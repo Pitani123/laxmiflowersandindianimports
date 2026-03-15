@@ -17,13 +17,18 @@ export function AddToCartButton({ product, className, variant = 'default' }: Add
   const [isAdded, setIsAdded] = useState(false)
   const [mounted, setMounted] = useState(false)
 
-  // Only render after mounting to avoid hydration mismatch
   useEffect(() => {
     setMounted(true)
   }, [])
 
-  // Don't render on server or if cart is not enabled
-  if (!mounted || !isCartEnabled) {
+  // Always return null on server AND initial client render to match
+  // After mount, check if cart is enabled
+  if (!mounted) {
+    return null
+  }
+
+  // After mounting, if cart is not enabled, return null
+  if (!isCartEnabled) {
     return null
   }
 
