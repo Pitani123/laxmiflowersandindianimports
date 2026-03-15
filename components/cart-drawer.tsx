@@ -1,12 +1,15 @@
 'use client'
 
-// Cart drawer component for displaying shopping cart
 import Image from 'next/image'
 import Link from 'next/link'
 import { X, Plus, Minus, ShoppingBag, Trash2 } from 'lucide-react'
 import { useCart } from '@/lib/cart-context'
-import { formatPrice } from '@/lib/format'
 import { Button } from '@/components/ui/button'
+
+// Local format function to avoid any server imports
+function formatPrice(priceInCents: number): string {
+  return `$${(priceInCents / 100).toFixed(2)}`
+}
 
 export function CartDrawer() {
   const { items, removeItem, updateQuantity, totalItems, totalPrice, isCartOpen, setIsCartOpen, isCartEnabled } = useCart()

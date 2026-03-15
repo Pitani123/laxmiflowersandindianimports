@@ -7,8 +7,12 @@ import { EmbeddedCheckout, EmbeddedCheckoutProvider } from '@stripe/react-stripe
 import { loadStripe } from '@stripe/stripe-js'
 import { ArrowLeft, ShoppingBag, CheckCircle, User, Mail, Phone, MapPin } from 'lucide-react'
 import { useCart } from '@/lib/cart-context'
-import { formatPrice } from '@/lib/format'
 import { createCheckoutSession } from '@/app/actions/checkout'
+
+// Local format function to avoid server imports
+function formatPrice(priceInCents: number): string {
+  return `$${(priceInCents / 100).toFixed(2)}`
+}
 import { Button } from '@/components/ui/button'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'

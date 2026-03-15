@@ -1,7 +1,11 @@
 import 'server-only'
 import { config, isSMSEnabled } from './config'
 import { markOrderSMSSent, DBOrder } from './db-orders'
-import { formatPrice } from './format'
+
+// Local format function
+function formatPrice(priceInCents: number): string {
+  return `$${(priceInCents / 100).toFixed(2)}`
+}
 
 interface SMSResult {
   success: boolean
