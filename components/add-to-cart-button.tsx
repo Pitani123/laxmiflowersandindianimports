@@ -1,7 +1,7 @@
 'use client'
 
 import { ShoppingCart, Check } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useCart } from '@/lib/cart-context'
 import { DBProduct, CartProduct } from '@/lib/types'
 import { Button } from '@/components/ui/button'
@@ -15,9 +15,15 @@ interface AddToCartButtonProps {
 export function AddToCartButton({ product, className, variant = 'default' }: AddToCartButtonProps) {
   const { addItem, isCartEnabled } = useCart()
   const [isAdded, setIsAdded] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
-  // Don't render if cart is not enabled
-  if (!isCartEnabled) {
+  // Only render after mounting to avoid hydration mismatch
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  // Don't render on server or if cart is not enabled
+  if (!mounted || !isCartEnabled) {
     return null
   }
 
