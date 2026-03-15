@@ -1,13 +1,20 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { ShoppingCart } from 'lucide-react'
 import { useCart } from '@/lib/cart-context'
 
 export function CartIcon() {
   const { totalItems, setIsCartOpen, isCartEnabled } = useCart()
+  const [mounted, setMounted] = useState(false)
 
-  // Don't render if cart is not enabled
-  if (!isCartEnabled) {
+  // Only render after mounting to avoid hydration mismatch
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  // Don't render on server or if cart is not enabled
+  if (!mounted || !isCartEnabled) {
     return null
   }
 
