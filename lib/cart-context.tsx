@@ -1,6 +1,9 @@
 'use client'
 
-// Cart context for managing shopping cart state
+/**
+ * Cart Context - Manages shopping cart state
+ * Updated: Forces clean rebuild
+ */
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 import { CartProduct, CartItem } from '@/lib/types'
 
@@ -18,6 +21,20 @@ interface CartContextType {
   isCartOpen: boolean
   setIsCartOpen: (open: boolean) => void
   isCartEnabled: boolean
+}
+
+// Default context for SSR and when provider is not available
+const defaultCartContext: CartContextType = {
+  items: [],
+  addItem: () => {},
+  removeItem: () => {},
+  updateQuantity: () => {},
+  clearCart: () => {},
+  totalItems: 0,
+  totalPrice: 0,
+  isCartOpen: false,
+  setIsCartOpen: () => {},
+  isCartEnabled: false,
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined)
@@ -111,23 +128,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
   )
 }
 
-// Default context for SSR and when provider is not available
-const defaultCartContext: CartContextType = {
-  items: [],
-  addItem: () => {},
-  removeItem: () => {},
-  updateQuantity: () => {},
-  clearCart: () => {},
-  totalItems: 0,
-  totalPrice: 0,
-  isCartOpen: false,
-  setIsCartOpen: () => {},
-  isCartEnabled: false,
-}
-
-export function useCart() {
+// Hook to use cart context - returns default context during SSR
+export function useCart(): CartContextType {
   const context = useContext(CartContext)
-  // Return default context during SSR or if provider is missing
+  // Return default context during SSR or if provider is missing - NEVER throws
   if (context === undefined) {
     return defaultCartContext
   }
