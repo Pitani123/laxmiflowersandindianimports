@@ -2,8 +2,8 @@
 
 export const config = {
   // Enable/disable shopping cart functionality
-  // Set NEXT_PUBLIC_ENABLE_CART=true to enable cart and checkout
-  enableCart: process.env.NEXT_PUBLIC_ENABLE_CART === 'true',
+  // Set NEXT_PUBLIC_ENABLE_CART=false to disable cart and checkout (enabled by default)
+  enableCart: process.env.NEXT_PUBLIC_ENABLE_CART !== 'false',
   
   // Enable/disable SMS notifications for orders
   // Requires TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, and TWILIO_PHONE_NUMBER
