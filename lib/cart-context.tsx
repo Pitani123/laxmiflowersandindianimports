@@ -1,0 +1,139 @@
+'use client'
+
+/**
+ * Cart Context - Manages shopping cart state
+ * Updated: Forces clean rebuild
+ */
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
+import { CartProduct, CartItem } from '@/lib/types'
+
+// Re-export types for convenience
+export type { CartProduct, CartItem } from '@/lib/types'
+
+interface CartContextType {
+  items: CartItem[]
+  addItem: (product: CartProduct, quantity?: number) => void
+  removeItem: (productId: string) => void
+  updateQuantity: (productId: string, quantity: number) => void
+  clearCart: () => void
+  totalItems: number
+  totalPrice: number
+  isCartOpen: boolean
+  setIsCartOpen: (open: boolean) => void
+  isCartEnabled: boolean
+}
+
+// Default context for SSR and when provider is not available
+const defaultCartContext: CartContextType = {
+  items: [],
+  addItem: () => {},
+  removeItem: () => {},
+  updateQuantity: () => {},
+  clearCart: () => {},
+  totalItems: 0,
+  totalPrice: 0,
+  isCartOpen: false,
+  setIsCartOpen: () => {},
+  isCartEnabled: false,
+}
+
+const CartContext = createContext<CartContextType | undefined>(undefined)
+
+export function CartProvider({ children }: { children: ReactNode }) {
+  const [items, setItems] = useState<CartItem[]>([])
+  const [isCartOpen, setIsCartOpen] = useState(false)
+  
+  // Check if cart is enabled via feature flag (defaults to true if not set)
+  // Controls both "Add to Cart" button and shopping cart experience
+  const isCartEnabled = process.env.NEXT_PUBLIC_ENABLE_ADD_TO_CART_BUTTON !== 'false'
+
+  // Load cart from localStorage on mount
+  useEffect(() => {
+    if (!isCartEnabled) return
+    const savedCart = localStorage.getItem('laxmi-flowers-cart')
+    if (savedCart) {
+      try {
+        setItems(JSON.parse(savedCart))
+      } catch (e) {
+        console.error('Failed to parse cart:', e)
+      }
+    }
+  }, [isCartEnabled])
+
+  // Save cart to localStorage when it changes
+  useEffect(() => {
+    if (!isCartEnabled) return
+    localStorage.setItem('laxmi-flowers-cart', JSON.stringify(items))
+  }, [items, isCartEnabled])
+
+  const addItem = (product: CartProduct, quantity: number = 1) => {
+    if (!isCartEnabled) return
+    setItems(currentItems => {
+      const existingItem = currentItems.find(item => item.product.id === product.id)
+      if (existingItem) {
+        return currentItems.map(item =>
+          item.product.id === product.id
+            ? { ...item, quantity: item.quantity + quantity }
+            : item
+        )
+      }
+      return [...currentItems, { product, quantity }]
+    })
+    setIsCartOpen(true)
+  }
+
+  const removeItem = (productId: string) => {
+    if (!isCartEnabled) return
+    setItems(currentItems => currentItems.filter(item => item.product.id !== productId))
+  }
+
+  const updateQuantity = (productId: string, quantity: number) => {
+    if (!isCartEnabled) return
+    if (quantity <= 0) {
+      removeItem(productId)
+      return
+    }
+    setItems(currentItems =>
+      currentItems.map(item =>
+        item.product.id === productId ? { ...item, quantity } : item
+      )
+    )
+  }
+
+  const clearCart = () => {
+    if (!isCartEnabled) return
+    setItems([])
+  }
+
+  const totalItems = items.reduce((sum, item) => sum + item.quantity, 0)
+  const totalPrice = items.reduce((sum, item) => sum + item.product.priceInCents * item.quantity, 0)
+
+  return (
+    <CartContext.Provider
+      value={{
+        items,
+        addItem,
+        removeItem,
+        updateQuantity,
+        clearCart,
+        totalItems,
+        totalPrice,
+        isCartOpen,
+        setIsCartOpen,
+        isCartEnabled,
+      }}
+    >
+      {children}
+    </CartContext.Provider>
+  )
+}
+
+// Hook to use cart context - returns default context during SSR
+export function useCart(): CartContextType {
+  const context = useContext(CartContext)
+  // Return default context during SSR or if provider is missing - NEVER throws
+  if (context === undefined) {
+    return defaultCartContext
+  }
+  return context
+}
