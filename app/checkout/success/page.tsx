@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
@@ -9,8 +9,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { useCart } from "@/lib/cart-context"
 import { CheckCircle, Package, ArrowRight } from "lucide-react"
+import { Spinner } from "@/components/ui/spinner"
 
-export default function CheckoutSuccessPage() {
+function SuccessContent() {
   const { clearCart } = useCart()
   const searchParams = useSearchParams()
   const sessionId = searchParams.get("session_id")
@@ -79,5 +80,29 @@ export default function CheckoutSuccessPage() {
       </main>
       <Footer />
     </div>
+  )
+}
+
+function SuccessLoading() {
+  return (
+    <div className="flex min-h-screen flex-col">
+      <Navigation />
+      <main className="flex-1 bg-secondary/30">
+        <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center">
+            <Spinner className="h-8 w-8" />
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  )
+}
+
+export default function CheckoutSuccessPage() {
+  return (
+    <Suspense fallback={<SuccessLoading />}>
+      <SuccessContent />
+    </Suspense>
   )
 }
