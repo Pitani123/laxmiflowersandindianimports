@@ -1,5 +1,6 @@
 'use client'
 
+// Cart context for managing shopping cart state
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
 import { CartProduct, CartItem } from '@/lib/types'
 
