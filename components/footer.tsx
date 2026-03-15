@@ -33,11 +33,11 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img 
-                src="/images/logo.png" 
+                src="/images/logo.jpg" 
                 alt="Laxmi Flowers Logo" 
                 width={60} 
                 height={60}
-                className="h-14 w-14 object-contain"
+                className="h-14 w-14 rounded-full object-cover"
               />
               <div>
                 <h3 className="font-serif text-2xl font-bold">Laxmi Flowers & Indian Imports</h3>

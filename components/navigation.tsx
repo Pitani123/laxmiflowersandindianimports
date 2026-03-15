@@ -38,11 +38,11 @@ export function Navigation() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
           <img 
-            src="/images/logo.png" 
+            src="/images/logo.jpg" 
             alt="Laxmi Flowers Logo" 
             width={60} 
             height={60}
-            className="h-14 w-14 object-contain"
+            className="h-14 w-14 rounded-full object-cover"
           />
           <div className="flex flex-col">
             <span className="font-serif text-xl font-bold text-primary sm:text-2xl">Laxmi Flowers & Indian Imports</span>
