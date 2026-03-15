@@ -1,5 +1,6 @@
 'use client'
 
+// Product card component with local formatPrice
 import Image from 'next/image'
 import { DBProduct } from '@/lib/types'
 import { AddToCartButton } from '@/components/add-to-cart-button'
