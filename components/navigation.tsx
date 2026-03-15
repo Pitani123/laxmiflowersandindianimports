@@ -45,8 +45,7 @@ export function Navigation() {
             className="h-14 w-14 object-contain"
           />
           <div className="flex flex-col">
-            <span className="font-serif text-xl font-bold text-primary sm:text-2xl">Laxmi Flowers</span>
-            <span className="text-xs font-medium text-foreground/80">& Indian Imports</span>
+            <span className="font-serif text-xl font-bold text-primary sm:text-2xl">Laxmi Flowers & Indian Imports</span>
             <span className="hidden text-[10px] italic text-muted-foreground sm:block">Authentic Indian Traditions in the USA</span>
           </div>
         </Link>
