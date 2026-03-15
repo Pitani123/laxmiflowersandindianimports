@@ -1,5 +1,6 @@
 'use client'
 
+// Cart drawer component for displaying shopping cart
 import Image from 'next/image'
 import Link from 'next/link'
 import { X, Plus, Minus, ShoppingBag, Trash2 } from 'lucide-react'
