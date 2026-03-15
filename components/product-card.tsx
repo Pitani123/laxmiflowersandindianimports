@@ -1,12 +1,10 @@
 'use client'
 
-// Product card component with local formatPrice
 import Image from 'next/image'
 import { DBProduct } from '@/lib/types'
 import { AddToCartButton } from '@/components/add-to-cart-button'
 import { Store } from 'lucide-react'
 
-// Local format function to avoid server imports
 function formatPrice(priceInCents: number): string {
   return `$${(priceInCents / 100).toFixed(2)}`
 }
@@ -17,7 +15,6 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product, showCartButton = true }: ProductCardProps) {
-  // Only show Add to Cart if cart is enabled and product has a price
   const canAddToCart = showCartButton && product.price_in_cents > 0
 
   return (
