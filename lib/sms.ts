@@ -1,6 +1,7 @@
+import 'server-only'
 import { config, isSMSEnabled } from './config'
 import { markOrderSMSSent, DBOrder } from './db-orders'
-import { formatPrice } from './db-products'
+import { formatPrice } from './format'
 
 interface SMSResult {
   success: boolean
