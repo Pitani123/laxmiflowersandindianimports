@@ -7,40 +7,28 @@ import { ArrowRight } from "lucide-react"
 
 const teamMembers = [
   {
-    name: "Lakshmi Patel",
+    name: "Praveen Kamuju",
     role: "Founder & Owner",
-    bio: "With over 25 years of experience in floristry, Lakshmi brings her passion for flowers and Indian traditions to every arrangement. Her vision started this beautiful journey.",
-    image: "/images/team-lakshmi.jpg",
+    bio: "Praveen founded Laxmi Flowers with a vision to bring authentic Indian flowers and traditions to the community. His passion and dedication have made this dream a reality.",
+    image: "/images/team-praveen.jpg",
   },
   {
-    name: "Rajesh Patel",
-    role: "Co-Owner & Operations",
-    bio: "Rajesh manages the day-to-day operations and ensures every customer leaves with a smile. His attention to detail keeps everything running smoothly.",
-    image: "/images/team-rajesh.jpg",
+    name: "Sirisha Kamuju",
+    role: "Co-Owner, Operations & Head Florist",
+    bio: "Sirisha manages operations and is also a talented Head Florist & Garland Specialist. Her creativity and attention to detail ensure every arrangement is perfect.",
+    image: "/images/team-sirisha.jpg",
   },
   {
-    name: "Priya Sharma",
-    role: "Head Florist",
-    bio: "Priya is our creative genius behind the stunning wedding decorations and custom arrangements. She turns floral dreams into reality.",
-    image: "/images/team-priya.jpg",
+    name: "Manju",
+    role: "Head Florist & Garland Specialist",
+    bio: "Manju is an expert in traditional Indian floristry and garland making. Her beautiful creations bring joy to weddings, pujas, and special ceremonies.",
+    image: "/images/team-manju.jpg",
   },
   {
-    name: "Anil Kumar",
-    role: "Garland Specialist",
-    bio: "Anil has mastered the traditional art of garland making, creating beautiful malas for weddings, pujas, and special ceremonies.",
-    image: "/images/team-anil.jpg",
-  },
-  {
-    name: "Meera Desai",
-    role: "Customer Relations",
-    bio: "Meera greets every customer with warmth and helps them find exactly what they need. She knows all our regular customers by name.",
-    image: "/images/team-meera.jpg",
-  },
-  {
-    name: "Vikram Singh",
-    role: "Events & Rentals",
-    bio: "Vikram coordinates our event services and rental department, making sure your special occasions have everything they need.",
-    image: "/images/team-vikram.jpg",
+    name: "Roopa",
+    role: "Events & Rentals Specialist",
+    bio: "Roopa coordinates our event services and rental department, ensuring every celebration has the perfect decorations and arrangements.",
+    image: "/images/team-roopa.jpg",
   },
 ]
 
@@ -145,7 +133,7 @@ export default function OurTeamPage() {
                   </div>
                 </div>
                 <Button asChild className="mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
-                  <a href="mailto:careers@laxmiflowers.com">
+                  <a href="mailto:laxmiflowers.aubrey@gmail.com">
                     Contact Us About Opportunities
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
