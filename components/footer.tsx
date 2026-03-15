@@ -40,8 +40,7 @@ export function Footer() {
                 className="h-14 w-14 object-contain"
               />
               <div>
-                <h3 className="font-serif text-2xl font-bold">Laxmi Flowers</h3>
-                <p className="text-sm text-background/60">& Indian Imports</p>
+                <h3 className="font-serif text-2xl font-bold">Laxmi Flowers & Indian Imports</h3>
               </div>
             </div>
             <p className="text-xs italic text-accent">Authentic Indian Traditions in the USA</p>
