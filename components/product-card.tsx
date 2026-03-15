@@ -2,9 +2,13 @@
 
 import Image from 'next/image'
 import { DBProduct } from '@/lib/types'
-import { formatPrice } from '@/lib/format'
 import { AddToCartButton } from '@/components/add-to-cart-button'
 import { Store } from 'lucide-react'
+
+// Local format function to avoid server imports
+function formatPrice(priceInCents: number): string {
+  return `$${(priceInCents / 100).toFixed(2)}`
+}
 
 interface ProductCardProps {
   product: DBProduct
