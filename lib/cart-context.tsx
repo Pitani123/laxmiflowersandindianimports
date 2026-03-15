@@ -109,10 +109,25 @@ export function CartProvider({ children }: { children: ReactNode }) {
   )
 }
 
+// Default context for SSR and when provider is not available
+const defaultCartContext: CartContextType = {
+  items: [],
+  addItem: () => {},
+  removeItem: () => {},
+  updateQuantity: () => {},
+  clearCart: () => {},
+  totalItems: 0,
+  totalPrice: 0,
+  isCartOpen: false,
+  setIsCartOpen: () => {},
+  isCartEnabled: false,
+}
+
 export function useCart() {
   const context = useContext(CartContext)
+  // Return default context during SSR or if provider is missing
   if (context === undefined) {
-    throw new Error('useCart must be used within a CartProvider')
+    return defaultCartContext
   }
   return context
 }
