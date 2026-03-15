@@ -135,9 +135,9 @@ export function Navigation() {
         </nav>
 
         <div className="hidden items-center gap-4 lg:flex">
-          <a href="tel:+1234567890" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary">
+          <a href="tel:+16824396439" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary">
             <Phone className="h-4 w-4" />
-            <span>Call Us</span>
+            <span>682-439-6439</span>
           </a>
           <CartIcon />
           <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -244,9 +244,9 @@ export function Navigation() {
             </Link>
 
             <div className="mt-4 flex flex-col gap-3 border-t border-border pt-4">
-              <a href="tel:+1234567890" className="flex items-center gap-2 text-sm text-muted-foreground">
+              <a href="tel:+16824396439" className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>Call Us</span>
+                <span>682-439-6439</span>
               </a>
               <Button asChild className="w-full bg-primary text-primary-foreground">
                 <Link href="/locations">Visit Store</Link>

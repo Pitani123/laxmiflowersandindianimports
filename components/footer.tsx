@@ -80,32 +80,31 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="mb-4 font-semibold">Contact Us</h4>
+            <h4 className="mb-4 font-semibold">Contact Us (Main Store)</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                 <span className="text-sm text-background/70">
-                  123 Main Street<br />
-                  Your City, State 12345
+                  2881 FM1385<br />
+                  Aubrey, TX 76227, USA
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-accent" />
-                <a href="tel:+1234567890" className="text-sm text-background/70 hover:text-accent">
-                  (123) 456-7890
+                <a href="tel:+16824396439" className="text-sm text-background/70 hover:text-accent">
+                  682-439-6439
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-accent" />
-                <a href="mailto:info@laxmiflowers.com" className="text-sm text-background/70 hover:text-accent">
-                  info@laxmiflowers.com
+                <a href="mailto:laxmiflowers.aubrey@gmail.com" className="text-sm text-background/70 hover:text-accent">
+                  laxmiflowers.aubrey@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                 <span className="text-sm text-background/70">
-                  Mon - Sat: 9AM - 7PM<br />
-                  Sun: 10AM - 5PM
+                  Mon - Sun: 10AM - 11PM
                 </span>
               </li>
             </ul>

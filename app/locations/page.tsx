@@ -3,78 +3,39 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { MapPin, Phone, Mail, Clock, Navigation as NavIcon, ArrowRight, Package } from "lucide-react"
-
-const pickupLocations = [
-  {
-    id: "pickup-1",
-    name: "North Side Pickup Point",
-    address: "789 North Avenue",
-    city: "North District, State 12347",
-    phone: "(123) 456-7892",
-    hours: "Mon - Sat: 8:00 AM - 6:00 PM",
-    mapUrl: "https://maps.google.com/?q=789+North+Avenue",
-  },
-  {
-    id: "pickup-2",
-    name: "East End Pickup Point",
-    address: "321 East Boulevard",
-    city: "East Side, State 12348",
-    phone: "(123) 456-7893",
-    hours: "Mon - Fri: 9:00 AM - 5:00 PM",
-    mapUrl: "https://maps.google.com/?q=321+East+Boulevard",
-  },
-  {
-    id: "pickup-3",
-    name: "West Market Pickup",
-    address: "555 West Market Street",
-    city: "West Town, State 12349",
-    phone: "(123) 456-7894",
-    hours: "Daily: 7:00 AM - 7:00 PM",
-    mapUrl: "https://maps.google.com/?q=555+West+Market+Street",
-  },
-  {
-    id: "pickup-4",
-    name: "South Plaza Pickup",
-    address: "888 South Plaza",
-    city: "South Area, State 12350",
-    phone: "(123) 456-7895",
-    hours: "Mon - Sat: 10:00 AM - 8:00 PM",
-    mapUrl: "https://maps.google.com/?q=888+South+Plaza",
-  },
-]
+import { MapPin, Phone, Mail, Clock, Navigation as NavIcon, ArrowRight } from "lucide-react"
 
 const locations = [
   {
     id: "main-store",
-    name: "Main Store",
-    address: "123 Main Street",
-    city: "Your City, State 12345",
-    phone: "(123) 456-7890",
-    email: "main@laxmiflowers.com",
+    name: "Aubrey, TX - Main Store",
+    address: "2881 FM1385",
+    city: "Aubrey, TX 76227, USA",
+    phone: "682-439-6439",
+    email: "laxmiflowers.aubrey@gmail.com",
     hours: {
-      weekdays: "9:00 AM - 7:00 PM",
-      saturday: "9:00 AM - 7:00 PM",
-      sunday: "10:00 AM - 5:00 PM",
+      weekdays: "10:00 AM - 11:00 PM",
+      saturday: "10:00 AM - 11:00 PM",
+      sunday: "10:00 AM - 11:00 PM",
     },
     image: "/images/store-main.jpg",
-    mapUrl: "https://maps.google.com/?q=123+Main+Street",
+    mapUrl: "https://maps.google.com/?q=2881+FM1385+Aubrey+TX+76227",
     isPrimary: true,
   },
   {
-    id: "downtown",
-    name: "Downtown Location",
-    address: "456 Center Avenue",
-    city: "Downtown, State 12346",
-    phone: "(123) 456-7891",
-    email: "downtown@laxmiflowers.com",
+    id: "edison",
+    name: "Edison, NJ Store",
+    address: "1655 Oak Tree Rd",
+    city: "Edison, NJ, USA",
+    phone: "732-799-9567",
+    email: "laxmiflowers.edison@gmail.com",
     hours: {
-      weekdays: "10:00 AM - 6:00 PM",
-      saturday: "10:00 AM - 6:00 PM",
-      sunday: "Closed",
+      weekdays: "10:00 AM - 8:30 PM",
+      saturday: "10:00 AM - 8:30 PM",
+      sunday: "10:00 AM - 8:30 PM",
     },
     image: "/images/store-downtown.jpg",
-    mapUrl: "https://maps.google.com/?q=456+Center+Avenue",
+    mapUrl: "https://maps.google.com/?q=1655+Oak+Tree+Rd+Edison+NJ",
     isPrimary: false,
   },
 ]
@@ -208,70 +169,6 @@ export default function LocationsPage() {
           </div>
         </section>
 
-        {/* Pickup Locations Section */}
-        <section className="bg-card py-20 lg:py-28">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-12 text-center">
-              <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
-                <Package className="h-7 w-7 text-primary" />
-              </div>
-              <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl">Pickup Locations</h2>
-              <p className="mt-4 text-muted-foreground">
-                Convenient pickup points across the city. Order ahead and pick up at your nearest location.
-              </p>
-            </div>
-            
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {pickupLocations.map((pickup) => (
-                <div
-                  key={pickup.id}
-                  className="rounded-xl border border-border bg-background p-6 transition-shadow hover:shadow-lg"
-                >
-                  <h3 className="font-serif text-lg font-bold text-foreground">{pickup.name}</h3>
-                  
-                  <div className="mt-4 space-y-3">
-                    <div className="flex items-start gap-3">
-                      <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                      <div className="text-sm text-muted-foreground">
-                        <p>{pickup.address}</p>
-                        <p>{pickup.city}</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center gap-3">
-                      <Phone className="h-4 w-4 shrink-0 text-primary" />
-                      <a href={`tel:${pickup.phone}`} className="text-sm text-muted-foreground hover:text-primary">
-                        {pickup.phone}
-                      </a>
-                    </div>
-                    
-                    <div className="flex items-center gap-3">
-                      <Clock className="h-4 w-4 shrink-0 text-primary" />
-                      <span className="text-sm text-muted-foreground">{pickup.hours}</span>
-                    </div>
-                  </div>
-                  
-                  <div className="mt-6">
-                    <Button asChild variant="outline" size="sm" className="w-full">
-                      <a href={pickup.mapUrl} target="_blank" rel="noopener noreferrer">
-                        <NavIcon className="mr-2 h-4 w-4" />
-                        Get Directions
-                      </a>
-                    </Button>
-                  </div>
-                </div>
-              ))}
-            </div>
-            
-            <div className="mt-10 rounded-xl bg-secondary p-6 text-center">
-              <p className="text-muted-foreground">
-                <strong className="text-foreground">How Pickup Works:</strong> Place your order by phone or in-store, 
-                select your preferred pickup location, and we will have your items ready for collection.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Map Section Placeholder */}
         <section className="py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -317,8 +214,8 @@ export default function LocationsPage() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Call us anytime</p>
-                      <a href="tel:+1234567890" className="font-medium text-foreground hover:text-primary">
-                        (123) 456-7890
+                      <a href="tel:+16824396439" className="font-medium text-foreground hover:text-primary">
+                        682-439-6439
                       </a>
                     </div>
                   </div>
@@ -328,8 +225,8 @@ export default function LocationsPage() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Email us at</p>
-                      <a href="mailto:info@laxmiflowers.com" className="font-medium text-foreground hover:text-primary">
-                        info@laxmiflowers.com
+                      <a href="mailto:laxmiflowers.aubrey@gmail.com" className="font-medium text-foreground hover:text-primary">
+                        laxmiflowers.aubrey@gmail.com
                       </a>
                     </div>
                   </div>
