@@ -25,8 +25,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([])
   const [isCartOpen, setIsCartOpen] = useState(false)
   
-  // Check if cart is enabled via environment variable (defaults to true if not set)
-  const isCartEnabled = process.env.NEXT_PUBLIC_ENABLE_CART !== 'false'
+  // Check if cart is enabled via feature flag (defaults to true if not set)
+  // Controls both "Add to Cart" button and shopping cart experience
+  const isCartEnabled = process.env.NEXT_PUBLIC_ENABLE_ADD_TO_CART_BUTTON !== 'false'
 
   // Load cart from localStorage on mount
   useEffect(() => {
