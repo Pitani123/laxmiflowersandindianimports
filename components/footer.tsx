@@ -16,10 +16,10 @@ const footerLinks = {
     // { href: "/products/wedding-decorations", label: "Wedding Decorations" }, // Temporarily disabled
     // { href: "/products/gift-items", label: "Indian Gift Items" }, // Temporarily disabled
     // { href: "/products/silver-items", label: "Silver Items" }, // Temporarily disabled
-    { href: "/products/brass-items", label: "Brass Items" },
-    { href: "/products/jewellery", label: "Low Cost Jewellery" },
+    // { href: "/products/brass-items", label: "Brass Items" }, // Temporarily disabled
+    // { href: "/products/jewellery", label: "Low Cost Jewellery" }, // Temporarily disabled
     // { href: "/products/traditional-dresses", label: "Traditional Dresses" }, // Temporarily disabled
-    { href: "/products/snacks", label: "Indian Snacks" },
+    // { href: "/products/snacks", label: "Indian Snacks" }, // Temporarily disabled
     { href: "/products/rentals", label: "Rentals" },
   ],
 }

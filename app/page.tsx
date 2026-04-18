@@ -45,10 +45,16 @@ const services = [
     description: "Daily fresh flowers for home altar and special occasions",
     image: "/images/fresh-flowers.jpg",
   },
+  // Temporarily disabled - Indian Snacks
+  // {
+  //   title: "Indian Snacks",
+  //   description: "Delicious traditional Indian snacks and sweets",
+  //   image: "/images/snacks.jpg",
+  // },
   {
-    title: "Indian Snacks",
-    description: "Delicious traditional Indian snacks and sweets",
-    image: "/images/snacks.jpg",
+    title: "Rentals",
+    description: "Event rental items for ceremonies and celebrations",
+    image: "/images/rentals.jpg",
   },
 ]
 
@@ -209,11 +215,11 @@ export default function HomePage() {
               <div className="max-w-2xl">
                 <p className="mb-2 text-sm font-medium uppercase tracking-wider text-accent">New at Laxmi Flowers</p>
                 <h2 className="font-serif text-3xl font-bold sm:text-4xl">
-                  Now Offering Brass Items, Jewellery & Indian Snacks
+                  Fresh Flowers, Garlands & Event Rentals
                 </h2>
                 <p className="mt-4 text-primary-foreground/80">
-                  We have expanded our collection to serve you better. Visit us to explore 
-                  our range of authentic Indian products.
+                  Your one-stop shop for fresh flowers, beautiful garlands, and event rentals. 
+                  Visit us to explore our collection.
                 </p>
               </div>
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">

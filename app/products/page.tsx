@@ -53,20 +53,22 @@ const productCategories = [
   //   image: "/images/silver-items.jpg",
   //   href: "/products/silver-items",
   // },
-  {
-    id: "brass-items",
-    name: "Brass Items",
-    description: "Traditional brass items for pooja and home decor",
-    image: "/images/gift-items.jpg",
-    href: "/products/brass-items",
-  },
-  {
-    id: "jewellery",
-    name: "Low Cost Jewellery Items",
-    description: "Affordable traditional Indian jewelry for all occasions",
-    image: "/images/traditional-dresses.jpg",
-    href: "/products/jewellery",
-  },
+  // Temporarily disabled - Brass Items
+  // {
+  //   id: "brass-items",
+  //   name: "Brass Items",
+  //   description: "Traditional brass items for pooja and home decor",
+  //   image: "/images/gift-items.jpg",
+  //   href: "/products/brass-items",
+  // },
+  // Temporarily disabled - Low Cost Jewellery Items
+  // {
+  //   id: "jewellery",
+  //   name: "Low Cost Jewellery Items",
+  //   description: "Affordable traditional Indian jewelry for all occasions",
+  //   image: "/images/traditional-dresses.jpg",
+  //   href: "/products/jewellery",
+  // },
   // Temporarily disabled - Traditional Dresses
   // {
   //   id: "traditional-dresses",
@@ -75,13 +77,14 @@ const productCategories = [
   //   image: "/images/traditional-dresses.jpg",
   //   href: "/products/traditional-dresses",
   // },
-  {
-    id: "snacks",
-    name: "Indian Snacks",
-    description: "Delicious traditional Indian snacks and sweets",
-    image: "/images/snacks.jpg",
-    href: "/products/snacks",
-  },
+  // Temporarily disabled - Indian Snacks
+  // {
+  //   id: "snacks",
+  //   name: "Indian Snacks",
+  //   description: "Delicious traditional Indian snacks and sweets",
+  //   image: "/images/snacks.jpg",
+  //   href: "/products/snacks",
+  // },
   {
     id: "rentals",
     name: "Rentals",

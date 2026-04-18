@@ -290,9 +290,6 @@ export default function ReviewsPage() {
                         <option value="Garlands">Garlands</option>
                         <option value="Flower Bouquets">Flower Bouquets</option>
                         <option value="Fresh Flowers">Fresh Flowers</option>
-                        <option value="Brass Items">Brass Items</option>
-                        <option value="Low Cost Jewellery">Low Cost Jewellery</option>
-                        <option value="Indian Snacks">Indian Snacks</option>
                         <option value="Rentals">Rentals</option>
                         <option value="General">General Experience</option>
                       </select>
