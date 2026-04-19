@@ -145,8 +145,8 @@ export default function ReviewsPage() {
           </div>
         </section>
 
-        {/* Reviews Grid */}
-        <section className="py-20 lg:py-28">
+        {/* Reviews Grid - Temporarily Disabled */}
+        {/* <section className="py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12 flex items-center justify-between">
               <h2 className="font-serif text-2xl font-bold text-foreground sm:text-3xl">Recent Reviews</h2>
@@ -183,7 +183,7 @@ export default function ReviewsPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Submit Review Form */}
         <section className="bg-card py-20 lg:py-28">
