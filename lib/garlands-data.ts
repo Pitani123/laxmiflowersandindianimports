@@ -215,6 +215,46 @@ export const garlands: Garland[] = [
     ],
     availableExtras: ["gold-beads", "crystals", "extra-flowers"],
   },
+  {
+    id: "coral-rose-mum",
+    name: "Coral Rose & Chrysanthemum Garland", // <-- Change name here
+    description: "Coral pink roses with white chrysanthemums and baby's breath",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.26.24%20PM-98tS3cAG1QbQknFBMId3DTrci6RUWQ.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
+  },
+  {
+    id: "red-rose-mum-single",
+    name: "Red Rose & Chrysanthemum Garland", // <-- Change name here
+    description: "Classic red roses with white chrysanthemums and baby's breath",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.25.29%20PM-BrotXTC3MD9LrXUq9KIELtVD1Gt0Ou.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
+  },
+  {
+    id: "lotus-ushape",
+    name: "Lotus U-Shape Garland", // <-- Change name here
+    description: "Elegant lotus flowers with baby's breath in classic U-shape design",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.24.17%20PM-OhjJOZHUocCwe77QKKAc4HQyz8lUZ7.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "crystals"],
+  },
+  {
+    id: "red-rose-mum-double",
+    name: "Red Rose & Mum Double Garland", // <-- Change name here
+    description: "Matching pair of red roses with white chrysanthemums",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.25.29%20PM%20%281%29-IXPyaYihsK7cNnP0loLbSTtC24PsxT.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
+  },
+  {
+    id: "pastel-rose-mix",
+    name: "Pastel Rose Mix Garland", // <-- Change name here
+    description: "Delicate light pink and cream roses with baby's breath",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.26.46%20PM-7Z6d4bL3A5NRAYWcEiD1EIeIOHwdvh.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "silver-beads", "crystals", "ribbons"],
+  },
 ]
 
 // Helper function to get extras by IDs
