@@ -16,7 +16,7 @@ export default function WeddingGarlandsPage() {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px]">
           <Image
-            src={garlands[0]?.image || "/images/garlands.jpg"}
+            src={garlands[0]?.images?.[0] || "/images/garlands.jpg"}
             alt="Wedding Garlands"
             fill
             className="object-cover"
@@ -54,6 +54,9 @@ export default function WeddingGarlandsPage() {
                   </p>
                   <p className="text-xs text-muted-foreground mt-1">
                     Prices vary by size. Custom orders welcome - contact us for special requests.
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1">
+                    <span className="font-medium">Color Customizations Available.</span> Colors may vary slightly due to photographic lighting sources.
                   </p>
                 </div>
               </div>
