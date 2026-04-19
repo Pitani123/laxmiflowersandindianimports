@@ -11,7 +11,7 @@ const footerLinks = {
   ],
   products: [
     { href: "/products/fresh-flowers", label: "Fresh Flowers" },
-    { href: "/products/garlands", label: "Garlands" },
+    { href: "/products/wedding", label: "Wedding" },
     { href: "/products/bouquets", label: "Flower Bouquets" },
     // { href: "/products/wedding-decorations", label: "Wedding Decorations" }, // Temporarily disabled
     // { href: "/products/gift-items", label: "Indian Gift Items" }, // Temporarily disabled
