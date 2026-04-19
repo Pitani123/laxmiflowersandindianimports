@@ -42,14 +42,7 @@ export function Navigation() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-3">
-          <img 
-            src="/images/logo.jpg" 
-            alt="Laxmi Flowers Logo" 
-            width={60} 
-            height={60}
-            className="h-14 w-14 rounded-full object-cover"
-          />
+        <Link href="/" className="flex items-center">
           <div className="flex flex-col">
             <span className="font-serif text-xl font-bold text-primary sm:text-2xl">Laxmi Flowers</span>
             <span className="hidden text-[10px] italic text-muted-foreground sm:block">Authentic Indian Traditions in the USA</span>

@@ -21,17 +21,8 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <img 
-                src="/images/logo.jpg" 
-                alt="Laxmi Flowers Logo" 
-                width={60} 
-                height={60}
-                className="h-14 w-14 rounded-full object-cover"
-              />
-              <div>
-                <h3 className="font-serif text-2xl font-bold">Laxmi Flowers</h3>
-              </div>
+            <div>
+              <h3 className="font-serif text-2xl font-bold">Laxmi Flowers</h3>
             </div>
             <p className="text-xs italic text-accent">Authentic Indian Traditions in the USA</p>
             <p className="text-sm leading-relaxed text-background/80">
