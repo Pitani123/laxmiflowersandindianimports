@@ -94,7 +94,7 @@ export const garlands: Garland[] = [
   },
   {
     id: "red-pink-daisy",
-    name: "Red & Pink Rose with Daisy Garland",
+    name: "Carnations and Baby’s Breath Garland",
     description: "Vibrant red-pink roses with white daisies and baby's breath",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.26%20PM-CAuwPXGjdK87gqWw3MkSYJM8YJCHsC.jpeg",
     sizes: defaultSizes,
