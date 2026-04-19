@@ -77,10 +77,10 @@ export const garlands: Garland[] = [
   {
     id: "garland-003",
     name: "Garland_003",
-    description: "Roses, and Baby's Breath Garland",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.13.05%20PM-0r9TxlcHuUhxhVlJeyVkLfyGGKhcwR.jpeg"],
+    description: "Carnations, Roses, and Baby's Breath Garland",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.26%20PM-GvnZbx7l2HPTlDcRz4L8pUlFgdiAli.jpeg"],
     sizes: defaultSizes
-    //availableExtras: ["pearls", "silver-beads", "crystals", "ribbons"],
+    //availableExtras: ["pearls", "gold-beads", "crystals"],
   },
   {
     id: "garland-004",
@@ -187,10 +187,10 @@ export const garlands: Garland[] = [
   {
     id: "garland-016",
     name: "Garland_016",
-    description: "Carnations, Roses, and Baby's Breath Garland",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.26%20PM-GvnZbx7l2HPTlDcRz4L8pUlFgdiAli.jpeg"],
+    description: "Roses, and Baby's Breath Garland",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.13.05%20PM-0r9TxlcHuUhxhVlJeyVkLfyGGKhcwR.jpeg"],
     sizes: defaultSizes
-    //availableExtras: ["pearls", "gold-beads", "crystals"],
+    //availableExtras: ["pearls", "silver-beads", "crystals", "ribbons"],
   },
   {
     id: "garland-017",
