@@ -4,11 +4,16 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { ProductCard } from "@/components/product-card"
+import { GarlandCard } from "@/components/garland-card"
 import { getProductsByCategory } from "@/lib/db-products"
+import { garlands } from "@/lib/garlands-data"
 import { ArrowLeft, Gem, ShoppingBag } from "lucide-react"
 
 export default async function WeddingAccessoriesPage() {
   const products = await getProductsByCategory('wedding-accessories')
+  
+  // Get Garika Muntha products from local data
+  const garikaMunthaProducts = garlands.filter(g => g.category === "wedding-accessories")
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -60,12 +65,32 @@ export default async function WeddingAccessoriesPage() {
               </Button>
             </div>
 
-            {products.length > 0 ? (
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {products.map((product) => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
-              </div>
+            {(products.length > 0 || garikaMunthaProducts.length > 0) ? (
+              <>
+                {/* Garika Muntha Section */}
+                {garikaMunthaProducts.length > 0 && (
+                  <div className="mb-12">
+                    <h2 className="mb-6 font-serif text-2xl font-bold text-foreground">Garika Muntha (Decorated Clay Pots)</h2>
+                    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                      {garikaMunthaProducts.map((garland) => (
+                        <GarlandCard key={garland.id} garland={garland} />
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Other Products from Database */}
+                {products.length > 0 && (
+                  <div>
+                    <h2 className="mb-6 font-serif text-2xl font-bold text-foreground">Other Accessories</h2>
+                    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                      {products.map((product) => (
+                        <ProductCard key={product.id} product={product} />
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </>
             ) : (
               <div className="rounded-xl bg-secondary p-12 text-center">
                 <Gem className="mx-auto h-12 w-12 text-muted-foreground" />
