@@ -66,8 +66,8 @@ export function GarlandCard({ garland }: GarlandCardProps) {
 
   return (
     <div className="group overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/30 hover:shadow-lg">
-      {/* Image Container - Fixed aspect ratio for consistent sizing */}
-      <div className="relative aspect-[3/4] overflow-hidden bg-muted">
+      {/* Image Container - Full image display */}
+      <div className="relative aspect-[2/3] overflow-hidden bg-muted">
         <Image
           src={garland.image}
           alt={garland.name}
