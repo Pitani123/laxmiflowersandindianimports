@@ -184,7 +184,6 @@ export const garlands: Garland[] = [
     sizes: defaultSizes
     //availableExtras: ["pearls", "gold-beads", "silver-beads"],
   },
-
   {
     id: "garland-016",
     name: "Garland_016",
@@ -193,7 +192,6 @@ export const garlands: Garland[] = [
     sizes: defaultSizes
     //availableExtras: ["pearls", "gold-beads", "crystals"],
   },
-
   {
     id: "garland-017",
     name: "Garland_017",
