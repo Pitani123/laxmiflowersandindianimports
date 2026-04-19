@@ -17,8 +17,8 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: 'Laxmi Flowers and Indian Imports | Fresh Flowers, Garlands & Indian Gifts',
-  description: 'Over 20 years of bringing beauty and tradition to your celebrations. Offering garlands, flower bouquets, wedding decorations, Indian gift items, silver items, traditional dresses, and more.',
+  title: 'Laxmi Flowers | Fresh Flowers, Garlands & Indian Gifts',
+  description: 'A long-standing tradition of bringing beauty to your celebrations. Offering garlands, flower bouquets, wedding decorations, Indian gift items, and more.',
   generator: 'v0.app',
   icons: {
     icon: [

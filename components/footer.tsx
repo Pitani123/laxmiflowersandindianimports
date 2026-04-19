@@ -11,14 +11,6 @@ const footerLinks = {
     { href: "/products/fresh-flowers", label: "Fresh Flowers" },
     { href: "/products/wedding", label: "Wedding" },
     { href: "/products/bouquets", label: "Flower Bouquets" },
-    // { href: "/products/wedding-decorations", label: "Wedding Decorations" }, // Temporarily disabled
-    // { href: "/products/gift-items", label: "Indian Gift Items" }, // Temporarily disabled
-    // { href: "/products/silver-items", label: "Silver Items" }, // Temporarily disabled
-    // { href: "/products/brass-items", label: "Brass Items" }, // Temporarily disabled
-    // { href: "/products/jewellery", label: "Low Cost Jewellery" }, // Temporarily disabled
-    // { href: "/products/traditional-dresses", label: "Traditional Dresses" }, // Temporarily disabled
-    // { href: "/products/snacks", label: "Indian Snacks" }, // Temporarily disabled
-    { href: "/products/rentals", label: "Rentals" },
   ],
 }
 
@@ -38,12 +30,12 @@ export function Footer() {
                 className="h-14 w-14 rounded-full object-cover"
               />
               <div>
-                <h3 className="font-serif text-2xl font-bold">Laxmi Flowers & Indian Imports</h3>
+                <h3 className="font-serif text-2xl font-bold">Laxmi Flowers</h3>
               </div>
             </div>
             <p className="text-xs italic text-accent">Authentic Indian Traditions in the USA</p>
             <p className="text-sm leading-relaxed text-background/80">
-              Over 20 years of bringing beauty and tradition to your celebrations. 
+              A long-standing tradition of bringing beauty to your celebrations. 
               Your trusted source for fresh flowers, garlands, and authentic Indian items.
             </p>
           </div>
@@ -112,10 +104,10 @@ export function Footer() {
         <div className="mt-12 border-t border-background/10 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-background/60">
-              © {new Date().getFullYear()} Laxmi Flowers and Indian Imports. All rights reserved.
+              © {new Date().getFullYear()} Laxmi Flowers. All rights reserved.
             </p>
             <p className="text-sm text-background/60">
-              Serving the community with love for over 20 years
+              Serving the community with love and tradition
             </p>
           </div>
         </div>

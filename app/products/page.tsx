@@ -85,13 +85,14 @@ const productCategories = [
   //   image: "/images/snacks.jpg",
   //   href: "/products/snacks",
   // },
-  {
-    id: "rentals",
-    name: "Rentals",
-    description: "Rental items for events and ceremonies",
-    image: "/images/rentals.jpg",
-    href: "/products/rentals",
-  },
+  // Temporarily disabled - Rentals
+  // {
+  //   id: "rentals",
+  //   name: "Rentals",
+  //   description: "Rental items for events and ceremonies",
+  //   image: "/images/rentals.jpg",
+  //   href: "/products/rentals",
+  // },
 ]
 
 export default async function ProductsPage() {
