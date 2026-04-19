@@ -3,9 +3,9 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { ProductCard } from "@/components/product-card"
+import { RentalCard } from "@/components/rental-card"
 import { getProductsByCategory } from "@/lib/db-products"
-import { Phone, ArrowLeft, Package, ShoppingBag } from "lucide-react"
+import { Phone, ArrowLeft, Package } from "lucide-react"
 
 export default async function RentalsPage() {
   const products = await getProductsByCategory('rentals')
@@ -37,7 +37,7 @@ export default async function RentalsPage() {
                 </div>
                 <div>
                   <h1 className="font-serif text-4xl font-bold text-card sm:text-5xl">Rentals</h1>
-                  <p className="mt-1 text-lg text-card/80">Rental items for events and ceremonies</p>
+                  <p className="mt-1 text-lg text-card/80">Rental items for events and ceremonies - per day pricing</p>
                 </div>
               </div>
             </div>
@@ -49,8 +49,11 @@ export default async function RentalsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-10 flex flex-col gap-4 rounded-xl bg-secondary p-6 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-3">
-                <ShoppingBag className="h-6 w-6 text-primary" />
-                <p className="font-medium text-foreground">Add items to your cart and checkout online!</p>
+                <Package className="h-6 w-6 text-primary" />
+                <div>
+                  <p className="font-medium text-foreground">All rentals are priced per day</p>
+                  <p className="text-sm text-muted-foreground">Call us to check availability and get pricing for your event</p>
+                </div>
               </div>
               <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <a href="tel:+1234567890">
@@ -62,7 +65,7 @@ export default async function RentalsPage() {
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {products.map((product) => (
-                <ProductCard key={product.id} product={product} />
+                <RentalCard key={product.id} product={product} />
               ))}
             </div>
           </div>
