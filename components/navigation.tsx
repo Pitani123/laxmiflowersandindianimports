@@ -22,7 +22,7 @@ const productLinks = [
       { href: "/products/wedding/wedding-garlands", label: "Wedding Garlands" },
       { href: "/products/wedding/decorative-coconuts", label: "Decorative Coconuts" },
       { href: "/products/wedding/wedding-accessories", label: "Wedding Accessories" },
-      { href: "/products/wedding/hari-accessories", label: "Hari Accessories" },
+      { href: "/products/wedding/hair-accessories", label: "Hair Accessories" },
     ]
   },
   { href: "/products/bouquets", label: "Flower Bouquets" },
@@ -42,13 +42,11 @@ export function Navigation() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-2">
           <img 
-            src="/images/logo.jpg" 
+            src="/images/laxmi-logo.png" 
             alt="Laxmi Flowers Logo" 
-            width={60} 
-            height={60}
-            className="h-14 w-14 rounded-full object-cover"
+            className="h-10 w-10 object-contain sm:h-12 sm:w-12"
           />
           <div className="flex flex-col">
             <span className="font-serif text-xl font-bold text-primary sm:text-2xl">Laxmi Flowers</span>
@@ -156,9 +154,9 @@ export function Navigation() {
         </nav>
 
         <div className="hidden items-center gap-4 lg:flex">
-          <a href="tel:+16824396439" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary">
+          <a href="tel:+14699889029" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary">
             <Phone className="h-4 w-4" />
-            <span>682-439-6439</span>
+            <span>+1-469-988-9029</span>
           </a>
           <CartIcon />
           <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -280,9 +278,9 @@ export function Navigation() {
             </Link>
 
             <div className="mt-4 flex flex-col gap-3 border-t border-border pt-4">
-              <a href="tel:+16824396439" className="flex items-center gap-2 text-sm text-muted-foreground">
+              <a href="tel:+14699889029" className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>682-439-6439</span>
+                <span>+1-469-988-9029</span>
               </a>
               <Button asChild className="w-full bg-primary text-primary-foreground">
                 <Link href="/locations">Visit Store</Link>

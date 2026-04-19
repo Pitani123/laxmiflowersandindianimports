@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -11,7 +10,7 @@ const locations = [
     name: "Aubrey, TX - Main Store",
     address: "2881 FM1385",
     city: "Aubrey, TX 76227, USA",
-    phone: "682-439-6439",
+    phone: "+1-469-988-9029",
     email: "laxmiflowers.aubrey@gmail.com",
     hours: {
       weekdays: "10:00 AM - 11:00 PM",
@@ -67,27 +66,12 @@ export default function LocationsPage() {
         <section className="py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="space-y-16">
-              {locations.map((location, index) => (
+              {locations.map((location) => (
                 <div
                   key={location.id}
-                  className="overflow-hidden rounded-2xl border border-border bg-card shadow-lg"
+                  className="overflow-hidden rounded-2xl border border-border bg-card shadow-lg p-8 lg:p-12"
                 >
-                  <div className={`grid lg:grid-cols-2 ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
-                    <div className={`relative aspect-[4/3] lg:aspect-auto ${index % 2 === 1 ? "lg:order-2" : ""}`}>
-                      <Image
-                        src={location.image}
-                        alt={`${location.name} storefront`}
-                        fill
-                        className="object-cover"
-                      />
-                      {location.isPrimary && (
-                        <div className="absolute left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                          Main Location
-                        </div>
-                      )}
-                    </div>
-                    
-                    <div className={`p-8 lg:p-12 ${index % 2 === 1 ? "lg:order-1" : ""}`}>
+                  {/* Store Images - Temporarily Disabled (will add later) */}
                       <h2 className="font-serif text-2xl font-bold text-foreground sm:text-3xl">
                         {location.name}
                       </h2>
@@ -160,8 +144,6 @@ export default function LocationsPage() {
                             Call Store
                           </a>
                         </Button>
-                      </div>
-                    </div>
                   </div>
                 </div>
               ))}
@@ -169,29 +151,7 @@ export default function LocationsPage() {
           </div>
         </section>
 
-        {/* Map Section Placeholder */}
-        <section className="py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-12 text-center">
-              <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl">Find Us on the Map</h2>
-              <p className="mt-4 text-muted-foreground">
-                Click on any location above to get directions from your current location.
-              </p>
-            </div>
-            
-            <div className="relative aspect-[16/9] overflow-hidden rounded-xl bg-muted">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="mx-auto h-12 w-12 text-muted-foreground/50" />
-                  <p className="mt-4 text-lg font-medium text-muted-foreground">Interactive Map</p>
-                  <p className="mt-2 text-sm text-muted-foreground/70">
-                    Use the "Get Directions" buttons above to navigate to our stores
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* Contact Form Section */}
         <section className="py-20 lg:py-28">
@@ -214,8 +174,8 @@ export default function LocationsPage() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Call us anytime</p>
-                      <a href="tel:+16824396439" className="font-medium text-foreground hover:text-primary">
-                        682-439-6439
+                      <a href="tel:+14699889029" className="font-medium text-foreground hover:text-primary">
+                        +1-469-988-9029
                       </a>
                     </div>
                   </div>

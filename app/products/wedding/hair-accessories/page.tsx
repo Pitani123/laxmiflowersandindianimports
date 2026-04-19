@@ -8,7 +8,7 @@ import { getProductsByCategory } from "@/lib/db-products"
 import { ArrowLeft, Sparkles, ShoppingBag } from "lucide-react"
 
 export default async function HariAccessoriesPage() {
-  const products = await getProductsByCategory('hari-accessories')
+  const products = await getProductsByCategory('hair-accessories')
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -18,8 +18,8 @@ export default async function HariAccessoriesPage() {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px]">
           <Image
-            src="/images/hari-accessories.jpg"
-            alt="Hari Accessories"
+            src="/images/hair-accessories.jpg"
+            alt="Hair Accessories"
             fill
             className="object-cover"
             priority
@@ -36,8 +36,8 @@ export default async function HariAccessoriesPage() {
                   <Sparkles className="h-7 w-7 text-primary-foreground" />
                 </div>
                 <div>
-                  <h1 className="font-serif text-4xl font-bold text-card sm:text-5xl">Hari Accessories</h1>
-                  <p className="mt-1 text-lg text-card/80">Traditional Hari accessories for religious ceremonies</p>
+                  <h1 className="font-serif text-4xl font-bold text-card sm:text-5xl">Hair Accessories</h1>
+                  <p className="mt-1 text-lg text-card/80">Traditional hair accessories for religious ceremonies</p>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default async function HariAccessoriesPage() {
               <div className="rounded-xl bg-secondary p-12 text-center">
                 <Sparkles className="mx-auto h-12 w-12 text-muted-foreground" />
                 <h3 className="mt-4 font-serif text-xl font-semibold text-foreground">Coming Soon</h3>
-                <p className="mt-2 text-muted-foreground">We are adding Hari accessories to our collection. Please check back soon or call us for availability.</p>
+                <p className="mt-2 text-muted-foreground">We are adding hair accessories to our collection. Please check back soon or call us for availability.</p>
                 <Button asChild className="mt-6 bg-primary text-primary-foreground hover:bg-primary/90">
                   <a href="tel:+14699889029">Call for Availability</a>
                 </Button>
@@ -82,8 +82,8 @@ export default async function HariAccessoriesPage() {
         {/* CTA Section */}
         <section className="bg-primary py-12">
           <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-            <h2 className="font-serif text-2xl font-bold text-primary-foreground sm:text-3xl">Traditional Hari Items</h2>
-            <p className="mt-2 text-primary-foreground/80">We offer authentic Hari accessories for all religious ceremonies.</p>
+            <h2 className="font-serif text-2xl font-bold text-primary-foreground sm:text-3xl">Traditional Hair Accessories</h2>
+            <p className="mt-2 text-primary-foreground/80">We offer authentic hair accessories for all religious ceremonies.</p>
             <div className="mt-6 flex flex-col justify-center gap-4 sm:flex-row">
               <Button asChild size="lg" variant="secondary" className="bg-card text-foreground hover:bg-card/90">
                 <Link href="/locations">Find a Store</Link>

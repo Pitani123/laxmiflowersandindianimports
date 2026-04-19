@@ -5,7 +5,8 @@ import Image from "next/image"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { Star, Quote, Send, User, Mail, MessageSquare, CheckCircle } from "lucide-react"
+import { Star, Quote, Send, User, Mail, Phone, MessageSquare, CheckCircle } from "lucide-react"
+import { submitReview } from "./actions"
 
 // Sample reviews - these would come from database later
 const existingReviews = [
@@ -87,28 +88,53 @@ export default function ReviewsPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     rating: 5,
     service: "",
     comment: "",
   })
+  const [contactError, setContactError] = useState("")
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // In the future, this will save to database
-    console.log("Review submitted:", formData)
-    setIsSubmitted(true)
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({
-        name: "",
-        email: "",
-        rating: 5,
-        service: "",
-        comment: "",
-      })
-    }, 3000)
+    
+    // Validate that at least email or phone is provided
+    if (!formData.email && !formData.phone) {
+      setContactError("Please provide either an email address or phone number")
+      return
+    }
+    setContactError("")
+    setSubmitError("")
+    setIsSubmitting(true)
+    
+    try {
+      const result = await submitReview(formData)
+      
+      if (result.success) {
+        setIsSubmitted(true)
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setIsSubmitted(false)
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            rating: 5,
+            service: "",
+            comment: "",
+          })
+        }, 3000)
+      } else {
+        setSubmitError(result.error || "Failed to submit review")
+      }
+    } catch {
+      setSubmitError("An unexpected error occurred. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const averageRating = existingReviews.reduce((acc, r) => acc + r.rating, 0) / existingReviews.length
@@ -145,8 +171,8 @@ export default function ReviewsPage() {
           </div>
         </section>
 
-        {/* Reviews Grid */}
-        <section className="py-20 lg:py-28">
+        {/* Reviews Grid - Temporarily Disabled */}
+        {/* <section className="py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12 flex items-center justify-between">
               <h2 className="font-serif text-2xl font-bold text-foreground sm:text-3xl">Recent Reviews</h2>
@@ -183,7 +209,7 @@ export default function ReviewsPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Submit Review Form */}
         <section className="bg-card py-20 lg:py-28">
@@ -256,12 +282,38 @@ export default function ReviewsPage() {
                       <input
                         type="email"
                         id="email"
-                        required
                         value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        onChange={(e) => {
+                          setFormData({ ...formData, email: e.target.value })
+                          setContactError("")
+                        }}
                         className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
                         placeholder="your@email.com"
                       />
+                    </div>
+                    
+                    <div>
+                      <label htmlFor="phone" className="mb-2 flex items-center gap-2 text-sm font-medium text-foreground">
+                        <Phone className="h-4 w-4" />
+                        Phone Number
+                      </label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        value={formData.phone}
+                        onChange={(e) => {
+                          setFormData({ ...formData, phone: e.target.value })
+                          setContactError("")
+                        }}
+                        className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                        placeholder="(123) 456-7890"
+                      />
+                      {contactError && (
+                        <p className="mt-2 text-sm text-red-500">{contactError}</p>
+                      )}
+                      <p className="mt-1 text-xs text-muted-foreground">
+                        Please provide at least an email or phone number
+                      </p>
                     </div>
                     
                     <div>
@@ -311,9 +363,23 @@ export default function ReviewsPage() {
                       />
                     </div>
                     
-                    <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                      <Send className="mr-2 h-4 w-4" />
-                      Submit Review
+                    {submitError && (
+                      <p className="text-sm text-red-500 text-center">{submitError}</p>
+                    )}
+                    
+                    <Button 
+                      type="submit" 
+                      disabled={isSubmitting}
+                      className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                    >
+                      {isSubmitting ? (
+                        "Submitting..."
+                      ) : (
+                        <>
+                          <Send className="mr-2 h-4 w-4" />
+                          Submit Review
+                        </>
+                      )}
                     </Button>
                     
                     <p className="text-center text-xs text-muted-foreground">

@@ -31,11 +31,11 @@ const subcategories = [
     icon: Gem,
   },
   {
-    id: "hari-accessories",
-    name: "Hari Accessories",
-    description: "Traditional Hari accessories for religious ceremonies",
-    image: "/images/hari-accessories.jpg",
-    href: "/products/wedding/hari-accessories",
+    id: "hair-accessories",
+    name: "Hair Accessories",
+    description: "Traditional hair accessories for religious ceremonies",
+    image: "/images/hair-accessories.jpg",
+    href: "/products/wedding/hair-accessories",
     icon: Sparkles,
   },
 ]

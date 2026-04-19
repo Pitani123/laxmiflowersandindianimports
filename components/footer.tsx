@@ -23,15 +23,11 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img 
-                src="/images/logo.jpg" 
+                src="/images/laxmi-logo.png" 
                 alt="Laxmi Flowers Logo" 
-                width={60} 
-                height={60}
-                className="h-14 w-14 rounded-full object-cover"
+                className="h-16 w-16 object-contain"
               />
-              <div>
-                <h3 className="font-serif text-2xl font-bold">Laxmi Flowers</h3>
-              </div>
+              <h3 className="font-serif text-2xl font-bold">Laxmi Flowers</h3>
             </div>
             <p className="text-xs italic text-accent">Authentic Indian Traditions in the USA</p>
             <p className="text-sm leading-relaxed text-background/80">
@@ -81,8 +77,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-accent" />
-                <a href="tel:+16824396439" className="text-sm text-background/70 hover:text-accent">
-                  682-439-6439
+                <a href="tel:+14699889029" className="text-sm text-background/70 hover:text-accent">
+                  +1-469-988-9029
                 </a>
               </li>
               <li className="flex items-center gap-3">
