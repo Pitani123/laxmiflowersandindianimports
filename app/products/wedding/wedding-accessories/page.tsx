@@ -4,16 +4,13 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { ProductCard } from "@/components/product-card"
-import { GarlandCard } from "@/components/garland-card"
+import { GarikaMunthaluCard } from "@/components/garika-munthalu-card"
 import { getProductsByCategory } from "@/lib/db-products"
-import { garlands } from "@/lib/garlands-data"
+import { garikaMunthaluProducts } from "@/lib/garika-munthalu-data"
 import { ArrowLeft, Gem, ShoppingBag } from "lucide-react"
 
 export default async function WeddingAccessoriesPage() {
   const products = await getProductsByCategory('wedding-accessories')
-  
-  // Get Garika Muntha products from local data
-  const garikaMunthaProducts = garlands.filter(g => g.category === "wedding-accessories")
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -65,15 +62,15 @@ export default async function WeddingAccessoriesPage() {
               </Button>
             </div>
 
-            {(products.length > 0 || garikaMunthaProducts.length > 0) ? (
+            {(products.length > 0 || garikaMunthaluProducts.length > 0) ? (
               <>
-                {/* Garika Muntha Section */}
-                {garikaMunthaProducts.length > 0 && (
+                {/* Garika Munthalu Section */}
+                {garikaMunthaluProducts.length > 0 && (
                   <div className="mb-12">
-                    <h2 className="mb-6 font-serif text-2xl font-bold text-foreground">Garika Muntha (Decorated Clay Pots)</h2>
+                    <h2 className="mb-6 font-serif text-2xl font-bold text-foreground">Garika Munthalu (Decorated Clay Pots)</h2>
                     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                      {garikaMunthaProducts.map((garland) => (
-                        <GarlandCard key={garland.id} garland={garland} />
+                      {garikaMunthaluProducts.map((product) => (
+                        <GarikaMunthaluCard key={product.id} product={product} />
                       ))}
                     </div>
                   </div>
