@@ -137,59 +137,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Fresh Flowers & Rentals */}
-        <section className="py-20 lg:py-28">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid items-center gap-12 lg:grid-cols-2">
-              <div className="relative">
-                <div className="relative aspect-square overflow-hidden rounded-2xl">
-                  <Image
-                    src="/images/fresh-flowers.jpg"
-                    alt="Fresh flowers at Laxmi Flowers"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="absolute -bottom-6 -right-6 aspect-square w-1/2 overflow-hidden rounded-xl shadow-xl">
-                  <Image
-                    src="/images/rentals.jpg"
-                    alt="Rental items for events"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              
-              <div className="space-y-6 lg:pl-8">
-                <p className="text-sm font-medium uppercase tracking-wider text-primary">Fresh & Beautiful</p>
-                <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl">
-                  Fresh Flowers Daily & Event Rentals
-                </h2>
-                <p className="leading-relaxed text-muted-foreground">
-                  We source the freshest flowers daily to ensure your arrangements are vibrant and long-lasting. 
-                  Our rental collection includes everything you need for your events, from decorative items to 
-                  traditional vessels.
-                </p>
-                <ul className="space-y-3">
-                  {["Daily fresh flower deliveries", "Wide variety of Indian flowers", "Event rental equipment", "Custom arrangements available"].map((item) => (
-                    <li key={item} className="flex items-center gap-3">
-                      <div className="flex h-6 w-6 items-center justify-center rounded-full bg-accent/20">
-                        <div className="h-2 w-2 rounded-full bg-primary" />
-                      </div>
-                      <span className="text-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Button asChild className="mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
-                  <Link href="/services">
-                    View All Services
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* CTA Section */}
         <section className="bg-secondary py-20">
