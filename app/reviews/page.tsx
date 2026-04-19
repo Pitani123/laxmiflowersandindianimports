@@ -5,7 +5,7 @@ import Image from "next/image"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { Star, Quote, Send, User, Mail, MessageSquare, CheckCircle } from "lucide-react"
+import { Star, Quote, Send, User, Mail, Phone, MessageSquare, CheckCircle } from "lucide-react"
 
 // Sample reviews - these would come from database later
 const existingReviews = [
@@ -87,14 +87,24 @@ export default function ReviewsPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     rating: 5,
     service: "",
     comment: "",
   })
+  const [contactError, setContactError] = useState("")
   const [isSubmitted, setIsSubmitted] = useState(false)
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    
+    // Validate that at least email or phone is provided
+    if (!formData.email && !formData.phone) {
+      setContactError("Please provide either an email address or phone number")
+      return
+    }
+    setContactError("")
+    
     // In the future, this will save to database
     console.log("Review submitted:", formData)
     setIsSubmitted(true)
@@ -104,6 +114,7 @@ export default function ReviewsPage() {
       setFormData({
         name: "",
         email: "",
+        phone: "",
         rating: 5,
         service: "",
         comment: "",
@@ -256,12 +267,38 @@ export default function ReviewsPage() {
                       <input
                         type="email"
                         id="email"
-                        required
                         value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        onChange={(e) => {
+                          setFormData({ ...formData, email: e.target.value })
+                          setContactError("")
+                        }}
                         className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
                         placeholder="your@email.com"
                       />
+                    </div>
+                    
+                    <div>
+                      <label htmlFor="phone" className="mb-2 flex items-center gap-2 text-sm font-medium text-foreground">
+                        <Phone className="h-4 w-4" />
+                        Phone Number
+                      </label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        value={formData.phone}
+                        onChange={(e) => {
+                          setFormData({ ...formData, phone: e.target.value })
+                          setContactError("")
+                        }}
+                        className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                        placeholder="(123) 456-7890"
+                      />
+                      {contactError && (
+                        <p className="mt-2 text-sm text-red-500">{contactError}</p>
+                      )}
+                      <p className="mt-1 text-xs text-muted-foreground">
+                        Please provide at least an email or phone number
+                      </p>
                     </div>
                     
                     <div>
