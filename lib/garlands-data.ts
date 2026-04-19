@@ -164,14 +164,6 @@ export const garland_023_Sizes: GarlandSize[] = [
 ]
 
 // =================================================================================
-// GARIKA MUNTHA SIZES - Wedding Decoration Pots
-// =================================================================================
-export const garikaMunthaSizes: GarlandSize[] = [
-  { id: "single", label: "Single Pot (5-6 inch)", priceInCents: 4500 }, // $45.00
-  { id: "pair", label: "Pair (5-6 inch each)", priceInCents: 9000 }, // $90.00
-]
-
-// =================================================================================
 // GARLANDS - Named as Garland_001, Garland_002, etc.
 // =================================================================================
 export const garlands: Garland[] = [
@@ -361,31 +353,7 @@ export const garlands: Garland[] = [
     description: "Roses and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%202.49.05%20PM%20%282%29-e5iER1npLDVycCCjGCjS0ohG1ROEse.jpeg"],
     sizes: garland_023_Sizes
-  },
-  {
-    id: "garika-muntha-001",
-    name: "GarikaMuntha_001",
-    description: "Traditional red and gold decorated clay pot (5-6 inch) with pearl beading and multicolored gemstone floral patterns. We offer customizations according to your preferences - colors can be customized.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.11.41%20PM-dWgy9mPeE5GyVrKUIGFOpczYEAQNZ8.jpeg"],
-    sizes: garikaMunthaSizes,
-    category: "wedding-accessories"
-  },
-  {
-    id: "garika-muntha-002",
-    name: "GarikaMuntha_002",
-    description: "Elegant golden clay pot (5-6 inch) with pearl beading and colorful floral gemstone designs. We offer customizations according to your preferences - colors can be customized.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.05.42%20PM-xX89tzXqKZ5NM7RnDI1qoaJ5Z11mcd.jpeg"],
-    sizes: garikaMunthaSizes,
-    category: "wedding-accessories"
-  },
-  {
-    id: "garika-muntha-003",
-    name: "GarikaMuntha_003",
-    description: "Beautiful golden clay pot (5-6 inch) with white rim, pearl beading, and vibrant multicolored gemstone floral accents. We offer customizations according to your preferences - colors can be customized.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.05.43%20PM-4CmdQXAVgiwzr1FL7XS0Kn7NWpgBRR.jpeg"],
-    sizes: garikaMunthaSizes,
-    category: "wedding-accessories"
-  },
+  }
 ]
 
 // Helper function to get extras by IDs
