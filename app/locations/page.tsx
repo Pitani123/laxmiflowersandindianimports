@@ -151,29 +151,7 @@ export default function LocationsPage() {
           </div>
         </section>
 
-        {/* Map Section Placeholder */}
-        <section className="py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-12 text-center">
-              <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl">Find Us on the Map</h2>
-              <p className="mt-4 text-muted-foreground">
-                Click on any location above to get directions from your current location.
-              </p>
-            </div>
-            
-            <div className="relative aspect-[16/9] overflow-hidden rounded-xl bg-muted">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="mx-auto h-12 w-12 text-muted-foreground/50" />
-                  <p className="mt-4 text-lg font-medium text-muted-foreground">Interactive Map</p>
-                  <p className="mt-2 text-sm text-muted-foreground/70">
-                    Use the "Get Directions" buttons above to navigate to our stores
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* Contact Form Section */}
         <section className="py-20 lg:py-28">
