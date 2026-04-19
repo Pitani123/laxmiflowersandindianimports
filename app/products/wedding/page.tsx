@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Heart, ShoppingBag, Palmtree, Gem, Sparkles } from "lucide-react"
+import { ArrowLeft, Heart, ShoppingBag, Palmtree, Gem, Sparkles, Flame } from "lucide-react"
 
 const subcategories = [
   {
@@ -13,6 +13,14 @@ const subcategories = [
     image: "/images/garlands.jpg",
     href: "/products/wedding/wedding-garlands",
     icon: Heart,
+  },
+  {
+    id: "camphor-garlands",
+    name: "Camphor Garlands",
+    description: "Beautiful camphor garlands for traditional ceremonies",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.36.59%20PM-FRRNJgBs7q27lot0ETR5tdY62Yw71t.jpeg",
+    href: "/products/wedding/camphor-garlands",
+    icon: Flame,
   },
   {
     id: "decorative-coconuts",

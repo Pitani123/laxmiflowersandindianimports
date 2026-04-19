@@ -3,13 +3,11 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { ProductCard } from "@/components/product-card"
-import { getProductsByCategory } from "@/lib/db-products"
-import { ArrowLeft, Palmtree, ShoppingBag } from "lucide-react"
+import { DecorativeCoconutCard } from "@/components/decorative-coconut-card"
+import { decorativeCoconuts } from "@/lib/decorative-coconuts-data"
+import { ArrowLeft, Palmtree, ShoppingBag, Palette } from "lucide-react"
 
-export default async function DecorativeCoconutsPage() {
-  const products = await getProductsByCategory('decorative-coconuts')
-
+export default function DecorativeCoconutsPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navigation />
@@ -47,23 +45,34 @@ export default async function DecorativeCoconutsPage() {
         {/* Products Section */}
         <section className="py-16 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-10 flex flex-col gap-4 rounded-xl bg-secondary p-6 sm:flex-row sm:items-center sm:justify-between">
-              <div className="flex items-center gap-3">
-                <ShoppingBag className="h-6 w-6 text-primary" />
-                <p className="font-medium text-foreground">Add items to your cart and checkout online!</p>
+            {/* Info Banners */}
+            <div className="mb-10 flex flex-col gap-4">
+              <div className="flex flex-col gap-4 rounded-xl bg-secondary p-6 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex items-center gap-3">
+                  <ShoppingBag className="h-6 w-6 text-primary" />
+                  <p className="font-medium text-foreground">Add items to your cart and checkout online!</p>
+                </div>
+                <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+                  <Link href="/checkout">
+                    <ShoppingBag className="mr-2 h-4 w-4" />
+                    View Cart
+                  </Link>
+                </Button>
               </div>
-              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <Link href="/checkout">
-                  <ShoppingBag className="mr-2 h-4 w-4" />
-                  View Cart
-                </Link>
-              </Button>
+              
+              {/* Customization Notice */}
+              <div className="flex items-center gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
+                <Palette className="h-6 w-6 text-primary flex-shrink-0" />
+                <p className="text-sm text-foreground">
+                  <span className="font-semibold">Custom Orders Available:</span> We can customize colors, decorations, initials, and designs to match your preferences. Contact us for personalized options!
+                </p>
+              </div>
             </div>
 
-            {products.length > 0 ? (
+            {decorativeCoconuts.length > 0 ? (
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {products.map((product) => (
-                  <ProductCard key={product.id} product={product} />
+                {decorativeCoconuts.map((coconut) => (
+                  <DecorativeCoconutCard key={coconut.id} coconut={coconut} />
                 ))}
               </div>
             ) : (
@@ -83,7 +92,7 @@ export default async function DecorativeCoconutsPage() {
         <section className="bg-primary py-12">
           <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
             <h2 className="font-serif text-2xl font-bold text-primary-foreground sm:text-3xl">Custom Decorated Coconuts</h2>
-            <p className="mt-2 text-primary-foreground/80">We create beautifully decorated coconuts for your wedding. Order in advance.</p>
+            <p className="mt-2 text-primary-foreground/80">We create beautifully decorated coconuts for your wedding. Colors, initials, and decorations can be customized. Order in advance.</p>
             <div className="mt-6 flex flex-col justify-center gap-4 sm:flex-row">
               <Button asChild size="lg" variant="secondary" className="bg-card text-foreground hover:bg-card/90">
                 <Link href="/locations">Find a Store</Link>
