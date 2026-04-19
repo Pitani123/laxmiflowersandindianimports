@@ -10,7 +10,7 @@ const locations = [
     name: "Aubrey, TX - Main Store",
     address: "2881 FM1385",
     city: "Aubrey, TX 76227, USA",
-    phone: "682-439-6439",
+    phone: "+1-469-988-9029",
     email: "laxmiflowers.aubrey@gmail.com",
     hours: {
       weekdays: "10:00 AM - 11:00 PM",
@@ -174,8 +174,8 @@ export default function LocationsPage() {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Call us anytime</p>
-                      <a href="tel:+16824396439" className="font-medium text-foreground hover:text-primary">
-                        682-439-6439
+                      <a href="tel:+14699889029" className="font-medium text-foreground hover:text-primary">
+                        +1-469-988-9029
                       </a>
                     </div>
                   </div>

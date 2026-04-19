@@ -265,7 +265,7 @@ When enabled, sends:
 
 ### Main Store - Aubrey, TX
 - **Address**: 2881 FM1385, Aubrey, TX 76227, USA
-- **Phone**: 682-439-6439
+- **Phone**: +1-469-988-9029
 - **Email**: laxmiflowers.aubrey@gmail.com
 - **Hours**: Mon-Sun 10:00 AM - 11:00 PM
 
