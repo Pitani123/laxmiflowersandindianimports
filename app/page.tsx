@@ -8,8 +8,8 @@ import { ArrowRight, Star, Heart, Sparkles } from "lucide-react"
 const features = [
   {
     icon: Star,
-    title: "20+ Years Experience",
-    description: "Trusted by the community for over two decades",
+    title: "Trusted Quality",
+    description: "Trusted by the community for beautiful celebrations",
   },
   {
     icon: Heart,
@@ -41,7 +41,7 @@ export default function HomePage() {
               <div className="space-y-8">
                 <div className="inline-flex items-center gap-2 rounded-full bg-accent/20 px-4 py-2 text-sm text-foreground">
                   <Sparkles className="h-4 w-4 text-accent" />
-                  <span>Serving since 2003</span>
+                  <span>Fresh Flowers Daily</span>
                 </div>
                 
                 <h1 className="font-serif text-4xl font-bold leading-tight text-foreground sm:text-5xl lg:text-6xl">
@@ -61,7 +61,7 @@ export default function HomePage() {
                     </Link>
                   </Button>
                   <Button asChild variant="outline" size="lg" className="border-foreground/20">
-                    <Link href="/our-story">Our Story</Link>
+                    <Link href="/products">View Products</Link>
                   </Button>
                 </div>
               </div>
@@ -82,8 +82,8 @@ export default function HomePage() {
                       <Star className="h-6 w-6 text-accent" />
                     </div>
                     <div>
-                      <p className="text-2xl font-bold text-foreground">20+</p>
-                      <p className="text-sm text-muted-foreground">Years of Excellence</p>
+                      <p className="text-2xl font-bold text-foreground">100%</p>
+                      <p className="text-sm text-muted-foreground">Fresh Quality</p>
                     </div>
                   </div>
                 </div>
@@ -113,29 +113,7 @@ export default function HomePage() {
 
 
 
-        {/* New Offerings Banner */}
-        <section className="bg-primary py-16 text-primary-foreground">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col items-center gap-8 text-center lg:flex-row lg:justify-between lg:text-left">
-              <div className="max-w-2xl">
-                <p className="mb-2 text-sm font-medium uppercase tracking-wider text-accent">New at Laxmi Flowers</p>
-                <h2 className="font-serif text-3xl font-bold sm:text-4xl">
-                  Fresh Flowers, Garlands & Event Rentals
-                </h2>
-                <p className="mt-4 text-primary-foreground/80">
-                  Your one-stop shop for fresh flowers, beautiful garlands, and event rentals. 
-                  Visit us to explore our collection.
-                </p>
-              </div>
-              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                <Link href="/locations">
-                  Visit Our Store
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </section>
+        
 
 
 

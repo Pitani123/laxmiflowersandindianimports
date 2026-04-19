@@ -26,12 +26,9 @@ const productLinks = [
     ]
   },
   { href: "/products/bouquets", label: "Flower Bouquets" },
-  { href: "/products/rentals", label: "Rentals" },
 ]
 
 const aboutLinks = [
-  { href: "/our-story", label: "Our Story" },
-  { href: "/our-team", label: "Our Team" },
   { href: "/services", label: "Our Services" },
 ]
 
@@ -54,7 +51,7 @@ export function Navigation() {
             className="h-14 w-14 rounded-full object-cover"
           />
           <div className="flex flex-col">
-            <span className="font-serif text-xl font-bold text-primary sm:text-2xl">Laxmi Flowers & Indian Imports</span>
+            <span className="font-serif text-xl font-bold text-primary sm:text-2xl">Laxmi Flowers</span>
             <span className="hidden text-[10px] italic text-muted-foreground sm:block">Authentic Indian Traditions in the USA</span>
           </div>
         </Link>
