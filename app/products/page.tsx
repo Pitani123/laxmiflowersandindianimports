@@ -29,55 +29,62 @@ const productCategories = [
     image: "/images/bouquets.jpg",
     href: "/products/bouquets",
   },
-  {
-    id: "wedding-decorations",
-    name: "Wedding Decorations",
-    description: "Complete wedding decor solutions with fresh flowers",
-    image: "/images/wedding-decorations.jpg",
-    href: "/products/wedding-decorations",
-  },
-  {
-    id: "gift-items",
-    name: "Indian Gift Items",
-    description: "Traditional Indian gifts and puja items",
-    image: "/images/gift-items.jpg",
-    href: "/products/gift-items",
-  },
-  {
-    id: "silver-items",
-    name: "Silver Items",
-    description: "Pure silver puja items and gifts",
-    image: "/images/silver-items.jpg",
-    href: "/products/silver-items",
-  },
-  {
-    id: "brass-items",
-    name: "Brass Items",
-    description: "Traditional brass items for pooja and home decor",
-    image: "/images/gift-items.jpg",
-    href: "/products/brass-items",
-  },
-  {
-    id: "jewellery",
-    name: "Low Cost Jewellery Items",
-    description: "Affordable traditional Indian jewelry for all occasions",
-    image: "/images/traditional-dresses.jpg",
-    href: "/products/jewellery",
-  },
-  {
-    id: "traditional-dresses",
-    name: "Indian Traditional Dresses",
-    description: "Beautiful ethnic wear for all occasions",
-    image: "/images/traditional-dresses.jpg",
-    href: "/products/traditional-dresses",
-  },
-  {
-    id: "snacks",
-    name: "Indian Snacks",
-    description: "Delicious traditional Indian snacks and sweets",
-    image: "/images/snacks.jpg",
-    href: "/products/snacks",
-  },
+  // Temporarily disabled - Wedding Decorations
+  // {
+  //   id: "wedding-decorations",
+  //   name: "Wedding Decorations",
+  //   description: "Complete wedding decor solutions with fresh flowers",
+  //   image: "/images/wedding-decorations.jpg",
+  //   href: "/products/wedding-decorations",
+  // },
+  // Temporarily disabled - Indian Gift Items
+  // {
+  //   id: "gift-items",
+  //   name: "Indian Gift Items",
+  //   description: "Traditional Indian gifts and puja items",
+  //   image: "/images/gift-items.jpg",
+  //   href: "/products/gift-items",
+  // },
+  // Temporarily disabled - Silver Items
+  // {
+  //   id: "silver-items",
+  //   name: "Silver Items",
+  //   description: "Pure silver puja items and gifts",
+  //   image: "/images/silver-items.jpg",
+  //   href: "/products/silver-items",
+  // },
+  // Temporarily disabled - Brass Items
+  // {
+  //   id: "brass-items",
+  //   name: "Brass Items",
+  //   description: "Traditional brass items for pooja and home decor",
+  //   image: "/images/gift-items.jpg",
+  //   href: "/products/brass-items",
+  // },
+  // Temporarily disabled - Low Cost Jewellery Items
+  // {
+  //   id: "jewellery",
+  //   name: "Low Cost Jewellery Items",
+  //   description: "Affordable traditional Indian jewelry for all occasions",
+  //   image: "/images/traditional-dresses.jpg",
+  //   href: "/products/jewellery",
+  // },
+  // Temporarily disabled - Traditional Dresses
+  // {
+  //   id: "traditional-dresses",
+  //   name: "Indian Traditional Dresses",
+  //   description: "Beautiful ethnic wear for all occasions",
+  //   image: "/images/traditional-dresses.jpg",
+  //   href: "/products/traditional-dresses",
+  // },
+  // Temporarily disabled - Indian Snacks
+  // {
+  //   id: "snacks",
+  //   name: "Indian Snacks",
+  //   description: "Delicious traditional Indian snacks and sweets",
+  //   image: "/images/snacks.jpg",
+  //   href: "/products/snacks",
+  // },
   {
     id: "rentals",
     name: "Rentals",

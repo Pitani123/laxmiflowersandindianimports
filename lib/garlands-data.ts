@@ -1,0 +1,228 @@
+// Garlands Data - Edit this file to change garland names, prices, sizes, and extras
+// =================================================================================
+
+export interface GarlandSize {
+  id: string
+  label: string
+  priceInCents: number // Price in cents (e.g., 2500 = $25.00)
+}
+
+export interface GarlandExtra {
+  id: string
+  name: string
+  priceInCents: number // Additional price in cents
+}
+
+export interface Garland {
+  id: string
+  name: string // Change this to update the garland name
+  description: string
+  image: string
+  sizes: GarlandSize[] // Available sizes with prices
+  availableExtras: string[] // IDs of extras that can be added
+}
+
+// =================================================================================
+// EXTRAS - Add or modify extras here
+// =================================================================================
+export const garlandExtras: GarlandExtra[] = [
+  { id: "pearls", name: "Pearls", priceInCents: 500 }, // $5.00
+  { id: "gold-beads", name: "Gold Beads", priceInCents: 800 }, // $8.00
+  { id: "silver-beads", name: "Silver Beads", priceInCents: 700 }, // $7.00
+  { id: "crystals", name: "Crystals", priceInCents: 1000 }, // $10.00
+  { id: "ribbons", name: "Ribbons", priceInCents: 300 }, // $3.00
+  { id: "extra-flowers", name: "Extra Flowers", priceInCents: 1200 }, // $12.00
+]
+
+// =================================================================================
+// DEFAULT SIZES - These are the default size options (can be overridden per garland)
+// =================================================================================
+export const defaultSizes: GarlandSize[] = [
+  { id: "1ft", label: "1 ft", priceInCents: 1500 }, // $15.00
+  { id: "3ft", label: "3 ft", priceInCents: 3500 }, // $35.00
+  { id: "4ft", label: "4 ft", priceInCents: 4500 }, // $45.00
+  { id: "5ft", label: "5 ft", priceInCents: 5500 }, // $55.00
+  { id: "10ft", label: "10 ft", priceInCents: 9500 }, // $95.00
+]
+
+// =================================================================================
+// GARLANDS - Edit names, descriptions, and prices here
+// =================================================================================
+export const garlands: Garland[] = [
+  {
+    id: "pink-rose-daisy",
+    name: "Pink Rose & Daisy Garland", // <-- Change name here
+    description: "Elegant pink roses with white daisies and baby's breath",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.16%20PM%20%281%29-Bw2pkgn4VjDqsaqepDFzSeS5Z9a3Xo.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
+  },
+  {
+    id: "pink-lotus-triple",
+    name: "Pink Lotus Garland", // <-- Change name here
+    description: "Beautiful pink lotus flowers with delicate baby's breath",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.16%20PM%20%283%29-dDU0TQ60HapGnV4a5sUTGIKDVsQDhV.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "crystals"],
+  },
+  {
+    id: "white-orchid-rose",
+    name: "White Orchid & Rose Garland", // <-- Change name here
+    description: "White orchids paired with soft pink roses",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.12%20PM-FCZ2vPuuE1kV6soqckzYBp95mStKmC.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "silver-beads", "crystals", "ribbons"],
+  },
+  {
+    id: "white-carnation",
+    name: "White Carnation Garland", // <-- Change name here
+    description: "Pure white carnations with elegant baby's breath accents",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.15%20PM%20%281%29-AkiDUV6utmZfr53AgCSba0Kf0KaXcl.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "silver-beads", "crystals"],
+  },
+  {
+    id: "red-rose-single",
+    name: "Red Rose Garland", // <-- Change name here
+    description: "Classic red roses with white baby's breath",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.39.38%20PM-L0ol5lqqa3qujRPeAmOWcEsaBebUp6.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "silver-beads"],
+  },
+  {
+    id: "pink-rose-simple",
+    name: "Simple Pink Rose Garland", // <-- Change name here
+    description: "Soft pink roses with baby's breath for a delicate look",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.17%20PM-MQ9sjle9JBqQFGGxmgUW0qLX09IrXk.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "crystals", "ribbons"],
+  },
+  {
+    id: "white-mum-pink-rose",
+    name: "White Mum & Pink Rose Garland", // <-- Change name here
+    description: "White chrysanthemums with pink roses and baby's breath",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.25%20PM-6mmHwrRMo7GnrMH5X0szTjxpD3Fmma.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
+  },
+  {
+    id: "pink-rose-pair",
+    name: "Pink Rose Double Garland", // <-- Change name here
+    description: "Matching pair of pink rose garlands with baby's breath",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.11%20PM-cbAzsebfmJ05dYr6ZwI0006CinyMCl.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "crystals"],
+  },
+  {
+    id: "white-elaborate",
+    name: "Elaborate White Garland", // <-- Change name here
+    description: "Luxurious white roses and carnations with baby's breath",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.16%20PM%20%282%29-0tdX9cj8M0dijC9D51KgTJkRk8udoF.jpeg",
+    sizes: [
+      { id: "3ft", label: "3 ft", priceInCents: 4500 },
+      { id: "4ft", label: "4 ft", priceInCents: 5500 },
+      { id: "5ft", label: "5 ft", priceInCents: 6500 },
+      { id: "10ft", label: "10 ft", priceInCents: 11500 },
+    ],
+    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals", "extra-flowers"],
+  },
+  {
+    id: "red-pink-daisy",
+    name: "Red & Pink Rose with Daisy Garland", // <-- Change name here
+    description: "Vibrant red-pink roses with white daisies and baby's breath",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.26%20PM-CAuwPXGjdK87gqWw3MkSYJM8YJCHsC.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "crystals"],
+  },
+  {
+    id: "deep-red-rose",
+    name: "Deep Red Rose Garland", // <-- Change name here
+    description: "Rich deep red roses with white baby's breath accents",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.10.19%20PM-0P4WiWuw544Yqmb4bhWquTsy1peyRe.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "silver-beads"],
+  },
+  {
+    id: "pink-white-alternating",
+    name: "Pink & White Rose Garland", // <-- Change name here
+    description: "Alternating pink and white roses with baby's breath",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.09.42%20PM-DmjfhwkBvaaZmG3FJVZOceWA3qC8oc.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "silver-beads", "crystals", "ribbons"],
+  },
+  {
+    id: "white-carnation-full",
+    name: "Full White Carnation Garland", // <-- Change name here
+    description: "Lush white carnations with delicate baby's breath throughout",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.13.05%20PM-VKpkvEX0TwwFaFJy4Fs7W4iiFNEmdt.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "silver-beads", "crystals"],
+  },
+  {
+    id: "lotus-baby-breath",
+    name: "Lotus & Baby's Breath Garland", // <-- Change name here
+    description: "Pink lotus flowers with abundant baby's breath sections",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.10.55%20PM-gkiqzpfGLBlIEU5OeKM2ZOuuvYWbm2.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "crystals"],
+  },
+  {
+    id: "hot-pink-rose",
+    name: "Hot Pink Rose Garland", // <-- Change name here
+    description: "Vibrant hot pink roses with white baby's breath",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.11.59%20PM-V7u5tO8KdeuQkishWKRquDsGcICyu4.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
+  },
+  {
+    id: "red-white-carnation",
+    name: "Red & White Carnation Garland", // <-- Change name here
+    description: "Classic combination of red and white carnations",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.40.57%20PM-XFSO1cFLXVoMRaeF3WnlK0nOKhg0DW.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "silver-beads"],
+  },
+  {
+    id: "lotus-single",
+    name: "Single Lotus Garland", // <-- Change name here
+    description: "Elegant single strand pink lotus with baby's breath",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.13%20PM-5VAYObIlZpEhHzhQFAduxTrbzBq5Ku.jpeg",
+    sizes: defaultSizes,
+    availableExtras: ["pearls", "gold-beads", "crystals"],
+  },
+  {
+    id: "traditional-wedding",
+    name: "Traditional Wedding Varmala", // <-- Change name here
+    description: "Classic red rose petal wedding garland with golden flowers",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.15%20PM-kVpNR74JlAHHD3gbNDpU6tvdaZcBoU.jpeg",
+    sizes: [
+      { id: "3ft", label: "3 ft", priceInCents: 5500 },
+      { id: "4ft", label: "4 ft", priceInCents: 7500 },
+      { id: "5ft", label: "5 ft", priceInCents: 9500 },
+      { id: "10ft", label: "10 ft", priceInCents: 15000 },
+    ],
+    availableExtras: ["gold-beads", "crystals", "extra-flowers"],
+  },
+  {
+    id: "traditional-wedding-couple",
+    name: "Couple Wedding Varmala Set", // <-- Change name here
+    description: "Matching bride and groom wedding garlands with jasmine",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.40.24%20PM-6UvjBY0Z0w2vJ9T8nv2bWe4sEyxQFH.jpeg",
+    sizes: [
+      { id: "3ft", label: "3 ft (Set of 2)", priceInCents: 12000 },
+      { id: "4ft", label: "4 ft (Set of 2)", priceInCents: 15000 },
+      { id: "5ft", label: "5 ft (Set of 2)", priceInCents: 18000 },
+    ],
+    availableExtras: ["gold-beads", "crystals", "extra-flowers"],
+  },
+]
+
+// Helper function to get extras by IDs
+export function getExtrasByIds(ids: string[]): GarlandExtra[] {
+  return garlandExtras.filter(extra => ids.includes(extra.id))
+}
+
+// Helper function to format price
+export function formatPrice(priceInCents: number): string {
+  return `$${(priceInCents / 100).toFixed(2)}`
+}

@@ -286,15 +286,10 @@ export default function ReviewsPage() {
                         onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                         className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
                       >
-                        <option value="">Select a category</option>
+<option value="">Select a category</option>
                         <option value="Garlands">Garlands</option>
                         <option value="Flower Bouquets">Flower Bouquets</option>
-                        <option value="Wedding Decorations">Wedding Decorations</option>
                         <option value="Fresh Flowers">Fresh Flowers</option>
-                        <option value="Gift Items">Gift Items</option>
-                        <option value="Silver Items">Silver Items</option>
-                        <option value="Traditional Dresses">Traditional Dresses</option>
-                        <option value="Indian Snacks">Indian Snacks</option>
                         <option value="Rentals">Rentals</option>
                         <option value="General">General Experience</option>
                       </select>

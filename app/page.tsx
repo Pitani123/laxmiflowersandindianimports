@@ -16,25 +16,45 @@ const services = [
     description: "Beautifully arranged bouquets for every celebration",
     image: "/images/bouquets.jpg",
   },
+  // Temporarily disabled - Wedding Decorations
+  // {
+  //   title: "Wedding Decorations",
+  //   description: "Transform your venue with stunning floral arrangements",
+  //   image: "/images/wedding-decorations.jpg",
+  // },
+  // Temporarily disabled - Indian Gift Items
+  // {
+  //   title: "Indian Gift Items",
+  //   description: "Authentic Indian gifts for all occasions",
+  //   image: "/images/gift-items.jpg",
+  // },
+  // Temporarily disabled - Silver Items
+  // {
+  //   title: "Silver Items",
+  //   description: "Elegant silver pieces for pooja and gifting",
+  //   image: "/images/silver-items.jpg",
+  // },
+  // Temporarily disabled - Traditional Dresses
+  // {
+  //   title: "Traditional Dresses",
+  //   description: "Beautiful Indian attire for the whole family",
+  //   image: "/images/traditional-dresses.jpg",
+  // },
   {
-    title: "Wedding Decorations",
-    description: "Transform your venue with stunning floral arrangements",
-    image: "/images/wedding-decorations.jpg",
+    title: "Fresh Flowers",
+    description: "Daily fresh flowers for home altar and special occasions",
+    image: "/images/fresh-flowers.jpg",
   },
+  // Temporarily disabled - Indian Snacks
+  // {
+  //   title: "Indian Snacks",
+  //   description: "Delicious traditional Indian snacks and sweets",
+  //   image: "/images/snacks.jpg",
+  // },
   {
-    title: "Indian Gift Items",
-    description: "Authentic Indian gifts for all occasions",
-    image: "/images/gift-items.jpg",
-  },
-  {
-    title: "Silver Items",
-    description: "Elegant silver pieces for pooja and gifting",
-    image: "/images/silver-items.jpg",
-  },
-  {
-    title: "Traditional Dresses",
-    description: "Beautiful Indian attire for the whole family",
-    image: "/images/traditional-dresses.jpg",
+    title: "Rentals",
+    description: "Event rental items for ceremonies and celebrations",
+    image: "/images/rentals.jpg",
   },
 ]
 
@@ -195,11 +215,11 @@ export default function HomePage() {
               <div className="max-w-2xl">
                 <p className="mb-2 text-sm font-medium uppercase tracking-wider text-accent">New at Laxmi Flowers</p>
                 <h2 className="font-serif text-3xl font-bold sm:text-4xl">
-                  Now Offering Silver Items, Traditional Dresses & Indian Snacks
+                  Fresh Flowers, Garlands & Event Rentals
                 </h2>
                 <p className="mt-4 text-primary-foreground/80">
-                  We have expanded our collection to serve you better. Visit us to explore 
-                  our new range of authentic Indian products.
+                  Your one-stop shop for fresh flowers, beautiful garlands, and event rentals. 
+                  Visit us to explore our collection.
                 </p>
               </div>
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
