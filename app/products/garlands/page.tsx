@@ -3,22 +3,20 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { ProductCard } from "@/components/product-card"
-import { getProductsByCategory } from "@/lib/db-products"
-import { ArrowLeft, Heart, ShoppingBag } from "lucide-react"
+import { GarlandCard } from "@/components/garland-card"
+import { garlands } from "@/lib/garlands-data"
+import { ArrowLeft, Heart, ShoppingBag, Info } from "lucide-react"
 
-export default async function GarlandsPage() {
-  const products = await getProductsByCategory('garlands')
-
+export default function GarlandsPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-background">
       <Navigation />
       
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px]">
           <Image
-            src="/images/garlands.jpg"
+            src={garlands[0]?.image || "/images/garlands.jpg"}
             alt="Traditional Garlands"
             fill
             className="object-cover"
@@ -44,25 +42,46 @@ export default async function GarlandsPage() {
           </div>
         </section>
 
-        {/* Products Section */}
-        <section className="py-16 lg:py-24">
+        {/* Info Banner */}
+        <section className="border-b border-border bg-secondary/50 py-4">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-10 flex flex-col gap-4 rounded-xl bg-secondary p-6 sm:flex-row sm:items-center sm:justify-between">
-              <div className="flex items-center gap-3">
-                <ShoppingBag className="h-6 w-6 text-primary" />
-                <p className="font-medium text-foreground">Add items to your cart and checkout online. Custom orders welcome!</p>
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-start gap-3">
+                <Info className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
+                <div>
+                  <p className="text-sm font-medium text-foreground">
+                    Select your garland size and add extras like Pearls, Gold Beads, and more!
+                  </p>
+                  <p className="text-xs text-muted-foreground mt-1">
+                    Prices vary by size. Custom orders welcome - contact us for special requests.
+                  </p>
+                </div>
               </div>
-              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button asChild size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <Link href="/checkout">
                   <ShoppingBag className="mr-2 h-4 w-4" />
                   View Cart
                 </Link>
               </Button>
             </div>
+          </div>
+        </section>
+
+        {/* Products Section */}
+        <section className="py-12 lg:py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-8">
+              <h2 className="font-serif text-2xl font-bold text-foreground">
+                Our Garland Collection
+              </h2>
+              <p className="mt-1 text-muted-foreground">
+                {garlands.length} beautiful garlands to choose from
+              </p>
+            </div>
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {products.map((product) => (
-                <ProductCard key={product.id} product={product} />
+              {garlands.map((garland) => (
+                <GarlandCard key={garland.id} garland={garland} />
               ))}
             </div>
           </div>
