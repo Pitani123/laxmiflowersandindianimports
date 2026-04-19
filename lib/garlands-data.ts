@@ -38,9 +38,9 @@ export const garlandExtras: GarlandExtra[] = [
 // DEFAULT SIZES - Wedding Garlands (3ft, 4ft, 5ft)
 // =================================================================================
 export const defaultSizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 8500 }, // $85.00
-  { id: "4ft", label: "4 ft", priceInCents: 9500 }, // $95.00
-  { id: "5ft", label: "5 ft", priceInCents: 10500 }, // $105.00
+  { id: "3ft", label: "3 ft", priceInCents: 10000 }, // $100.00
+  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $110.00
+  { id: "5ft", label: "5 ft", priceInCents: 12000 }, // $120.00
 ]
 
 // =================================================================================
@@ -50,7 +50,7 @@ export const garlands: Garland[] = [
   {
     id: "garland-001",
     name: "Garland_001",
-    description: "Coral pink roses with white chrysanthemums and baby's breath. Colors: Coral, White, Green",
+    description: "Lotus and Baby's Breath Garland.",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.15%20PM%20%281%29-xIoAWCrxPugzCsgeezBJdmCm9jq2cX.jpeg",
     sizes: defaultSizes
     //availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],  
