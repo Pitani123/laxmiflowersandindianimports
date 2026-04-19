@@ -128,12 +128,9 @@ export default function HomePage() {
                 Visit our store or give us a call. Our friendly team is here to help you 
                 find exactly what you need for your special occasions.
               </p>
-              <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+              <div className="mt-8 flex justify-center">
                 <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
                   <Link href="/locations">Find Our Store</Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="border-foreground/20">
-                  <a href="tel:+1234567890">Call (123) 456-7890</a>
                 </Button>
               </div>
             </div>

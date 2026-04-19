@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -67,27 +66,12 @@ export default function LocationsPage() {
         <section className="py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="space-y-16">
-              {locations.map((location, index) => (
+              {locations.map((location) => (
                 <div
                   key={location.id}
-                  className="overflow-hidden rounded-2xl border border-border bg-card shadow-lg"
+                  className="overflow-hidden rounded-2xl border border-border bg-card shadow-lg p-8 lg:p-12"
                 >
-                  <div className={`grid lg:grid-cols-2 ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
-                    <div className={`relative aspect-[4/3] lg:aspect-auto ${index % 2 === 1 ? "lg:order-2" : ""}`}>
-                      <Image
-                        src={location.image}
-                        alt={`${location.name} storefront`}
-                        fill
-                        className="object-cover"
-                      />
-                      {location.isPrimary && (
-                        <div className="absolute left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                          Main Location
-                        </div>
-                      )}
-                    </div>
-                    
-                    <div className={`p-8 lg:p-12 ${index % 2 === 1 ? "lg:order-1" : ""}`}>
+                  {/* Store Images - Temporarily Disabled (will add later) */}
                       <h2 className="font-serif text-2xl font-bold text-foreground sm:text-3xl">
                         {location.name}
                       </h2>
@@ -160,8 +144,6 @@ export default function LocationsPage() {
                             Call Store
                           </a>
                         </Button>
-                      </div>
-                    </div>
                   </div>
                 </div>
               ))}

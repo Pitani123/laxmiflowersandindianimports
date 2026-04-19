@@ -164,8 +164,8 @@ export default async function ProductsPage() {
           </div>
         </section>
 
-        {/* Featured Products */}
-        <section className="bg-secondary py-20 lg:py-28">
+        {/* Featured Products - Temporarily Disabled */}
+        {/* <section className="bg-secondary py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <h2 className="mb-10 text-center font-serif text-3xl font-bold">Featured Products</h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -177,7 +177,7 @@ export default async function ProductsPage() {
               <p className="text-muted-foreground">Showing {Math.min(8, products.length)} of {products.length} products</p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section className="bg-primary py-16">
