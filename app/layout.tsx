@@ -3,6 +3,7 @@ import { Playfair_Display, Lato } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { CartProvider } from '@/lib/cart-context'
 import { CartDrawer } from '@/components/cart-drawer'
+import { WhatsAppChat } from '@/components/whatsapp-chat'
 import './globals.css'
 
 const playfair = Playfair_Display({ 
@@ -49,6 +50,7 @@ export default function RootLayout({
         <CartProvider>
           {children}
           <CartDrawer />
+          <WhatsAppChat />
         </CartProvider>
         <Analytics />
       </body>
