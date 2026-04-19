@@ -5,59 +5,6 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Star, Heart, Sparkles } from "lucide-react"
 
-const services = [
-  {
-    title: "Garlands",
-    description: "Traditional flower garlands for weddings, pujas, and special occasions",
-    image: "/images/garlands.jpg",
-  },
-  {
-    title: "Flower Bouquets",
-    description: "Beautifully arranged bouquets for every celebration",
-    image: "/images/bouquets.jpg",
-  },
-  // Temporarily disabled - Wedding Decorations
-  // {
-  //   title: "Wedding Decorations",
-  //   description: "Transform your venue with stunning floral arrangements",
-  //   image: "/images/wedding-decorations.jpg",
-  // },
-  // Temporarily disabled - Indian Gift Items
-  // {
-  //   title: "Indian Gift Items",
-  //   description: "Authentic Indian gifts for all occasions",
-  //   image: "/images/gift-items.jpg",
-  // },
-  // Temporarily disabled - Silver Items
-  // {
-  //   title: "Silver Items",
-  //   description: "Elegant silver pieces for pooja and gifting",
-  //   image: "/images/silver-items.jpg",
-  // },
-  // Temporarily disabled - Traditional Dresses
-  // {
-  //   title: "Traditional Dresses",
-  //   description: "Beautiful Indian attire for the whole family",
-  //   image: "/images/traditional-dresses.jpg",
-  // },
-  {
-    title: "Fresh Flowers",
-    description: "Daily fresh flowers for home altar and special occasions",
-    image: "/images/fresh-flowers.jpg",
-  },
-  // Temporarily disabled - Indian Snacks
-  // {
-  //   title: "Indian Snacks",
-  //   description: "Delicious traditional Indian snacks and sweets",
-  //   image: "/images/snacks.jpg",
-  // },
-  {
-    title: "Rentals",
-    description: "Event rental items for ceremonies and celebrations",
-    image: "/images/rentals.jpg",
-  },
-]
-
 const features = [
   {
     icon: Star,
@@ -164,49 +111,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Services Grid */}
-        <section className="py-20 lg:py-28">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-16 text-center">
-              <p className="mb-3 text-sm font-medium uppercase tracking-wider text-primary">What We Offer</p>
-              <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl">Our Services</h2>
-              <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-                From fresh flowers to traditional Indian items, we have everything you need 
-                for your celebrations, ceremonies, and everyday moments.
-              </p>
-            </div>
-            
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {services.map((service) => (
-                <Link
-                  key={service.title}
-                  href={`/services#${service.title.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="group overflow-hidden rounded-xl border border-border bg-card transition-all hover:shadow-lg"
-                >
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <h3 className="font-serif text-xl font-semibold text-white">{service.title}</h3>
-                    </div>
-                  </div>
-                  <div className="p-4">
-                    <p className="text-sm text-muted-foreground">{service.description}</p>
-                    <span className="mt-3 inline-flex items-center text-sm font-medium text-primary">
-                      Learn more
-                      <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
+
 
         {/* New Offerings Banner */}
         <section className="bg-primary py-16 text-primary-foreground">
