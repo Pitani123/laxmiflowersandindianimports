@@ -6,6 +6,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Star, Quote, Send, User, Mail, Phone, MessageSquare, CheckCircle } from "lucide-react"
+import { submitReview } from "./actions"
 
 // Sample reviews - these would come from database later
 const existingReviews = [
@@ -94,8 +95,10 @@ export default function ReviewsPage() {
   })
   const [contactError, setContactError] = useState("")
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     
     // Validate that at least email or phone is provided
@@ -104,22 +107,34 @@ export default function ReviewsPage() {
       return
     }
     setContactError("")
+    setSubmitError("")
+    setIsSubmitting(true)
     
-    // In the future, this will save to database
-    console.log("Review submitted:", formData)
-    setIsSubmitted(true)
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        rating: 5,
-        service: "",
-        comment: "",
-      })
-    }, 3000)
+    try {
+      const result = await submitReview(formData)
+      
+      if (result.success) {
+        setIsSubmitted(true)
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setIsSubmitted(false)
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            rating: 5,
+            service: "",
+            comment: "",
+          })
+        }, 3000)
+      } else {
+        setSubmitError(result.error || "Failed to submit review")
+      }
+    } catch {
+      setSubmitError("An unexpected error occurred. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const averageRating = existingReviews.reduce((acc, r) => acc + r.rating, 0) / existingReviews.length
@@ -348,9 +363,23 @@ export default function ReviewsPage() {
                       />
                     </div>
                     
-                    <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                      <Send className="mr-2 h-4 w-4" />
-                      Submit Review
+                    {submitError && (
+                      <p className="text-sm text-red-500 text-center">{submitError}</p>
+                    )}
+                    
+                    <Button 
+                      type="submit" 
+                      disabled={isSubmitting}
+                      className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                    >
+                      {isSubmitting ? (
+                        "Submitting..."
+                      ) : (
+                        <>
+                          <Send className="mr-2 h-4 w-4" />
+                          Submit Review
+                        </>
+                      )}
                     </Button>
                     
                     <p className="text-center text-xs text-muted-foreground">
