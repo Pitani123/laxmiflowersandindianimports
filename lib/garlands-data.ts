@@ -189,7 +189,7 @@ export const garlands: Garland[] = [
     name: "Garland_011",
     description: "Roses, and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.40.57%20PM-O272fb5TYnmPvfkhvqbJSwvYGKxWNj.jpeg"],
-    sizes: defaultSizes
+    sizes: garland_011_Sizes
     //availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
   },
   {
