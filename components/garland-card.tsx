@@ -22,7 +22,7 @@ export function GarlandCard({ garland }: GarlandCardProps) {
   const { addItem } = useCart()
 
   const selectedSize = garland.sizes.find(s => s.id === selectedSizeId)
-  const availableExtras = getExtrasByIds(garland.availableExtras)
+  const availableExtras = getExtrasByIds(garland.availableExtras || [])
 
   const extrasTotal = selectedExtras.reduce((total, extraId) => {
     const extra = availableExtras.find(e => e.id === extraId)
