@@ -195,49 +195,49 @@ export const garlands: Garland[] = [
   {
     id: "garland-017",
     name: "Garland_017",
-    description: "White Chrysanthemums, Carnations and Baby's Breath Garland",
+    description: "Mums, Carnations and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%202.49.05%20PM%20%285%29-3ASv17bdEIyFzqUqK0DVFZdRlimXeV.jpeg"],
     sizes: defaultSizes
   },
   {
     id: "garland-018",
     name: "Garland_018",
-    description: "Pink Roses, White Mums and Baby's Breath Garland",
+    description: "Roses, Mums and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%202.49.05%20PM%20%286%29-F2RY8w57qRjrlB0S02Coo4zARAlSXY.jpeg"],
     sizes: defaultSizes
   },
   {
     id: "garland-019",
     name: "Garland_019",
-    description: "Pink Roses and Baby's Breath Garland",
+    description: "Roses and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%202.49.05%20PM-P9f7xipVyz0MsqKU8qp4igjfeWEwyk.jpeg"],
     sizes: defaultSizes
   },
   {
     id: "garland-020",
     name: "Garland_020",
-    description: "Red and White Roses with Baby's Breath Garland",
+    description: "Roses, and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%202.49.05%20PM%20%283%29-mp4CxRYuSbIPUKYRqoaLMa7Mqgia9X.jpeg"],
     sizes: defaultSizes
   },
   {
     id: "garland-021",
     name: "Garland_021",
-    description: "Red and Pink Roses with Baby's Breath Garland",
+    description: "Roses, and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%202.49.05%20PM%20%281%29-tlxYUbXiHBdOTnscI6YwTuNQAsoINv.jpeg"],
     sizes: defaultSizes
   },
   {
     id: "garland-022",
     name: "Garland_022",
-    description: "Red Roses and Baby's Breath Garland",
+    description: "Roses and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%202.49.05%20PM%20%284%29-WwxEa0IHWKL2Z2TVENnsjENGTA2Miv.jpeg"],
     sizes: defaultSizes
   },
   {
     id: "garland-023",
     name: "Garland_023",
-    description: "Baby's Breath and Red Roses Garland",
+    description: "Roses and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%202.49.05%20PM%20%282%29-e5iER1npLDVycCCjGCjS0ohG1ROEse.jpeg"],
     sizes: defaultSizes
   },
