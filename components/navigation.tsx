@@ -22,7 +22,7 @@ const productLinks = [
       { href: "/products/wedding/wedding-garlands", label: "Wedding Garlands" },
       { href: "/products/wedding/decorative-coconuts", label: "Decorative Coconuts" },
       { href: "/products/wedding/wedding-accessories", label: "Wedding Accessories" },
-      { href: "/products/wedding/hari-accessories", label: "Hari Accessories" },
+      { href: "/products/wedding/hair-accessories", label: "Hair Accessories" },
     ]
   },
   { href: "/products/bouquets", label: "Flower Bouquets" },
