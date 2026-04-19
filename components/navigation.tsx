@@ -30,8 +30,6 @@ const productLinks = [
 ]
 
 const aboutLinks = [
-  { href: "/our-story", label: "Our Story" },
-  { href: "/our-team", label: "Our Team" },
   { href: "/services", label: "Our Services" },
 ]
 

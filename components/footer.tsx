@@ -3,8 +3,6 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react"
 
 const footerLinks = {
   company: [
-    { href: "/our-story", label: "Our Story" },
-    { href: "/our-team", label: "Our Team" },
     { href: "/services", label: "Our Services" },
     { href: "/locations", label: "Store Locations" },
     { href: "/reviews", label: "Reviews" },
