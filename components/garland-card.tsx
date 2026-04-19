@@ -129,6 +129,7 @@ export function GarlandCard({ garland }: GarlandCardProps) {
         {/* Name & Description */}
         <h3 className="font-serif text-lg font-bold text-foreground">{garland.name}</h3>
         <p className="mt-1 text-sm text-muted-foreground line-clamp-2">{garland.description}</p>
+        <p className="mt-1 text-xs italic text-muted-foreground/70">Color customizations available</p>
 
         {/* Size Selection */}
         <div className="mt-4">
