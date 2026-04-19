@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { ProductCard } from "@/components/product-card"
+import { PoojaGarlandCard } from "@/components/pooja-garland-card"
 import { getProductsByCategory } from "@/lib/db-products"
 import { ArrowLeft, Heart, ShoppingBag } from "lucide-react"
 
@@ -52,7 +52,7 @@ export default async function PoojaGarlandsPage() {
                 <ShoppingBag className="h-6 w-6 text-primary" />
                 <div>
                   <p className="font-medium text-foreground">Pooja Garlands - Pricing per foot</p>
-                  <p className="text-sm text-muted-foreground">1ft - $12 | 2ft - $24. Call for custom sizes and bulk orders.</p>
+                  <p className="text-sm text-muted-foreground">1ft - $12 | 2ft - $24 | 3ft - $36 | 4ft - $48 | 5ft - $60</p>
                 </div>
               </div>
               <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -63,7 +63,7 @@ export default async function PoojaGarlandsPage() {
             {products.length > 0 ? (
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {products.map((product) => (
-                  <ProductCard key={product.id} product={product} />
+                  <PoojaGarlandCard key={product.id} product={product} />
                 ))}
               </div>
             ) : (

@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
 import { Label } from '@/components/ui/label'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
-import { ShoppingBag, Check, Plus, Minus } from 'lucide-react'
+import { ShoppingBag, Check } from 'lucide-react'
 import { useCart } from '@/lib/cart-context'
 import { cn } from '@/lib/utils'
 
@@ -18,7 +18,6 @@ interface GarlandCardProps {
 export function GarlandCard({ garland }: GarlandCardProps) {
   const [selectedSizeId, setSelectedSizeId] = useState(garland.sizes[0]?.id || '')
   const [selectedExtras, setSelectedExtras] = useState<string[]>([])
-  const [quantity, setQuantity] = useState(1)
   const [isAdded, setIsAdded] = useState(false)
   const { addItem } = useCart()
 
@@ -31,7 +30,7 @@ export function GarlandCard({ garland }: GarlandCardProps) {
   }, 0)
 
   const basePrice = selectedSize?.priceInCents || 0
-  const totalPrice = (basePrice + extrasTotal) * quantity
+  const totalPrice = basePrice + extrasTotal
 
   const toggleExtra = (extraId: string) => {
     setSelectedExtras(prev => 
@@ -58,7 +57,7 @@ export function GarlandCard({ garland }: GarlandCardProps) {
       priceInCents: basePrice + extrasTotal,
       imageUrl: garland.image,
       category: 'garlands',
-    }, quantity)
+    }, 1)
 
     setIsAdded(true)
     setTimeout(() => setIsAdded(false), 2000)
@@ -152,35 +151,10 @@ export function GarlandCard({ garland }: GarlandCardProps) {
           </div>
         )}
 
-        {/* Quantity & Total */}
+        {/* Total Price */}
         <div className="mt-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Label className="text-sm text-muted-foreground">Qty:</Label>
-            <div className="flex items-center gap-1">
-              <Button
-                variant="outline"
-                size="icon"
-                className="h-8 w-8"
-                onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                disabled={quantity <= 1}
-              >
-                <Minus className="h-4 w-4" />
-              </Button>
-              <span className="w-8 text-center font-medium">{quantity}</span>
-              <Button
-                variant="outline"
-                size="icon"
-                className="h-8 w-8"
-                onClick={() => setQuantity(quantity + 1)}
-              >
-                <Plus className="h-4 w-4" />
-              </Button>
-            </div>
-          </div>
-          <div className="text-right">
-            <p className="text-xs text-muted-foreground">Total</p>
-            <p className="text-xl font-bold text-primary">{formatPrice(totalPrice)}</p>
-          </div>
+          <span className="text-sm text-muted-foreground">Price</span>
+          <p className="text-xl font-bold text-primary">{formatPrice(totalPrice)}</p>
         </div>
 
         {/* Add to Cart Button */}

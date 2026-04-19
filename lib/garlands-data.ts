@@ -35,14 +35,12 @@ export const garlandExtras: GarlandExtra[] = [
 ]
 
 // =================================================================================
-// DEFAULT SIZES - These are the default size options (can be overridden per garland)
+// DEFAULT SIZES - Wedding Garlands (3ft, 4ft, 5ft)
 // =================================================================================
 export const defaultSizes: GarlandSize[] = [
-  //{ id: "1ft", label: "1 ft", priceInCents: 1500 }, // $15.00
-  { id: "3ft", label: "3 ft", priceInCents: 3500 }, // $35.00
-  { id: "4ft", label: "4 ft", priceInCents: 4500 }, // $45.00
-  { id: "5ft", label: "5 ft", priceInCents: 5500 }, // $55.00
-  //{ id: "10ft", label: "10 ft", priceInCents: 9500 }, // $95.00
+  { id: "3ft", label: "3 ft", priceInCents: 8500 }, // $85.00
+  { id: "4ft", label: "4 ft", priceInCents: 9500 }, // $95.00
+  { id: "5ft", label: "5 ft", priceInCents: 10500 }, // $105.00
 ]
 
 // =================================================================================
@@ -62,11 +60,7 @@ export const garlands: Garland[] = [
     name: "Garland_002",
     description: "Traditional wedding varmala with red rose petals, golden roses, and jasmine. Colors: Red, Gold, White",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.11%20PM-mBKW1Oh3L9uZKxzsz5LpWYY9rgKhhX.jpeg",
-    sizes: [
-      { id: "3ft", label: "3 ft", priceInCents: 5500 },
-      { id: "4ft", label: "4 ft", priceInCents: 7500 },
-      { id: "5ft", label: "5 ft", priceInCents: 9500 }
-    ]
+    sizes: defaultSizes
     //availableExtras: ["gold-beads", "crystals", "extra-flowers"],
   },
   {
@@ -178,11 +172,7 @@ export const garlands: Garland[] = [
     name: "Garland_016",
     description: "Luxurious white roses and carnations with baby's breath pair. Colors: White, Ivory, Green",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.09.42%20PM-a27IxFbItgoF11FmjzkXkeQvVuSMET.jpeg",
-    sizes: [
-      { id: "3ft", label: "3 ft", priceInCents: 4500 },
-      { id: "4ft", label: "4 ft", priceInCents: 5500 },
-      { id: "5ft", label: "5 ft", priceInCents: 6500 }
-    ]
+    sizes: defaultSizes
     //availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals", "extra-flowers"],
   },
   {
