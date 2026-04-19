@@ -61,6 +61,39 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     sizes: garikaMunthaluSizes,
     potSize: "5/6 inch clay pot",
     customizable: true
+  },
+  {
+    id: "garika-munthalu-004",
+    name: "GarikaMunthalu_004",
+    description: "Golden clay pot with pearl circular designs, rhinestone centers, golden bead chains, and elegant embellishments",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM%20%284%29-MKqEsdE2VyOw9NVpaQiaimr5Tq9dAz.jpeg"
+    ],
+    sizes: garikaMunthaluSizes,
+    potSize: "5/6 inch clay pot",
+    customizable: true
+  },
+  {
+    id: "garika-munthalu-005",
+    name: "GarikaMunthalu_005",
+    description: "Vibrant red clay pot with golden rim, pearl chains, multicolored rhinestones, and intricate golden bead work",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM%20%283%29-0Kdha6raJGXNFMhERMXddHPaWTWa13.jpeg"
+    ],
+    sizes: garikaMunthaluSizes,
+    potSize: "5/6 inch clay pot",
+    customizable: true
+  },
+  {
+    id: "garika-munthalu-006",
+    name: "GarikaMunthalu_006",
+    description: "Deep red clay pot with pearl bands, green crystal drapes, white flower accents, and golden rhinestone patterns",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM%20%282%29-kYD4ou5FYideu95eSIQwlE0kEuCOOr.jpeg"
+    ],
+    sizes: garikaMunthaluSizes,
+    potSize: "5/6 inch clay pot",
+    customizable: true
   }
 ]
 
