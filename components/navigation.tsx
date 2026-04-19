@@ -7,16 +7,25 @@ import { Button } from "@/components/ui/button"
 import { CartIcon } from "@/components/cart-icon"
 
 const productLinks = [
-  { href: "/products/fresh-flowers", label: "Fresh Flowers" },
-  { href: "/products/garlands", label: "Garlands" },
+  { 
+    href: "/products/fresh-flowers", 
+    label: "Fresh Flowers",
+    subcategories: [
+      { href: "/products/fresh-flowers/loose-flowers", label: "Loose Flowers" },
+      { href: "/products/fresh-flowers/pooja-garlands", label: "Pooja Garlands" },
+    ]
+  },
+  { 
+    href: "/products/wedding", 
+    label: "Wedding",
+    subcategories: [
+      { href: "/products/wedding/wedding-garlands", label: "Wedding Garlands" },
+      { href: "/products/wedding/decorative-coconuts", label: "Decorative Coconuts" },
+      { href: "/products/wedding/wedding-accessories", label: "Wedding Accessories" },
+      { href: "/products/wedding/hari-accessories", label: "Hari Accessories" },
+    ]
+  },
   { href: "/products/bouquets", label: "Flower Bouquets" },
-  // { href: "/products/wedding-decorations", label: "Wedding Decorations" }, // Temporarily disabled
-  // { href: "/products/gift-items", label: "Indian Gift Items" }, // Temporarily disabled
-  // { href: "/products/silver-items", label: "Silver Items" }, // Temporarily disabled
-  // { href: "/products/brass-items", label: "Brass Items" }, // Temporarily disabled
-  // { href: "/products/jewellery", label: "Low Cost Jewellery Items" }, // Temporarily disabled
-  // { href: "/products/traditional-dresses", label: "Indian Traditional Dresses" }, // Temporarily disabled
-  // { href: "/products/snacks", label: "Indian Snacks" }, // Temporarily disabled
   { href: "/products/rentals", label: "Rentals" },
 ]
 
@@ -70,7 +79,7 @@ export function Navigation() {
               <ChevronDown className={`h-4 w-4 transition-transform ${productsOpen ? 'rotate-180' : ''}`} />
             </button>
             <div 
-              className={`absolute left-0 top-full z-50 w-64 rounded-lg border border-border bg-background p-2 shadow-lg transition-all ${productsOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}
+              className={`absolute left-0 top-full z-50 w-72 rounded-lg border border-border bg-background p-2 shadow-lg transition-all ${productsOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}
             >
               <Link
                 href="/products"
@@ -81,14 +90,29 @@ export function Navigation() {
               </Link>
               <div className="my-2 border-t border-border" />
               {productLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="block rounded-md px-3 py-2 text-sm text-foreground/80 hover:bg-secondary hover:text-primary"
-                  onClick={() => setProductsOpen(false)}
-                >
-                  {link.label}
-                </Link>
+                <div key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="block rounded-md px-3 py-2 text-sm font-medium text-foreground hover:bg-secondary hover:text-primary"
+                    onClick={() => setProductsOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                  {link.subcategories && (
+                    <div className="ml-3 border-l border-border/50 pl-3">
+                      {link.subcategories.map((sub) => (
+                        <Link
+                          key={sub.href}
+                          href={sub.href}
+                          className="block rounded-md px-3 py-1.5 text-sm text-foreground/70 hover:bg-secondary hover:text-primary"
+                          onClick={() => setProductsOpen(false)}
+                        >
+                          {sub.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           </div>
@@ -189,14 +213,29 @@ export function Navigation() {
                     View All Products
                   </Link>
                   {productLinks.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="block py-2 text-sm text-foreground/70 hover:text-primary"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {link.label}
-                    </Link>
+                    <div key={link.href}>
+                      <Link
+                        href={link.href}
+                        className="block py-2 text-sm font-medium text-foreground/80 hover:text-primary"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {link.label}
+                      </Link>
+                      {link.subcategories && (
+                        <div className="ml-3 border-l border-border/50 pl-3">
+                          {link.subcategories.map((sub) => (
+                            <Link
+                              key={sub.href}
+                              href={sub.href}
+                              className="block py-1.5 text-sm text-foreground/60 hover:text-primary"
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {sub.label}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   ))}
                 </div>
               )}

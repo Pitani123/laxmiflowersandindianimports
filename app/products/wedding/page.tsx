@@ -3,38 +3,54 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Flower2, ShoppingBag, Leaf, Heart } from "lucide-react"
+import { ArrowLeft, Heart, ShoppingBag, Palmtree, Gem, Sparkles } from "lucide-react"
 
 const subcategories = [
   {
-    id: "loose-flowers",
-    name: "Loose Flowers",
-    description: "Fresh loose flowers for daily pooja and home decoration",
-    image: "/images/fresh-flowers.jpg",
-    href: "/products/fresh-flowers/loose-flowers",
-    icon: Leaf,
+    id: "wedding-garlands",
+    name: "Wedding Garlands",
+    description: "Traditional Indian garlands for weddings and celebrations",
+    image: "/images/garlands.jpg",
+    href: "/products/wedding/wedding-garlands",
+    icon: Heart,
   },
   {
-    id: "pooja-garlands",
-    name: "Pooja Garlands",
-    description: "Traditional garlands for temple and pooja ceremonies",
-    image: "/images/garlands.jpg",
-    href: "/products/fresh-flowers/pooja-garlands",
-    icon: Heart,
+    id: "decorative-coconuts",
+    name: "Decorative Coconuts",
+    description: "Beautifully decorated coconuts for wedding ceremonies",
+    image: "/images/decorative-coconuts.jpg",
+    href: "/products/wedding/decorative-coconuts",
+    icon: Palmtree,
+  },
+  {
+    id: "wedding-accessories",
+    name: "Wedding Accessories",
+    description: "Essential accessories for traditional Indian weddings",
+    image: "/images/wedding-accessories.jpg",
+    href: "/products/wedding/wedding-accessories",
+    icon: Gem,
+  },
+  {
+    id: "hari-accessories",
+    name: "Hari Accessories",
+    description: "Traditional Hari accessories for religious ceremonies",
+    image: "/images/hari-accessories.jpg",
+    href: "/products/wedding/hari-accessories",
+    icon: Sparkles,
   },
 ]
 
-export default function FreshFlowersPage() {
+export default function WeddingPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-background">
       <Navigation />
       
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px]">
           <Image
-            src="/images/fresh-flowers.jpg"
-            alt="Fresh Flowers"
+            src="/images/garlands.jpg"
+            alt="Wedding Collection"
             fill
             className="object-cover"
             priority
@@ -48,11 +64,11 @@ export default function FreshFlowersPage() {
               </Link>
               <div className="flex items-center gap-3">
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary">
-                  <Flower2 className="h-7 w-7 text-primary-foreground" />
+                  <Heart className="h-7 w-7 text-primary-foreground" />
                 </div>
                 <div>
-                  <h1 className="font-serif text-4xl font-bold text-card sm:text-5xl">Fresh Flowers</h1>
-                  <p className="mt-1 text-lg text-card/80">Daily fresh flowers for home and temple</p>
+                  <h1 className="font-serif text-4xl font-bold text-card sm:text-5xl">Wedding</h1>
+                  <p className="mt-1 text-lg text-card/80">Everything you need for your special day</p>
                 </div>
               </div>
             </div>
@@ -65,7 +81,7 @@ export default function FreshFlowersPage() {
             <div className="mb-10 flex flex-col gap-4 rounded-xl bg-secondary p-6 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-3">
                 <ShoppingBag className="h-6 w-6 text-primary" />
-                <p className="font-medium text-foreground">Browse our fresh flower categories below</p>
+                <p className="font-medium text-foreground">Browse our wedding categories below</p>
               </div>
               <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
                 <Link href="/checkout">
@@ -110,14 +126,14 @@ export default function FreshFlowersPage() {
         {/* CTA Section */}
         <section className="bg-primary py-12">
           <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-            <h2 className="font-serif text-2xl font-bold text-primary-foreground sm:text-3xl">Fresh Daily Delivery</h2>
-            <p className="mt-2 text-primary-foreground/80">We receive fresh flower shipments daily. Visit our store for the freshest selection.</p>
+            <h2 className="font-serif text-2xl font-bold text-primary-foreground sm:text-3xl">Custom Wedding Orders</h2>
+            <p className="mt-2 text-primary-foreground/80">We create custom wedding decorations and garlands. Order in advance for best results.</p>
             <div className="mt-6 flex flex-col justify-center gap-4 sm:flex-row">
               <Button asChild size="lg" variant="secondary" className="bg-card text-foreground hover:bg-card/90">
                 <Link href="/locations">Find a Store</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-                <a href="tel:+1234567890">Call Us</a>
+                <a href="tel:+14699889029">Call Us</a>
               </Button>
             </div>
           </div>

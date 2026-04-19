@@ -19,7 +19,7 @@ export interface Garland {
   description: string
   image: string
   sizes: GarlandSize[] // Available sizes with prices
-  availableExtras: string[] // IDs of extras that can be added
+  //availableExtras: string[] // IDs of extras that can be added
 }
 
 // =================================================================================
@@ -35,244 +35,177 @@ export const garlandExtras: GarlandExtra[] = [
 ]
 
 // =================================================================================
-// DEFAULT SIZES - These are the default size options (can be overridden per garland)
+// DEFAULT SIZES - Wedding Garlands (3ft, 4ft, 5ft)
 // =================================================================================
 export const defaultSizes: GarlandSize[] = [
-  { id: "1ft", label: "1 ft", priceInCents: 1500 }, // $15.00
-  { id: "3ft", label: "3 ft", priceInCents: 3500 }, // $35.00
-  { id: "4ft", label: "4 ft", priceInCents: 4500 }, // $45.00
-  { id: "5ft", label: "5 ft", priceInCents: 5500 }, // $55.00
-  { id: "10ft", label: "10 ft", priceInCents: 9500 }, // $95.00
+  { id: "3ft", label: "3 ft", priceInCents: 8500 }, // $85.00
+  { id: "4ft", label: "4 ft", priceInCents: 9500 }, // $95.00
+  { id: "5ft", label: "5 ft", priceInCents: 10500 }, // $105.00
 ]
 
 // =================================================================================
-// GARLANDS - Sorted by similarity (grouped by flower type/color)
+// GARLANDS - Named as Garland_001, Garland_002, etc.
 // =================================================================================
 export const garlands: Garland[] = [
-  // ---------------------------------------------------------------------------------
-  // RED ROSE GARLANDS
-  // ---------------------------------------------------------------------------------
   {
-    id: "deep-red-rose",
-    name: "Deep Red Rose Garland",
-    description: "Rich deep red roses with white baby's breath accents",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.10.19%20PM-0P4WiWuw544Yqmb4bhWquTsy1peyRe.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "silver-beads"],
+    id: "garland-001",
+    name: "Garland_001",
+    description: "Coral pink roses with white chrysanthemums and baby's breath. Colors: Coral, White, Green",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.15%20PM%20%281%29-xIoAWCrxPugzCsgeezBJdmCm9jq2cX.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],  
   },
   {
-    id: "red-rose-single",
-    name: "Red Rose Garland",
-    description: "Classic red roses with white baby's breath",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.39.38%20PM-L0ol5lqqa3qujRPeAmOWcEsaBebUp6.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "silver-beads"],
+    id: "garland-002",
+    name: "Garland_002",
+    description: "Traditional wedding varmala with red rose petals, golden roses, and jasmine. Colors: Red, Gold, White",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.11%20PM-mBKW1Oh3L9uZKxzsz5LpWYY9rgKhhX.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["gold-beads", "crystals", "extra-flowers"],
   },
   {
-    id: "red-rose-mum-single",
-    name: "Red Rose & Chrysanthemum Garland",
-    description: "Classic red roses with white chrysanthemums and baby's breath",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.25.29%20PM-BrotXTC3MD9LrXUq9KIELtVD1Gt0Ou.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
+    id: "garland-003",
+    name: "Garland_003",
+    description: "White orchids with soft pink spray roses. Colors: White, Light Green, Pink",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.40.24%20PM-68AsyoEQaQ8YfMIsWDsra1vtiM1xDe.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "silver-beads", "crystals", "ribbons"],
   },
   {
-    id: "red-rose-mum-double",
-    name: "Red Rose & Mum Double Garland",
-    description: "Matching pair of red roses with white chrysanthemums",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.25.29%20PM%20%281%29-IXPyaYihsK7cNnP0loLbSTtC24PsxT.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
+    id: "garland-004",
+    name: "Garland_004",
+    description: "Soft pink roses with white baby's breath on pink pearl beads. Colors: Light Pink, White",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.16%20PM%20%281%29-Dp9B4gguX5sKEDAsfDHKvbcKxjcoyq.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "crystals", "ribbons"],
   },
   {
-    id: "red-white-carnation",
-    name: "Red & White Carnation Garland",
-    description: "Classic combination of red and white carnations",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.40.57%20PM-XFSO1cFLXVoMRaeF3WnlK0nOKhg0DW.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "silver-beads"],
+    id: "garland-005",
+    name: "Garland_005",
+    description: "Pure white carnations with delicate baby's breath accents. Colors: White, Green",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.25%20PM-iUVruhGktLurBvZZHIgQIEDG6Op2hU.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "silver-beads", "crystals"],
   },
   {
-    id: "red-pink-daisy",
-    name: "Carnations and Baby’s Breath Garland",
-    description: "Vibrant red-pink roses with white daisies and baby's breath",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.26%20PM-CAuwPXGjdK87gqWw3MkSYJM8YJCHsC.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "crystals"],
-  },
-
-  // ---------------------------------------------------------------------------------
-  // PINK ROSE GARLANDS
-  // ---------------------------------------------------------------------------------
-  {
-    id: "hot-pink-rose",
-    name: "Hot Pink Rose Garland",
-    description: "Vibrant hot pink roses with white baby's breath",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.11.59%20PM-V7u5tO8KdeuQkishWKRquDsGcICyu4.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
+    id: "garland-006",
+    name: "Garland_006",
+    description: "Elegant white carnations pair with baby's breath throughout. Colors: White, Ivory, Green",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.39.38%20PM-oUACy734hgrNcq15g94BEUaazGKnC7.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "silver-beads", "crystals"],
   },
   {
-    id: "pink-rose-pair",
-    name: "Pink Rose Double Garland",
-    description: "Matching pair of pink rose garlands with baby's breath",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.11%20PM-cbAzsebfmJ05dYr6ZwI0006CinyMCl.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "crystals"],
+    id: "garland-007",
+    name: "Garland_007",
+    description: "Pink lotus flowers with white baby's breath and pearl beads. Colors: Pink, Green, White",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.10.55%20PM-cFxS32IXNf000iVsQ5JdSV02iPQ3ax.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "gold-beads", "crystals"],
   },
   {
-    id: "pink-rose-simple",
-    name: "Simple Pink Rose Garland",
-    description: "Soft pink roses with baby's breath for a delicate look",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.17%20PM-MQ9sjle9JBqQFGGxmgUW0qLX09IrXk.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "crystals", "ribbons"],
+    id: "garland-008",
+    name: "Garland_008",
+    description: "Red and white carnations in alternating pattern. Colors: Red, White, Green",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.15%20PM-Bo0UPqLUzxI0lEXKT8L3McGaZxX0Uy.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "gold-beads", "silver-beads"],
   },
   {
-    id: "pink-rose-daisy",
-    name: "Pink Rose & Daisy Garland",
-    description: "Elegant pink roses with white daisies and baby's breath",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.16%20PM%20%281%29-Bw2pkgn4VjDqsaqepDFzSeS5Z9a3Xo.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
+    id: "garland-009",
+    name: "Garland_009",
+    description: "Pink roses with white daisies and baby's breath on pink beads. Colors: Pink, White, Green",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.13%20PM-2uBT8GQnOFJHfsMvg8te9bnsPQaP0G.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
   },
   {
-    id: "coral-rose-mum",
-    name: "Coral Rose & Chrysanthemum Garland",
-    description: "Coral pink roses with white chrysanthemums and baby's breath",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.26.24%20PM-98tS3cAG1QbQknFBMId3DTrci6RUWQ.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
+    id: "garland-010",
+    name: "Garland_010",
+    description: "Vibrant hot pink roses with white baby's breath. Colors: Hot Pink, White, Green",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.16%20PM%20%283%29-SpGaAjL4J3ZsRPeWLacnWbqthoDPmg.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
   },
   {
-    id: "pastel-rose-mix",
-    name: "Pastel Rose Mix Garland",
-    description: "Delicate light pink and cream roses with baby's breath",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.26.46%20PM-7Z6d4bL3A5NRAYWcEiD1EIeIOHwdvh.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "silver-beads", "crystals", "ribbons"],
+    id: "garland-011",
+    name: "Garland_011",
+    description: "Pink-tipped roses with white chrysanthemums and baby's breath. Colors: Pink, Red, White",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.40.57%20PM-O272fb5TYnmPvfkhvqbJSwvYGKxWNj.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
   },
   {
-    id: "pink-white-alternating",
-    name: "Pink & White Rose Garland",
-    description: "Alternating pink and white roses with baby's breath",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.09.42%20PM-DmjfhwkBvaaZmG3FJVZOceWA3qC8oc.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "silver-beads", "crystals", "ribbons"],
+    id: "garland-012",
+    name: "Garland_012",
+    description: "Pink lotus flowers with abundant baby's breath sections. Colors: Pink, Olive Green, White",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.10.19%20PM-pwvqSJRRHMTvy5QgOUkOHMyCD8hMFZ.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "gold-beads", "crystals"],
   },
   {
-    id: "white-mum-pink-rose",
-    name: "White Mum & Pink Rose Garland",
-    description: "White chrysanthemums with pink roses and baby's breath",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.25%20PM-6mmHwrRMo7GnrMH5X0szTjxpD3Fmma.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals"],
-  },
-
-  // ---------------------------------------------------------------------------------
-  // WHITE GARLANDS
-  // ---------------------------------------------------------------------------------
-  {
-    id: "white-carnation",
-    name: "White Carnation Garland",
-    description: "Pure white carnations with elegant baby's breath accents",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.15%20PM%20%281%29-AkiDUV6utmZfr53AgCSba0Kf0KaXcl.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "silver-beads", "crystals"],
+    id: "garland-013",
+    name: "Garland_013",
+    description: "Deep red roses with white baby's breath accents. Colors: Deep Red, White, Green",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.11.59%20PM-skTbPskt4lrHvbaBOXQFH4Bw0Tl97X.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "gold-beads", "silver-beads"],
   },
   {
-    id: "white-carnation-full",
-    name: "Full White Carnation Garland",
-    description: "Lush white carnations with delicate baby's breath throughout",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.13.05%20PM-VKpkvEX0TwwFaFJy4Fs7W4iiFNEmdt.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "silver-beads", "crystals"],
+    id: "garland-014",
+    name: "Garland_014",
+    description: "Soft pink roses with white baby's breath pair. Colors: Light Pink, White, Green",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.17%20PM-VNYnHnuVcGacKNBP70do7lIgQ3XVpC.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "silver-beads", "crystals", "ribbons"],
   },
   {
-    id: "white-elaborate",
-    name: "Elaborate White Garland",
-    description: "Luxurious white roses and carnations with baby's breath",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.16%20PM%20%282%29-0tdX9cj8M0dijC9D51KgTJkRk8udoF.jpeg",
-    sizes: [
-      { id: "3ft", label: "3 ft", priceInCents: 4500 },
-      { id: "4ft", label: "4 ft", priceInCents: 5500 },
-      { id: "5ft", label: "5 ft", priceInCents: 6500 },
-      { id: "10ft", label: "10 ft", priceInCents: 11500 },
-    ],
-    availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals", "extra-flowers"],
+    id: "garland-015",
+    name: "Garland_015",
+    description: "Rich deep red roses with white baby's breath pair. Colors: Deep Red, White, Green",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.16%20PM%20%282%29-yTpMhtenXfarEaNWZEIVn9EhLOaQbf.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "gold-beads", "silver-beads"],
   },
   {
-    id: "white-orchid-rose",
-    name: "White Orchid & Rose Garland",
-    description: "White orchids paired with soft pink roses",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.12%20PM-FCZ2vPuuE1kV6soqckzYBp95mStKmC.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "silver-beads", "crystals", "ribbons"],
-  },
-
-  // ---------------------------------------------------------------------------------
-  // LOTUS GARLANDS
-  // ---------------------------------------------------------------------------------
-  {
-    id: "lotus-single",
-    name: "Single Lotus Garland",
-    description: "Elegant single strand pink lotus with baby's breath",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.13%20PM-5VAYObIlZpEhHzhQFAduxTrbzBq5Ku.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "crystals"],
+    id: "garland-016",
+    name: "Garland_016",
+    description: "Luxurious white roses and carnations with baby's breath pair. Colors: White, Ivory, Green",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.09.42%20PM-a27IxFbItgoF11FmjzkXkeQvVuSMET.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "gold-beads", "silver-beads", "crystals", "extra-flowers"],
   },
   {
-    id: "pink-lotus-triple",
-    name: "Pink Lotus Garland",
-    description: "Beautiful pink lotus flowers with delicate baby's breath",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.16%20PM%20%283%29-dDU0TQ60HapGnV4a5sUTGIKDVsQDhV.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "crystals"],
+    id: "garland-017",
+    name: "Garland_017",
+    description: "Pink lotus flowers with baby's breath triple strand. Colors: Pink, Olive Green, White",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.26%20PM-GvnZbx7l2HPTlDcRz4L8pUlFgdiAli.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "gold-beads", "crystals"],
   },
   {
-    id: "lotus-baby-breath",
-    name: "Lotus & Baby's Breath Garland",
-    description: "Pink lotus flowers with abundant baby's breath sections",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.10.55%20PM-gkiqzpfGLBlIEU5OeKM2ZOuuvYWbm2.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "crystals"],
+    id: "garland-018",
+    name: "Garland_018",
+    description: "White orchids with soft pink spray roses pair. Colors: White, Light Green, Pink",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.12%20PM-H2GwvJAEtRKxiib7U2qRcl4BkgN2XQ.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "silver-beads", "crystals", "ribbons"],
   },
   {
-    id: "lotus-ushape",
-    name: "Lotus U-Shape Garland",
-    description: "Elegant lotus flowers with baby's breath in classic U-shape design",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.24.17%20PM-OhjJOZHUocCwe77QKKAc4HQyz8lUZ7.jpeg",
-    sizes: defaultSizes,
-    availableExtras: ["pearls", "gold-beads", "crystals"],
-  },
-
-  // ---------------------------------------------------------------------------------
-  // WEDDING / TRADITIONAL VARMALAS
-  // ---------------------------------------------------------------------------------
-  {
-    id: "traditional-wedding",
-    name: "Traditional Wedding Varmala",
-    description: "Classic red rose petal wedding garland with golden flowers",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.15%20PM-kVpNR74JlAHHD3gbNDpU6tvdaZcBoU.jpeg",
-    sizes: [
-      { id: "3ft", label: "3 ft", priceInCents: 5500 },
-      { id: "4ft", label: "4 ft", priceInCents: 7500 },
-      { id: "5ft", label: "5 ft", priceInCents: 9500 },
-      { id: "10ft", label: "10 ft", priceInCents: 15000 },
-    ],
-    availableExtras: ["gold-beads", "crystals", "extra-flowers"],
+    id: "garland-019",
+    name: "Garland_019",
+    description: "Alternating pink and white roses with baby's breath. Colors: Pink, White, Coral",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.48.16%20PM-eA7YiPwunz9NbuDB4rSHo5kzTwuYbc.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "silver-beads", "crystals", "ribbons"],
   },
   {
-    id: "traditional-wedding-couple",
-    name: "Couple Wedding Varmala Set",
-    description: "Matching bride and groom wedding garlands with jasmine",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.40.24%20PM-6UvjBY0Z0w2vJ9T8nv2bWe4sEyxQFH.jpeg",
-    sizes: [
-      { id: "3ft", label: "3 ft (Set of 2)", priceInCents: 12000 },
-      { id: "4ft", label: "4 ft (Set of 2)", priceInCents: 15000 },
-      { id: "5ft", label: "5 ft (Set of 2)", priceInCents: 18000 },
-    ],
-    availableExtras: ["gold-beads", "crystals", "extra-flowers"],
+    id: "garland-020",
+    name: "Garland_020",
+    description: "Pink and cream roses alternating with baby's breath. Colors: Coral Pink, Cream, White",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%2012.13.05%20PM-0r9TxlcHuUhxhVlJeyVkLfyGGKhcwR.jpeg",
+    sizes: defaultSizes
+    //availableExtras: ["pearls", "silver-beads", "crystals", "ribbons"],
   },
 ]
 

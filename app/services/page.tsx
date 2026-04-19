@@ -7,18 +7,18 @@ import { ArrowRight, Check } from "lucide-react"
 
 const services = [
   {
-    id: "garlands",
-    title: "Garlands",
-    subtitle: "Traditional Malas for Every Occasion",
-    description: "Our handcrafted garlands (malas) are made fresh daily using traditional techniques passed down through generations. Perfect for weddings, pujas, temple offerings, and special ceremonies.",
+    id: "wedding",
+    title: "Wedding",
+    subtitle: "Everything for Your Special Day",
+    description: "Our handcrafted wedding garlands (malas) are made fresh daily using traditional techniques passed down through generations. Plus decorative coconuts, wedding accessories, and hari accessories for your ceremonies.",
     image: "/images/garlands.jpg",
-    productLink: "/products/garlands",
+    productLink: "/products/wedding",
     features: [
       "Wedding Varmalas (bride & groom garlands)",
-      "Pooja garlands for deities",
-      "Temple offerings",
+      "Decorative coconuts",
+      "Wedding accessories",
+      "Hari accessories",
       "Fresh jasmine strings",
-      "Marigold garlands",
       "Rose petal malas",
       "Custom designs available",
     ],

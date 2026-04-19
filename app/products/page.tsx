@@ -16,11 +16,11 @@ const productCategories = [
     href: "/products/fresh-flowers",
   },
   {
-    id: "garlands",
-    name: "Garlands",
-    description: "Traditional Indian garlands for weddings, pooja, and celebrations",
+    id: "wedding",
+    name: "Wedding",
+    description: "Wedding garlands, decorative coconuts, and accessories for your special day",
     image: "/images/garlands.jpg",
-    href: "/products/garlands",
+    href: "/products/wedding",
   },
   {
     id: "bouquets",
