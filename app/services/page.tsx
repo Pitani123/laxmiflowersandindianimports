@@ -147,23 +147,23 @@ const services = [
   //     "Festival bulk orders",
   //   ],
   // },
-  {
-    id: "rentals",
-    title: "Event Rentals",
-    subtitle: "Everything You Need for Your Event",
-    description: "Make your events special with our rental collection. From traditional brass items to modern decoration pieces, we have everything you need to create the perfect setting.",
-    image: "/images/rentals.jpg",
-    productLink: "/products/rentals",
-    features: [
-      "Brass kalash & vessels",
-      "Decorative umbrellas",
-      "Traditional stands",
-      "Ceremony items",
-      "Table settings",
-      "Stage props",
-      "Package deals available",
-    ],
-  },
+  // {
+  //   id: "rentals",
+  //   title: "Event Rentals",
+  //   subtitle: "Everything You Need for Your Event",
+  //   description: "Make your events special with our rental collection. From traditional brass items to modern decoration pieces, we have everything you need to create the perfect setting.",
+  //   image: "/images/rentals.jpg",
+  //   productLink: "/products/rentals",
+  //   features: [
+  //     "Brass kalash & vessels",
+  //     "Decorative umbrellas",
+  //     "Traditional stands",
+  //     "Ceremony items",
+  //     "Table settings",
+  //     "Stage props",
+  //     "Package deals available",
+  //   ],
+  // },
 ]
 
 export default function ServicesPage() {
