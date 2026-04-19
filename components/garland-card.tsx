@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
 import { Label } from '@/components/ui/label'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
-import { ShoppingBag, Check } from 'lucide-react'
+import { ShoppingBag, Check, ChevronLeft, ChevronRight } from 'lucide-react'
 import { useCart } from '@/lib/cart-context'
 import { cn } from '@/lib/utils'
 
@@ -19,7 +19,19 @@ export function GarlandCard({ garland }: GarlandCardProps) {
   const [selectedSizeId, setSelectedSizeId] = useState(garland.sizes[0]?.id || '')
   const [selectedExtras, setSelectedExtras] = useState<string[]>([])
   const [isAdded, setIsAdded] = useState(false)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const { addItem } = useCart()
+
+  const images = garland.images || []
+  const hasMultipleImages = images.length > 1
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % images.length)
+  }
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length)
+  }
 
   const selectedSize = garland.sizes.find(s => s.id === selectedSizeId)
   const availableExtras = getExtrasByIds(garland.availableExtras || [])
@@ -55,7 +67,7 @@ export function GarlandCard({ garland }: GarlandCardProps) {
       name: productName,
       description: garland.description,
       priceInCents: basePrice + extrasTotal,
-      imageUrl: garland.image,
+      imageUrl: images[0] || '',
       category: 'garlands',
     }, 1)
 
@@ -65,15 +77,52 @@ export function GarlandCard({ garland }: GarlandCardProps) {
 
   return (
     <div className="group overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/30 hover:shadow-lg">
-      {/* Image Container - Full image display */}
+      {/* Image Container - Scrollable images */}
       <div className="relative aspect-[2/3] overflow-hidden bg-muted">
         <Image
-          src={garland.image}
-          alt={garland.name}
+          src={images[currentImageIndex] || ''}
+          alt={`${garland.name} - Image ${currentImageIndex + 1}`}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
+        
+        {/* Navigation arrows for multiple images */}
+        {hasMultipleImages && (
+          <>
+            <button
+              onClick={(e) => { e.preventDefault(); prevImage(); }}
+              className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-1.5 text-white opacity-0 transition-opacity hover:bg-black/70 group-hover:opacity-100"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+            <button
+              onClick={(e) => { e.preventDefault(); nextImage(); }}
+              className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-1.5 text-white opacity-0 transition-opacity hover:bg-black/70 group-hover:opacity-100"
+              aria-label="Next image"
+            >
+              <ChevronRight className="h-5 w-5" />
+            </button>
+            
+            {/* Image indicators */}
+            <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={(e) => { e.preventDefault(); setCurrentImageIndex(index); }}
+                  className={cn(
+                    "h-2 w-2 rounded-full transition-all",
+                    index === currentImageIndex
+                      ? "bg-white w-4"
+                      : "bg-white/50 hover:bg-white/80"
+                  )}
+                  aria-label={`Go to image ${index + 1}`}
+                />
+              ))}
+            </div>
+          </>
+        )}
       </div>
 
       <div className="p-5">
