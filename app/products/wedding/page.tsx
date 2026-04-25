@@ -10,7 +10,7 @@ const subcategories = [
     id: "wedding-garlands",
     name: "Wedding Garlands",
     description: "Traditional Indian garlands for weddings and celebrations",
-    image: "/images/garlands.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-22%20at%2010.24.58%20PM-9s9uCjSrK2CYFijcNQxD84SlVqIOAJ.jpeg",
     href: "/products/wedding/wedding-garlands",
     icon: Heart,
   },
@@ -57,7 +57,7 @@ export default function WeddingPage() {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px]">
           <Image
-            src="/images/garlands.jpg"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-22%20at%2010.24.58%20PM-9s9uCjSrK2CYFijcNQxD84SlVqIOAJ.jpeg"
             alt="Wedding Collection"
             fill
             className="object-cover"
