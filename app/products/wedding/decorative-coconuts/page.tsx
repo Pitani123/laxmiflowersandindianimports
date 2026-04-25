@@ -16,7 +16,7 @@ export default function DecorativeCoconutsPage() {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px]">
           <Image
-            src="/images/decorative-coconuts.jpg"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM-vCPPivoLUFvpilgi9XUCQYwaRhBSVC.jpeg"
             alt="Decorative Coconuts"
             fill
             className="object-cover"
