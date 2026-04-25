@@ -26,7 +26,7 @@ const subcategories = [
     id: "decorative-coconuts",
     name: "Decorative Coconuts",
     description: "Beautifully decorated coconuts for wedding ceremonies",
-    image: "/images/decorative-coconuts.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM-vCPPivoLUFvpilgi9XUCQYwaRhBSVC.jpeg",
     href: "/products/wedding/decorative-coconuts",
     icon: Palmtree,
   },
