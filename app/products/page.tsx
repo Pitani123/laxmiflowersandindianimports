@@ -19,7 +19,7 @@ const productCategories = [
     id: "wedding",
     name: "Wedding",
     description: "Wedding garlands, decorative coconuts, and accessories for your special day",
-    image: "/images/garlands.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-22%20at%2010.24.58%20PM-9s9uCjSrK2CYFijcNQxD84SlVqIOAJ.jpeg",
     href: "/products/wedding",
   },
   {
