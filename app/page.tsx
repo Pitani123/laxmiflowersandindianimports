@@ -69,7 +69,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
                   <Image
-                    src="/images/hero-flowers.jpg"
+                    src="/images/fresh-flowers.jpg"
                     alt="Beautiful flower arrangement by Laxmi Flowers"
                     fill
                     className="object-cover"
