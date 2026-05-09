@@ -37,35 +37,69 @@ export default function HomePage() {
           </div>
           
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center">
-              <div className="mb-4 flex flex-wrap items-center justify-center gap-2">
-                <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-xs font-medium text-foreground sm:text-sm">
+            {/* Desktop: badges on sides of heading */}
+            <div className="hidden items-center justify-center gap-4 lg:flex">
+              {/* Left badges */}
+              <div className="flex flex-col items-end gap-2">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-sm font-medium text-foreground">
                   <Sparkles className="h-3.5 w-3.5 text-accent" />
                   <span>Fresh Flowers Daily</span>
                 </div>
-                <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-medium text-foreground sm:text-sm">
-                  <Heart className="h-3.5 w-3.5 text-primary" />
-                  <span>Wedding Garlands</span>
-                </div>
-                <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-xs font-medium text-foreground sm:text-sm">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-sm font-medium text-foreground">
                   <Flower2 className="h-3.5 w-3.5 text-accent" />
                   <span>Flower Bouquets</span>
                 </div>
-                <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-medium text-foreground sm:text-sm">
+              </div>
+              
+              {/* Center heading */}
+              <div className="max-w-xl text-center">
+                <h1 className="font-serif text-4xl font-bold leading-tight text-foreground lg:text-5xl">
+                  <span className="text-balance">Bringing Beauty & Tradition to Your Celebrations</span>
+                </h1>
+              </div>
+              
+              {/* Right badges */}
+              <div className="flex flex-col items-start gap-2">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-foreground">
+                  <Heart className="h-3.5 w-3.5 text-primary" />
+                  <span>Wedding Garlands</span>
+                </div>
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-foreground">
                   <Gift className="h-3.5 w-3.5 text-primary" />
                   <span>Traditional Gifts</span>
                 </div>
               </div>
-              
-              <h1 className="font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-5xl">
+            </div>
+            
+            {/* Mobile: stacked layout */}
+            <div className="text-center lg:hidden">
+              <div className="mb-3 flex flex-wrap items-center justify-center gap-2">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-xs font-medium text-foreground">
+                  <Sparkles className="h-3.5 w-3.5 text-accent" />
+                  <span>Fresh Flowers Daily</span>
+                </div>
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-xs font-medium text-foreground">
+                  <Flower2 className="h-3.5 w-3.5 text-accent" />
+                  <span>Flower Bouquets</span>
+                </div>
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-medium text-foreground">
+                  <Heart className="h-3.5 w-3.5 text-primary" />
+                  <span>Wedding Garlands</span>
+                </div>
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-medium text-foreground">
+                  <Gift className="h-3.5 w-3.5 text-primary" />
+                  <span>Traditional Gifts</span>
+                </div>
+              </div>
+              <h1 className="font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl">
                 <span className="text-balance">Bringing Beauty & Tradition to Your Celebrations</span>
               </h1>
-              
-              <p className="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-                Your trusted source for fresh flowers, traditional garlands, Indian gifts, 
-                and everything you need to make your special moments unforgettable.
-              </p>
             </div>
+            
+            <p className="mx-auto mt-3 max-w-2xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Your trusted source for fresh flowers, traditional garlands, Indian gifts, 
+              and everything you need to make your special moments unforgettable.
+            </p>
           </div>
           
           {/* Product Categories */}
