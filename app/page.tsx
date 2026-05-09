@@ -3,7 +3,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { ProductCategories } from "@/components/product-categories"
-import { Star, Heart, Sparkles } from "lucide-react"
+import { Star, Heart, Sparkles, Flower2, Gift } from "lucide-react"
 
 const features = [
   {
@@ -37,17 +37,31 @@ export default function HomePage() {
           </div>
           
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-3xl text-center">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-accent/20 px-4 py-2 text-sm text-foreground">
-                <Sparkles className="h-4 w-4 text-accent" />
-                <span>Fresh Flowers Daily</span>
+            <div className="mx-auto max-w-4xl text-center">
+              <div className="mb-4 flex flex-wrap items-center justify-center gap-2">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-xs font-medium text-foreground sm:text-sm">
+                  <Sparkles className="h-3.5 w-3.5 text-accent" />
+                  <span>Fresh Flowers Daily</span>
+                </div>
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-medium text-foreground sm:text-sm">
+                  <Heart className="h-3.5 w-3.5 text-primary" />
+                  <span>Wedding Garlands</span>
+                </div>
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-xs font-medium text-foreground sm:text-sm">
+                  <Flower2 className="h-3.5 w-3.5 text-accent" />
+                  <span>Flower Bouquets</span>
+                </div>
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-medium text-foreground sm:text-sm">
+                  <Gift className="h-3.5 w-3.5 text-primary" />
+                  <span>Traditional Gifts</span>
+                </div>
               </div>
               
               <h1 className="font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-5xl">
                 <span className="text-balance">Bringing Beauty & Tradition to Your Celebrations</span>
               </h1>
               
-              <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+              <p className="mx-auto mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
                 Your trusted source for fresh flowers, traditional garlands, Indian gifts, 
                 and everything you need to make your special moments unforgettable.
               </p>
