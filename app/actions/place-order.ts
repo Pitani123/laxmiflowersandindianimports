@@ -1,0 +1,137 @@
+'use server'
+
+import { Resend } from 'resend'
+import { createOrder } from '@/lib/db-orders'
+
+const resend = new Resend(process.env.RESEND_API_KEY)
+
+// Owner email to receive order notifications
+const OWNER_EMAIL = process.env.OWNER_EMAIL || 'owner@example.com'
+const FROM_EMAIL = process.env.FROM_EMAIL || 'orders@resend.dev'
+
+interface CartItem {
+  productId: string
+  productName: string
+  quantity: number
+  priceInCents: number
+}
+
+interface PlaceOrderInput {
+  customerName: string
+  customerEmail: string
+  customerPhone: string
+  shippingAddress?: string
+  items: CartItem[]
+}
+
+function formatPrice(priceInCents: number): string {
+  return `$${(priceInCents / 100).toFixed(2)}`
+}
+
+export async function placeOrder(input: PlaceOrderInput): Promise<{ success: boolean; orderId?: string; error?: string }> {
+  try {
+    // Calculate total
+    const totalInCents = input.items.reduce(
+      (sum, item) => sum + item.priceInCents * item.quantity, 
+      0
+    )
+
+    // Create order items for database
+    const orderItems = input.items.map(item => ({
+      product_id: item.productId,
+      product_name: item.productName,
+      quantity: item.quantity,
+      price_in_cents: item.priceInCents,
+    }))
+
+    // Create order in database
+    const { order, error: orderError } = await createOrder({
+      customer_name: input.customerName,
+      customer_email: input.customerEmail,
+      customer_phone: input.customerPhone,
+      shipping_address: input.shippingAddress,
+      total_in_cents: totalInCents,
+      items: orderItems,
+      status: 'pending',
+    })
+
+    if (orderError || !order) {
+      console.error('Failed to create order:', orderError)
+      return { success: false, error: 'Failed to create order. Please try again.' }
+    }
+
+    // Build order items HTML for email
+    const itemsHtml = input.items.map(item => `
+      <tr>
+        <td style="padding: 8px; border-bottom: 1px solid #eee;">${item.productName}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #eee; text-align: center;">${item.quantity}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #eee; text-align: right;">${formatPrice(item.priceInCents)}</td>
+        <td style="padding: 8px; border-bottom: 1px solid #eee; text-align: right;">${formatPrice(item.priceInCents * item.quantity)}</td>
+      </tr>
+    `).join('')
+
+    // Send email to owner
+    const { error: emailError } = await resend.emails.send({
+      from: FROM_EMAIL,
+      to: OWNER_EMAIL,
+      subject: `New Order #${order.id.slice(0, 8)} from ${input.customerName}`,
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h1 style="color: #333; border-bottom: 2px solid #e91e63; padding-bottom: 10px;">
+            New Order Received!
+          </h1>
+          
+          <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h2 style="margin-top: 0; color: #555;">Customer Information</h2>
+            <p><strong>Name:</strong> ${input.customerName}</p>
+            <p><strong>Email:</strong> ${input.customerEmail}</p>
+            <p><strong>Phone:</strong> ${input.customerPhone}</p>
+            ${input.shippingAddress ? `<p><strong>Address:</strong> ${input.shippingAddress}</p>` : ''}
+          </div>
+          
+          <h2 style="color: #555;">Order Details</h2>
+          <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+              <tr style="background: #f5f5f5;">
+                <th style="padding: 10px; text-align: left;">Product</th>
+                <th style="padding: 10px; text-align: center;">Qty</th>
+                <th style="padding: 10px; text-align: right;">Price</th>
+                <th style="padding: 10px; text-align: right;">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${itemsHtml}
+            </tbody>
+            <tfoot>
+              <tr style="background: #f5f5f5;">
+                <td colspan="3" style="padding: 10px; text-align: right;"><strong>Order Total:</strong></td>
+                <td style="padding: 10px; text-align: right;"><strong style="color: #e91e63;">${formatPrice(totalInCents)}</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+          
+          <div style="margin-top: 30px; padding: 15px; background: #fff3e0; border-radius: 8px;">
+            <p style="margin: 0; color: #e65100;">
+              <strong>Action Required:</strong> Please contact the customer to confirm the order and arrange payment.
+            </p>
+          </div>
+          
+          <p style="color: #999; font-size: 12px; margin-top: 30px;">
+            Order ID: ${order.id}<br>
+            Order Date: ${new Date().toLocaleString()}
+          </p>
+        </div>
+      `,
+    })
+
+    if (emailError) {
+      console.error('Failed to send email:', emailError)
+      // Order was created, but email failed - still return success
+    }
+
+    return { success: true, orderId: order.id }
+  } catch (error) {
+    console.error('Place order error:', error)
+    return { success: false, error: 'Failed to place order. Please try again.' }
+  }
+}

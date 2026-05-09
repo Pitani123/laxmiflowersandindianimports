@@ -145,20 +145,20 @@ export default function ReviewsPage() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-secondary py-20 lg:py-28">
+        <section className="bg-secondary py-6 lg:py-8">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="mb-3 text-sm font-medium uppercase tracking-wider text-primary">Customer Reviews</p>
-              <h1 className="font-serif text-4xl font-bold leading-tight text-foreground sm:text-5xl">
+              <p className="mb-2 text-sm font-medium uppercase tracking-wider text-primary">Customer Reviews</p>
+              <h1 className="font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl">
                 <span className="text-balance">What Our Customers Say</span>
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                 We value your feedback! Read what our customers have to say about their experience 
                 with Laxmi Flowers and Indian Imports, and share your own story.
               </p>
               
               {/* Overall Rating */}
-              <div className="mt-8 flex items-center justify-center gap-4">
+              <div className="mt-5 flex items-center justify-center gap-4">
                 <div className="flex items-center gap-2">
                   <span className="text-4xl font-bold text-foreground">{averageRating.toFixed(1)}</span>
                   <div className="flex flex-col items-start">
@@ -212,7 +212,7 @@ export default function ReviewsPage() {
         </section> */}
 
         {/* Submit Review Form */}
-        <section className="bg-card py-20 lg:py-28">
+        <section className="bg-card py-10 lg:py-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid gap-12 lg:grid-cols-2">
               <div className="space-y-6">
