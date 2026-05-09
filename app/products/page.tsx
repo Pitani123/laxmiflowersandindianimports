@@ -104,21 +104,21 @@ export default async function ProductsPage() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-secondary py-20 lg:py-28">
+        <section className="bg-secondary py-6 lg:py-8">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="mb-3 text-sm font-medium uppercase tracking-wider text-primary">Our Products</p>
-              <h1 className="font-serif text-4xl font-bold leading-tight text-foreground sm:text-5xl">
+              <p className="mb-2 text-sm font-medium uppercase tracking-wider text-primary">Our Products</p>
+              <h1 className="font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl">
                 <span className="text-balance">Explore Our Collection</span>
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                 Browse our wide selection of fresh flowers, garlands, Indian gifts, traditional dresses, 
                 silver items, and more. Add items to your cart and checkout online!
               </p>
             </div>
             
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <div className="flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-accent-foreground">
+            <div className="mt-5 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <div className="flex items-center gap-2 rounded-full bg-accent px-6 py-2.5 text-accent-foreground">
                 <ShoppingBag className="h-5 w-5" />
                 <span className="font-medium">Shop Online</span>
               </div>
@@ -133,9 +133,9 @@ export default async function ProductsPage() {
         </section>
 
         {/* Categories Grid */}
-        <section className="py-20 lg:py-28">
+        <section className="py-10 lg:py-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <h2 className="mb-10 text-center font-serif text-3xl font-bold">Shop by Category</h2>
+            <h2 className="mb-8 text-center font-serif text-2xl font-bold sm:text-3xl">Shop by Category</h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {productCategories.map((category) => (
                 <Link
