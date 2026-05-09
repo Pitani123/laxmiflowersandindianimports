@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
@@ -31,57 +30,32 @@ export default function HomePage() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-secondary py-20 lg:py-32">
+        <section className="relative overflow-hidden bg-secondary py-12 lg:py-16">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute left-1/4 top-1/4 h-96 w-96 rounded-full bg-primary blur-3xl" />
             <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-accent blur-3xl" />
           </div>
           
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid items-center gap-12 lg:grid-cols-2">
-              <div className="space-y-8">
-                <div className="inline-flex items-center gap-2 rounded-full bg-accent/20 px-4 py-2 text-sm text-foreground">
-                  <Sparkles className="h-4 w-4 text-accent" />
-                  <span>Fresh Flowers Daily</span>
-                </div>
-                
-                <h1 className="font-serif text-4xl font-bold leading-tight text-foreground sm:text-5xl lg:text-6xl">
-                  <span className="text-balance">Bringing Beauty & Tradition to Your Celebrations</span>
-                </h1>
-                
-                <p className="max-w-lg text-lg leading-relaxed text-muted-foreground">
-                  Your trusted source for fresh flowers, traditional garlands, Indian gifts, 
-                  and everything you need to make your special moments unforgettable.
-                </p>
+            <div className="mx-auto max-w-3xl text-center">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-accent/20 px-4 py-2 text-sm text-foreground">
+                <Sparkles className="h-4 w-4 text-accent" />
+                <span>Fresh Flowers Daily</span>
               </div>
               
-              <div className="relative">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
-                  <Image
-                    src="/images/fresh-flowers.jpg"
-                    alt="Beautiful flower arrangement by Laxmi Flowers"
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                </div>
-                <div className="absolute -bottom-6 -left-6 rounded-xl bg-card p-6 shadow-xl">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/20">
-                      <Star className="h-6 w-6 text-accent" />
-                    </div>
-                    <div>
-                      <p className="text-2xl font-bold text-foreground">100%</p>
-                      <p className="text-sm text-muted-foreground">Fresh Quality</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h1 className="font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-5xl">
+                <span className="text-balance">Bringing Beauty & Tradition to Your Celebrations</span>
+              </h1>
+              
+              <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+                Your trusted source for fresh flowers, traditional garlands, Indian gifts, 
+                and everything you need to make your special moments unforgettable.
+              </p>
             </div>
           </div>
           
           {/* Product Categories */}
-          <div className="relative mx-auto mt-16 max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="relative mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-8 text-center">
               <h2 className="font-serif text-2xl font-bold text-foreground sm:text-3xl">
                 Shop by Category
