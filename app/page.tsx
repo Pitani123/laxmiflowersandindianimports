@@ -56,14 +56,9 @@ export default function HomePage() {
           
           {/* Product Categories */}
           <div className="relative mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-8 text-center">
-              <h2 className="font-serif text-2xl font-bold text-foreground sm:text-3xl">
-                Shop by Category
-              </h2>
-              <p className="mt-2 text-muted-foreground">
-                Find exactly what you need for your celebration
-              </p>
-            </div>
+            <h2 className="mb-6 text-center font-serif text-2xl font-bold text-foreground sm:text-3xl">
+              Shop by Category
+            </h2>
             <ProductCategories />
           </div>
         </section>
