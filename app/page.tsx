@@ -3,7 +3,8 @@ import Image from "next/image"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Star, Heart, Sparkles } from "lucide-react"
+import { ProductCategories } from "@/components/product-categories"
+import { Star, Heart, Sparkles } from "lucide-react"
 
 const features = [
   {
@@ -52,18 +53,6 @@ export default function HomePage() {
                   Your trusted source for fresh flowers, traditional garlands, Indian gifts, 
                   and everything you need to make your special moments unforgettable.
                 </p>
-                
-                <div className="flex flex-col gap-4 sm:flex-row">
-                  <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                    <Link href="/services">
-                      Explore Our Services
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline" size="lg" className="border-foreground/20">
-                    <Link href="/products">View Products</Link>
-                  </Button>
-                </div>
               </div>
               
               <div className="relative">
@@ -89,6 +78,19 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+          </div>
+          
+          {/* Product Categories */}
+          <div className="relative mx-auto mt-16 max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-8 text-center">
+              <h2 className="font-serif text-2xl font-bold text-foreground sm:text-3xl">
+                Shop by Category
+              </h2>
+              <p className="mt-2 text-muted-foreground">
+                Find exactly what you need for your celebration
+              </p>
+            </div>
+            <ProductCategories />
           </div>
         </section>
 
