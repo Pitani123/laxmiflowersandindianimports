@@ -46,14 +46,14 @@ export default function LocationsPage() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-secondary py-20 lg:py-28">
+        <section className="bg-secondary py-6 lg:py-8">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="mb-3 text-sm font-medium uppercase tracking-wider text-primary">Visit Us</p>
-              <h1 className="font-serif text-4xl font-bold leading-tight text-foreground sm:text-5xl">
+              <p className="mb-2 text-sm font-medium uppercase tracking-wider text-primary">Visit Us</p>
+              <h1 className="font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl">
                 <span className="text-balance">Our Store Locations</span>
               </h1>
-              <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                 We would love to see you in person! Visit one of our stores to explore our full 
                 selection of fresh flowers, garlands, Indian gifts, and more. Our friendly team 
                 is ready to help you.
@@ -63,7 +63,7 @@ export default function LocationsPage() {
         </section>
 
         {/* Locations */}
-        <section className="py-20 lg:py-28">
+        <section className="py-10 lg:py-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="space-y-16">
               {locations.map((location) => (
@@ -154,7 +154,7 @@ export default function LocationsPage() {
 
 
         {/* Contact Form Section */}
-        <section className="py-20 lg:py-28">
+        <section className="py-10 lg:py-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid gap-12 lg:grid-cols-2">
               <div className="space-y-6">
