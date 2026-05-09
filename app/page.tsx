@@ -38,7 +38,7 @@ export default function HomePage() {
           
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             {/* Desktop: badges on sides of heading */}
-            <div className="hidden items-center justify-center gap-4 lg:flex">
+            <div className="hidden items-center justify-between lg:flex">
               {/* Left badges */}
               <div className="flex flex-col items-end gap-2">
                 <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-sm font-medium text-foreground">
@@ -52,9 +52,9 @@ export default function HomePage() {
               </div>
               
               {/* Center heading */}
-              <div className="max-w-xl text-center">
+              <div className="max-w-md text-center">
                 <h1 className="font-serif text-4xl font-bold leading-tight text-foreground lg:text-5xl">
-                  <span className="text-balance">Bringing Beauty & Tradition to Your Celebrations</span>
+                  Bringing Beauty & Tradition to Your Celebrations
                 </h1>
               </div>
               
