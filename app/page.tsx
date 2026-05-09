@@ -52,8 +52,8 @@ export default function HomePage() {
               </div>
               
               {/* Center heading */}
-              <div className="max-w-md text-center">
-                <h1 className="font-serif text-4xl font-bold leading-tight text-foreground lg:text-5xl">
+              <div className="max-w-lg text-center">
+                <h1 className="font-serif text-4xl font-bold leading-tight text-foreground">
                   Bringing Beauty & Tradition to Your Celebrations
                 </h1>
               </div>
