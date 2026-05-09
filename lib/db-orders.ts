@@ -1,5 +1,6 @@
 import 'server-only'
-import { createClient } from '@/lib/supabase/server'
+import { promises as fs } from 'fs'
+import path from 'path'
 
 export interface OrderItem {
   product_id: string
@@ -32,15 +33,49 @@ export interface DBOrder {
   notes: string | null
   created_at: string
   updated_at: string
+  items?: OrderItem[]
+}
+
+interface OrdersData {
+  orders: DBOrder[]
+}
+
+const ORDERS_FILE_PATH = path.join(process.cwd(), 'data', 'orders.json')
+
+// Helper to read orders from file
+async function readOrdersFile(): Promise<OrdersData> {
+  try {
+    const data = await fs.readFile(ORDERS_FILE_PATH, 'utf-8')
+    return JSON.parse(data)
+  } catch {
+    // If file doesn't exist, return empty orders
+    return { orders: [] }
+  }
+}
+
+// Helper to write orders to file
+async function writeOrdersFile(data: OrdersData): Promise<void> {
+  // Ensure the data directory exists
+  const dataDir = path.dirname(ORDERS_FILE_PATH)
+  try {
+    await fs.mkdir(dataDir, { recursive: true })
+  } catch {
+    // Directory already exists
+  }
+  await fs.writeFile(ORDERS_FILE_PATH, JSON.stringify(data, null, 2), 'utf-8')
+}
+
+// Generate a simple unique ID
+function generateId(): string {
+  return `order_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`
 }
 
 export async function createOrder(input: CreateOrderInput): Promise<{ order: DBOrder | null; error: string | null }> {
-  const supabase = await createClient()
-  
-  // Create the order
-  const { data: order, error: orderError } = await supabase
-    .from('orders')
-    .insert({
+  try {
+    const ordersData = await readOrdersFile()
+    
+    const newOrder: DBOrder = {
+      id: generateId(),
       customer_name: input.customer_name,
       customer_email: input.customer_email,
       customer_phone: input.customer_phone,
@@ -49,98 +84,78 @@ export async function createOrder(input: CreateOrderInput): Promise<{ order: DBO
       stripe_session_id: input.stripe_session_id || null,
       notes: input.notes || null,
       status: 'pending',
-    })
-    .select()
-    .single()
-  
-  if (orderError) {
-    console.error('Error creating order:', orderError)
-    return { order: null, error: orderError.message }
+      sms_sent: false,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+      items: input.items,
+    }
+    
+    ordersData.orders.push(newOrder)
+    await writeOrdersFile(ordersData)
+    
+    return { order: newOrder, error: null }
+  } catch (error) {
+    console.error('Error creating order:', error)
+    return { order: null, error: error instanceof Error ? error.message : 'Unknown error' }
   }
-  
-  // Create order items
-  const orderItems = input.items.map(item => ({
-    order_id: order.id,
-    product_id: item.product_id,
-    product_name: item.product_name,
-    quantity: item.quantity,
-    price_in_cents: item.price_in_cents,
-  }))
-  
-  const { error: itemsError } = await supabase
-    .from('order_items')
-    .insert(orderItems)
-  
-  if (itemsError) {
-    console.error('Error creating order items:', itemsError)
-    // Note: order was created, just items failed
-  }
-  
-  return { order, error: null }
 }
 
 export async function updateOrderStatus(orderId: string, status: string): Promise<boolean> {
-  const supabase = await createClient()
-  
-  const { error } = await supabase
-    .from('orders')
-    .update({ status, updated_at: new Date().toISOString() })
-    .eq('id', orderId)
-  
-  if (error) {
+  try {
+    const ordersData = await readOrdersFile()
+    const orderIndex = ordersData.orders.findIndex(o => o.id === orderId)
+    
+    if (orderIndex === -1) {
+      return false
+    }
+    
+    ordersData.orders[orderIndex].status = status
+    ordersData.orders[orderIndex].updated_at = new Date().toISOString()
+    
+    await writeOrdersFile(ordersData)
+    return true
+  } catch (error) {
     console.error('Error updating order status:', error)
     return false
   }
-  
-  return true
 }
 
 export async function markOrderSMSSent(orderId: string): Promise<boolean> {
-  const supabase = await createClient()
-  
-  const { error } = await supabase
-    .from('orders')
-    .update({ sms_sent: true, updated_at: new Date().toISOString() })
-    .eq('id', orderId)
-  
-  if (error) {
+  try {
+    const ordersData = await readOrdersFile()
+    const orderIndex = ordersData.orders.findIndex(o => o.id === orderId)
+    
+    if (orderIndex === -1) {
+      return false
+    }
+    
+    ordersData.orders[orderIndex].sms_sent = true
+    ordersData.orders[orderIndex].updated_at = new Date().toISOString()
+    
+    await writeOrdersFile(ordersData)
+    return true
+  } catch (error) {
     console.error('Error marking SMS sent:', error)
     return false
   }
-  
-  return true
 }
 
 export async function getOrderById(orderId: string): Promise<DBOrder | null> {
-  const supabase = await createClient()
-  
-  const { data, error } = await supabase
-    .from('orders')
-    .select('*')
-    .eq('id', orderId)
-    .single()
-  
-  if (error) {
+  try {
+    const ordersData = await readOrdersFile()
+    return ordersData.orders.find(o => o.id === orderId) || null
+  } catch (error) {
     console.error('Error fetching order:', error)
     return null
   }
-  
-  return data
 }
 
 export async function getOrderByStripeSession(sessionId: string): Promise<DBOrder | null> {
-  const supabase = await createClient()
-  
-  const { data, error } = await supabase
-    .from('orders')
-    .select('*')
-    .eq('stripe_session_id', sessionId)
-    .single()
-  
-  if (error) {
+  try {
+    const ordersData = await readOrdersFile()
+    return ordersData.orders.find(o => o.stripe_session_id === sessionId) || null
+  } catch (error) {
     console.error('Error fetching order by stripe session:', error)
     return null
   }
-  
-  return data
 }
