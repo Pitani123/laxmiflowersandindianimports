@@ -60,12 +60,12 @@ export default function HomePage() {
               
               {/* Right badges */}
               <div className="flex flex-col items-start gap-2">
-                <div className="inline-flex w-44 items-center justify-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-foreground">
-                  <Heart className="h-3.5 w-3.5 text-primary" />
+                <div className="inline-flex w-44 items-center justify-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-sm font-medium text-foreground">
+                  <Heart className="h-3.5 w-3.5 text-accent" />
                   <span>Wedding Garlands</span>
                 </div>
-                <div className="inline-flex w-44 items-center justify-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-sm font-medium text-foreground">
-                  <Gift className="h-3.5 w-3.5 text-primary" />
+                <div className="inline-flex w-44 items-center justify-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-sm font-medium text-foreground">
+                  <Gift className="h-3.5 w-3.5 text-accent" />
                   <span>Traditional Gifts</span>
                 </div>
               </div>
@@ -82,12 +82,12 @@ export default function HomePage() {
                   <Flower2 className="h-3.5 w-3.5 text-accent" />
                   <span>Flower Bouquets</span>
                 </div>
-                <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-medium text-foreground">
-                  <Heart className="h-3.5 w-3.5 text-primary" />
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-xs font-medium text-foreground">
+                  <Heart className="h-3.5 w-3.5 text-accent" />
                   <span>Wedding Garlands</span>
                 </div>
-                <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-medium text-foreground">
-                  <Gift className="h-3.5 w-3.5 text-primary" />
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-xs font-medium text-foreground">
+                  <Gift className="h-3.5 w-3.5 text-accent" />
                   <span>Traditional Gifts</span>
                 </div>
               </div>
