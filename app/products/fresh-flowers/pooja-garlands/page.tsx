@@ -18,7 +18,7 @@ export default async function PoojaGarlandsPage() {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px]">
           <Image
-            src="/images/garlands.jpg"
+            src="/images/pooja-garlands-collage.jpg"
             alt="Pooja Garlands"
             fill
             className="object-cover"

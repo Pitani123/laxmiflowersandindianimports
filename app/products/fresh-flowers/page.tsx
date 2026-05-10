@@ -19,7 +19,7 @@ const subcategories = [
     id: "pooja-garlands",
     name: "Pooja Garlands",
     description: "Traditional garlands for temple and pooja ceremonies",
-    image: "/images/garlands.jpg",
+    image: "/images/pooja-garlands-collage.jpg",
     href: "/products/fresh-flowers/pooja-garlands",
     icon: Heart,
   },
