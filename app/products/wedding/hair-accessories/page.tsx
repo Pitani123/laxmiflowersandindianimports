@@ -15,16 +15,46 @@ export default async function HariAccessoriesPage() {
       <Navigation />
       
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative h-[50vh] min-h-[400px]">
-          <Image
-            src="/images/hair-accessories.jpg"
-            alt="Hair Accessories"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-transparent" />
+        {/* Hero Section with Product Image Collage */}
+        <section className="relative h-[50vh] min-h-[400px] overflow-hidden bg-secondary">
+          {/* Image Collage Grid */}
+          <div className="absolute inset-0 grid grid-cols-3 gap-1">
+            <div className="relative col-span-1 row-span-2">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%281%29-k4nVi5pHpcBGIqnN43h2oMIHNjb1N8.jpeg"
+                alt="Jasmine Gajra"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+            <div className="relative col-span-2">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.19%20AM-TuE7NV5SCeRqPQHdS0cWLUMVqyKxfN.jpeg"
+                alt="Three Layer Poolajada Veni"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+            <div className="relative">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-18%20at%207.42.20%20PM%20%284%29-O66DQv1cVUo1VHqpPINcXsOD6VnCUC.jpeg"
+                alt="Pink Hair Accessory"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-18%20at%207.42.20%20PM%20%286%29-yWO4v6HM03hdzqBVIlNWAhWNdTI5T2.jpeg"
+                alt="Traditional Hair Flowers"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/40 to-foreground/20" />
           <div className="absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
               <Link href="/products/wedding" className="mb-4 inline-flex items-center gap-2 text-sm text-card/80 hover:text-card">
