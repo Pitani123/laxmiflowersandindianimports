@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
+import { FreshFlowersCollage } from "@/components/fresh-flowers-collage"
 import { ArrowLeft, Flower2, ShoppingBag, Leaf, Heart } from "lucide-react"
 
 const subcategories = [
@@ -30,15 +31,9 @@ export default function FreshFlowersPage() {
       <Navigation />
       
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative h-[50vh] min-h-[400px]">
-          <Image
-            src="/images/fresh-flowers.jpg"
-            alt="Fresh Flowers"
-            fill
-            className="object-cover"
-            priority
-          />
+        {/* Hero Section with Product Image Collage */}
+        <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
+          <FreshFlowersCollage />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-transparent" />
           <div className="absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
