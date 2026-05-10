@@ -39,16 +39,16 @@ export default async function HariAccessoriesPage() {
             </div>
             <div className="relative">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-18%20at%207.42.20%20PM%20%284%29-O66DQv1cVUo1VHqpPINcXsOD6VnCUC.jpeg"
-                alt="Pink Hair Accessory"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.37%20PM%20%284%29-RLRQ4PKeeHDLrWmoiIbxeOOw6S3vrf.jpeg"
+                alt="Golden Flower Veni"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="relative">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-18%20at%207.42.20%20PM%20%286%29-yWO4v6HM03hdzqBVIlNWAhWNdTI5T2.jpeg"
-                alt="Traditional Hair Flowers"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.37%20PM%20%283%29-9kcCgxmY7HUz4xN2FDnvwRngpYWrHd.jpeg"
+                alt="Red Flower Veni"
                 fill
                 className="object-cover"
               />
