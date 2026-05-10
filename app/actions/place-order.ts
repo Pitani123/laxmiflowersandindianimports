@@ -124,12 +124,12 @@ export async function placeOrder(input: PlaceOrderInput): Promise<{ success: boo
         
         ${isCustomer ? `
         <div style="margin-top: 30px; padding: 20px; background: #fce4ec; border-radius: 8px;">
-          <h3 style="margin-top: 0; color: #c2185b;">Contact Us</h3>
+          <h3 style="margin-top: 0; color: #c2185b;">Contact Us (Main Store)</h3>
           <p style="margin: 0; color: #555; font-size: 14px;">
-            <strong>Laxmi Flowers & Indian Imports</strong><br>
-            Phone: (510) 824-8974<br>
-            Email: laxmiindianimports@gmail.com<br>
-            Address: 2080 E Capitol Expy Ste A, San Jose, CA 95122
+            <strong>Laxmi Flowers</strong><br>
+            Phone: +1-469-988-9029<br>
+            Email: laxmiflowers.aubrey@gmail.com<br>
+            Address: 2881 FM1385, Aubrey, TX 76227, USA
           </p>
         </div>
         ` : ''}
