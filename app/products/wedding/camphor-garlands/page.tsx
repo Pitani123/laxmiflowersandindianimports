@@ -99,7 +99,7 @@ export default function CamphorGarlandsPage() {
               <Button asChild size="lg" variant="secondary" className="bg-card text-foreground hover:bg-card/90">
                 <Link href="/locations">Find a Store</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button asChild size="lg" variant="secondary" className="bg-card text-foreground hover:bg-card/90">
                 <a href="tel:+14699889029">Call Us</a>
               </Button>
             </div>
