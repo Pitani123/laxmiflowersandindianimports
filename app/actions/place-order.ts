@@ -80,6 +80,10 @@ export async function placeOrder(input: PlaceOrderInput): Promise<{ success: boo
           ${isCustomer ? 'Thank You for Your Order!' : 'New Order Received!'}
         </h1>
         
+        <p style="color: #555; font-size: 14px;">
+          Order #${order.id.slice(0, 8).toUpperCase()}
+        </p>
+        
         <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
           <h2 style="margin-top: 0; color: #555;">Customer Information</h2>
           <p><strong>Name:</strong> ${input.customerName}</p>
@@ -117,6 +121,18 @@ export async function placeOrder(input: PlaceOrderInput): Promise<{ success: boo
             }
           </p>
         </div>
+        
+        ${isCustomer ? `
+        <div style="margin-top: 30px; padding: 20px; background: #fce4ec; border-radius: 8px;">
+          <h3 style="margin-top: 0; color: #c2185b;">Contact Us</h3>
+          <p style="margin: 0; color: #555; font-size: 14px;">
+            <strong>Laxmi Flowers & Indian Imports</strong><br>
+            Phone: (510) 824-8974<br>
+            Email: laxmiindianimports@gmail.com<br>
+            Address: 2080 E Capitol Expy Ste A, San Jose, CA 95122
+          </p>
+        </div>
+        ` : ''}
         
         <p style="color: #999; font-size: 12px; margin-top: 30px;">
           Order ID: ${order.id}<br>

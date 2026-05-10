@@ -20,6 +20,7 @@ export default function CheckoutPage() {
   const [checkoutComplete, setCheckoutComplete] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [orderId, setOrderId] = useState<string | null>(null)
   
   // Customer information form state
   const [customerName, setCustomerName] = useState('')
@@ -79,6 +80,7 @@ export default function CheckoutPage() {
       })
       
       if (result.success) {
+        setOrderId(result.orderId || null)
         setCheckoutComplete(true)
         clearCart()
       } else {
@@ -137,12 +139,29 @@ export default function CheckoutPage() {
           <div className="text-center max-w-md">
             <CheckCircle className="mx-auto mb-6 h-20 w-20 text-green-500" />
             <h1 className="font-serif text-3xl font-bold text-foreground">Thank You for Your Order!</h1>
+            {orderId && (
+              <p className="mt-2 text-sm font-medium text-primary">
+                Order #{orderId.slice(0, 8).toUpperCase()}
+              </p>
+            )}
             <p className="mt-4 text-lg text-muted-foreground">
               Your order has been received successfully. We will contact you shortly to confirm your order and arrange payment.
             </p>
             <p className="mt-2 text-muted-foreground">
               We&apos;ll reach out to you at: <strong>{customerPhone}</strong>
             </p>
+            
+            {/* Contact Information */}
+            <div className="mt-6 rounded-lg bg-secondary/50 p-4 text-left">
+              <h3 className="font-semibold text-foreground mb-2">Contact Us</h3>
+              <p className="text-sm text-muted-foreground">
+                <strong>Laxmi Flowers & Indian Imports</strong><br />
+                Phone: (510) 824-8974<br />
+                Email: laxmiindianimports@gmail.com<br />
+                Address: 2080 E Capitol Expy Ste A, San Jose, CA 95122
+              </p>
+            </div>
+
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
               <Button asChild>
                 <Link href="/products">Continue Shopping</Link>
