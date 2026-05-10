@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { WeddingAccessoriesCollage } from "@/components/wedding-accessories-collage"
 import { HairAccessoriesCollage } from "@/components/hair-accessories-collage"
+import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
 import { ArrowLeft, Heart, ShoppingBag, Palmtree, Gem, Sparkles, Flame } from "lucide-react"
 
 const subcategories = [
@@ -112,7 +113,9 @@ export default function WeddingPage() {
                     href={category.href}
                     className="group relative aspect-[4/3] overflow-hidden rounded-xl"
                   >
-                    {category.id === "wedding-accessories" ? (
+                    {category.id === "wedding-garlands" ? (
+                      <WeddingGarlandsCollage />
+                    ) : category.id === "wedding-accessories" ? (
                       <WeddingAccessoriesCollage />
                     ) : category.id === "hair-accessories" ? (
                       <HairAccessoriesCollage />
