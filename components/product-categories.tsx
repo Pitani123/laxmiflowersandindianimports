@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 import { WeddingGarlandsCollage } from "./wedding-garlands-collage"
+import { FreshFlowersCollage } from "./fresh-flowers-collage"
 
 const categories = [
   {
@@ -49,6 +50,8 @@ export function ProductCategories() {
             <div className="relative aspect-[4/3] overflow-hidden">
               {category.name === "Wedding" ? (
                 <WeddingGarlandsCollage />
+              ) : category.name === "Fresh Flowers" ? (
+                <FreshFlowersCollage />
               ) : (
                 <Image
                   src={category.image}

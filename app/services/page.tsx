@@ -4,6 +4,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
+import { FreshFlowersCollage } from "@/components/fresh-flowers-collage"
 import { ArrowRight, Check } from "lucide-react"
 
 const services = [
@@ -219,6 +220,8 @@ export default function ServicesPage() {
                     <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
                       {service.id === "wedding" ? (
                         <WeddingGarlandsCollage />
+                      ) : service.id === "fresh-flowers" ? (
+                        <FreshFlowersCollage />
                       ) : (
                         <Image
                           src={service.image}
