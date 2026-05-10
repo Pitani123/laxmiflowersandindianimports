@@ -10,7 +10,7 @@ const OWNER_EMAILS = (process.env.OWNER_EMAILS || process.env.OWNER_EMAIL || 'ow
   .split(',')
   .map(email => email.trim())
   .filter(email => email.length > 0)
-const FROM_EMAIL = process.env.FROM_EMAIL || 'orders@resend.dev'
+const FROM_EMAIL = process.env.FROM_EMAIL || 'onboarding@resend.dev'
 
 interface CartItem {
   productId: string
