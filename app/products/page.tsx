@@ -12,7 +12,7 @@ const productCategories = [
     id: "fresh-flowers",
     name: "Fresh Flowers",
     description: "Daily fresh flowers for home and temple",
-    image: "/images/fresh-flowers.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Marigold%20Loose%20-%20Orange-IgCeGBdV32NmCsjjDQi4z9xYIEGyRg.jpeg",
     href: "/products/fresh-flowers",
   },
   {
@@ -26,7 +26,7 @@ const productCategories = [
     id: "bouquets",
     name: "Flower Bouquets",
     description: "Beautiful arrangements for every occasion",
-    image: "/images/bouquets.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-21%20at%2010.21.26%20PM%20%281%29-UMR1pm60R9XMY7mWGZ2tMdpDaQoeSg.jpeg",
     href: "/products/bouquets",
   },
   // Temporarily disabled - Wedding Decorations
