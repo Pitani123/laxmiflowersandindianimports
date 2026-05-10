@@ -4,6 +4,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { WeddingAccessoriesCollage } from "@/components/wedding-accessories-collage"
+import { HairAccessoriesCollage } from "@/components/hair-accessories-collage"
 import { ArrowLeft, Heart, ShoppingBag, Palmtree, Gem, Sparkles, Flame } from "lucide-react"
 
 const subcategories = [
@@ -113,6 +114,8 @@ export default function WeddingPage() {
                   >
                     {category.id === "wedding-accessories" ? (
                       <WeddingAccessoriesCollage />
+                    ) : category.id === "hair-accessories" ? (
+                      <HairAccessoriesCollage />
                     ) : (
                       <Image
                         src={category.image}
