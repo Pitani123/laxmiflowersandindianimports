@@ -65,8 +65,11 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
   {
     id: "decorative-coconut-007",
     name: "DecorativeCoconut_007",
-    description: "Elegant dark green coconut with traditional Tirumala Namam design in silver and red rhinestones, scattered crystal accents, and decorative pearl bow topper with gold trim.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.10%20AM-XwMclB6qTwnaO3Gynp1bbYhJNw4rJ6.jpeg"],
+    description: "Elegant green coconut with traditional Tirumala Namam design in silver and red rhinestones, scattered crystal accents, and decorative topper with gold trim. Perfect for religious ceremonies.",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.10%20AM-XwMclB6qTwnaO3Gynp1bbYhJNw4rJ6.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%283%29-hwrXFqRp23wSRbfryUCAQcJHFhJOlF.jpeg"
+    ],
     priceInCents: 5500, // $55.00
     customizable: true,
   },
@@ -75,14 +78,6 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
     name: "DecorativeCoconut_008",
     description: "Vibrant green coconut featuring Om symbol in lotus mandala design with red center, golden Om lettering, crystal rhinestone petals, and pearl flower accents with decorative pearl bow topper.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%282%29-WA52eN3TJDtzWIHY8Qe44OHi9SczgU.jpeg"],
-    priceInCents: 5500, // $55.00
-    customizable: true,
-  },
-  {
-    id: "decorative-coconut-009",
-    name: "DecorativeCoconut_009",
-    description: "Classic green coconut with Tirumala Namam design featuring silver and red rhinestone embellishments, golden rope topper with red accent trim. Perfect for religious ceremonies.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%283%29-hwrXFqRp23wSRbfryUCAQcJHFhJOlF.jpeg"],
     priceInCents: 5500, // $55.00
     customizable: true,
   },
