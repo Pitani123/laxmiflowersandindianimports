@@ -94,6 +94,19 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     sizes: garikaMunthaluSizes,
     potSize: "5/6 inch clay pot",
     customizable: true
+  },
+  {
+    id: "garika-munthalu-007",
+    name: "GarikaMunthalu_007",
+    description: "Traditional decorated clay pots available in red and green with golden base, pearl bead rim, gold chain embellishments, and elegant scalloped patterns",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.41.55%20PM%20%282%29-rmqY8eGdSSG0xH0GwrJp9gXK9JgOOB.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.41.55%20PM-QbZg4LfKKaS5KkAPmiZFyyiXij5Z59.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.41.55%20PM%20%281%29-1pLnn3gO4RISA7RitjPMWuRwevu2ea.jpeg"
+    ],
+    sizes: garikaMunthaluSizes,
+    potSize: "5/6 inch clay pot",
+    customizable: true
   }
 ]
 
