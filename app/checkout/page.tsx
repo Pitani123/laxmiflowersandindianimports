@@ -153,12 +153,12 @@ export default function CheckoutPage() {
             
             {/* Contact Information */}
             <div className="mt-6 rounded-lg bg-secondary/50 p-4 text-left">
-              <h3 className="font-semibold text-foreground mb-2">Contact Us</h3>
+              <h3 className="font-semibold text-foreground mb-2">Contact Us (Main Store)</h3>
               <p className="text-sm text-muted-foreground">
-                <strong>Laxmi Flowers & Indian Imports</strong><br />
-                Phone: (510) 824-8974<br />
-                Email: laxmiindianimports@gmail.com<br />
-                Address: 2080 E Capitol Expy Ste A, San Jose, CA 95122
+                <strong>Laxmi Flowers</strong><br />
+                Phone: +1-469-988-9029<br />
+                Email: laxmiflowers.aubrey@gmail.com<br />
+                Address: 2881 FM1385, Aubrey, TX 76227, USA
               </p>
             </div>
 
