@@ -125,32 +125,43 @@ export async function placeOrder(input: PlaceOrderInput): Promise<{ success: boo
       </div>
     `
 
+    console.log('[v0] Email config:', { FROM_EMAIL, OWNER_EMAILS, customerEmail: input.customerEmail })
+    console.log('[v0] API Key exists:', !!process.env.RESEND_API_KEY)
+
     // Send email to all owners
-    const ownerEmailPromises = OWNER_EMAILS.map(ownerEmail => 
-      resend.emails.send({
+    const ownerEmailPromises = OWNER_EMAILS.map(async (ownerEmail) => {
+      const result = await resend.emails.send({
         from: FROM_EMAIL,
         to: ownerEmail,
         subject: `New Order #${order.id.slice(0, 8)} from ${input.customerName}`,
         html: orderEmailHtml(false),
       })
-    )
+      console.log('[v0] Owner email result for', ownerEmail, ':', result)
+      return result
+    })
 
     // Send confirmation email to customer
-    const customerEmailPromise = resend.emails.send({
-      from: FROM_EMAIL,
-      to: input.customerEmail,
-      subject: `Order Confirmation #${order.id.slice(0, 8)} - Laxmi Flowers`,
-      html: orderEmailHtml(true),
-    })
+    const customerEmailPromise = (async () => {
+      const result = await resend.emails.send({
+        from: FROM_EMAIL,
+        to: input.customerEmail,
+        subject: `Order Confirmation #${order.id.slice(0, 8)} - Laxmi Flowers`,
+        html: orderEmailHtml(true),
+      })
+      console.log('[v0] Customer email result:', result)
+      return result
+    })()
 
     // Send all emails in parallel
     const emailResults = await Promise.allSettled([...ownerEmailPromises, customerEmailPromise])
     
     const failedEmails = emailResults.filter(result => result.status === 'rejected')
     if (failedEmails.length > 0) {
-      console.error('Some emails failed to send:', failedEmails)
+      console.error('[v0] Some emails failed to send:', failedEmails)
       // Order was created, but some emails failed - still return success
     }
+    
+    console.log('[v0] All email results:', emailResults)
 
     return { success: true, orderId: order.id }
   } catch (error) {
