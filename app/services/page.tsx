@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
 import { FreshFlowersCollage } from "@/components/fresh-flowers-collage"
+import { FlowerBouquetCollage } from "@/components/flower-bouquet-collage"
 import { ArrowRight, Check } from "lucide-react"
 
 const services = [
@@ -222,6 +223,8 @@ export default function ServicesPage() {
                         <WeddingGarlandsCollage />
                       ) : service.id === "fresh-flowers" ? (
                         <FreshFlowersCollage />
+                      ) : service.id === "bouquets" ? (
+                        <FlowerBouquetCollage />
                       ) : (
                         <Image
                           src={service.image}
