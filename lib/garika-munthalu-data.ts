@@ -63,11 +63,13 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     customizable: true
   },
   {
-    id: "garika-munthalu-004",
-    name: "GarikaMunthalu_004",
-    description: "Golden clay pot with pearl circular designs, rhinestone centers, golden bead chains, and elegant embellishments",
+    id: "garika-munthalu-007",
+    name: "GarikaMunthalu_007",
+    description: "Traditional decorated clay pots available in red and green with golden base, pearl bead rim, gold chain embellishments, and elegant scalloped patterns",
     images: [
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM%20%284%29-MKqEsdE2VyOw9NVpaQiaimr5Tq9dAz.jpeg"
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.41.55%20PM%20%281%29-1pLnn3gO4RISA7RitjPMWuRwevu2ea.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.41.55%20PM%20%282%29-rmqY8eGdSSG0xH0GwrJp9gXK9JgOOB.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.41.55%20PM-QbZg4LfKKaS5KkAPmiZFyyiXij5Z59.jpeg"
     ],
     sizes: garikaMunthaluSizes,
     potSize: "5/6 inch clay pot",
@@ -96,13 +98,11 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     customizable: true
   },
   {
-    id: "garika-munthalu-007",
-    name: "GarikaMunthalu_007",
-    description: "Traditional decorated clay pots available in red and green with golden base, pearl bead rim, gold chain embellishments, and elegant scalloped patterns",
+    id: "garika-munthalu-004",
+    name: "GarikaMunthalu_004",
+    description: "Golden clay pot with pearl circular designs, rhinestone centers, golden bead chains, and elegant embellishments",
     images: [
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.41.55%20PM%20%281%29-1pLnn3gO4RISA7RitjPMWuRwevu2ea.jpeg",
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.41.55%20PM%20%282%29-rmqY8eGdSSG0xH0GwrJp9gXK9JgOOB.jpeg",
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.41.55%20PM-QbZg4LfKKaS5KkAPmiZFyyiXij5Z59.jpeg"
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM%20%284%29-MKqEsdE2VyOw9NVpaQiaimr5Tq9dAz.jpeg"
     ],
     sizes: garikaMunthaluSizes,
     potSize: "5/6 inch clay pot",
