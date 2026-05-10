@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
+import { WeddingAccessoriesCollage } from "@/components/wedding-accessories-collage"
 import { ArrowLeft, Heart, ShoppingBag, Palmtree, Gem, Sparkles, Flame } from "lucide-react"
 
 const subcategories = [
@@ -110,12 +111,16 @@ export default function WeddingPage() {
                     href={category.href}
                     className="group relative aspect-[4/3] overflow-hidden rounded-xl"
                   >
-                    <Image
-                      src={category.image}
-                      alt={category.name}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
+                    {category.id === "wedding-accessories" ? (
+                      <WeddingAccessoriesCollage />
+                    ) : (
+                      <Image
+                        src={category.image}
+                        alt={category.name}
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    )}
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-primary">
