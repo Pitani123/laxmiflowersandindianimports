@@ -30,11 +30,11 @@ export const garikaMunthaluSizes: GarikaMunthaluSize[] = [
 // =================================================================================
 export const garikaMunthaluProducts: GarikaMunthalu[] = [
   {
-    id: "garika-munthalu-001",
-    name: "GarikaMunthalu_001",
-    description: "Gold painted clay pot with pearl bead trim and colorful gemstone flower decorations",
+    id: "garika-munthalu-004",
+    name: "GarikaMunthalu_004",
+    description: "Golden clay pot with pearl circular designs, rhinestone centers, golden bead chains, and elegant embellishments",
     images: [
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.05.42%20PM-H988PFKyGvl8VmeM5QXLZKVIqhv8p3.jpeg"
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM%20%284%29-MKqEsdE2VyOw9NVpaQiaimr5Tq9dAz.jpeg"
     ],
     sizes: garikaMunthaluSizes,
     potSize: "5/6 inch clay pot",
@@ -98,11 +98,11 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     customizable: true
   },
   {
-    id: "garika-munthalu-004",
-    name: "GarikaMunthalu_004",
-    description: "Golden clay pot with pearl circular designs, rhinestone centers, golden bead chains, and elegant embellishments",
+    id: "garika-munthalu-001",
+    name: "GarikaMunthalu_001",
+    description: "Gold painted clay pot with pearl bead trim and colorful gemstone flower decorations",
     images: [
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM%20%284%29-MKqEsdE2VyOw9NVpaQiaimr5Tq9dAz.jpeg"
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.05.42%20PM-H988PFKyGvl8VmeM5QXLZKVIqhv8p3.jpeg"
     ],
     sizes: garikaMunthaluSizes,
     potSize: "5/6 inch clay pot",
