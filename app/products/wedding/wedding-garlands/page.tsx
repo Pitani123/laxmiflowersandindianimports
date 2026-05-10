@@ -16,7 +16,7 @@ export default function WeddingGarlandsPage() {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px]">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-22%20at%2010.24.58%20PM-9s9uCjSrK2CYFijcNQxD84SlVqIOAJ.jpeg"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%284%29-5eqzxWOFqQSmLSUrhBdvbPiEGPDPGc.jpeg"
             alt="Wedding Garlands"
             fill
             className="object-cover"
