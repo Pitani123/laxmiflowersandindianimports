@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
+import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
 import { ArrowRight, Check } from "lucide-react"
 
 const services = [
@@ -216,12 +217,16 @@ export default function ServicesPage() {
                 >
                   <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                     <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl">
-                      <Image
-                        src={service.image}
-                        alt={service.title}
-                        fill
-                        className="object-cover"
-                      />
+                      {service.id === "wedding" ? (
+                        <WeddingGarlandsCollage />
+                      ) : (
+                        <Image
+                          src={service.image}
+                          alt={service.title}
+                          fill
+                          className="object-cover"
+                        />
+                      )}
                     </div>
                   </div>
                   
