@@ -4,6 +4,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { ProductCard } from "@/components/product-card"
+import { FlowerBouquetCollage } from "@/components/flower-bouquet-collage"
 import { getProductsByCategory } from "@/lib/db-products"
 import { Store, ArrowLeft, Gift, ShoppingBag } from "lucide-react"
 
@@ -15,15 +16,9 @@ export default async function BouquetsPage() {
       <Navigation />
       
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative h-[50vh] min-h-[400px]">
-          <Image
-            src="/images/bouquets.jpg"
-            alt="Flower Bouquets"
-            fill
-            className="object-cover"
-            priority
-          />
+        {/* Hero Section with Product Image Collage */}
+        <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
+          <FlowerBouquetCollage />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-transparent" />
           <div className="absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">

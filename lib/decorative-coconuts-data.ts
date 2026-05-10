@@ -62,6 +62,33 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
     priceInCents: 5500, // $55.00
     customizable: true,
   },
+  {
+    id: "decorative-coconut-007",
+    name: "DecorativeCoconut_007",
+    description: "Elegant green coconut with traditional Tirumala Namam design in silver and red rhinestones, scattered crystal accents, and decorative topper with gold trim. Perfect for religious ceremonies.",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.10%20AM-XwMclB6qTwnaO3Gynp1bbYhJNw4rJ6.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%283%29-hwrXFqRp23wSRbfryUCAQcJHFhJOlF.jpeg"
+    ],
+    priceInCents: 5500, // $55.00
+    customizable: true,
+  },
+  {
+    id: "decorative-coconut-008",
+    name: "DecorativeCoconut_008",
+    description: "Vibrant green coconut featuring Om symbol in lotus mandala design with red center, golden Om lettering, crystal rhinestone petals, and pearl flower accents with decorative pearl bow topper.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%282%29-WA52eN3TJDtzWIHY8Qe44OHi9SczgU.jpeg"],
+    priceInCents: 5500, // $55.00
+    customizable: true,
+  },
+  {
+    id: "decorative-coconut-010",
+    name: "DecorativeCoconut_010",
+    description: "Beautiful green coconut with red heart centerpiece featuring Telugu script names, pearl and gold bead border with rhinestone accents, and decorative pearl bow topper. Ideal for personalized wedding gifts.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM%20%282%29-CVcTvMSxN48Jzwolel50s0aGqYwiF8.jpeg"],
+    priceInCents: 5500, // $55.00
+    customizable: true,
+  },
 ]
 
 // Helper function to format price

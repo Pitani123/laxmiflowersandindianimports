@@ -107,6 +107,50 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     sizes: garikaMunthaluSizes,
     potSize: "5/6 inch clay pot",
     customizable: true
+  },
+  {
+    id: "garika-munthalu-008",
+    name: "GarikaMunthalu_008",
+    description: "Elegant red, green and gold banded clay pot pair with pearl flower accents, gold rhinestone borders, emerald crystal details, and golden base",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM%20%281%29-1ODsc5q4CSTdec2U7jGmWxWSAQ4epM.jpeg"
+    ],
+    sizes: garikaMunthaluSizes,
+    potSize: "5/6 inch clay pot",
+    customizable: true
+  },
+  {
+    id: "garika-munthalu-009",
+    name: "GarikaMunthalu_009",
+    description: "Stunning golden clay pot pair with green leaf petal designs outlined in rhinestones, red teardrop accents, and elegant green rim",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.15%20AM-vYJ3GzsMg6r9O1BXylLQjizjkimLWf.jpeg"
+    ],
+    sizes: garikaMunthaluSizes,
+    potSize: "5/6 inch clay pot",
+    customizable: true
+  },
+  {
+    id: "garika-munthalu-010",
+    name: "GarikaMunthalu_010",
+    description: "Rich maroon clay pot pair with golden rim and base, pearl and gold flower decorations, and red rhinestone band accent near the neck",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.09%20AM-oz8sUBVHywgtOqwXZZ0OS472DA6VeS.jpeg"
+    ],
+    sizes: garikaMunthaluSizes,
+    potSize: "5/6 inch clay pot",
+    customizable: true
+  },
+  {
+    id: "garika-munthalu-011",
+    name: "GarikaMunthalu_011",
+    description: "Classic maroon and gold striped clay pot pair with pearl dot accents, red crystal embellishments, and gold rhinestone borders between bands",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM-lSgVb3ZItdNXeGr9d65sLhKUSGSZZ3.jpeg"
+    ],
+    sizes: garikaMunthaluSizes,
+    potSize: "5/6 inch clay pot",
+    customizable: true
   }
 ]
 
