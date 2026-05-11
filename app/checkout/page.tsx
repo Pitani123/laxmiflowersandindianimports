@@ -69,6 +69,7 @@ export default function CheckoutPage() {
         productName: item.product.name,
         quantity: item.quantity,
         priceInCents: item.product.priceInCents,
+        imageUrl: item.product.imageUrl,
       }))
       
       const result = await placeOrder({
