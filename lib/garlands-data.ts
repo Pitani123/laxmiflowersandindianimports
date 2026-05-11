@@ -347,23 +347,17 @@ export const garlands: Garland[] = [
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%202.49.05%20PM%20%284%29-WwxEa0IHWKL2Z2TVENnsjENGTA2Miv.jpeg"],
     sizes: garland_022_Sizes
   },
+
   {
     id: "garland-023",
     name: "WeddingGarland_023",
-    description: "Roses and Baby's Breath Garland",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%202.49.05%20PM%20%282%29-e5iER1npLDVycCCjGCjS0ohG1ROEse.jpeg"],
-    sizes: garland_023_Sizes
-  },
-  {
-    id: "garland-024",
-    name: "WeddingGarland_024",
     description: "White Jasmine and Baby's Breath Garland with Pink Rose Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.37%20PM-N2IVuqPOEBZFj699KmH8cNr4Bnafm3.jpeg"],
     sizes: defaultSizes
   },
   {
-    id: "garland-025",
-    name: "WeddingGarland_025",
+    id: "garland-024",
+    name: "WeddingGarland_024",
     description: "Pink and Red Roses with Baby's Breath Double Garland",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.38%20PM%20%283%29-i1gmWws6BoBwLwNmTIytZqjLn517GH.jpeg",
@@ -373,66 +367,64 @@ export const garlands: Garland[] = [
     sizes: defaultSizes
   },
   {
-    id: "garland-026",
-    name: "WeddingGarland_026",
+    id: "garland-025",
+    name: "WeddingGarland_025",
     description: "Red Roses and Baby's Breath Garland with Pearl Accents",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.37%20PM%20%281%29-WxtA9S5FUJNGGU7y6kwPUzgLje3BLX.jpeg"],
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.37%20PM%20%281%29-WxtA9S5FUJNGGU7y6kwPUzgLje3BLX.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%285%29-1BpenkKSC0rREU8LO7grtD3njQeR6R.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%202.49.05%20PM%20%282%29-e5iER1npLDVycCCjGCjS0ohG1ROEse.jpeg"
+    ],
     sizes: defaultSizes
   },
 
   {
-    id: "garland-027",
-    name: "WeddingGarland_027",
+    id: "garland-026",
+    name: "WeddingGarland_026",
     description: "Pink Lotus and Baby's Breath Double Garland with Pearl Tassels",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.46.06%20PM%20%281%29-DmsRYuiqrwbqJBDgA5hlh0ofJpg55Z.jpeg"],
     sizes: defaultSizes
   },
 
   {
-    id: "garland-028",
-    name: "WeddingGarland_028",
+    id: "garland-027",
+    name: "WeddingGarland_027",
     description: "Pink Roses with Baby's Breath Garland and Pearl Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM%20%283%29-T98NkFU7LCLPhJYezrsBNg8iRqhOcn.jpeg"],
     sizes: defaultSizes
   },
   {
-    id: "garland-029",
-    name: "WeddingGarland_029",
+    id: "garland-028",
+    name: "WeddingGarland_028",
     description: "White Roses with Baby's Breath Double Garland and Pearl Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM-9Era4vgRS39Dv75fSIbUukvIIJLvPj.jpeg"],
     sizes: defaultSizes
   },
+
   {
-    id: "garland-030",
-    name: "WeddingGarland_030",
-    description: "Red Roses with Baby's Breath Side Garland and Pearl Tassels",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%285%29-1BpenkKSC0rREU8LO7grtD3njQeR6R.jpeg"],
-    sizes: defaultSizes
-  },
-  {
-    id: "garland-031",
-    name: "WeddingGarland_031",
+    id: "garland-029",
+    name: "WeddingGarland_029",
     description: "White and Red Roses with Baby's Breath Double Garland and Gold Bead Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.11%20AM-xjPLULyL0afSIstlK1yySiFPFc3Hz3.jpeg"],
     sizes: defaultSizes
   },
   {
-    id: "garland-032",
-    name: "WeddingGarland_032",
+    id: "garland-030",
+    name: "WeddingGarland_030",
     description: "Cream Jasmine with Baby's Breath Garland and Pink Rose Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%284%29-5eqzxWOFqQSmLSUrhBdvbPiEGPDPGc.jpeg"],
     sizes: defaultSizes
   },
   {
-    id: "garland-033",
-    name: "WeddingGarland_033",
+    id: "garland-031",
+    name: "WeddingGarland_031",
     description: "Pink Roses with Baby's Breath Double Garland and Pink Pearl Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.13%20AM-KVrpbrRvkHVt1lVug0CS8jPVCOQP3P.jpeg"],
     sizes: defaultSizes
   },
   {
-    id: "garland-034",
-    name: "WeddingGarland_034",
+    id: "garland-032",
+    name: "WeddingGarland_032",
     description: "White Carnations with Red Roses and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.12%20AM-DpHWd0jduD3thAxkLsIiMkJjYnyJsT.jpeg"],
     sizes: defaultSizes
