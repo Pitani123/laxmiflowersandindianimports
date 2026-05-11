@@ -352,7 +352,10 @@ export const garlands: Garland[] = [
     id: "garland-023",
     name: "WeddingGarland_023",
     description: "White Jasmine and Baby's Breath Garland with Pink Rose Accents",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.37%20PM-N2IVuqPOEBZFj699KmH8cNr4Bnafm3.jpeg"],
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%284%29-5eqzxWOFqQSmLSUrhBdvbPiEGPDPGc.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.37%20PM-N2IVuqPOEBZFj699KmH8cNr4Bnafm3.jpeg"
+    ],
     sizes: defaultSizes
   },
   {
@@ -408,23 +411,17 @@ export const garlands: Garland[] = [
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.11%20AM-xjPLULyL0afSIstlK1yySiFPFc3Hz3.jpeg"],
     sizes: defaultSizes
   },
+
   {
     id: "garland-030",
     name: "WeddingGarland_030",
-    description: "Cream Jasmine with Baby's Breath Garland and Pink Rose Accents",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%284%29-5eqzxWOFqQSmLSUrhBdvbPiEGPDPGc.jpeg"],
-    sizes: defaultSizes
-  },
-  {
-    id: "garland-031",
-    name: "WeddingGarland_031",
     description: "Pink Roses with Baby's Breath Double Garland and Pink Pearl Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.13%20AM-KVrpbrRvkHVt1lVug0CS8jPVCOQP3P.jpeg"],
     sizes: defaultSizes
   },
   {
-    id: "garland-032",
-    name: "WeddingGarland_032",
+    id: "garland-031",
+    name: "WeddingGarland_031",
     description: "White Carnations with Red Roses and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.12%20AM-DpHWd0jduD3thAxkLsIiMkJjYnyJsT.jpeg"],
     sizes: defaultSizes
