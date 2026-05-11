@@ -1,10 +1,10 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { GarlandCard } from "@/components/garland-card"
 import { garlands } from "@/lib/garlands-data"
+import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
 import { ArrowLeft, Heart, ShoppingBag, Info } from "lucide-react"
 
 export default function WeddingGarlandsPage() {
@@ -15,13 +15,7 @@ export default function WeddingGarlandsPage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px]">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%284%29-5eqzxWOFqQSmLSUrhBdvbPiEGPDPGc.jpeg"
-            alt="Wedding Garlands"
-            fill
-            className="object-cover"
-            priority
-          />
+          <WeddingGarlandsCollage />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-transparent" />
           <div className="absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">

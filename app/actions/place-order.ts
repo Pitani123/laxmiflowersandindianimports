@@ -17,6 +17,7 @@ interface CartItem {
   productName: string
   quantity: number
   priceInCents: number
+  imageUrl?: string | null
 }
 
 interface PlaceOrderInput {
@@ -63,13 +64,28 @@ export async function placeOrder(input: PlaceOrderInput): Promise<{ success: boo
       return { success: false, error: 'Failed to create order. Please try again.' }
     }
 
-    // Build order items HTML for email
+    // Build order items HTML for email with product images
     const itemsHtml = input.items.map(item => `
       <tr>
-        <td style="padding: 8px; border-bottom: 1px solid #eee;">${item.productName}</td>
-        <td style="padding: 8px; border-bottom: 1px solid #eee; text-align: center;">${item.quantity}</td>
-        <td style="padding: 8px; border-bottom: 1px solid #eee; text-align: right;">${formatPrice(item.priceInCents)}</td>
-        <td style="padding: 8px; border-bottom: 1px solid #eee; text-align: right;">${formatPrice(item.priceInCents * item.quantity)}</td>
+        <td style="padding: 12px 8px; border-bottom: 1px solid #eee; vertical-align: middle;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            ${item.imageUrl ? `
+              <img 
+                src="${item.imageUrl}" 
+                alt="${item.productName}" 
+                width="60" 
+                height="60" 
+                style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px; flex-shrink: 0;"
+              />
+            ` : `
+              <div style="width: 60px; height: 60px; background: #f5f5f5; border-radius: 8px; flex-shrink: 0;"></div>
+            `}
+            <span style="font-weight: 500;">${item.productName}</span>
+          </div>
+        </td>
+        <td style="padding: 12px 8px; border-bottom: 1px solid #eee; text-align: center; vertical-align: middle;">${item.quantity}</td>
+        <td style="padding: 12px 8px; border-bottom: 1px solid #eee; text-align: right; vertical-align: middle;">${formatPrice(item.priceInCents)}</td>
+        <td style="padding: 12px 8px; border-bottom: 1px solid #eee; text-align: right; vertical-align: middle;">${formatPrice(item.priceInCents * item.quantity)}</td>
       </tr>
     `).join('')
 
