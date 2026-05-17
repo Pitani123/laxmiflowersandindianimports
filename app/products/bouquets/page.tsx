@@ -5,11 +5,11 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { ProductCard } from "@/components/product-card"
 import { FlowerBouquetCollage } from "@/components/flower-bouquet-collage"
-import { getProductsByCategory } from "@/lib/db-products"
+import { bouquetProducts } from "@/data/bouquets"
 import { Store, ArrowLeft, Gift, ShoppingBag } from "lucide-react"
 
 export default async function BouquetsPage() {
-  const products = await getProductsByCategory('bouquets')
+  const products = bouquetProducts.filter((p) => p.is_active)
 
   return (
     <div className="flex min-h-screen flex-col">
