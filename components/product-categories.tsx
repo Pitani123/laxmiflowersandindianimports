@@ -7,14 +7,11 @@ import { FlowerBouquetCollage } from "./flower-bouquet-collage"
 
 const categories = [
   {
-    name: "Fresh Flowers",
-    href: "/products/fresh-flowers",
-    image: "/images/fresh-flowers.jpg",
-    description: "Daily fresh flowers for all occasions",
-    subcategories: [
-      { name: "Loose Flowers", href: "/products/fresh-flowers/loose-flowers" },
-      { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
-    ],
+    name: "Flower Bouquets",
+    href: "/products/bouquets",
+    image: "/images/bouquets.jpg",
+    description: "Beautiful arrangements for gifting",
+    subcategories: [],
   },
   {
     name: "Wedding",
@@ -30,11 +27,14 @@ const categories = [
     ],
   },
   {
-    name: "Flower Bouquets",
-    href: "/products/bouquets",
-    image: "/images/bouquets.jpg",
-    description: "Beautiful arrangements for gifting",
-    subcategories: [],
+    name: "Fresh Flowers",
+    href: "/products/fresh-flowers",
+    image: "/images/fresh-flowers.jpg",
+    description: "Daily fresh flowers for all occasions",
+    subcategories: [
+      { name: "Loose Flowers", href: "/products/fresh-flowers/loose-flowers" },
+      { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
+    ],
   },
 ]
 
