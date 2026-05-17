@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { PoojaGarlandCard } from "@/components/pooja-garland-card"
 import { PoojaGarlandsCollage } from "@/components/pooja-garlands-collage"
 import { poojaGarlandProducts } from "@/data/pooja-garlands"
-import { ArrowLeft, Heart, ShoppingBag } from "lucide-react"
+import { ArrowLeft, Heart } from "lucide-react"
 
 export default async function PoojaGarlandsPage() {
   const products = poojaGarlandProducts.filter((p) => p.is_active)
@@ -42,19 +42,6 @@ export default async function PoojaGarlandsPage() {
         {/* Products Section */}
         <section className="py-16 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-10 flex flex-col gap-4 rounded-xl bg-secondary p-6 sm:flex-row sm:items-center sm:justify-between">
-              <div className="flex items-center gap-3">
-                <ShoppingBag className="h-6 w-6 text-primary" />
-                <div>
-                  <p className="font-medium text-foreground">Pooja Garlands - Pricing per foot</p>
-                  <p className="text-sm text-muted-foreground">1ft - $12 | 2ft - $24 | 3ft - $36 | 4ft - $48 | 5ft - $60</p>
-                </div>
-              </div>
-              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <a href="tel:+14699889029">Call to Order</a>
-              </Button>
-            </div>
-
             {products.length > 0 ? (
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {products.map((product) => (

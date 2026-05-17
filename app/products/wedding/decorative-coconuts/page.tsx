@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { DecorativeCoconutCard } from "@/components/decorative-coconut-card"
 import { decorativeCoconuts } from "@/lib/decorative-coconuts-data"
-import { ArrowLeft, Palmtree, ShoppingBag, Palette } from "lucide-react"
+import { ArrowLeft, Palmtree, Palette } from "lucide-react"
 
 export default function DecorativeCoconutsPage() {
   return (
@@ -45,28 +45,12 @@ export default function DecorativeCoconutsPage() {
         {/* Products Section */}
         <section className="py-16 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            {/* Info Banners */}
-            <div className="mb-10 flex flex-col gap-4">
-              <div className="flex flex-col gap-4 rounded-xl bg-secondary p-6 sm:flex-row sm:items-center sm:justify-between">
-                <div className="flex items-center gap-3">
-                  <ShoppingBag className="h-6 w-6 text-primary" />
-                  <p className="font-medium text-foreground">Add items to your cart and checkout online!</p>
-                </div>
-                <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  <Link href="/checkout">
-                    <ShoppingBag className="mr-2 h-4 w-4" />
-                    View Cart
-                  </Link>
-                </Button>
-              </div>
-              
-              {/* Customization Notice */}
-              <div className="flex items-center gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
-                <Palette className="h-6 w-6 text-primary flex-shrink-0" />
-                <p className="text-sm text-foreground">
-                  <span className="font-semibold">Custom Orders Available:</span> We can customize colors, decorations, initials, and designs to match your preferences. Contact us for personalized options!
-                </p>
-              </div>
+            {/* Customization Notice */}
+            <div className="mb-10 flex items-center gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
+              <Palette className="h-6 w-6 text-primary flex-shrink-0" />
+              <p className="text-sm text-foreground">
+                <span className="font-semibold">Custom Orders Available:</span> We can customize colors, decorations, initials, and designs to match your preferences. Contact us for personalized options!
+              </p>
             </div>
 
             {decorativeCoconuts.length > 0 ? (
