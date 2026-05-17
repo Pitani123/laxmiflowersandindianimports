@@ -163,12 +163,6 @@ export const garland_023_Sizes: GarlandSize[] = [
   { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
 ]
 
-export const garland_032_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
-  { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
-  { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
-]
-
 export const garland_033_Sizes: GarlandSize[] = [
   { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
   { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
@@ -467,13 +461,6 @@ export const garlands: Garland[] = [
     description: "White Carnations with Red Roses and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.12%20AM-DpHWd0jduD3thAxkLsIiMkJjYnyJsT.jpeg"],
     sizes: defaultSizes
-  },
-  {
-    id: "garland-032",
-    name: "WeddingGarland_032",
-    description: "White Jasmine Garland with Golden Rose Petal Accents",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%2010.10.46%20PM%20%282%29-vIWkaxPNQAhARffrwtfn3oX4xmeaka.jpeg"],
-    sizes: garland_032_Sizes
   },
   {
     id: "garland-033",
