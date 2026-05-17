@@ -7,6 +7,7 @@ export interface DBProduct {
   price_in_cents: number
   category: string
   image_url: string | null
+  additional_images?: string[]
   is_active: boolean
   created_at: string
   updated_at: string
