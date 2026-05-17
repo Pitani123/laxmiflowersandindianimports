@@ -153,8 +153,8 @@ export const garland_021_Sizes: GarlandSize[] = [
 
 export const garland_022_Sizes: GarlandSize[] = [
   { id: "3ft", label: "3 ft", priceInCents: 9000 }, // $90.00
-  { id: "4ft", label: "4 ft", priceInCents: 9500 }, // $95.00
-  { id: "5ft", label: "5 ft", priceInCents: 10000 }, // $100.00
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $95.00
+  { id: "5ft", label: "5 ft", priceInCents: 10500 }, // $100.00
 ]
 
 export const garland_023_Sizes: GarlandSize[] = [
@@ -163,37 +163,97 @@ export const garland_023_Sizes: GarlandSize[] = [
   { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
 ]
 
+export const garland_024_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 9500 }, // $110.00
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 10500 }, // $130.00
+]
+
+export const garland_025_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 11000 }, // $110.00
+  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
+]
+
+export const garland_026_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 12000 }, // $110.00
+  { id: "4ft", label: "4 ft", priceInCents: 14000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 15000 }, // $130.00
+]
+
+export const garland_027_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 10000 }, // $110.00
+  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 12000 }, // $130.00
+]
+
+export const garland_028_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 9500 }, // $110.00
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 10500 }, // $130.00
+]
+
+export const garland_029_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 10000 }, // $110.00
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 11000 }, // $130.00
+]
+
+export const garland_030_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 10000 }, // $110.00
+  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 12000 }, // $130.00
+]
+
+export const garland_031_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 13000 }, // $110.00
+  { id: "4ft", label: "4 ft", priceInCents: 15000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 17000 }, // $130.00
+]
+
+export const garland_032_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 11000 }, // $110.00
+  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
+]
+
 export const garland_033_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
-  { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
-  { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
+  { id: "3ft", label: "3 ft", priceInCents: 13000 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 14000 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 15000 }, // Update price later
 ]
 
 export const garland_034_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
-  { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
-  { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
+  { id: "3ft", label: "3 ft", priceInCents: 10000 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 12000 }, // Update price later
 ]
 
 export const garland_035_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
-  { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
-  { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
+  { id: "3ft", label: "3 ft", priceInCents: 13000 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 14000 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 15000 }, // Update price later
 ]
 
 export const garland_036_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
-  { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
-  { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
+  { id: "3ft", label: "3 ft", priceInCents: 9000 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 9500 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 10000 }, // Update price later
 ]
 
 export const garland_037_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
-  { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
-  { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
+  { id: "3ft", label: "3 ft", priceInCents: 11500 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 12500 }, // Update price later
 ]
 
 export const garland_038_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 9000 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 11000 }, // Update price later
+]
+
+export const garland_039_Sizes: GarlandSize[] = [
   { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
   { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
   { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
@@ -392,7 +452,7 @@ export const garlands: Garland[] = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%284%29-5eqzxWOFqQSmLSUrhBdvbPiEGPDPGc.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.37%20PM-N2IVuqPOEBZFj699KmH8cNr4Bnafm3.jpeg"
     ],
-    sizes: defaultSizes
+    sizes: garland_023_Sizes
   },
   {
     id: "garland-024",
@@ -403,7 +463,7 @@ export const garlands: Garland[] = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.38%20PM%20%282%29-h8wwyeSeHKo46xrKCVUV7xosqokoqU.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.19%20AM%20%281%29-hCmULtwCVsChoZgffXVXn5dXNrT7Vi.jpeg"
     ],
-    sizes: defaultSizes
+    sizes: garland_024_Sizes
   },
   {
     id: "garland-025",
@@ -414,7 +474,7 @@ export const garlands: Garland[] = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%285%29-1BpenkKSC0rREU8LO7grtD3njQeR6R.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%202.49.05%20PM%20%282%29-e5iER1npLDVycCCjGCjS0ohG1ROEse.jpeg"
     ],
-    sizes: defaultSizes
+    sizes: garland_025_Sizes
   },
 
   {
@@ -422,7 +482,7 @@ export const garlands: Garland[] = [
     name: "WeddingGarland_026",
     description: "Pink Lotus and Baby's Breath Double Garland with Pearl Tassels",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.46.06%20PM%20%281%29-DmsRYuiqrwbqJBDgA5hlh0ofJpg55Z.jpeg"],
-    sizes: defaultSizes
+    sizes: garland_026_Sizes
   },
 
   {
@@ -430,14 +490,14 @@ export const garlands: Garland[] = [
     name: "WeddingGarland_027",
     description: "Pink Roses with Baby's Breath Garland and Pearl Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM%20%283%29-T98NkFU7LCLPhJYezrsBNg8iRqhOcn.jpeg"],
-    sizes: defaultSizes
+    sizes: garland_027_Sizes
   },
   {
     id: "garland-028",
     name: "WeddingGarland_028",
     description: "White Roses with Baby's Breath Double Garland and Pearl Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM-9Era4vgRS39Dv75fSIbUukvIIJLvPj.jpeg"],
-    sizes: defaultSizes
+    sizes: garland_028_Sizes
   },
 
   {
@@ -445,7 +505,7 @@ export const garlands: Garland[] = [
     name: "WeddingGarland_029",
     description: "White and Red Roses with Baby's Breath Double Garland and Gold Bead Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.11%20AM-xjPLULyL0afSIstlK1yySiFPFc3Hz3.jpeg"],
-    sizes: defaultSizes
+    sizes: garland_029_Sizes
   },
 
   {
@@ -453,14 +513,21 @@ export const garlands: Garland[] = [
     name: "WeddingGarland_030",
     description: "Pink Roses with Baby's Breath Double Garland and Pink Pearl Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.13%20AM-KVrpbrRvkHVt1lVug0CS8jPVCOQP3P.jpeg"],
-    sizes: defaultSizes
+    sizes: garland_030_Sizes
   },
   {
     id: "garland-031",
     name: "WeddingGarland_031",
     description: "White Carnations with Red Roses and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.12%20AM-DpHWd0jduD3thAxkLsIiMkJjYnyJsT.jpeg"],
-    sizes: defaultSizes
+    sizes: garland_031_Sizes
+  },
+  {
+    id: "garland-032",
+    name: "WeddingGarland_032",
+    description: "Pink Lotus and Baby's Breath Garland with Pearl Accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-16%20at%208.26.27%20PM-2W0lH1WSoTNOFp22DwvfLLg2w33BcM.jpeg"],
+    sizes: garland_032_Sizes
   },
   {
     id: "garland-033",
@@ -503,6 +570,13 @@ export const garlands: Garland[] = [
     description: "Classic Rose Petal Garland in Deep Pink",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%2010.10.46%20PM%20%281%29-DmerghZu0PPTd5yU6vzs84taoQbM9t.jpeg"],
     sizes: garland_038_Sizes
+  },
+  {
+    id: "garland-039",
+    name: "WeddingGarland_039",
+    description: "Pink and White Roses with Baby's Breath Garland",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-16%20at%208.26.50%20PM-voBxKmK8gW1tnhrnMCB1npmcjwZinl.jpeg"],
+    sizes: garland_039_Sizes
   },
 ]
 
