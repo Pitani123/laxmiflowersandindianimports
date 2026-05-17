@@ -20,9 +20,59 @@ export interface GarikaMunthalu {
 // =================================================================================
 // DEFAULT SIZES - Single or Pair
 // =================================================================================
-export const garikaMunthaluSizes: GarikaMunthaluSize[] = [
-  { id: "single", label: "Single Pot", priceInCents: 4500 }, // $45.00
-  { id: "pair", label: "Pair", priceInCents: 9000 }, // $90.00
+export const garikaMunthaluSizes1: GarikaMunthaluSize[] = [
+  { id: "single", label: "Single Pot", priceInCents: 6500 },
+  { id: "pair", label: "Pair", priceInCents: 13000 }, 
+]
+
+export const garikaMunthaluSizes2: GarikaMunthaluSize[] = [
+  { id: "single", label: "Single Pot", priceInCents: 5500 },
+  { id: "pair", label: "Pair", priceInCents: 11000 }, 
+]
+
+export const garikaMunthaluSizes3: GarikaMunthaluSize[] = [
+  { id: "single", label: "Single Pot", priceInCents: 6000 },
+  { id: "pair", label: "Pair", priceInCents: 12000 }, 
+]
+
+export const garikaMunthaluSizes4: GarikaMunthaluSize[] = [
+  { id: "single", label: "Single Pot", priceInCents: 5500 },
+  { id: "pair", label: "Pair", priceInCents: 11000 }, 
+]
+
+export const garikaMunthaluSizes5: GarikaMunthaluSize[] = [
+  { id: "single", label: "Single Pot", priceInCents: 6500 },
+  { id: "pair", label: "Pair", priceInCents: 13000 }, 
+]
+
+export const garikaMunthaluSizes6: GarikaMunthaluSize[] = [
+  { id: "single", label: "Single Pot", priceInCents: 7500 },
+  { id: "pair", label: "Pair", priceInCents: 15000 }, 
+]
+
+export const garikaMunthaluSizes7: GarikaMunthaluSize[] = [
+  { id: "single", label: "Single Pot", priceInCents: 7000 },
+  { id: "pair", label: "Pair", priceInCents: 14000 }, 
+]
+
+export const garikaMunthaluSizes8: GarikaMunthaluSize[] = [
+  { id: "single", label: "Single Pot", priceInCents: 6500 },
+  { id: "pair", label: "Pair", priceInCents: 13000 }, 
+]
+
+export const garikaMunthaluSizes9: GarikaMunthaluSize[] = [
+  { id: "single", label: "Single Pot", priceInCents: 7500 },
+  { id: "pair", label: "Pair", priceInCents: 15000 }, 
+]
+
+export const garikaMunthaluSizes10: GarikaMunthaluSize[] = [
+  { id: "single", label: "Single Pot", priceInCents: 6500 },
+  { id: "pair", label: "Pair", priceInCents: 13000 }, 
+]
+
+export const garikaMunthaluSizes11: GarikaMunthaluSize[] = [
+  { id: "single", label: "Single Pot", priceInCents: 4500 },
+  { id: "pair", label: "Pair", priceInCents: 9000 },
 ]
 
 // =================================================================================
@@ -38,7 +88,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.41.55%20PM%20%282%29-rmqY8eGdSSG0xH0GwrJp9gXK9JgOOB.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.41.55%20PM-QbZg4LfKKaS5KkAPmiZFyyiXij5Z59.jpeg"
     ],
-    sizes: garikaMunthaluSizes,
+    sizes: garikaMunthaluSizes1,
     potSize: "5/6 inch clay pot",
     customizable: true
   },
@@ -49,7 +99,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.11.41%20PM-VsZlEuNR4SBdC1TSGEmL12gfdYrcjN.jpeg"
     ],
-    sizes: garikaMunthaluSizes,
+    sizes: garikaMunthaluSizes2,
     potSize: "5/6 inch clay pot",
     customizable: true
   },
@@ -60,7 +110,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.05.43%20PM-j6NghIyGasuJN6oLp26TQSYD8FmANA.jpeg"
     ],
-    sizes: garikaMunthaluSizes,
+    sizes: garikaMunthaluSizes3,
     potSize: "5/6 inch clay pot",
     customizable: true
   },
@@ -71,7 +121,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.05.42%20PM-H988PFKyGvl8VmeM5QXLZKVIqhv8p3.jpeg"
     ],
-    sizes: garikaMunthaluSizes,
+    sizes: garikaMunthaluSizes4,
     potSize: "5/6 inch clay pot",
     customizable: true
   },
@@ -82,7 +132,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM%20%283%29-0Kdha6raJGXNFMhERMXddHPaWTWa13.jpeg"
     ],
-    sizes: garikaMunthaluSizes,
+    sizes: garikaMunthaluSizes5,
     potSize: "5/6 inch clay pot",
     customizable: true
   },
@@ -93,7 +143,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM%20%282%29-kYD4ou5FYideu95eSIQwlE0kEuCOOr.jpeg"
     ],
-    sizes: garikaMunthaluSizes,
+    sizes: garikaMunthaluSizes6,
     potSize: "5/6 inch clay pot",
     customizable: true
   },
@@ -104,7 +154,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM%20%284%29-MKqEsdE2VyOw9NVpaQiaimr5Tq9dAz.jpeg"
     ],
-    sizes: garikaMunthaluSizes,
+    sizes: garikaMunthaluSizes7,
     potSize: "5/6 inch clay pot",
     customizable: true
   },
@@ -115,7 +165,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM%20%281%29-1ODsc5q4CSTdec2U7jGmWxWSAQ4epM.jpeg"
     ],
-    sizes: garikaMunthaluSizes,
+    sizes: garikaMunthaluSizes8,
     potSize: "5/6 inch clay pot",
     customizable: true
   },
@@ -126,7 +176,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.15%20AM-vYJ3GzsMg6r9O1BXylLQjizjkimLWf.jpeg"
     ],
-    sizes: garikaMunthaluSizes,
+    sizes: garikaMunthaluSizes9,
     potSize: "5/6 inch clay pot",
     customizable: true
   },
@@ -137,7 +187,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.09%20AM-oz8sUBVHywgtOqwXZZ0OS472DA6VeS.jpeg"
     ],
-    sizes: garikaMunthaluSizes,
+    sizes: garikaMunthaluSizes10,
     potSize: "5/6 inch clay pot",
     customizable: true
   },
@@ -148,7 +198,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM-lSgVb3ZItdNXeGr9d65sLhKUSGSZZ3.jpeg"
     ],
-    sizes: garikaMunthaluSizes,
+    sizes: garikaMunthaluSizes11,
     potSize: "5/6 inch clay pot",
     customizable: true
   }
