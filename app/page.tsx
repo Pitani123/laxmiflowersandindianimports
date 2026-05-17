@@ -30,11 +30,14 @@ export default function HomePage() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-secondary py-6 lg:py-8">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute left-1/4 top-1/4 h-96 w-96 rounded-full bg-primary blur-3xl" />
-            <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-accent blur-3xl" />
-          </div>
+        <section className="relative overflow-hidden py-6 lg:py-8">
+          {/* Background Image */}
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/images/hero-background.png')" }}
+          />
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-white/70" />
           
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             {/* Desktop: badges on sides of heading */}
