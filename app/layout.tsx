@@ -47,12 +47,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lato.variable} ${playfair.variable} font-sans antialiased`}>
-        {/* Global Background Image */}
-        <div 
-          className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/hero-background.png')" }}
-        />
-        <div className="fixed inset-0 -z-10 bg-white/70" />
         <CartProvider>
           {children}
           <CartDrawer />
