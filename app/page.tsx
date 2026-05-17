@@ -57,7 +57,7 @@ export default function HomePage() {
               {/* Center heading */}
               <div className="max-w-lg text-center">
                 <h1 className="font-serif text-4xl font-bold leading-tight text-foreground">
-                  Bringing Beauty & Tradition to Your Celebrations
+                  Bringing Beauty to Your Celebrations
                 </h1>
               </div>
               
@@ -95,7 +95,7 @@ export default function HomePage() {
                 </div>
               </div>
               <h1 className="font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl">
-                <span className="text-balance">Bringing Beauty & Tradition to Your Celebrations</span>
+                <span className="text-balance">Bringing Beauty to Your Celebrations</span>
               </h1>
             </div>
             
