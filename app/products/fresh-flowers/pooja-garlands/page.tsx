@@ -4,11 +4,11 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { PoojaGarlandCard } from "@/components/pooja-garland-card"
-import { getProductsByCategory } from "@/lib/db-products"
+import { poojaGarlandProducts } from "@/data/pooja-garlands"
 import { ArrowLeft, Heart, ShoppingBag } from "lucide-react"
 
 export default async function PoojaGarlandsPage() {
-  const products = await getProductsByCategory('pooja-garlands')
+  const products = poojaGarlandProducts.filter((p) => p.is_active)
 
   return (
     <div className="flex min-h-screen flex-col">

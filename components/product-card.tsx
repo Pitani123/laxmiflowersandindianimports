@@ -1,10 +1,10 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import Image from 'next/image'
 import { DBProduct } from '@/lib/types'
 import { AddToCartButton } from '@/components/add-to-cart-button'
-import { Store, X, ZoomIn } from 'lucide-react'
+import { Store, X, ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react'
 import {
   Dialog,
   DialogContent,
@@ -22,14 +22,38 @@ interface ProductCardProps {
 
 export function ProductCard({ product, showCartButton = true }: ProductCardProps) {
   const [isImageOpen, setIsImageOpen] = useState(false)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const canAddToCart = showCartButton && product.price_in_cents > 0
+
+  const allImages = useMemo(() => {
+    const imgs = [product.image_url || '/images/placeholder.jpg']
+    if (product.additional_images) {
+      imgs.push(...product.additional_images)
+    }
+    return imgs
+  }, [product.image_url, product.additional_images])
+
+  const hasMultipleImages = allImages.length > 1
+
+  const handleOpenImage = () => {
+    setCurrentImageIndex(0)
+    setIsImageOpen(true)
+  }
+
+  const handlePrev = () => {
+    setCurrentImageIndex((prev) => (prev === 0 ? allImages.length - 1 : prev - 1))
+  }
+
+  const handleNext = () => {
+    setCurrentImageIndex((prev) => (prev === allImages.length - 1 ? 0 : prev + 1))
+  }
 
   return (
     <>
       <div className="group overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/30 hover:shadow-lg">
         <div 
           className="relative aspect-[4/3] cursor-pointer"
-          onClick={() => setIsImageOpen(true)}
+          onClick={handleOpenImage}
         >
           <Image
             src={product.image_url || '/images/placeholder.jpg'}
@@ -72,10 +96,28 @@ export function ProductCard({ product, showCartButton = true }: ProductCardProps
             <X className="h-6 w-6" />
             <span className="sr-only">Close</span>
           </button>
+          {hasMultipleImages && (
+            <button
+              onClick={handlePrev}
+              className="absolute left-3 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/10 p-2 text-white hover:bg-white/20 transition-colors"
+            >
+              <ChevronLeft className="h-6 w-6" />
+              <span className="sr-only">Previous image</span>
+            </button>
+          )}
+          {hasMultipleImages && (
+            <button
+              onClick={handleNext}
+              className="absolute right-3 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/10 p-2 text-white hover:bg-white/20 transition-colors"
+            >
+              <ChevronRight className="h-6 w-6" />
+              <span className="sr-only">Next image</span>
+            </button>
+          )}
           <div className="relative w-full aspect-square sm:aspect-[4/3] md:aspect-[16/10]">
             <Image
-              src={product.image_url || '/images/placeholder.jpg'}
-              alt={product.name}
+              src={allImages[currentImageIndex]}
+              alt={`${product.name} - Image ${currentImageIndex + 1}`}
               fill
               className="object-contain"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
@@ -83,8 +125,15 @@ export function ProductCard({ product, showCartButton = true }: ProductCardProps
             />
           </div>
           <div className="p-4 bg-black/80">
-            <h3 className="font-serif text-lg font-bold text-white">{product.name}</h3>
-            <p className="mt-1 text-sm text-white/70">{product.description}</p>
+            <div className="flex items-center justify-between">
+              <div>
+                <h3 className="font-serif text-lg font-bold text-white">{product.name}</h3>
+                <p className="mt-1 text-sm text-white/70">{product.description}</p>
+              </div>
+              {hasMultipleImages && (
+                <span className="text-sm text-white/50">{currentImageIndex + 1} / {allImages.length}</span>
+              )}
+            </div>
           </div>
         </DialogContent>
       </Dialog>

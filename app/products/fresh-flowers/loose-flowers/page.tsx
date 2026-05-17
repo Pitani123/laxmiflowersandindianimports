@@ -1,15 +1,14 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { ProductCard } from "@/components/product-card"
 import { FreshFlowersCollage } from "@/components/fresh-flowers-collage"
-import { getProductsByCategory } from "@/lib/db-products"
+import { looseFlowerProducts } from "@/data/loose-flowers"
 import { ArrowLeft, Leaf, ShoppingBag } from "lucide-react"
 
 export default async function LooseFlowersPage() {
-  const products = await getProductsByCategory('loose-flowers')
+  const products = looseFlowerProducts.filter((p) => p.is_active)
 
   return (
     <div className="flex min-h-screen flex-col">
