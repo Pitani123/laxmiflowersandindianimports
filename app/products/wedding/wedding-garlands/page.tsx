@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { GarlandCard } from "@/components/garland-card"
 import { garlands } from "@/lib/garlands-data"
 import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
-import { ArrowLeft, Heart, ShoppingBag, Info } from "lucide-react"
+import { ArrowLeft, Heart, Info } from "lucide-react"
 
 export default function WeddingGarlandsPage() {
   return (
@@ -54,12 +54,7 @@ export default function WeddingGarlandsPage() {
                   </p>
                 </div>
               </div>
-              <Button asChild size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <Link href="/checkout">
-                  <ShoppingBag className="mr-2 h-4 w-4" />
-                  View Cart
-                </Link>
-              </Button>
+
             </div>
           </div>
         </section>
