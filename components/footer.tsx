@@ -18,7 +18,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-foreground text-background">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -64,10 +64,10 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact - Main Store */}
           <div>
-            <h4 className="mb-4 font-semibold">Contact Us (Main Store)</h4>
-            <ul className="space-y-4">
+            <h4 className="mb-4 font-semibold">Main Store (Aubrey, TX)</h4>
+            <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                 <span className="text-sm text-background/70">
@@ -91,6 +91,38 @@ export function Footer() {
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                 <span className="text-sm text-background/70">
                   Mon - Sun: 10AM - 11PM
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact - Edison Store */}
+          <div>
+            <h4 className="mb-4 font-semibold">Edison, NJ Store</h4>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                <span className="text-sm text-background/70">
+                  1655 Oak Tree Rd<br />
+                  Edison, NJ, USA
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="h-4 w-4 shrink-0 text-accent" />
+                <a href="tel:+17327999567" className="text-sm text-background/70 hover:text-accent">
+                  732-799-9567
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="h-4 w-4 shrink-0 text-accent" />
+                <a href="mailto:laxmiflowers.edison@gmail.com" className="text-sm text-background/70 hover:text-accent">
+                  laxmiflowers.edison@gmail.com
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                <span className="text-sm text-background/70">
+                  Mon - Sun: 10AM - 8:30PM
                 </span>
               </li>
             </ul>
