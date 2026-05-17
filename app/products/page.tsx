@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { ProductCard } from "@/components/product-card"
 import { getProducts } from "@/lib/db-products"
-import { Phone, Store, ShoppingBag } from "lucide-react"
+import { Phone, Store } from "lucide-react"
 
 const productCategories = [
   {
@@ -116,19 +116,7 @@ export default async function ProductsPage() {
                 silver items, and more. Add items to your cart and checkout online!
               </p>
             </div>
-            
-            <div className="mt-5 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <div className="flex items-center gap-2 rounded-full bg-accent px-6 py-2.5 text-accent-foreground">
-                <ShoppingBag className="h-5 w-5" />
-                <span className="font-medium">Shop Online</span>
-              </div>
-              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <Link href="/checkout">
-                  <ShoppingBag className="mr-2 h-4 w-4" />
-                  View Cart
-                </Link>
-              </Button>
-            </div>
+
           </div>
         </section>
 
