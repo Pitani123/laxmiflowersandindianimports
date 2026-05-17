@@ -2,9 +2,9 @@ import Image from "next/image"
 
 const flowerImages = [
   {
-    // Marigold Loose - Orange
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Marigold%20Loose%20-%20Orange-IgCeGBdV32NmCsjjDQi4z9xYIEGyRg.jpeg",
-    alt: "Marigold Loose - Orange",
+    // Jasmine String
+    src: "/images/loose-flowers/jasmine-string.jpg",
+    alt: "Jasmine String",
   },
   {
     // Chamanthi - Yellow
@@ -36,7 +36,7 @@ const flowerImages = [
 export function FreshFlowersCollage() {
   return (
     <div className="absolute inset-0 grid grid-cols-4 grid-rows-2 gap-0.5">
-      {/* Large left panel - Marigold Loose Orange */}
+      {/* Large left panel - Jasmine String */}
       <div className="relative col-span-2 row-span-2">
         <Image
           src={flowerImages[0].src}
