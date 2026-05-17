@@ -12,7 +12,7 @@ const productCategories = [
     id: "fresh-flowers",
     name: "Fresh Flowers",
     description: "Daily fresh flowers for home and temple",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Marigold%20Loose%20-%20Orange-IgCeGBdV32NmCsjjDQi4z9xYIEGyRg.jpeg",
+    image: "/images/loose-flowers/jasmine-string.jpg",
     href: "/products/fresh-flowers",
   },
   {
