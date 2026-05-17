@@ -30,7 +30,7 @@ export default function HomePage() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-secondary py-6 lg:py-8">
+        <section className="relative overflow-hidden bg-white py-6 lg:py-8">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute left-1/4 top-1/4 h-96 w-96 rounded-full bg-primary blur-3xl" />
             <div className="absolute bottom-1/4 right-1/4 h-96 w-96 rounded-full bg-accent blur-3xl" />
