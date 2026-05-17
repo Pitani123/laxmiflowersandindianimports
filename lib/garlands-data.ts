@@ -163,6 +163,48 @@ export const garland_023_Sizes: GarlandSize[] = [
   { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
 ]
 
+export const garland_032_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
+]
+
+export const garland_033_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
+]
+
+export const garland_034_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
+]
+
+export const garland_035_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
+]
+
+export const garland_036_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
+]
+
+export const garland_037_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
+]
+
+export const garland_038_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 0 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 0 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 0 }, // Update price later
+]
+
 // =================================================================================
 // GARLANDS - Named as Garland_001, Garland_002, etc.
 // =================================================================================
@@ -425,7 +467,56 @@ export const garlands: Garland[] = [
     description: "White Carnations with Red Roses and Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.12%20AM-DpHWd0jduD3thAxkLsIiMkJjYnyJsT.jpeg"],
     sizes: defaultSizes
-  }
+  },
+  {
+    id: "garland-032",
+    name: "WeddingGarland_032",
+    description: "White Jasmine Garland with Golden Rose Petal Accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%2010.10.46%20PM%20%282%29-vIWkaxPNQAhARffrwtfn3oX4xmeaka.jpeg"],
+    sizes: garland_032_Sizes
+  },
+  {
+    id: "garland-033",
+    name: "WeddingGarland_033",
+    description: "Tuberose and Lotus Garland with Baby's Breath and Green Rose Accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%2010.10.46%20PM-LMIhZciZxEImnT79MphA9nd2vl3tuy.jpeg"],
+    sizes: garland_033_Sizes
+  },
+  {
+    id: "garland-034",
+    name: "WeddingGarland_034",
+    description: "Jasmine and Rose Petal Double Garland with Gold Accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%208.51.36%20PM-NulcMENf90OZMBjKVRY3IdxDrQCP8L.jpeg"],
+    sizes: garland_034_Sizes
+  },
+  {
+    id: "garland-035",
+    name: "WeddingGarland_035",
+    description: "Lotus and Globe Amaranth Garland with Baby's Breath and Pearl Tassels",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%2010.10.46%20PM%20%283%29-LWoKQJuRl0jvXpLMnZaY14lPeEAmLU.jpeg"],
+    sizes: garland_035_Sizes
+  },
+  {
+    id: "garland-036",
+    name: "WeddingGarland_036",
+    description: "Pink Roses and White Tuberose Garland with Baby's Breath",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%208.50.22%20PM-R7M4YzoovThzAfC0ae0TekKj7oRhgD.jpeg"],
+    sizes: garland_036_Sizes
+  },
+  {
+    id: "garland-037",
+    name: "WeddingGarland_037",
+    description: "Pink Roses and Baby's Breath Garland",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%208.50.23%20PM-kqX7MSyHA98izhy4gwYlNgGoHlNoZG.jpeg"],
+    sizes: garland_037_Sizes
+  },
+  {
+    id: "garland-038",
+    name: "WeddingGarland_038",
+    description: "Classic Rose Petal Garland in Deep Pink",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%2010.10.46%20PM%20%281%29-DmerghZu0PPTd5yU6vzs84taoQbM9t.jpeg"],
+    sizes: garland_038_Sizes
+  },
 ]
 
 // Helper function to get extras by IDs
