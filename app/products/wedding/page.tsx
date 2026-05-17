@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { WeddingAccessoriesCollage } from "@/components/wedding-accessories-collage"
 import { HairAccessoriesCollage } from "@/components/hair-accessories-collage"
 import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
-import { ArrowLeft, Heart, ShoppingBag, Palmtree, Gem, Sparkles, Flame } from "lucide-react"
+import { ArrowLeft, Heart, Palmtree, Gem, Sparkles, Flame } from "lucide-react"
 
 const subcategories = [
   {
@@ -89,19 +89,6 @@ export default function WeddingPage() {
         {/* Subcategories Section */}
         <section className="py-16 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-10 flex flex-col gap-4 rounded-xl bg-secondary p-6 sm:flex-row sm:items-center sm:justify-between">
-              <div className="flex items-center gap-3">
-                <ShoppingBag className="h-6 w-6 text-primary" />
-                <p className="font-medium text-foreground">Browse our wedding categories below</p>
-              </div>
-              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <Link href="/checkout">
-                  <ShoppingBag className="mr-2 h-4 w-4" />
-                  View Cart
-                </Link>
-              </Button>
-            </div>
-
             <h2 className="mb-8 font-serif text-2xl font-bold text-foreground">Shop by Category</h2>
 
             <div className="grid gap-6 sm:grid-cols-2">

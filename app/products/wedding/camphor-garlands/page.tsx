@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { CamphorGarlandCard } from "@/components/camphor-garland-card"
 import { camphorGarlands } from "@/lib/camphor-garlands-data"
-import { ArrowLeft, Flame, ShoppingBag, Info } from "lucide-react"
+import { ArrowLeft, Flame, Info } from "lucide-react"
 
 export default function CamphorGarlandsPage() {
   return (
@@ -60,12 +60,7 @@ export default function CamphorGarlandsPage() {
                   </p>
                 </div>
               </div>
-              <Button asChild size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <Link href="/checkout">
-                  <ShoppingBag className="mr-2 h-4 w-4" />
-                  View Cart
-                </Link>
-              </Button>
+
             </div>
           </div>
         </section>

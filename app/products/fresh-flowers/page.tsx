@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { FreshFlowersCollage } from "@/components/fresh-flowers-collage"
 import { LooseFlowersCollage } from "@/components/loose-flowers-collage"
+import { PoojaGarlandsCollage } from "@/components/pooja-garlands-collage"
 import { ArrowLeft, Flower2, ShoppingBag, Leaf, Heart } from "lucide-react"
 
 const subcategories = [
@@ -84,6 +85,8 @@ export default function FreshFlowersPage() {
                   >
                     {category.id === "loose-flowers" ? (
                       <LooseFlowersCollage />
+                    ) : category.id === "pooja-garlands" ? (
+                      <PoojaGarlandsCollage />
                     ) : (
                       <Image
                         src={category.image}

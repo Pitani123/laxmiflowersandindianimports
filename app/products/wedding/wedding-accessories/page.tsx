@@ -7,7 +7,7 @@ import { ProductCard } from "@/components/product-card"
 import { GarikaMunthaluCard } from "@/components/garika-munthalu-card"
 import { getProductsByCategory } from "@/lib/db-products"
 import { garikaMunthaluProducts } from "@/lib/garika-munthalu-data"
-import { ArrowLeft, Gem, ShoppingBag } from "lucide-react"
+import { ArrowLeft, Gem } from "lucide-react"
 
 export default async function WeddingAccessoriesPage() {
   const products = await getProductsByCategory('wedding-accessories')
@@ -92,19 +92,6 @@ export default async function WeddingAccessoriesPage() {
         {/* Products Section */}
         <section className="py-16 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-10 flex flex-col gap-4 rounded-xl bg-secondary p-6 sm:flex-row sm:items-center sm:justify-between">
-              <div className="flex items-center gap-3">
-                <ShoppingBag className="h-6 w-6 text-primary" />
-                <p className="font-medium text-foreground">Add items to your cart and checkout online!</p>
-              </div>
-              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <Link href="/checkout">
-                  <ShoppingBag className="mr-2 h-4 w-4" />
-                  View Cart
-                </Link>
-              </Button>
-            </div>
-
             {(products.length > 0 || garikaMunthaluProducts.length > 0) ? (
               <>
                 {/* Garika Munthalu Section */}
