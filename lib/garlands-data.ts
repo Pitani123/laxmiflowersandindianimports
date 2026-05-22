@@ -251,6 +251,17 @@ export const garland_038_Sizes: GarlandSize[] = [
   { id: "5ft", label: "5 ft", priceInCents: 11000 }, // Update price later
 ]
 
+export const garland_039_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 9500 }, // $95.00
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $100.00
+  { id: "5ft", label: "5 ft", priceInCents: 10500 }, // $105.00
+]
+
+export const garland_040_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 9500 }, // $95.00
+  { id: "5ft", label: "5 ft", priceInCents: 10000 }, // $100.00
+]
+
 // =================================================================================
 // GARLANDS - Named as Garland_001, Garland_002, etc.
 // =================================================================================
@@ -564,6 +575,20 @@ export const garlands: Garland[] = [
     description: "Classic Rose Petal Garland in Deep Pink",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%2010.10.46%20PM%20%281%29-DmerghZu0PPTd5yU6vzs84taoQbM9t.jpeg"],
     sizes: garland_038_Sizes
+  },
+  {
+    id: "garland-039",
+    name: "WeddingGarland_039",
+    description: "Coral Pink Roses with Baby's Breath Double Strand Garland",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_039-F32jd2EU2o1PvpdFuiubaOeGIqm54z.jpeg"],
+    sizes: garland_039_Sizes
+  },
+  {
+    id: "garland-040",
+    name: "WeddingGarland_040",
+    description: "White Spider Mums and Pink Carnations with Baby's Breath Garland",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_040-nkyATf8ujrOArHwIldv6cetSjCMJ2t.jpeg"],
+    sizes: garland_040_Sizes
   },
 ]
 
