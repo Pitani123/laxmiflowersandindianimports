@@ -251,12 +251,6 @@ export const garland_038_Sizes: GarlandSize[] = [
   { id: "5ft", label: "5 ft", priceInCents: 11000 }, // Update price later
 ]
 
-export const garland_039_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 9000 }, // Update price later
-  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // Update price later
-  { id: "5ft", label: "5 ft", priceInCents: 11000 }, // Update price later
-]
-
 // =================================================================================
 // GARLANDS - Named as Garland_001, Garland_002, etc.
 // =================================================================================
@@ -570,13 +564,6 @@ export const garlands: Garland[] = [
     description: "Classic Rose Petal Garland in Deep Pink",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%2010.10.46%20PM%20%281%29-DmerghZu0PPTd5yU6vzs84taoQbM9t.jpeg"],
     sizes: garland_038_Sizes
-  },
-  {
-    id: "garland-039",
-    name: "WeddingGarland_039",
-    description: "Pink and White Roses with Baby's Breath Garland",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-16%20at%208.26.50%20PM-voBxKmK8gW1tnhrnMCB1npmcjwZinl.jpeg"],
-    sizes: garland_039_Sizes
   },
 ]
 
