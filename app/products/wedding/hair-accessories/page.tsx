@@ -1,16 +1,13 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { ProductCard } from "@/components/product-card"
+import { HairAccessoryCard } from "@/components/hair-accessory-card"
 import { HairAccessoriesCollage } from "@/components/hair-accessories-collage"
-import { getProductsByCategory } from "@/lib/db-products"
+import { hairAccessories } from "@/lib/hair-accessories-data"
 import { ArrowLeft, Sparkles } from "lucide-react"
 
-export default async function HariAccessoriesPage() {
-  const products = await getProductsByCategory('hair-accessories')
-
+export default function HairAccessoriesPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navigation />
@@ -42,10 +39,10 @@ export default async function HariAccessoriesPage() {
         {/* Products Section */}
         <section className="py-16 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            {products.length > 0 ? (
+            {hairAccessories.length > 0 ? (
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {products.map((product) => (
-                  <ProductCard key={product.id} product={product} />
+                {hairAccessories.map((product) => (
+                  <HairAccessoryCard key={product.id} product={product} />
                 ))}
               </div>
             ) : (
@@ -58,22 +55,6 @@ export default async function HariAccessoriesPage() {
                 </Button>
               </div>
             )}
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="bg-primary py-12">
-          <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-            <h2 className="font-serif text-2xl font-bold text-primary-foreground sm:text-3xl">Traditional Hair Accessories</h2>
-            <p className="mt-2 text-primary-foreground/80">We offer authentic hair accessories for all religious ceremonies.</p>
-            <div className="mt-6 flex flex-col justify-center gap-4 sm:flex-row">
-              <Button asChild size="lg" variant="secondary" className="bg-card text-foreground hover:bg-card/90">
-                <Link href="/locations">Find a Store</Link>
-              </Button>
-              <Button asChild size="lg" variant="secondary" className="bg-card text-foreground hover:bg-card/90">
-                <a href="tel:+14699889029">Call Us</a>
-              </Button>
-            </div>
           </div>
         </section>
       </main>

@@ -55,6 +55,18 @@ export const camphor_002_Sizes: CamphorGarlandSize[] = [
   { id: "5ft", label: "5 ft", priceInCents: 12000 }, // $120.00
 ]
 
+export const camphor_003_Sizes: CamphorGarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 10000 }, // $100.00 - Update price as needed
+  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $110.00 - Update price as needed
+  { id: "5ft", label: "5 ft", priceInCents: 12000 }, // $120.00 - Update price as needed
+]
+
+export const camphor_004_Sizes: CamphorGarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 10000 }, // $100.00 - Update price as needed
+  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $110.00 - Update price as needed
+  { id: "5ft", label: "5 ft", priceInCents: 12000 }, // $120.00 - Update price as needed
+]
+
 // =================================================================================
 // CAMPHOR GARLANDS - Named as Camphor_001, Camphor_002, etc.
 // =================================================================================
@@ -76,6 +88,24 @@ export const camphorGarlands: CamphorGarland[] = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.36.42%20PM-n2rJxBixiKxx38cLrK835uk3YjROOL.jpeg"
     ],
     sizes: camphor_002_Sizes
+  },
+  {
+    id: "camphor-003",
+    name: "Camphor_003",
+    description: "Double-strand camphor garland with golden and yellow decorative beads at top and bottom, white camphor pieces in the middle strands, red silk thread ball accents, and decorative tassels with orange and pearl beads",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-18%20at%201.05.25%20PM-xpszNoeAJLdSFfzt5EDxeHRU3XQFUX.jpeg"
+    ],
+    sizes: camphor_003_Sizes
+  },
+  {
+    id: "camphor-004",
+    name: "Camphor_004",
+    description: "Multi-strand camphor garland featuring two large red velvet hearts with gold filigree borders at the top, white camphor beads, golden beads throughout, red silk thread balls in the middle section, and ornate gold bead tassels",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-18%20at%201.00.01%20PM-COZ852IVn4pDZ6WxxYAybqaWqdKYit.jpeg"
+    ],
+    sizes: camphor_004_Sizes
   }
 ]
 

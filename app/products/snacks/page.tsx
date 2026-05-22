@@ -67,22 +67,6 @@ export default async function SnacksPage() {
             </div>
           </div>
         </section>
-
-        {/* CTA Section */}
-        <section className="bg-primary py-12">
-          <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-            <h2 className="font-serif text-2xl font-bold text-primary-foreground sm:text-3xl">Bulk Orders for Festivals</h2>
-            <p className="mt-2 text-primary-foreground/80">Planning a big celebration? We offer special pricing for bulk festival orders. Order in advance for best availability.</p>
-            <div className="mt-6 flex flex-col justify-center gap-4 sm:flex-row">
-              <Button asChild size="lg" variant="secondary" className="bg-card text-foreground hover:bg-card/90">
-                <Link href="/locations">Find a Store</Link>
-              </Button>
-              <Button asChild size="lg" className="border border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10">
-                <a href="tel:+1234567890">Call Us</a>
-              </Button>
-            </div>
-          </div>
-        </section>
       </main>
       
       <Footer />

@@ -64,9 +64,8 @@ export const garland_004_Sizes: GarlandSize[] = [
 ]
 
 export const garland_005_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 12000 }, // $120.00
-  { id: "4ft", label: "4 ft", priceInCents: 13000 }, // $130.00
-  { id: "5ft", label: "5 ft", priceInCents: 14000 }, // $140.00
+  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $110.00
+  { id: "5ft", label: "5 ft", priceInCents: 12500 }, // $125.00
 ]
 
 export const garland_006_Sizes: GarlandSize[] = [
@@ -75,9 +74,9 @@ export const garland_006_Sizes: GarlandSize[] = [
 ]
 
 export const garland_009_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 8000 }, // $80.00
-  { id: "4ft", label: "4 ft", priceInCents: 8500 }, // $85.00
-  { id: "5ft", label: "5 ft", priceInCents: 9000 }, // $90.00
+  { id: "3ft", label: "3 ft", priceInCents: 8500 }, // $85.00
+  { id: "4ft", label: "4 ft", priceInCents: 9000 }, // $90.00
+  { id: "5ft", label: "5 ft", priceInCents: 10000 }, // $100.00
 ]
 
 export const garland_010_Sizes: GarlandSize[] = [
@@ -212,9 +211,8 @@ export const garland_031_Sizes: GarlandSize[] = [
 ]
 
 export const garland_032_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 11000 }, // $110.00
-  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
-  { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
+  { id: "4ft", label: "4 ft", priceInCents: 13000 }, // $130.00
+  { id: "5ft", label: "5 ft", priceInCents: 14000 }, // $140.00
 ]
 
 export const garland_033_Sizes: GarlandSize[] = [
@@ -236,9 +234,9 @@ export const garland_035_Sizes: GarlandSize[] = [
 ]
 
 export const garland_036_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 9000 }, // Update price later
-  { id: "4ft", label: "4 ft", priceInCents: 9500 }, // Update price later
-  { id: "5ft", label: "5 ft", priceInCents: 10000 }, // Update price later
+  { id: "3ft", label: "3 ft", priceInCents: 9500 }, // Update price later
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // Update price later
+  { id: "5ft", label: "5 ft", priceInCents: 10500 }, // Update price later
 ]
 
 export const garland_037_Sizes: GarlandSize[] = [
@@ -254,9 +252,14 @@ export const garland_038_Sizes: GarlandSize[] = [
 ]
 
 export const garland_039_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 9000 }, // Update price later
-  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // Update price later
-  { id: "5ft", label: "5 ft", priceInCents: 11000 }, // Update price later
+  { id: "3ft", label: "3 ft", priceInCents: 9500 }, // $95.00
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $100.00
+  { id: "5ft", label: "5 ft", priceInCents: 10500 }, // $105.00
+]
+
+export const garland_040_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 9500 }, // $95.00
+  { id: "5ft", label: "5 ft", priceInCents: 10000 }, // $100.00
 ]
 
 // =================================================================================
@@ -489,7 +492,9 @@ export const garlands: Garland[] = [
     id: "garland-027",
     name: "WeddingGarland_027",
     description: "Pink Roses with Baby's Breath Garland and Pearl Accents",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM%20%283%29-T98NkFU7LCLPhJYezrsBNg8iRqhOcn.jpeg"],
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM%20%283%29-T98NkFU7LCLPhJYezrsBNg8iRqhOcn.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-16%20at%208.26.50%20PM-voBxKmK8gW1tnhrnMCB1npmcjwZinl.jpeg"
+    ],
     sizes: garland_027_Sizes
   },
   {
@@ -574,9 +579,16 @@ export const garlands: Garland[] = [
   {
     id: "garland-039",
     name: "WeddingGarland_039",
-    description: "Pink and White Roses with Baby's Breath Garland",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-16%20at%208.26.50%20PM-voBxKmK8gW1tnhrnMCB1npmcjwZinl.jpeg"],
+    description: "Coral Pink Roses with Baby's Breath Double Strand Garland",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_039-F32jd2EU2o1PvpdFuiubaOeGIqm54z.jpeg"],
     sizes: garland_039_Sizes
+  },
+  {
+    id: "garland-040",
+    name: "WeddingGarland_040",
+    description: "White Spider Mums and Pink Carnations with Baby's Breath Garland",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_040-nkyATf8ujrOArHwIldv6cetSjCMJ2t.jpeg"],
+    sizes: garland_040_Sizes
   },
 ]
 
