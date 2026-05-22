@@ -3,12 +3,15 @@
 import { useState, useMemo } from 'react'
 import Image from 'next/image'
 import { HairAccessory } from '@/lib/hair-accessories-data'
-import { X, ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react'
+import { X, ZoomIn, ChevronLeft, ChevronRight, ShoppingBag, Check } from 'lucide-react'
 import {
   Dialog,
   DialogContent,
   DialogTitle,
 } from '@/components/ui/dialog'
+import { Button } from '@/components/ui/button'
+import { useCart } from '@/lib/cart-context'
+import { cn } from '@/lib/utils'
 
 function formatPrice(priceInCents: number): string {
   return `$${(priceInCents / 100).toFixed(2)}`
@@ -21,6 +24,8 @@ interface HairAccessoryCardProps {
 export function HairAccessoryCard({ product }: HairAccessoryCardProps) {
   const [isImageOpen, setIsImageOpen] = useState(false)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [isAdded, setIsAdded] = useState(false)
+  const { addItem } = useCart()
 
   const allImages = useMemo(() => {
     return product.images.length > 0 ? product.images : ['/images/placeholder.jpg']
@@ -39,6 +44,20 @@ export function HairAccessoryCard({ product }: HairAccessoryCardProps) {
 
   const handleNext = () => {
     setCurrentImageIndex((prev) => (prev === allImages.length - 1 ? 0 : prev + 1))
+  }
+
+  const handleAddToCart = () => {
+    addItem({
+      id: product.id,
+      name: product.name,
+      description: product.description,
+      priceInCents: product.priceInCents,
+      imageUrl: allImages[0] || '',
+      category: 'hair-accessories',
+    }, 1)
+
+    setIsAdded(true)
+    setTimeout(() => setIsAdded(false), 2000)
   }
 
   return (
@@ -66,6 +85,29 @@ export function HairAccessoryCard({ product }: HairAccessoryCardProps) {
           <div className="mt-3 flex items-center justify-between">
             <span className="text-lg font-bold text-primary">{formatPrice(product.priceInCents)}</span>
           </div>
+          
+          {/* Add to Cart Button */}
+          <Button
+            onClick={handleAddToCart}
+            className={cn(
+              "mt-4 w-full transition-all",
+              isAdded 
+                ? "bg-green-600 hover:bg-green-600" 
+                : "bg-primary hover:bg-primary/90"
+            )}
+          >
+            {isAdded ? (
+              <>
+                <Check className="mr-2 h-4 w-4" />
+                Added to Cart
+              </>
+            ) : (
+              <>
+                <ShoppingBag className="mr-2 h-4 w-4" />
+                Add to Cart
+              </>
+            )}
+          </Button>
         </div>
       </div>
 
