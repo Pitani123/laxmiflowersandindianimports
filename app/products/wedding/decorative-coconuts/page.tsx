@@ -81,22 +81,6 @@ export default function DecorativeCoconutsPage() {
             )}
           </div>
         </section>
-
-        {/* CTA Section */}
-        <section className="bg-primary py-12">
-          <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-            <h2 className="font-serif text-2xl font-bold text-primary-foreground sm:text-3xl">Custom Decorated Coconuts</h2>
-            <p className="mt-2 text-primary-foreground/80">We create beautifully decorated coconuts for your wedding. Colors, initials, and decorations can be customized. Order in advance.</p>
-            <div className="mt-6 flex flex-col justify-center gap-4 sm:flex-row">
-              <Button asChild size="lg" variant="secondary" className="bg-card text-foreground hover:bg-card/90">
-                <Link href="/locations">Find a Store</Link>
-              </Button>
-              <Button asChild size="lg" variant="secondary" className="bg-card text-foreground hover:bg-card/90">
-                <a href="tel:+14699889029">Call Us</a>
-              </Button>
-            </div>
-          </div>
-        </section>
       </main>
       
       <Footer />
