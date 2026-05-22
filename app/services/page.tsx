@@ -277,54 +277,9 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* Custom Orders */}
-        <section className="bg-card py-20 lg:py-28">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-3xl text-center">
-              <p className="mb-3 text-sm font-medium uppercase tracking-wider text-primary">Custom Orders</p>
-              <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl">
-                <span className="text-balance">Do Not See What You Need?</span>
-              </h2>
-              <p className="mt-6 leading-relaxed text-muted-foreground">
-                We specialize in custom orders and can help you find or create exactly what you are looking for. 
-                Whether it is a specific flower arrangement, custom garland design, or bulk order for an event, 
-                our team is here to help.
-              </p>
-              <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-                <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  <a href="tel:+1234567890">
-                    Call Us to Discuss
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="border-foreground/20">
-                  <Link href="/locations">Visit Our Store</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        {/* CTA */}
-        <section className="bg-primary py-16 text-primary-foreground">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col items-center gap-6 text-center">
-              <h2 className="font-serif text-3xl font-bold sm:text-4xl">
-                Ready to Get Started?
-              </h2>
-              <p className="max-w-2xl text-primary-foreground/80">
-                Visit our store to see our full selection of products and services. 
-                Our friendly team is ready to help you find exactly what you need.
-              </p>
-              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                <Link href="/locations">
-                  Find Our Store Location
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </section>
+
+
       </main>
       
       <Footer />

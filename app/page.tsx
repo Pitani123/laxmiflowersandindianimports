@@ -139,25 +139,7 @@ export default function HomePage() {
 
 
 
-        {/* CTA Section */}
-        <section className="bg-secondary py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl">
-                Ready to Make Your Celebration Special?
-              </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-                Visit our store or give us a call. Our friendly team is here to help you 
-                find exactly what you need for your special occasions.
-              </p>
-              <div className="mt-8 flex justify-center">
-                <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  <Link href="/locations">Find Our Store</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
+
       </main>
       
       <Footer />
