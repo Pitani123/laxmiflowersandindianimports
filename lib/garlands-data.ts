@@ -487,7 +487,9 @@ export const garlands: Garland[] = [
     id: "garland-027",
     name: "WeddingGarland_027",
     description: "Pink Roses with Baby's Breath Garland and Pearl Accents",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM%20%283%29-T98NkFU7LCLPhJYezrsBNg8iRqhOcn.jpeg"],
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM%20%283%29-T98NkFU7LCLPhJYezrsBNg8iRqhOcn.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-16%20at%208.26.50%20PM-voBxKmK8gW1tnhrnMCB1npmcjwZinl.jpeg"
+    ],
     sizes: garland_027_Sizes
   },
   {
