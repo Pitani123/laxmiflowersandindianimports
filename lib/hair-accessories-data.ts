@@ -32,36 +32,36 @@ export const hairAccessories: HairAccessory[] = [
     id: "hair-004",
     name: "Hair_Accessories_004",
     description: "Classic cream jasmine gajra. Fragrant and elegant for traditional occasions.",
-    images: ["/images/products/hair-accessory-4.jpg"],
-    priceInCents: 4500, // $45.00
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-21%20at%2010.17.29%20PM-2D5tipAs3sRQ75dBGKLncpYpvN0M8E.jpeg"],
+    priceInCents: 6000, // $60.00
   },
   {
     id: "hair-005",
     name: "Hair_Accessories_005",
     description: "Multi-color flower veni with jasmine, roses, and golden flowers. Beautiful tricolor design.",
-    images: ["/images/products/hair-accessory-5.jpg"],
-    priceInCents: 2000, // $20.00
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-21%20at%2010.18.54%20PM-X2ZHlnqJlIRGFlZ2rTFMZ0Ll1LFLZP.jpeg"],
+    priceInCents: 7500, // $75.00
   },
   {
     id: "hair-006",
     name: "Hair_Accessories_006",
     description: "Orange marigold poolajada with green leaves. Traditional and vibrant for festive occasions.",
-    images: ["/images/products/hair-accessory-6.jpg"],
-    priceInCents: 2500, // $25.00
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-21%20at%2010.12.23%20PM-m3vXIZyXjAHwFI8es0FWWR4drNI0kR.jpeg"],
+    priceInCents: 7500, // $75.00
   },
   {
     id: "hair-007",
     name: "Hair_Accessories_007",
     description: "Pink rose gajra with baby's breath. Romantic and delicate for weddings.",
-    images: ["/images/products/hair-accessory-7.jpg"],
-    priceInCents: 8500, // $85.00
+    images: ["/images/products/hair-accessory-7.jpg"], // TODO: Need original image URL
+    priceInCents: 7500, // $75.00
   },
   {
     id: "hair-008",
     name: "Hair_Accessories_008",
-    description: "Yellow flower veni with pearl accents. Bright and festive design.",
-    images: ["/images/products/hair-accessory-8.jpg"],
-    priceInCents: 2500, // $25.00
+    description: "Traditional Hair Veni with golden and red flowers.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-21%20at%2010.12.35%20PM-WIptFXF4teqzV72VilRUwcBOeIFFuZ.jpeg"],
+    priceInCents: 9500, // $95.00
   },
   {
     id: "hair-009",
