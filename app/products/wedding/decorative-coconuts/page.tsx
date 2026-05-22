@@ -1,11 +1,27 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { DecorativeCoconutCard } from "@/components/decorative-coconut-card"
+import { DecorativeCoconutCollage } from "@/components/decorative-coconut-collage"
 import { decorativeCoconuts } from "@/lib/decorative-coconuts-data"
 import { ArrowLeft, Palmtree, Palette } from "lucide-react"
+
+// Collage images using actual product images
+const collageImages = [
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.20%20PM-7LL5qBIo35DTtsn74AIib9S2CXlhba.jpeg",
+    alt: "DecorativeCoconut_004 - Green coconut with R & N initials and Ganesha medallion"
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM-vCPPivoLUFvpilgi9XUCQYwaRhBSVC.jpeg",
+    alt: "DecorativeCoconut_005 - Green coconut with Ganesha medallion and pearl embellishments"
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%282%29-WA52eN3TJDtzWIHY8Qe44OHi9SczgU.jpeg",
+    alt: "DecorativeCoconut_008 - Green coconut with Om symbol lotus mandala design"
+  }
+]
 
 export default function DecorativeCoconutsPage() {
   return (
@@ -15,13 +31,7 @@ export default function DecorativeCoconutsPage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px]">
-          <Image
-            src="/images/decorative-coconuts-collage.jpg"
-            alt="Decorative Coconuts Collection - Hand-decorated wedding coconuts with crystals, pearls and traditional designs"
-            fill
-            className="object-cover"
-            priority
-          />
+          <DecorativeCoconutCollage images={collageImages} />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-transparent" />
           <div className="absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
