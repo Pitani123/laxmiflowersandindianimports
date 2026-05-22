@@ -305,26 +305,7 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="bg-primary py-16 text-primary-foreground">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col items-center gap-6 text-center">
-              <h2 className="font-serif text-3xl font-bold sm:text-4xl">
-                Ready to Get Started?
-              </h2>
-              <p className="max-w-2xl text-primary-foreground/80">
-                Visit our store to see our full selection of products and services. 
-                Our friendly team is ready to help you find exactly what you need.
-              </p>
-              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                <Link href="/locations">
-                  Find Our Store Location
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </section>
+
       </main>
       
       <Footer />
