@@ -37,7 +37,7 @@ export default function HomePage() {
             style={{ backgroundImage: "url('/images/hero-background.png')" }}
           />
           {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-white/70" />
+          <div className="absolute inset-0 bg-white/95" />
           
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             {/* Desktop: badges on sides of heading */}
