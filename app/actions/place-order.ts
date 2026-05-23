@@ -25,6 +25,7 @@ interface PlaceOrderInput {
   customerEmail: string
   customerPhone: string
   shippingAddress?: string
+  pickupDate: string
   items: CartItem[]
 }
 
@@ -105,6 +106,7 @@ export async function placeOrder(input: PlaceOrderInput): Promise<{ success: boo
           <p><strong>Name:</strong> ${input.customerName}</p>
           <p><strong>Email:</strong> ${input.customerEmail}</p>
           <p><strong>Phone:</strong> ${input.customerPhone}</p>
+          <p><strong>Pick up Date:</strong> ${new Date(input.pickupDate).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
           ${input.shippingAddress ? `<p><strong>Address:</strong> ${input.shippingAddress}</p>` : ''}
         </div>
         

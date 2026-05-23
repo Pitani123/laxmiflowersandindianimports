@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowLeft, ShoppingBag, CheckCircle, User, Mail, Phone, MapPin, Loader2 } from 'lucide-react'
+import { ArrowLeft, ShoppingBag, CheckCircle, User, Mail, Phone, MapPin, Loader2, Calendar } from 'lucide-react'
 import { useCart } from '@/lib/cart-context'
 import { placeOrder } from '@/app/actions/place-order'
 
@@ -27,6 +27,14 @@ export default function CheckoutPage() {
   const [customerEmail, setCustomerEmail] = useState('')
   const [customerPhone, setCustomerPhone] = useState('')
   const [shippingAddress, setShippingAddress] = useState('')
+  const [pickupDate, setPickupDate] = useState('')
+
+  // Get minimum date (tomorrow)
+  const getMinDate = () => {
+    const tomorrow = new Date()
+    tomorrow.setDate(tomorrow.getDate() + 1)
+    return tomorrow.toISOString().split('T')[0]
+  }
 
   // Validate phone number (basic validation - at least 10 digits)
   const isValidPhone = (phone: string) => {
@@ -53,6 +61,10 @@ export default function CheckoutPage() {
       setError('Please enter a valid mobile number (at least 10 digits)')
       return false
     }
+    if (!pickupDate) {
+      setError('Please select a pick up date')
+      return false
+    }
     setError(null)
     return true
   }
@@ -77,6 +89,7 @@ export default function CheckoutPage() {
         customerEmail: customerEmail.trim(),
         customerPhone: customerPhone.trim(),
         shippingAddress: shippingAddress.trim() || undefined,
+        pickupDate: pickupDate,
         items: cartItems,
       })
       
@@ -258,6 +271,25 @@ export default function CheckoutPage() {
                   </div>
 
                   <div>
+                    <label htmlFor="pickupDate" className="mb-2 flex items-center gap-2 text-sm font-medium">
+                      <Calendar className="h-4 w-4 text-muted-foreground" />
+                      Pick up Date <span className="text-destructive">*</span>
+                    </label>
+                    <input
+                      type="date"
+                      id="pickupDate"
+                      value={pickupDate}
+                      onChange={(e) => setPickupDate(e.target.value)}
+                      min={getMinDate()}
+                      className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                      required
+                    />
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      Select the date you&apos;d like to pick up your order
+                    </p>
+                  </div>
+
+                  <div>
                     <label htmlFor="address" className="mb-2 flex items-center gap-2 text-sm font-medium">
                       <MapPin className="h-4 w-4 text-muted-foreground" />
                       Shipping Address (Optional)
@@ -273,10 +305,22 @@ export default function CheckoutPage() {
                   </div>
                 </div>
 
-                <div className="mt-6 rounded-lg bg-secondary/50 p-4">
-                  <p className="text-sm text-muted-foreground">
-                    <strong>Note:</strong> After placing your order, we will contact you to confirm the details and arrange payment. No payment is required now.
-                  </p>
+                <div className="mt-6 space-y-3">
+                  <div className="rounded-lg bg-secondary/50 p-4">
+                    <p className="text-sm text-muted-foreground">
+                      <strong>Note:</strong> After placing your order, we will contact you to confirm the details and arrange payment. No payment is required now.
+                    </p>
+                  </div>
+                  <div className="rounded-lg bg-amber-50 border border-amber-200 p-4">
+                    <p className="text-sm text-amber-800">
+                      <strong>Tax Information:</strong> Sales tax will be added to your total based on the store location where you pick up your order. We have stores in TX and NJ only.
+                    </p>
+                  </div>
+                  <div className="rounded-lg bg-blue-50 border border-blue-200 p-4">
+                    <p className="text-sm text-blue-800">
+                      <strong>Shipping:</strong> For products that need to be shipped, shipping costs will be added to your total.
+                    </p>
+                  </div>
                 </div>
 
                 <Button 

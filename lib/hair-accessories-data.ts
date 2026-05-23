@@ -11,21 +11,24 @@ export const hairAccessories: HairAccessory[] = [
     id: "hair-001",
     name: "Hair_Accessories_001",
     description: "Traditional white jasmine gajra with golden accents. Perfect for weddings and special occasions.",
-    images: ["/images/products/hair-accessory-1.jpg"],
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hair_Accessories_001-4YI69GWvbOdVdYj2sxyyEZOFcz9OzA.jpeg"],
     priceInCents: 2000, // $20.00
   },
   {
     id: "hair-002",
     name: "Hair_Accessories_002",
     description: "Elegant red rose poolajada with jasmine buds. Ideal for South Indian bridal hairstyles.",
-    images: ["/images/products/hair-accessory-2.jpg"],
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hair_Accessories_002_1-1XfBWrJMelZEgUgCiQBFkdIHP1OFD0.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hair_Accessories_002_2-yuPmifOXzECawk3a9foS6T748qNHzi.jpeg"
+    ],
     priceInCents: 8500, // $85.00
   },
   {
     id: "hair-003",
     name: "Hair_Accessories_003",
     description: "Beautiful golden flower veni with traditional design. Perfect for ceremonies and weddings.",
-    images: ["/images/products/hair-accessory-3.jpg"],
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hair_Accessories_003-xlYHhR4Aaw2SyEvQSbstzLI73QB3A7.jpeg"],
     priceInCents: 2000, // $20.00
   },
   {
@@ -52,8 +55,8 @@ export const hairAccessories: HairAccessory[] = [
   {
     id: "hair-007",
     name: "Hair_Accessories_007",
-    description: "Pink rose gajra with baby's breath. Romantic and delicate for weddings.",
-    images: ["/images/products/hair-accessory-7.jpg"], // TODO: Need original image URL
+    description: "Long bridal jadai veni with white jasmine petals and red flower accents with golden stone-studded centers. Features pearl strings and rose bud tassels at the bottom. Perfect for South Indian bridal hairstyles.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Hair_Accessories_007-HyRh0BpCYfVjsy15YjOGHn8YjL1RVq.jpeg"],
     priceInCents: 7500, // $75.00
   },
   {
