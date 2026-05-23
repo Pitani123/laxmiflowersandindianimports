@@ -175,23 +175,10 @@ export default function ServicesPage() {
       <Navigation />
       
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="bg-secondary py-6 lg:py-8">
+        {/* Quick Nav */}
+        <section className="bg-secondary py-6">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-3xl text-center">
-              <p className="mb-2 text-sm font-medium uppercase tracking-wider text-primary">Our Services</p>
-              <h1 className="font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl">
-                <span className="text-balance">Everything You Need for Your Celebrations</span>
-              </h1>
-              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                From fresh flowers and traditional garlands to Indian gifts, silver items, 
-                traditional dresses, and authentic snacks. We are your one-stop shop for 
-                all things Indian.
-              </p>
-            </div>
-            
-            {/* Quick Nav */}
-            <div className="mx-auto mt-6 flex max-w-4xl flex-wrap justify-center gap-3">
+            <div className="mx-auto flex max-w-4xl flex-wrap justify-center gap-3">
               {services.map((service) => (
                 <a
                   key={service.id}
