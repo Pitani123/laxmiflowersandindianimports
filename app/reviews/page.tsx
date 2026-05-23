@@ -137,39 +137,12 @@ export default function ReviewsPage() {
     }
   }
 
-  const averageRating = existingReviews.reduce((acc, r) => acc + r.rating, 0) / existingReviews.length
-
   return (
     <div className="flex min-h-screen flex-col">
       <Navigation />
       
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="bg-secondary py-6 lg:py-8">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-3xl text-center">
-              <p className="mb-2 text-sm font-medium uppercase tracking-wider text-primary">Customer Reviews</p>
-              <h1 className="font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl">
-                <span className="text-balance">What Our Customers Say</span>
-              </h1>
-              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                We value your feedback! Read what our customers have to say about their experience 
-                with Laxmi Flowers and Indian Imports, and share your own story.
-              </p>
-              
-              {/* Overall Rating */}
-              <div className="mt-5 flex items-center justify-center gap-4">
-                <div className="flex items-center gap-2">
-                  <span className="text-4xl font-bold text-foreground">{averageRating.toFixed(1)}</span>
-                  <div className="flex flex-col items-start">
-                    <StarRating rating={Math.round(averageRating)} />
-                    <span className="text-sm text-muted-foreground">{existingReviews.length} reviews</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* Reviews Grid - Temporarily Disabled */}
         {/* <section className="py-20 lg:py-28">
