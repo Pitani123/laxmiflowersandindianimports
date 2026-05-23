@@ -103,22 +103,6 @@ export default async function ProductsPage() {
       <Navigation />
       
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="bg-secondary py-6 lg:py-8">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-3xl text-center">
-              <h1 className="font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl">
-                <span className="text-balance">Shop by Category</span>
-              </h1>
-              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                Browse our wide selection of fresh flowers, garlands, Indian gifts, traditional dresses, 
-                silver items, and more. Add items to your cart and checkout online!
-              </p>
-            </div>
-
-          </div>
-        </section>
-
         {/* Categories Grid */}
         <section className="py-10 lg:py-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
