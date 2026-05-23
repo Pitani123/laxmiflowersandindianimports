@@ -29,11 +29,20 @@ export default function CheckoutPage() {
   const [shippingAddress, setShippingAddress] = useState('')
   const [pickupDate, setPickupDate] = useState('')
 
-  // Get minimum date (tomorrow)
+  // Check if cart contains garlands
+  const hasGarlands = items.some(item => item.product.category === 'garlands')
+
+  // Get minimum date based on cart contents
+  // Garlands require at least 7 days advance notice
+  // Other products require at least 1 day advance notice
   const getMinDate = () => {
-    const tomorrow = new Date()
-    tomorrow.setDate(tomorrow.getDate() + 1)
-    return tomorrow.toISOString().split('T')[0]
+    const minDate = new Date()
+    if (hasGarlands) {
+      minDate.setDate(minDate.getDate() + 7)
+    } else {
+      minDate.setDate(minDate.getDate() + 1)
+    }
+    return minDate.toISOString().split('T')[0]
   }
 
   // Validate phone number (basic validation - at least 10 digits)
@@ -285,7 +294,10 @@ export default function CheckoutPage() {
                       required
                     />
                     <p className="mt-1 text-xs text-muted-foreground">
-                      Select the date you&apos;d like to pick up your order
+                      {hasGarlands 
+                        ? "Garland orders require at least 7 days advance notice"
+                        : "Select the date you'd like to pick up your order"
+                      }
                     </p>
                   </div>
 
@@ -311,6 +323,13 @@ export default function CheckoutPage() {
                       <strong>Note:</strong> After placing your order, we will contact you to confirm the details and arrange payment. No payment is required now.
                     </p>
                   </div>
+                  {hasGarlands && (
+                    <div className="rounded-lg bg-rose-50 border border-rose-200 p-4">
+                      <p className="text-sm text-rose-800">
+                        <strong>Garland Orders:</strong> Garland orders must be placed at least 7 days in advance. <strong>Contact us for last minute orders.</strong>
+                      </p>
+                    </div>
+                  )}
                   <div className="rounded-lg bg-amber-50 border border-amber-200 p-4">
                     <p className="text-sm text-amber-800">
                       <strong>Tax Information:</strong> Sales tax will be added to your total based on the store location where you pick up your order. We have stores in TX and NJ only.
@@ -319,6 +338,11 @@ export default function CheckoutPage() {
                   <div className="rounded-lg bg-blue-50 border border-blue-200 p-4">
                     <p className="text-sm text-blue-800">
                       <strong>Shipping:</strong> For products that need to be shipped, shipping costs will be added to your total.
+                    </p>
+                  </div>
+                  <div className="rounded-lg bg-purple-50 border border-purple-200 p-4">
+                    <p className="text-sm text-purple-800">
+                      <strong>Contact us for custom/bulk orders or any questions.</strong>
                     </p>
                   </div>
                 </div>
