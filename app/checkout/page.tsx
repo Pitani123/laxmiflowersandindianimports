@@ -29,15 +29,17 @@ export default function CheckoutPage() {
   const [shippingAddress, setShippingAddress] = useState('')
   const [pickupDate, setPickupDate] = useState('')
 
-  // Check if cart contains garlands
+  // Check if cart contains garlands or decorating coconuts
   const hasGarlands = items.some(item => item.product.category === 'garlands')
+  const hasDecoratingCoconuts = items.some(item => item.product.category === 'decorating-coconuts')
+  const requiresAdvanceNotice = hasGarlands || hasDecoratingCoconuts
 
   // Get minimum date based on cart contents
-  // Garlands require at least 7 days advance notice
+  // Garlands and Decorating Coconuts require at least 7 days advance notice
   // Other products require at least 1 day advance notice
   const getMinDate = () => {
     const minDate = new Date()
-    if (hasGarlands) {
+    if (requiresAdvanceNotice) {
       minDate.setDate(minDate.getDate() + 7)
     } else {
       minDate.setDate(minDate.getDate() + 1)
@@ -294,8 +296,8 @@ export default function CheckoutPage() {
                       required
                     />
                     <p className="mt-1 text-xs text-muted-foreground">
-                      {hasGarlands 
-                        ? "Garland orders require at least 7 days advance notice"
+                      {requiresAdvanceNotice 
+                        ? "Garland and Decorating Coconut orders require at least 7 days advance notice"
                         : "Select the date you'd like to pick up your order"
                       }
                     </p>
@@ -323,10 +325,10 @@ export default function CheckoutPage() {
                       <strong>Note:</strong> After placing your order, we will contact you to confirm the details and arrange payment. No payment is required now.
                     </p>
                   </div>
-                  {hasGarlands && (
+                  {requiresAdvanceNotice && (
                     <div className="rounded-lg bg-rose-50 border border-rose-200 p-4">
                       <p className="text-sm text-rose-800">
-                        <strong>Garland Orders:</strong> Garland orders must be placed at least 7 days in advance. <strong>Contact us for last minute orders.</strong>
+                        <strong>Advance Notice Required:</strong> Garland and Decorating Coconut orders must be placed at least 7 days in advance. <strong>Contact us for last minute orders.</strong>
                       </p>
                     </div>
                   )}
