@@ -313,7 +313,7 @@ export default function CheckoutPage() {
                   </div>
                   <div className="rounded-lg bg-amber-50 border border-amber-200 p-4">
                     <p className="text-sm text-amber-800">
-                      <strong>Tax Information:</strong> Sales tax will be added to your total based on your state. Applicable for TX and NJ orders.
+                      <strong>Tax Information:</strong> Sales tax will be added to your total based on the store location where you pick up your order. We have stores in TX and NJ only.
                     </p>
                   </div>
                   <div className="rounded-lg bg-blue-50 border border-blue-200 p-4">
