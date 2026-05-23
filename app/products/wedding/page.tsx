@@ -6,6 +6,23 @@ import { Button } from "@/components/ui/button"
 import { WeddingAccessoriesCollage } from "@/components/wedding-accessories-collage"
 import { HairAccessoriesCollage } from "@/components/hair-accessories-collage"
 import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
+import { DecorativeCoconutCollage } from "@/components/decorative-coconut-collage"
+
+// Collage images for decorative coconuts
+const decorativeCoconutCollageImages = [
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.20%20PM-7LL5qBIo35DTtsn74AIib9S2CXlhba.jpeg",
+    alt: "DecorativeCoconut_004 - Green coconut with R & N initials and Ganesha medallion"
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM-vCPPivoLUFvpilgi9XUCQYwaRhBSVC.jpeg",
+    alt: "DecorativeCoconut_005 - Green coconut with Ganesha medallion and pearl embellishments"
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%282%29-WA52eN3TJDtzWIHY8Qe44OHi9SczgU.jpeg",
+    alt: "DecorativeCoconut_008 - Green coconut with Om symbol lotus mandala design"
+  }
+]
 import { ArrowLeft, Heart, Palmtree, Gem, Sparkles, Flame } from "lucide-react"
 
 const subcategories = [
@@ -106,6 +123,8 @@ export default function WeddingPage() {
                       <WeddingAccessoriesCollage />
                     ) : category.id === "hair-accessories" ? (
                       <HairAccessoriesCollage />
+                    ) : category.id === "decorative-coconuts" ? (
+                      <DecorativeCoconutCollage images={decorativeCoconutCollageImages} />
                     ) : (
                       <Image
                         src={category.image}
