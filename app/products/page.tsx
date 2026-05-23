@@ -107,7 +107,6 @@ export default async function ProductsPage() {
         <section className="bg-secondary py-6 lg:py-8">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="mb-2 text-sm font-medium uppercase tracking-wider text-primary">Our Products</p>
               <h1 className="font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl">
                 <span className="text-balance">Shop by Category</span>
               </h1>
