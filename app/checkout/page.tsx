@@ -29,10 +29,10 @@ export default function CheckoutPage() {
   const [shippingAddress, setShippingAddress] = useState('')
   const [pickupDate, setPickupDate] = useState('')
 
-  // Check if cart contains garlands or decorating coconuts
+  // Check if cart contains garlands or decorative coconuts
   const hasGarlands = items.some(item => item.product.category === 'garlands')
-  const hasDecoratingCoconuts = items.some(item => item.product.category === 'decorating-coconuts')
-  const requiresAdvanceNotice = hasGarlands || hasDecoratingCoconuts
+  const hasDecorativeCoconuts = items.some(item => item.product.category === 'decorative-coconuts')
+  const requiresAdvanceNotice = hasGarlands || hasDecorativeCoconuts
 
   // Get minimum date based on cart contents
   // Garlands and Decorating Coconuts require at least 7 days advance notice
