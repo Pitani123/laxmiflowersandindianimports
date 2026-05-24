@@ -2,10 +2,10 @@ import Image from "next/image"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Button } from "@/components/ui/button"
+
 import { ProductCard } from "@/components/product-card"
 import { getProducts } from "@/lib/db-products"
-import { Phone, Store } from "lucide-react"
+import { Store } from "lucide-react"
 
 const productCategories = [
   {
@@ -103,23 +103,6 @@ export default async function ProductsPage() {
       <Navigation />
       
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="bg-secondary py-6 lg:py-8">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-3xl text-center">
-              <p className="mb-2 text-sm font-medium uppercase tracking-wider text-primary">Our Products</p>
-              <h1 className="font-serif text-3xl font-bold leading-tight text-foreground sm:text-4xl">
-                <span className="text-balance">Explore Our Collection</span>
-              </h1>
-              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                Browse our wide selection of fresh flowers, garlands, Indian gifts, traditional dresses, 
-                silver items, and more. Add items to your cart and checkout online!
-              </p>
-            </div>
-
-          </div>
-        </section>
-
         {/* Categories Grid */}
         <section className="py-10 lg:py-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -167,35 +150,7 @@ export default async function ProductsPage() {
           </div>
         </section> */}
 
-        {/* CTA Section */}
-        <section className="bg-primary py-16">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col items-center justify-between gap-6 text-center lg:flex-row lg:text-left">
-              <div>
-                <h2 className="font-serif text-2xl font-bold text-primary-foreground sm:text-3xl">
-                  Ready to Place an Order?
-                </h2>
-                <p className="mt-2 text-primary-foreground/80">
-                  Visit our store or call us to enquire about pricing and availability.
-                </p>
-              </div>
-              <div className="flex flex-col gap-3 sm:flex-row">
-                <Button asChild size="lg" variant="secondary" className="bg-card text-foreground hover:bg-card/90">
-                  <a href="tel:+1234567890">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Call Now
-                  </a>
-                </Button>
-                <Button asChild size="lg" className="border border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10">
-                  <Link href="/locations">
-                    <Store className="mr-2 h-5 w-5" />
-                    Store Locations
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
+
       </main>
       
       <Footer />
