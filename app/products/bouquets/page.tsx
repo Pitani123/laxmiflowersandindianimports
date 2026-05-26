@@ -7,6 +7,7 @@ import { ProductCard } from "@/components/product-card"
 import { FlowerBouquetCollage } from "@/components/flower-bouquet-collage"
 import { bouquetProducts } from "@/data/bouquets"
 import { Store, ArrowLeft, Gift } from "lucide-react"
+import { ProductNotice } from "@/components/product-notice"
 
 export default async function BouquetsPage() {
   const products = bouquetProducts.filter((p) => p.is_active)
@@ -38,6 +39,8 @@ export default async function BouquetsPage() {
             </div>
           </div>
         </section>
+
+        <ProductNotice />
 
         {/* Products Section */}
         <section className="py-16 lg:py-24">

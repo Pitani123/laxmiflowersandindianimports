@@ -6,6 +6,7 @@ import { DecorativeCoconutCard } from "@/components/decorative-coconut-card"
 import { DecorativeCoconutCollage } from "@/components/decorative-coconut-collage"
 import { decorativeCoconuts } from "@/lib/decorative-coconuts-data"
 import { ArrowLeft, Palmtree, Palette } from "lucide-react"
+import { ProductNotice } from "@/components/product-notice"
 
 // Collage images using actual product images
 const collageImages = [
@@ -51,6 +52,8 @@ export default function DecorativeCoconutsPage() {
             </div>
           </div>
         </section>
+
+        <ProductNotice />
 
         {/* Products Section */}
         <section className="py-16 lg:py-24">

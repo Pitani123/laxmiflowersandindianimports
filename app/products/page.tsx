@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer"
 import { ProductCard } from "@/components/product-card"
 import { getProducts } from "@/lib/db-products"
 import { Store } from "lucide-react"
+import { ProductNotice } from "@/components/product-notice"
 
 const productCategories = [
   {
@@ -103,6 +104,8 @@ export default async function ProductsPage() {
       <Navigation />
       
       <main className="flex-1">
+        <ProductNotice />
+
         {/* Categories Grid */}
         <section className="py-10 lg:py-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

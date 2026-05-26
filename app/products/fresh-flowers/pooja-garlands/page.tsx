@@ -7,6 +7,7 @@ import { PoojaGarlandCard } from "@/components/pooja-garland-card"
 import { PoojaGarlandsCollage } from "@/components/pooja-garlands-collage"
 import { poojaGarlandProducts } from "@/data/pooja-garlands"
 import { ArrowLeft, Heart } from "lucide-react"
+import { ProductNotice } from "@/components/product-notice"
 
 export default async function PoojaGarlandsPage() {
   const products = poojaGarlandProducts.filter((p) => p.is_active)
@@ -38,6 +39,8 @@ export default async function PoojaGarlandsPage() {
             </div>
           </div>
         </section>
+
+        <ProductNotice />
 
         {/* Products Section */}
         <section className="py-16 lg:py-24">

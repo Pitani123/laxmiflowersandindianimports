@@ -24,6 +24,7 @@ const decorativeCoconutCollageImages = [
   }
 ]
 import { ArrowLeft, Heart, Palmtree, Gem, Sparkles, Flame } from "lucide-react"
+import { ProductNotice } from "@/components/product-notice"
 
 const subcategories = [
   {
@@ -102,6 +103,8 @@ export default function WeddingPage() {
             </div>
           </div>
         </section>
+
+        <ProductNotice />
 
         {/* Subcategories Section */}
         <section className="py-16 lg:py-24">

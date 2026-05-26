@@ -6,6 +6,7 @@ import { HairAccessoryCard } from "@/components/hair-accessory-card"
 import { HairAccessoriesCollage } from "@/components/hair-accessories-collage"
 import { hairAccessories } from "@/lib/hair-accessories-data"
 import { ArrowLeft, Sparkles } from "lucide-react"
+import { ProductNotice } from "@/components/product-notice"
 
 export default function HairAccessoriesPage() {
   return (
@@ -35,6 +36,8 @@ export default function HairAccessoriesPage() {
             </div>
           </div>
         </section>
+
+        <ProductNotice />
 
         {/* Products Section */}
         <section className="py-16 lg:py-24">
