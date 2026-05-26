@@ -1,4 +1,4 @@
-import { Clock, Package } from "lucide-react"
+import { Clock, Package, Settings } from "lucide-react"
 
 export function ProductNotice() {
   return (
@@ -24,6 +24,17 @@ export function ProductNotice() {
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 We welcome custom and bulk requests! Please contact us to discuss your specific requirements.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <Settings className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
+            <div>
+              <p className="text-sm font-medium text-foreground">
+                Customizations Available
+              </p>
+              <p className="text-sm text-muted-foreground mt-1">
+                Customizations are available as per requirements.
               </p>
             </div>
           </div>
