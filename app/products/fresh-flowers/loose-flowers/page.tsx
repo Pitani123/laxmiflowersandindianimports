@@ -6,6 +6,7 @@ import { ProductCard } from "@/components/product-card"
 import { FreshFlowersCollage } from "@/components/fresh-flowers-collage"
 import { looseFlowerProducts } from "@/data/loose-flowers"
 import { ArrowLeft, Leaf } from "lucide-react"
+import { ProductNotice } from "@/components/product-notice"
 
 export default async function LooseFlowersPage() {
   const products = looseFlowerProducts.filter((p) => p.is_active)
@@ -37,6 +38,8 @@ export default async function LooseFlowersPage() {
             </div>
           </div>
         </section>
+
+        <ProductNotice />
 
         {/* Products Section */}
         <section className="py-16 lg:py-24">

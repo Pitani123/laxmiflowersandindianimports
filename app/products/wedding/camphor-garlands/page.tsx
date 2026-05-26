@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { CamphorGarlandCard } from "@/components/camphor-garland-card"
 import { camphorGarlands } from "@/lib/camphor-garlands-data"
 import { ArrowLeft, Flame, Info } from "lucide-react"
+import { ProductNotice } from "@/components/product-notice"
 
 export default function CamphorGarlandsPage() {
   return (
@@ -41,6 +42,8 @@ export default function CamphorGarlandsPage() {
             </div>
           </div>
         </section>
+
+        <ProductNotice />
 
         {/* Info Banner */}
         <section className="border-b border-border bg-secondary/50 py-4">

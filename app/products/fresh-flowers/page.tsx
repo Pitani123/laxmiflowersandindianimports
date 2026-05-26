@@ -7,6 +7,7 @@ import { FreshFlowersCollage } from "@/components/fresh-flowers-collage"
 import { LooseFlowersCollage } from "@/components/loose-flowers-collage"
 import { PoojaGarlandsCollage } from "@/components/pooja-garlands-collage"
 import { ArrowLeft, Flower2, ShoppingBag, Leaf, Heart } from "lucide-react"
+import { ProductNotice } from "@/components/product-notice"
 
 const subcategories = [
   {
@@ -55,6 +56,8 @@ export default function FreshFlowersPage() {
             </div>
           </div>
         </section>
+
+        <ProductNotice />
 
         {/* Subcategories Section */}
         <section className="py-16 lg:py-24">

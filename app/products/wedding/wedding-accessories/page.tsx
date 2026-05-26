@@ -8,6 +8,7 @@ import { GarikaMunthaluCard } from "@/components/garika-munthalu-card"
 import { getProductsByCategory } from "@/lib/db-products"
 import { garikaMunthaluProducts } from "@/lib/garika-munthalu-data"
 import { ArrowLeft, Gem } from "lucide-react"
+import { ProductNotice } from "@/components/product-notice"
 
 export default async function WeddingAccessoriesPage() {
   const products = await getProductsByCategory('wedding-accessories')
@@ -88,6 +89,8 @@ export default async function WeddingAccessoriesPage() {
             </div>
           </div>
         </section>
+
+        <ProductNotice />
 
         {/* Products Section */}
         <section className="py-16 lg:py-24">

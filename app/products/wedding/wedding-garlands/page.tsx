@@ -6,6 +6,7 @@ import { GarlandCard } from "@/components/garland-card"
 import { garlands } from "@/lib/garlands-data"
 import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
 import { ArrowLeft, Heart, Info } from "lucide-react"
+import { ProductNotice } from "@/components/product-notice"
 
 export default function WeddingGarlandsPage() {
   return (
@@ -35,6 +36,8 @@ export default function WeddingGarlandsPage() {
             </div>
           </div>
         </section>
+
+        <ProductNotice />
 
         {/* Info Banner */}
         <section className="border-b border-border bg-secondary/50 py-4">
