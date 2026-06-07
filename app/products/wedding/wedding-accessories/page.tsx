@@ -3,16 +3,12 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { ProductCard } from "@/components/product-card"
 import { GarikaMunthaluCard } from "@/components/garika-munthalu-card"
-import { getProductsByCategory } from "@/lib/db-products"
 import { garikaMunthaluProducts } from "@/lib/garika-munthalu-data"
 import { ArrowLeft, Gem } from "lucide-react"
 import { ProductNotice } from "@/components/product-notice"
 
-export default async function WeddingAccessoriesPage() {
-  const products = await getProductsByCategory('wedding-accessories')
-
+export default function WeddingAccessoriesPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navigation />
@@ -95,32 +91,15 @@ export default async function WeddingAccessoriesPage() {
         {/* Products Section */}
         <section className="py-16 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            {(products.length > 0 || garikaMunthaluProducts.length > 0) ? (
-              <>
-                {/* Garika Munthalu Section */}
-                {garikaMunthaluProducts.length > 0 && (
-                  <div className="mb-12">
-                    <h2 className="mb-6 font-serif text-2xl font-bold text-foreground">Garika Munthalu (Decorated Clay Pots)</h2>
-                    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                      {garikaMunthaluProducts.map((product) => (
-                        <GarikaMunthaluCard key={product.id} product={product} />
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Other Products from Database */}
-                {products.length > 0 && (
-                  <div>
-                    <h2 className="mb-6 font-serif text-2xl font-bold text-foreground">Other Accessories</h2>
-                    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                      {products.map((product) => (
-                        <ProductCard key={product.id} product={product} />
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </>
+            {garikaMunthaluProducts.length > 0 ? (
+              <div>
+                <h2 className="mb-6 font-serif text-2xl font-bold text-foreground">Garika Munthalu (Decorated Clay Pots)</h2>
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {garikaMunthaluProducts.map((product) => (
+                    <GarikaMunthaluCard key={product.id} product={product} />
+                  ))}
+                </div>
+              </div>
             ) : (
               <div className="rounded-xl bg-secondary p-12 text-center">
                 <Gem className="mx-auto h-12 w-12 text-muted-foreground" />
