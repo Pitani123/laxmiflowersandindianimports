@@ -122,4 +122,69 @@ export const bouquetProducts: DBProduct[] = [
     created_at: '2026-06-06T00:00:00Z',
     updated_at: '2026-06-06T00:00:00Z',
   },
+  {
+    id: 'bouquet-010',
+    name: 'Flower_Bouquet_010',
+    description:
+      "Elegant funeral and memorial wreaths featuring yellow and white roses with chrysanthemums and baby's breath, beautifully arranged with lush greenery for heartfelt tributes.",
+    price_in_cents: 18000,
+    category: 'bouquets',
+    image_url:
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Flower_Bouquet_010-AL14FVCB5PpHUIojlqvbRUc6Hc8aeo.jpeg',
+    is_active: true,
+    created_at: '2026-06-07T00:00:00Z',
+    updated_at: '2026-06-07T00:00:00Z',
+  },
+  {
+    id: 'bouquet-011',
+    name: 'Flower_Bouquet_011',
+    description:
+      "Charming bridal bouquet with pink and white roses, accented with baby's breath and fresh greenery, finished with a satin ribbon wrap.",
+    price_in_cents: 8500,
+    category: 'bouquets',
+    image_url:
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Flower_Bouquet_011-7VeGNdV8CgszJZxK6Tc4Txiy0rDTvw.jpeg',
+    is_active: true,
+    created_at: '2026-06-07T00:00:00Z',
+    updated_at: '2026-06-07T00:00:00Z',
+  },
+  {
+    id: 'bouquet-012',
+    name: 'Flower_Bouquet_012',
+    description:
+      'Lovely round bouquet of pink carnations and white chrysanthemums with glossy green leaves, wrapped in white marble paper with gold accents.',
+    price_in_cents: 7500,
+    category: 'bouquets',
+    image_url:
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Flower_Bouquet_012-IhS8S7MkZ1AQG09OfvFzvbJwbFdKB1.jpeg',
+    is_active: true,
+    created_at: '2026-06-07T00:00:00Z',
+    updated_at: '2026-06-07T00:00:00Z',
+  },
+  {
+    id: 'bouquet-013',
+    name: 'Flower_Bouquet_013',
+    description:
+      "Striking bouquet of red roses and pink stargazer lilies with baby's breath and ornate gold filigree butterfly accents, wrapped in soft pink paper with gold trim.",
+    price_in_cents: 10000,
+    category: 'bouquets',
+    image_url:
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Flower_Bouquet_013-rbv07U3DLjUeEwF3yllS51wJhb2nQf.jpeg',
+    is_active: true,
+    created_at: '2026-06-07T00:00:00Z',
+    updated_at: '2026-06-07T00:00:00Z',
+  },
+  {
+    id: 'bouquet-014',
+    name: 'Flower_Bouquet_014',
+    description:
+      "Romantic bouquet of red and cream roses with baby's breath and fresh greenery, featuring an elegant gold filigree butterfly centerpiece.",
+    price_in_cents: 9500,
+    category: 'bouquets',
+    image_url:
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Flower_Bouquet_014-V6xjcPEspIA4T3LMFsZrRilRuAWkBh.jpeg',
+    is_active: true,
+    created_at: '2026-06-07T00:00:00Z',
+    updated_at: '2026-06-07T00:00:00Z',
+  },
 ]
