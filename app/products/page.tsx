@@ -3,8 +3,6 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
-import { ProductCard } from "@/components/product-card"
-import { getProducts } from "@/lib/db-products"
 import { Store } from "lucide-react"
 import { ProductNotice } from "@/components/product-notice"
 
@@ -96,9 +94,7 @@ const productCategories = [
   // },
 ]
 
-export default async function ProductsPage() {
-  const products = await getProducts()
-  
+export default function ProductsPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navigation />

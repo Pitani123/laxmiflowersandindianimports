@@ -44,25 +44,21 @@ export const defaultCamphorSizes: CamphorGarlandSize[] = [
 ]
 
 export const camphor_001_Sizes: CamphorGarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 10000 }, // $100.00
-  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $110.00
-  { id: "5ft", label: "5 ft", priceInCents: 12000 }, // $120.00
+  { id: "4ft", label: "4 ft", priceInCents: 9500 }, // $95.00
+  { id: "5ft", label: "5 ft", priceInCents: 10000 }, // $100.00
 ]
 
 export const camphor_002_Sizes: CamphorGarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 10000 }, // $100.00
-  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $110.00
-  { id: "5ft", label: "5 ft", priceInCents: 12000 }, // $120.00
+  { id: "4ft", label: "4 ft", priceInCents: 9500 }, // $95.00
+  { id: "5ft", label: "5 ft", priceInCents: 10000 }, // $100.00
 ]
 
 export const camphor_003_Sizes: CamphorGarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 10000 }, // $100.00 - Update price as needed
-  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $110.00 - Update price as needed
-  { id: "5ft", label: "5 ft", priceInCents: 12000 }, // $120.00 - Update price as needed
+  { id: "4ft", label: "4 ft", priceInCents: 9500 }, // $95.00
+  { id: "5ft", label: "5 ft", priceInCents: 10000 }, // $100.00
 ]
 
 export const camphor_004_Sizes: CamphorGarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 10000 }, // $100.00 - Update price as needed
   { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $110.00 - Update price as needed
   { id: "5ft", label: "5 ft", priceInCents: 12000 }, // $120.00 - Update price as needed
 ]

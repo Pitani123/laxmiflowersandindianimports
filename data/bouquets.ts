@@ -109,4 +109,17 @@ export const bouquetProducts: DBProduct[] = [
     created_at: '2026-04-21T00:00:00Z',
     updated_at: '2026-04-21T00:00:00Z',
   },
+  {
+    id: 'bouquet-009',
+    name: 'Flower_Bouquet_009',
+    description:
+      'Luxurious deep red roses bouquet with personalized white floral lettering and ornate gold filigree butterflies, elegantly wrapped in black marble paper with gold accents.',
+    price_in_cents: 15000,
+    category: 'bouquets',
+    image_url:
+      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-06-06%20at%205.07.54%20PM-l5tX0gewd0ltP22SkiIUf9STjTuSr6.jpeg',
+    is_active: true,
+    created_at: '2026-06-06T00:00:00Z',
+    updated_at: '2026-06-06T00:00:00Z',
+  },
 ]
