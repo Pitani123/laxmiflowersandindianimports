@@ -275,21 +275,21 @@ export const garland_042_Sizes: GarlandSize[] = [
 ]
 
 export const garland_043_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 13000 }, // $130.00
-  { id: "4ft", label: "4 ft", priceInCents: 15000 }, // $150.00
-  { id: "5ft", label: "5 ft", priceInCents: 17000 }, // $170.00
+  { id: "3ft", label: "3 ft", priceInCents: 11000 }, // $110.00
+  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
 ]
 
 export const garland_044_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 13000 }, // $130.00
-  { id: "4ft", label: "4 ft", priceInCents: 15000 }, // $150.00
-  { id: "5ft", label: "5 ft", priceInCents: 17000 }, // $170.00
+  { id: "3ft", label: "3 ft", priceInCents: 16000 }, // $160.00
+  { id: "4ft", label: "4 ft", priceInCents: 18000 }, // $180.00
+  { id: "5ft", label: "5 ft", priceInCents: 20000 }, // $200.00
 ]
 
 export const garland_045_Sizes: GarlandSize[] = [
-  { id: "3ft", label: "3 ft", priceInCents: 10000 }, // $100.00
-  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $110.00
-  { id: "5ft", label: "5 ft", priceInCents: 12000 }, // $120.00
+  { id: "3ft", label: "3 ft", priceInCents: 16000 }, // $160.00
+  { id: "4ft", label: "4 ft", priceInCents: 18000 }, // $180.00
+  { id: "5ft", label: "5 ft", priceInCents: 20000 }, // $200.00
 ]
 
 // =================================================================================
