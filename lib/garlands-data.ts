@@ -262,6 +262,36 @@ export const garland_040_Sizes: GarlandSize[] = [
   { id: "5ft", label: "5 ft", priceInCents: 10000 }, // $100.00
 ]
 
+export const garland_041_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 6000 }, // $60.00
+  { id: "4ft", label: "4 ft", priceInCents: 7000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 8000 }, // $130.00
+]
+
+export const garland_042_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 11000 }, // $110.00
+  { id: "4ft", label: "4 ft", priceInCents: 11500 }, // $115.00
+  { id: "5ft", label: "5 ft", priceInCents: 12500 }, // $125.00
+]
+
+export const garland_043_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 11000 }, // $110.00
+  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
+]
+
+export const garland_044_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 16000 }, // $160.00
+  { id: "4ft", label: "4 ft", priceInCents: 18000 }, // $180.00
+  { id: "5ft", label: "5 ft", priceInCents: 20000 }, // $200.00
+]
+
+export const garland_045_Sizes: GarlandSize[] = [
+  { id: "3ft", label: "3 ft", priceInCents: 16000 }, // $160.00
+  { id: "4ft", label: "4 ft", priceInCents: 18000 }, // $180.00
+  { id: "5ft", label: "5 ft", priceInCents: 20000 }, // $200.00
+]
+
 // =================================================================================
 // GARLANDS - Named as Garland_001, Garland_002, etc.
 // =================================================================================
@@ -589,6 +619,41 @@ export const garlands: Garland[] = [
     description: "White Spider Mums and Pink Carnations with Baby's Breath Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_040-nkyATf8ujrOArHwIldv6cetSjCMJ2t.jpeg"],
     sizes: garland_040_Sizes
+  },
+  {
+    id: "garland-041",
+    name: "WeddingGarland_041",
+    description: "Olive Green Beaded Garland with Pearl Spheres and Gold Bead Accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_041-AYHG0Z7lkNexIYzz0sD1B0Y5rvOaSV.jpeg"],
+    sizes: garland_041_Sizes
+  },
+  {
+    id: "garland-042",
+    name: "WeddingGarland_042",
+    description: "Deep Pink Ruffled Rose Petal Garland with Baby's Breath Clusters",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_042-VAG6xoEDsZOU0dgWYkLqxSw3pblr4e.jpeg"],
+    sizes: garland_042_Sizes
+  },
+  {
+    id: "garland-043",
+    name: "WeddingGarland_043",
+    description: "Pink and White Lotus Garland with Baby's Breath Accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_043-alICEC5MQFa1LjOcig6ExNmJ5DUiFQ.jpeg"],
+    sizes: garland_043_Sizes
+  },
+  {
+    id: "garland-044",
+    name: "WeddingGarland_044",
+    description: "Pink Lotus Petal Garland with Delicate Baby's Breath",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_044-lS7MvhJmsKXNSW3JBtq4IgT7QTQOWy.jpeg"],
+    sizes: garland_044_Sizes
+  },
+  {
+    id: "garland-045",
+    name: "WeddingGarland_045",
+    description: "Lush Baby's Breath Garland with Soft Pink Floral Accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_045-VTl4Jc5yQ3L4OURuRgKmpdRgeFBLFV.jpeg"],
+    sizes: garland_045_Sizes
   },
 ]
 
