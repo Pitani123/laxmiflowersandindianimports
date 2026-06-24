@@ -7,6 +7,7 @@ import { WeddingAccessoriesCollage } from "@/components/wedding-accessories-coll
 import { HairAccessoriesCollage } from "@/components/hair-accessories-collage"
 import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
 import { DecorativeCoconutCollage } from "@/components/decorative-coconut-collage"
+import { WeddingRentalsCollage } from "@/components/wedding-rentals-collage"
 
 // Collage images for decorative coconuts
 const decorativeCoconutCollageImages = [
@@ -23,7 +24,7 @@ const decorativeCoconutCollageImages = [
     alt: "DecorativeCoconut_008 - Green coconut with Om symbol lotus mandala design"
   }
 ]
-import { ArrowLeft, Heart, Palmtree, Gem, Sparkles, Flame } from "lucide-react"
+import { ArrowLeft, Heart, Palmtree, Gem, Sparkles, Flame, Package } from "lucide-react"
 import { ProductNotice } from "@/components/product-notice"
 
 const subcategories = [
@@ -66,6 +67,14 @@ const subcategories = [
     image: "/images/hair-accessories.jpg",
     href: "/products/wedding/hair-accessories",
     icon: Sparkles,
+  },
+  {
+    id: "rentals",
+    name: "Rentals",
+    description: "Traditional wedding ritual items available to rent per day",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Kashi%20yatra%20set-0AyQNDakKZBOFdqw5FptkHRPL9M3Hv.jpeg",
+    href: "/products/wedding/rentals",
+    icon: Package,
   },
 ]
 
@@ -128,6 +137,8 @@ export default function WeddingPage() {
                       <HairAccessoriesCollage />
                     ) : category.id === "decorative-coconuts" ? (
                       <DecorativeCoconutCollage images={decorativeCoconutCollageImages} />
+                    ) : category.id === "rentals" ? (
+                      <WeddingRentalsCollage />
                     ) : (
                       <Image
                         src={category.image}
