@@ -22,6 +22,23 @@ const locations = [
     isPrimary: true,
   },
   {
+    id: "mckinney",
+    name: "McKinney, TX Store",
+    address: "6701 Collin McKinney Pkwy, Suite 120",
+    city: "McKinney, TX 75070, USA",
+    phone: "+1-469-988-9029",
+    email: "laxmiflowers.aubrey@gmail.com",
+    hours: {
+      weekdays: "Coming Soon",
+      saturday: "Coming Soon",
+      sunday: "Coming Soon",
+    },
+    image: "/images/store-main.jpg",
+    mapUrl: "https://maps.google.com/?q=6701+Collin+McKinney+Pkwy+Suite+120+McKinney+TX+75070",
+    isPrimary: false,
+    isComingSoon: true,
+  },
+  {
     id: "edison",
     name: "Edison, NJ Store",
     address: "1655 Oak Tree Rd",
@@ -72,9 +89,21 @@ export default function LocationsPage() {
                   className="overflow-hidden rounded-2xl border border-border bg-card shadow-lg p-8 lg:p-12"
                 >
                   {/* Store Images - Temporarily Disabled (will add later) */}
-                      <h2 className="font-serif text-2xl font-bold text-foreground sm:text-3xl">
-                        {location.name}
-                      </h2>
+                      <div className="flex flex-wrap items-center gap-3">
+                        <h2 className="font-serif text-2xl font-bold text-foreground sm:text-3xl">
+                          {location.name}
+                        </h2>
+                        {location.isComingSoon && (
+                          <span className="inline-flex items-center rounded-full bg-accent/20 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
+                            Coming Soon
+                          </span>
+                        )}
+                      </div>
+                      {location.isComingSoon && (
+                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                          Our new McKinney location is opening soon. Stay tuned for store hours and grand opening details!
+                        </p>
+                      )}
                       
                       <div className="mt-8 space-y-6">
                         {/* Address */}
@@ -138,12 +167,14 @@ export default function LocationsPage() {
                             Get Directions
                           </a>
                         </Button>
-                        <Button asChild variant="outline" className="border-foreground/20">
-                          <a href={`tel:${location.phone}`}>
-                            <Phone className="mr-2 h-4 w-4" />
-                            Call Store
-                          </a>
-                        </Button>
+                        {!location.isComingSoon && (
+                          <Button asChild variant="outline" className="border-foreground/20">
+                            <a href={`tel:${location.phone}`}>
+                              <Phone className="mr-2 h-4 w-4" />
+                              Call Store
+                            </a>
+                          </Button>
+                        )}
                   </div>
                 </div>
               ))}
