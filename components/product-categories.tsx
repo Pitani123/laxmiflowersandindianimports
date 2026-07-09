@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react"
 import { WeddingGarlandsCollage } from "./wedding-garlands-collage"
 import { FreshFlowersCollage } from "./fresh-flowers-collage"
 import { FlowerBouquetCollage } from "./flower-bouquet-collage"
+import { LiveCountersCollage } from "./live-counters-collage"
 
 const categories = [
   {
@@ -36,6 +37,17 @@ const categories = [
       { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
     ],
   },
+  {
+    name: "Live Counters",
+    href: "/products/live-counters",
+    image: "/images/live-floral-bloom-bar.jpg",
+    description: "Live stations for parties, functions & weddings",
+    subcategories: [
+      { name: "Chaat & Pani Puri", href: "/products/live-counters" },
+      { name: "Sugarcane Juice", href: "/products/live-counters" },
+      { name: "Floral Bloom Bar", href: "/products/live-counters" },
+    ],
+  },
 ]
 
 export function ProductCategories() {
@@ -55,6 +67,8 @@ export function ProductCategories() {
                 <FreshFlowersCollage />
               ) : category.name === "Flower Bouquets" ? (
                 <FlowerBouquetCollage />
+              ) : category.name === "Live Counters" ? (
+                <LiveCountersCollage />
               ) : (
                 <Image
                   src={category.image}
