@@ -24,7 +24,7 @@ const decorativeCoconutCollageImages = [
     alt: "DecorativeCoconut_008 - Green coconut with Om symbol lotus mandala design"
   }
 ]
-import { ArrowLeft, Heart, Palmtree, Gem, Sparkles, Flame, Package } from "lucide-react"
+import { ArrowLeft, Heart, Palmtree, Gem, Sparkles, Flame, Package, Car } from "lucide-react"
 import { ProductNotice } from "@/components/product-notice"
 
 const subcategories = [
@@ -75,6 +75,14 @@ const subcategories = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Kashi%20yatra%20set-0AyQNDakKZBOFdqw5FptkHRPL9M3Hv.jpeg",
     href: "/products/wedding/rentals",
     icon: Package,
+  },
+  {
+    id: "car-decorations",
+    name: "Car Decorations",
+    description: "Fresh floral car decorations for weddings, funerals & events",
+    image: "/images/products/car-decoration-1.jpg",
+    href: "/products/wedding/car-decorations",
+    icon: Car,
   },
 ]
 
