@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { GarlandCard } from "@/components/garland-card"
+import { GarlandGrid } from "@/components/garland-grid"
 import { garlands } from "@/lib/garlands-data"
 import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
 import { ArrowLeft, Heart, Info } from "lucide-react"
@@ -74,11 +74,7 @@ export default function WeddingGarlandsPage() {
               </p>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {garlands.map((garland) => (
-                <GarlandCard key={garland.id} garland={garland} />
-              ))}
-            </div>
+            <GarlandGrid garlands={garlands} batchSize={12} />
           </div>
         </section>
       </main>
