@@ -685,35 +685,35 @@ export const garlands: Garland[] = [
     name: "WeddingGarland_046",
     description: "Red and Magenta Petal Garland with Yellow Rose Accents and Cream Flower Bands",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_046-ABkmpsGmykII4wUSZQiEyghSOjBGZ5.jpeg"],
-    sizes: defaultSizes
+    sizes: garland_046_Sizes
   },
   {
     id: "garland-047",
     name: "WeddingGarland_047",
     description: "Cream Jasmine Garland with Baby's Breath Clusters and Gold Ribbon",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_047-FnWN7yH16YpAjmLol6MWFTenOkammU.jpeg"],
-    sizes: defaultSizes
+    sizes: garland_047_Sizes
   },
   {
     id: "garland-048",
     name: "WeddingGarland_048",
     description: "Matching Pair of Pink Rose Strands with Baby's Breath and Pearl Tops",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_049-66MpMj1PTcx9gfLR0uXUJvG21DE8g1.jpeg"],
-    sizes: defaultSizes
+    sizes: garland_048_Sizes
   },
   {
     id: "garland-049",
     name: "WeddingGarland_049",
     description: "White Baby's Breath Garland with Deep Red Roses and Pearl String Top",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_050-gBHO2KuPMJfO6oOqi9ryxET0UaXztu.jpeg"],
-    sizes: defaultSizes
+    sizes: garland_049_Sizes
   },
   {
     id: "garland-050",
     name: "WeddingGarland_050",
     description: "Red Rose Petal Garland with Baby's Breath Clusters and Gold Beaded Tassel",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_051-KSZjlxcixPrDJrSBjHUJIcIwkBJczT.jpeg"],
-    sizes: defaultSizes
+    sizes: garland_050_Sizes
   },
 ]
 
