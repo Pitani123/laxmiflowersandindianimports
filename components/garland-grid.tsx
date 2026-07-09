@@ -32,8 +32,8 @@ export function GarlandGrid({ garlands, batchSize = 12 }: GarlandGridProps) {
             Showing {visibleGarlands.length} of {garlands.length} garlands
           </p>
           <Button
-            variant="outline"
             size="lg"
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
             onClick={() => setVisibleCount((count) => Math.min(count + batchSize, garlands.length))}
           >
             Load More ({Math.min(batchSize, remaining)} more)
