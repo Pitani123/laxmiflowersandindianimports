@@ -86,5 +86,12 @@ export const hairAccessories: HairAccessory[] = [
     description: "Beautiful red flower garland veni made with vibrant red tulip-shaped buds. Classic design with black thread ties. Perfect for weddings and traditional ceremonies.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.37%20PM%20%283%29-9kcCgxmY7HUz4xN2FDnvwRngpYWrHd.jpeg"],
     priceInCents: 2000, // $75.00
+  },
+  {
+    id: "hair-012",
+    name: "Hair_Accessories_012",
+    description: "Traditional South Indian bridal poolajada with alternating bands of deep red rose petals and white jasmine buds, finished with gold ribbon ties. Perfect for bridal hairstyles and special occasions.",
+    images: ["/images/products/hair-accessories-12.jpg"],
+    priceInCents: 2500, // $25.00
   }  
 ]
