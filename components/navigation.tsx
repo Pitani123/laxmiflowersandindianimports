@@ -28,6 +28,7 @@ const productLinks = [
     ]
   },
   { href: "/products/bouquets", label: "Flower Bouquets" },
+  { href: "/products/live-counters", label: "Live Counters" },
 ]
 
 const aboutLinks = [
