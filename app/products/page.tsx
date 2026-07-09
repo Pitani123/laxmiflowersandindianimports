@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer"
 
 import { Store } from "lucide-react"
 import { ProductNotice } from "@/components/product-notice"
+import { WeddingCollage } from "@/components/wedding-collage"
 
 const productCategories = [
   {
@@ -120,12 +121,16 @@ export default function ProductsPage() {
                   href={category.href}
                   className="group relative aspect-[4/3] overflow-hidden rounded-xl"
                 >
-                  <Image
-                    src={category.image}
-                    alt={category.name}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                  {category.id === "wedding" ? (
+                    <WeddingCollage />
+                  ) : (
+                    <Image
+                      src={category.image}
+                      alt={category.name}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <h3 className="font-serif text-2xl font-bold text-card">{category.name}</h3>

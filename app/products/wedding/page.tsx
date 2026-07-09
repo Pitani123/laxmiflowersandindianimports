@@ -8,6 +8,7 @@ import { HairAccessoriesCollage } from "@/components/hair-accessories-collage"
 import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
 import { DecorativeCoconutCollage } from "@/components/decorative-coconut-collage"
 import { WeddingRentalsCollage } from "@/components/wedding-rentals-collage"
+import { WeddingCollage } from "@/components/wedding-collage"
 
 // Collage images for decorative coconuts
 const decorativeCoconutCollageImages = [
@@ -24,7 +25,7 @@ const decorativeCoconutCollageImages = [
     alt: "DecorativeCoconut_008 - Green coconut with Om symbol lotus mandala design"
   }
 ]
-import { ArrowLeft, Heart, Palmtree, Gem, Sparkles, Flame, Package } from "lucide-react"
+import { ArrowLeft, Heart, Palmtree, Gem, Sparkles, Flame, Package, Car } from "lucide-react"
 import { ProductNotice } from "@/components/product-notice"
 
 const subcategories = [
@@ -76,6 +77,14 @@ const subcategories = [
     href: "/products/wedding/rentals",
     icon: Package,
   },
+  {
+    id: "car-decorations",
+    name: "Car Decorations",
+    description: "Fresh floral car decorations for weddings, funerals & events",
+    image: "/images/products/car-decoration-1.jpg",
+    href: "/products/wedding/car-decorations",
+    icon: Car,
+  },
 ]
 
 export default function WeddingPage() {
@@ -86,13 +95,7 @@ export default function WeddingPage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px]">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-22%20at%2010.24.58%20PM-9s9uCjSrK2CYFijcNQxD84SlVqIOAJ.jpeg"
-            alt="Wedding Collection"
-            fill
-            className="object-cover"
-            priority
-          />
+          <WeddingCollage />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-transparent" />
           <div className="absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">

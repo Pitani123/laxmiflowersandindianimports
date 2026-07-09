@@ -105,6 +105,14 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
     priceInCents: 7500, // $75.00
     customizable: true,
   },
+  {
+    id: "decorative-coconut-012",
+    name: "DecorativeCoconut_012",
+    description: "Beautiful green coconut with a bold red heart centerpiece featuring Telugu script in gold beadwork, framed by pearl and gold bead borders with rhinestone accents and a delicate pearl bow topper. A perfect personalized keepsake for weddings and traditional ceremonies.",
+    images: ["/images/products/decorative-coconut-12.jpg"],
+    priceInCents: 10000, // $100.00
+    customizable: true,
+  },
 ]
 
 // Helper function to format price

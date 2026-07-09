@@ -25,6 +25,7 @@ const productLinks = [
       { href: "/products/wedding/wedding-accessories", label: "Wedding Accessories" },
       { href: "/products/wedding/hair-accessories", label: "Hair Accessories" },
       { href: "/products/wedding/rentals", label: "Rentals" },
+      { href: "/products/wedding/car-decorations", label: "Car Decorations" },
     ]
   },
   { href: "/products/bouquets", label: "Flower Bouquets" },

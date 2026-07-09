@@ -292,6 +292,31 @@ export const garland_045_Sizes: GarlandSize[] = [
   { id: "5ft", label: "5 ft", priceInCents: 20000 }, // $200.00
 ]
 
+export const garland_046_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $180.00
+  { id: "5ft", label: "5 ft", priceInCents: 12500 }, // $200.00
+]
+
+export const garland_047_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $180.00
+  { id: "5ft", label: "5 ft", priceInCents: 12500 }, // $200.00
+]
+
+export const garland_048_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $180.00
+  { id: "5ft", label: "5 ft", priceInCents: 10500 }, // $200.00
+]
+
+export const garland_049_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 21000 }, // $180.00
+  { id: "5ft", label: "5 ft", priceInCents: 22500 }, // $200.00
+]
+
+export const garland_050_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $180.00
+  { id: "5ft", label: "5 ft", priceInCents: 12500 }, // $200.00
+]
+
 // =================================================================================
 // GARLANDS - Named as Garland_001, Garland_002, etc.
 // =================================================================================
@@ -654,6 +679,41 @@ export const garlands: Garland[] = [
     description: "Lush Baby's Breath Garland with Soft Pink Floral Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_045-VTl4Jc5yQ3L4OURuRgKmpdRgeFBLFV.jpeg"],
     sizes: garland_045_Sizes
+  },
+  {
+    id: "garland-046",
+    name: "WeddingGarland_046",
+    description: "Red and Magenta Petal Garland with Yellow Rose Accents and Cream Flower Bands",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_046-ABkmpsGmykII4wUSZQiEyghSOjBGZ5.jpeg"],
+    sizes: garland_046_Sizes
+  },
+  {
+    id: "garland-047",
+    name: "WeddingGarland_047",
+    description: "Cream Jasmine Garland with Baby's Breath Clusters and Gold Ribbon",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_047-FnWN7yH16YpAjmLol6MWFTenOkammU.jpeg"],
+    sizes: garland_047_Sizes
+  },
+  {
+    id: "garland-048",
+    name: "WeddingGarland_048",
+    description: "Matching Pair of Pink Rose Strands with Baby's Breath and Pearl Tops",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_049-66MpMj1PTcx9gfLR0uXUJvG21DE8g1.jpeg"],
+    sizes: garland_048_Sizes
+  },
+  {
+    id: "garland-049",
+    name: "WeddingGarland_049",
+    description: "White Baby's Breath Garland with Deep Red Roses and Pearl String Top",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_050-gBHO2KuPMJfO6oOqi9ryxET0UaXztu.jpeg"],
+    sizes: garland_049_Sizes
+  },
+  {
+    id: "garland-050",
+    name: "WeddingGarland_050",
+    description: "Red Rose Petal Garland with Baby's Breath Clusters and Gold Beaded Tassel",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_051-KSZjlxcixPrDJrSBjHUJIcIwkBJczT.jpeg"],
+    sizes: garland_050_Sizes
   },
 ]
 
