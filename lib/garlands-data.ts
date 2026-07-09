@@ -308,8 +308,13 @@ export const garland_048_Sizes: GarlandSize[] = [
 ]
 
 export const garland_049_Sizes: GarlandSize[] = [
-  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $180.00
-  { id: "5ft", label: "5 ft", priceInCents: 10500 }, // $200.00
+  { id: "4ft", label: "4 ft", priceInCents: 21000 }, // $180.00
+  { id: "5ft", label: "5 ft", priceInCents: 22500 }, // $200.00
+]
+
+export const garland_049_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 21000 }, // $180.00
+  { id: "5ft", label: "5 ft", priceInCents: 22500 }, // $200.00
 ]
 
 // =================================================================================
