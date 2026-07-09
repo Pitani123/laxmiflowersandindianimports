@@ -11,21 +11,21 @@ const liveCounters = [
     name: "Live Chaat & Pani Puri Counter",
     description:
       "A crowd-favorite live station serving freshly assembled chaat and pani puri on the spot. Perfect for parties, functions, and weddings.",
-    image: "/placeholder.svg?height=800&width=1000",
+    image: "/images/live-chaat-pani-puri.jpg",
   },
   {
     id: "live-sugarcane-juice",
     name: "Live Sugarcane Juice Counter",
     description:
       "Freshly pressed sugarcane juice served live at your event. A refreshing, traditional treat for guests of all ages.",
-    image: "/placeholder.svg?height=800&width=1000",
+    image: "/images/live-sugarcane-juice.jpg",
   },
   {
     id: "live-floral-bloom-bar",
     name: "Live Floral Bloom Bar",
     description:
       "An interactive floral station where guests create their own fresh flower arrangements. A beautiful, hands-on experience for any celebration.",
-    image: "/placeholder.svg?height=800&width=1000",
+    image: "/images/live-floral-bloom-bar.jpg",
   },
 ]
 
@@ -38,7 +38,7 @@ export default function LiveCountersPage() {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px]">
           <Image
-            src="/placeholder.svg?height=900&width=1600"
+            src="/images/live-chaat-pani-puri.jpg"
             alt="Live counters and interactive stations for events"
             fill
             className="object-cover"

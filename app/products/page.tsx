@@ -32,7 +32,7 @@ const productCategories = [
     id: "live-counters",
     name: "Live Counters",
     description: "Live chaat & pani puri, sugarcane juice, and floral bloom bar for your events",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/live-floral-bloom-bar.jpg",
     href: "/products/live-counters",
   },
   // Temporarily disabled - Wedding Decorations
