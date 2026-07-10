@@ -11,7 +11,7 @@ const carDecorations = [
     id: "car-decoration-1",
     name: "Fresh Floral Car Decoration",
     description:
-      "Elegant fresh floral hood arrangement with pink, peach, and cream roses, eucalyptus greenery, and flowing ribbons. Perfect for weddings, funerals, and other special events. Custom colors and styles available on request.",
+      "Elegant fresh floral hood arrangement with pink, peach, and cream roses, eucalyptus greenery, and flowing ribbons. Perfect for weddings, festival parties, and other special events. Custom colors and styles available on request.",
     image: "/images/products/car-decoration-1.jpg",
   },
 ]
@@ -47,7 +47,7 @@ export default function CarDecorationsPage() {
                 </div>
                 <div>
                   <h1 className="font-serif text-4xl font-bold text-card sm:text-5xl">Car Decorations</h1>
-                  <p className="mt-1 text-lg text-card/80">Fresh floral car decorations for weddings, funerals & events</p>
+                  <p className="mt-1 text-lg text-card/80">Fresh floral car decorations for weddings, festival parties & events</p>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ export default function CarDecorationsPage() {
               <Sparkles className="h-6 w-6 flex-shrink-0 text-primary" />
               <p className="text-sm text-foreground">
                 <span className="font-semibold">Custom Orders Available:</span> We decorate cars for weddings,
-                funerals, and other events. Flowers, colors, and styles can be customized to match your occasion.
+                festival parties, and other events. Flowers, colors, and styles can be customized to match your occasion.
                 Please call the store for pricing and availability.
               </p>
             </div>
