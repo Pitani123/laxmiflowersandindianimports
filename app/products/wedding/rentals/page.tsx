@@ -29,7 +29,7 @@ export default function WeddingRentalsPage() {
                   <Package className="h-7 w-7 text-primary-foreground" />
                 </div>
                 <div>
-                  <h1 className="font-serif text-4xl font-bold text-card sm:text-5xl">Rentals</h1>
+                  <h1 className="font-serif text-4xl font-bold text-card sm:text-5xl">Wedding Rentals</h1>
                   <p className="mt-1 text-lg text-card/80">Traditional wedding ritual items available to rent per day</p>
                 </div>
               </div>

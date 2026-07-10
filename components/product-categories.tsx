@@ -8,13 +8,6 @@ import { LiveCountersCollage } from "./live-counters-collage"
 
 const categories = [
   {
-    name: "Flower Bouquets",
-    href: "/products/bouquets",
-    image: "/images/bouquets.jpg",
-    description: "Beautiful arrangements for gifting",
-    subcategories: [],
-  },
-  {
     name: "Wedding",
     href: "/products/wedding",
     image: "/images/garlands.jpg",
@@ -25,18 +18,8 @@ const categories = [
       { name: "Decorative Coconuts", href: "/products/wedding/decorative-coconuts" },
       { name: "Wedding Accessories", href: "/products/wedding/wedding-accessories" },
       { name: "Hair Accessories", href: "/products/wedding/hair-accessories" },
-      { name: "Rentals", href: "/products/wedding/rentals" },
+      { name: "Wedding Rentals", href: "/products/wedding/rentals" },
       { name: "Car Decorations", href: "/products/wedding/car-decorations" },
-    ],
-  },
-  {
-    name: "Fresh Flowers",
-    href: "/products/fresh-flowers",
-    image: "/images/fresh-flowers.jpg",
-    description: "Daily fresh flowers for all occasions",
-    subcategories: [
-      { name: "Loose Flowers", href: "/products/fresh-flowers/loose-flowers" },
-      { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
     ],
   },
   {
@@ -49,6 +32,37 @@ const categories = [
       { name: "Sugarcane Juice", href: "/products/live-counters" },
       { name: "Floral Bloom Bar", href: "/products/live-counters" },
     ],
+  },
+  {
+    name: "Flower Bouquets",
+    href: "/products/bouquets",
+    image: "/images/bouquets.jpg",
+    description: "Beautiful arrangements for gifting",
+    subcategories: [],
+  },
+  {
+    name: "Fresh Flowers",
+    href: "/products/fresh-flowers",
+    image: "/images/fresh-flowers.jpg",
+    description: "Daily fresh flowers for all occasions",
+    subcategories: [
+      { name: "Loose Flowers", href: "/products/fresh-flowers/loose-flowers" },
+      { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
+    ],
+  },
+  {
+    name: "Ethnic Wear",
+    href: "/products/ethnic-wear",
+    image: "/images/traditional-dresses.jpg",
+    description: "Indian ladies clothing for festivals & parties",
+    subcategories: [],
+  },
+  {
+    name: "Rentals",
+    href: "/products/rentals",
+    image: "/images/rentals.jpg",
+    description: "Rental items for events & ceremonies",
+    subcategories: [],
   },
 ]
 
