@@ -57,6 +57,13 @@ const categories = [
     description: "Indian ladies clothing for festivals & parties",
     subcategories: [],
   },
+  {
+    name: "Rentals",
+    href: "/products/rentals",
+    image: "/images/rentals.jpg",
+    description: "Rental items for events & ceremonies",
+    subcategories: [],
+  },
 ]
 
 export function ProductCategories() {

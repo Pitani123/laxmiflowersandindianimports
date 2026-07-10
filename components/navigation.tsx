@@ -31,6 +31,7 @@ const productLinks = [
   { href: "/products/bouquets", label: "Flower Bouquets" },
   { href: "/products/live-counters", label: "Live Counters" },
   { href: "/products/ethnic-wear", label: "Ethnic Wear" },
+  { href: "/products/rentals", label: "Rentals" },
 ]
 
 const aboutLinks = [
