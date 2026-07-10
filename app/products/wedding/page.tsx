@@ -71,7 +71,7 @@ const subcategories = [
   },
   {
     id: "rentals",
-    name: "Rentals",
+    name: "Wedding Rentals",
     description: "Traditional wedding ritual items available to rent per day",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Kashi%20yatra%20set-0AyQNDakKZBOFdqw5FptkHRPL9M3Hv.jpeg",
     href: "/products/wedding/rentals",
