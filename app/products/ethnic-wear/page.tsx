@@ -14,7 +14,7 @@ export default function EthnicWearPage() {
         {/* Hero Section */}
         <section className="relative h-[50vh] min-h-[400px]">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="/images/traditional-dresses.jpg"
             alt="Indian ladies ethnic wear for festivals and parties"
             fill
             className="object-cover object-center"
