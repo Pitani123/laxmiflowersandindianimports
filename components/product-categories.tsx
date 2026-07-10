@@ -8,13 +8,6 @@ import { LiveCountersCollage } from "./live-counters-collage"
 
 const categories = [
   {
-    name: "Flower Bouquets",
-    href: "/products/bouquets",
-    image: "/images/bouquets.jpg",
-    description: "Beautiful arrangements for gifting",
-    subcategories: [],
-  },
-  {
     name: "Wedding",
     href: "/products/wedding",
     image: "/images/garlands.jpg",
@@ -30,16 +23,6 @@ const categories = [
     ],
   },
   {
-    name: "Fresh Flowers",
-    href: "/products/fresh-flowers",
-    image: "/images/fresh-flowers.jpg",
-    description: "Daily fresh flowers for all occasions",
-    subcategories: [
-      { name: "Loose Flowers", href: "/products/fresh-flowers/loose-flowers" },
-      { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
-    ],
-  },
-  {
     name: "Live Counters",
     href: "/products/live-counters",
     image: "/images/live-floral-bloom-bar.jpg",
@@ -48,6 +31,23 @@ const categories = [
       { name: "Chaat & Pani Puri", href: "/products/live-counters" },
       { name: "Sugarcane Juice", href: "/products/live-counters" },
       { name: "Floral Bloom Bar", href: "/products/live-counters" },
+    ],
+  },
+  {
+    name: "Flower Bouquets",
+    href: "/products/bouquets",
+    image: "/images/bouquets.jpg",
+    description: "Beautiful arrangements for gifting",
+    subcategories: [],
+  },
+  {
+    name: "Fresh Flowers",
+    href: "/products/fresh-flowers",
+    image: "/images/fresh-flowers.jpg",
+    description: "Daily fresh flowers for all occasions",
+    subcategories: [
+      { name: "Loose Flowers", href: "/products/fresh-flowers/loose-flowers" },
+      { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
     ],
   },
 ]
