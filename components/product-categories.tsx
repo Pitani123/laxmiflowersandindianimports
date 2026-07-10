@@ -53,7 +53,7 @@ const categories = [
   {
     name: "Ethnic Wear",
     href: "/products/ethnic-wear",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/traditional-dresses.jpg",
     description: "Indian ladies clothing for festivals & parties",
     subcategories: [],
   },
