@@ -50,6 +50,13 @@ const categories = [
       { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
     ],
   },
+  {
+    name: "Ethnic Wear",
+    href: "/products/ethnic-wear",
+    image: "/placeholder.svg?height=600&width=800",
+    description: "Indian ladies clothing for festivals & parties",
+    subcategories: [],
+  },
 ]
 
 export function ProductCategories() {
