@@ -18,7 +18,7 @@ const categories = [
       { name: "Decorative Coconuts", href: "/products/wedding/decorative-coconuts" },
       { name: "Wedding Accessories", href: "/products/wedding/wedding-accessories" },
       { name: "Hair Accessories", href: "/products/wedding/hair-accessories" },
-      { name: "Rentals", href: "/products/wedding/rentals" },
+      { name: "Wedding Rentals", href: "/products/wedding/rentals" },
       { name: "Car Decorations", href: "/products/wedding/car-decorations" },
     ],
   },
