@@ -62,14 +62,14 @@ export function Footer() {
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                 <span className="text-sm text-background/70">
                   6701 Collin McKinney Pkwy, Suite 103<br />
-                  (Left side of India Bazar shop)<br />
+                  (Left side of India Bazar Store)<br />
                   McKinney, TX 75070, USA
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-accent" />
-                <a href="tel:+14699889029" className="text-sm text-background/70 hover:text-accent">
-                  +1-469-988-9029
+                <a href="tel:+16824396439" className="text-sm text-background/70 hover:text-accent">
+                  +1 (682) 439-6439
                 </a>
               </li>
               <li className="flex items-center gap-3">
