@@ -26,7 +26,7 @@ const locations = [
     name: "McKinney, TX Store",
     address: "6701 Collin McKinney Pkwy, Suite 103 (Left side of India Bazar shop)",
     city: "McKinney, TX 75070, USA",
-    phone: "+1-469-988-9029",
+    phone: "+1 (682) 439-6439",
     email: "laxmiflowers.aubrey@gmail.com",
     hours: {
       weekdays: "11:00 AM - 8:30 PM",
