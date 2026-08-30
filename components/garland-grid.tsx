@@ -33,7 +33,7 @@ export function GarlandGrid({ garlands, batchSize = 12 }: GarlandGridProps) {
           </p>
           <Button
             size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90"
+            className="min-w-48 px-8 py-4 text-base bg-primary text-primary-foreground hover:bg-primary/90"
             onClick={() => setVisibleCount((count) => Math.min(count + batchSize, garlands.length))}
           >
             Load More ({Math.min(batchSize, remaining)} more)

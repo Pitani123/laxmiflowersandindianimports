@@ -231,9 +231,12 @@ export function GarlandCard({ garland }: GarlandCardProps) {
 
         {/* Total Price */}
         <div className="mt-4 flex items-center justify-between">
-          <span className="text-sm text-muted-foreground">Price</span>
+          <span className="text-sm text-muted-foreground">Price per garland</span>
           <p className="text-xl font-bold text-primary">{formatPrice(totalPrice)}</p>
         </div>
+        <p className="mt-1 text-xs text-muted-foreground">
+          Photos may show two garlands; price is for one garland.
+        </p>
 
         {/* Add to Cart Button */}
         <Button
