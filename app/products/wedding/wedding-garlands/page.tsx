@@ -49,6 +49,9 @@ export default function WeddingGarlandsPage() {
                   <p className="text-sm font-medium text-foreground">
                     Select your garland size and add extras like Pearls, Gold Beads, and more!
                   </p>
+                  <p className="text-xs font-medium text-primary mt-1">
+                    Please note: Price shown is for one garland. Some photos show two garlands for display purposes only.
+                  </p>
                   <p className="text-xs text-muted-foreground mt-1">
                     Prices vary by size. Custom orders welcome - contact us for special requests.
                   </p>
