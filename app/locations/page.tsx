@@ -24,19 +24,18 @@ const locations = [
   {
     id: "mckinney",
     name: "McKinney, TX Store",
-    address: "6701 Collin McKinney Pkwy, Suite 120",
+    address: "6701 Collin McKinney Pkwy, Suite 103 (Left side of India Bazar shop)",
     city: "McKinney, TX 75070, USA",
     phone: "+1-469-988-9029",
     email: "laxmiflowers.aubrey@gmail.com",
     hours: {
-      weekdays: "Coming Soon",
-      saturday: "Coming Soon",
-      sunday: "Coming Soon",
+      weekdays: "11:00 AM - 8:30 PM",
+      saturday: "11:00 AM - 8:30 PM",
+      sunday: "11:00 AM - 8:30 PM",
     },
     image: "/images/store-main.jpg",
-    mapUrl: "https://maps.google.com/?q=6701+Collin+McKinney+Pkwy+Suite+120+McKinney+TX+75070",
+    mapUrl: "https://maps.google.com/?q=6701+Collin+McKinney+Pkwy+Suite+103+McKinney+TX+75070",
     isPrimary: false,
-    isComingSoon: true,
   },
   {
     id: "edison",
@@ -155,6 +154,11 @@ export default function LocationsPage() {
                               <p><span className="font-medium text-foreground">Mon - Fri:</span> {location.hours.weekdays}</p>
                               <p><span className="font-medium text-foreground">Saturday:</span> {location.hours.saturday}</p>
                               <p><span className="font-medium text-foreground">Sunday:</span> {location.hours.sunday}</p>
+                              {location.id === "mckinney" && (
+                                <p className="pt-2 text-sm leading-relaxed text-muted-foreground">
+                                  <span className="font-medium text-foreground">Festival & seasonal hours:</span> Every day, 10:00 AM - 10:00 PM
+                                </p>
+                              )}
                             </div>
                           </div>
                         </div>

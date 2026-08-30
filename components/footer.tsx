@@ -18,7 +18,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-foreground text-background">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-6">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -91,6 +91,40 @@ export function Footer() {
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                 <span className="text-sm text-background/70">
                   Mon - Sun: 10AM - 11PM
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact - McKinney Store */}
+          <div>
+            <h4 className="mb-4 font-semibold">McKinney, TX Store</h4>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                <span className="text-sm text-background/70">
+                  6701 Collin McKinney Pkwy, Suite 103<br />
+                  (Left side of India Bazar shop)<br />
+                  McKinney, TX 75070, USA
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="h-4 w-4 shrink-0 text-accent" />
+                <a href="tel:+14699889029" className="text-sm text-background/70 hover:text-accent">
+                  +1-469-988-9029
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="h-4 w-4 shrink-0 text-accent" />
+                <a href="mailto:laxmiflowers.aubrey@gmail.com" className="text-sm text-background/70 hover:text-accent">
+                  laxmiflowers.aubrey@gmail.com
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                <span className="text-sm text-background/70">
+                  Daily: 11AM - 8:30PM<br />
+                  Festival & seasonal: 10AM - 10PM
                 </span>
               </li>
             </ul>
