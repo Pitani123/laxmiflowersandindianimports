@@ -62,7 +62,7 @@ export function Footer() {
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                 <span className="text-sm text-background/70">
                   6701 Collin McKinney Pkwy, Suite 103<br />
-                  (Left side of India Bazar shop)<br />
+                  (Left side of India Bazar Store)<br />
                   McKinney, TX 75070, USA
                 </span>
               </li>
