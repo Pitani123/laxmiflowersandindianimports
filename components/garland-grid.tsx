@@ -9,9 +9,10 @@ interface GarlandGridProps {
   garlands: Garland[]
   /** How many cards to show initially and to reveal on each "Load More" click. */
   batchSize?: number
+  onAllDisplayed?: () => void
 }
 
-export function GarlandGrid({ garlands, batchSize = 12 }: GarlandGridProps) {
+export function GarlandGrid({ garlands, batchSize = 12, onAllDisplayed }: GarlandGridProps) {
   const [visibleCount, setVisibleCount] = useState(batchSize)
 
   const visibleGarlands = garlands.slice(0, visibleCount)
@@ -34,7 +35,11 @@ export function GarlandGrid({ garlands, batchSize = 12 }: GarlandGridProps) {
           <Button
             size="lg"
             className="min-w-48 px-8 py-4 text-base bg-primary text-primary-foreground hover:bg-primary/90"
-            onClick={() => setVisibleCount((count) => Math.min(count + batchSize, garlands.length))}
+            onClick={() => {
+              const nextCount = Math.min(visibleCount + batchSize, garlands.length)
+              setVisibleCount(nextCount)
+              if (nextCount >= garlands.length) onAllDisplayed?.()
+            }}
           >
             Load More ({Math.min(batchSize, remaining)} more)
           </Button>

@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from "react"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -9,6 +12,9 @@ import { ArrowLeft, Heart, Info } from "lucide-react"
 import { ProductNotice } from "@/components/product-notice"
 
 export default function WeddingGarlandsPage() {
+  const batchSize = 12
+  const [showFooter, setShowFooter] = useState(garlands.length <= batchSize)
+
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Navigation />
@@ -77,12 +83,16 @@ export default function WeddingGarlandsPage() {
               </p>
             </div>
 
-            <GarlandGrid garlands={garlands} batchSize={12} />
+            <GarlandGrid
+              garlands={garlands}
+              batchSize={batchSize}
+              onAllDisplayed={() => setShowFooter(true)}
+            />
           </div>
         </section>
       </main>
       
-      <Footer />
+      {showFooter && <Footer />}
     </div>
   )
 }
