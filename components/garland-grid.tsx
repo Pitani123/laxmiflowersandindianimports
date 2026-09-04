@@ -29,12 +29,12 @@ export function GarlandGrid({ garlands, batchSize = 12, onAllDisplayed }: Garlan
 
       {hasMore && (
         <div className="mt-10 flex flex-col items-center gap-3">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-base text-muted-foreground">
             Showing {visibleGarlands.length} of {garlands.length} garlands
           </p>
           <Button
             size="lg"
-            className="min-w-48 px-8 py-4 text-base bg-primary text-primary-foreground hover:bg-primary/90"
+            className="min-w-52 px-8 py-5 text-lg bg-primary text-primary-foreground hover:bg-primary/90"
             onClick={() => {
               const nextCount = Math.min(visibleCount + batchSize, garlands.length)
               setVisibleCount(nextCount)
