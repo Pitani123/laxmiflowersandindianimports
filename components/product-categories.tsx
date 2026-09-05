@@ -23,14 +23,13 @@ const categories = [
     ],
   },
   {
-    name: "Live Counters",
-    href: "/products/live-counters",
-    image: "/images/live-floral-bloom-bar.jpg",
-    description: "Live stations for parties, functions & weddings",
+    name: "Fresh Flowers",
+    href: "/products/fresh-flowers",
+    image: "/images/fresh-flowers.jpg",
+    description: "Daily fresh flowers for all occasions",
     subcategories: [
-      { name: "Chaat & Pani Puri", href: "/products/live-counters" },
-      { name: "Sugarcane Juice", href: "/products/live-counters" },
-      { name: "Floral Bloom Bar", href: "/products/live-counters" },
+      { name: "Loose Flowers", href: "/products/fresh-flowers/loose-flowers" },
+      { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
     ],
   },
   {
@@ -41,13 +40,14 @@ const categories = [
     subcategories: [],
   },
   {
-    name: "Fresh Flowers",
-    href: "/products/fresh-flowers",
-    image: "/images/fresh-flowers.jpg",
-    description: "Daily fresh flowers for all occasions",
+    name: "Live Counters",
+    href: "/products/live-counters",
+    image: "/images/live-floral-bloom-bar.jpg",
+    description: "Live stations for parties, functions & weddings",
     subcategories: [
-      { name: "Loose Flowers", href: "/products/fresh-flowers/loose-flowers" },
-      { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
+      { name: "Chaat & Pani Puri", href: "/products/live-counters" },
+      { name: "Sugarcane Juice", href: "/products/live-counters" },
+      { name: "Floral Bloom Bar", href: "/products/live-counters" },
     ],
   },
   {
