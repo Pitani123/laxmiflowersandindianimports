@@ -505,7 +505,7 @@ export const garlands: Garland[] = [
   {
     id: "garland-023",
     name: "WeddingGarland_023",
-    description: "White Jasmine and Baby's Breath Garland with Pink Rose Accents",
+    description: "Lily and Baby's Breath Garland with Pink Rose Accents",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%284%29-5eqzxWOFqQSmLSUrhBdvbPiEGPDPGc.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.37%20PM-N2IVuqPOEBZFj699KmH8cNr4Bnafm3.jpeg"
