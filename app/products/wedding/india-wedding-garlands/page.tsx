@@ -3,7 +3,8 @@ import { ArrowLeft, Flower2 } from "lucide-react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ProductNotice } from "@/components/product-notice"
-import { ComingSoon } from "@/components/coming-soon"
+import { GarlandGrid } from "@/components/garland-grid"
+import { indiaWeddingGarlands } from "@/lib/india-wedding-garlands-data"
 
 export default function IndiaWeddingGarlandsPage() {
   return (
@@ -38,10 +39,19 @@ export default function IndiaWeddingGarlandsPage() {
         </section>
 
         <ProductNotice />
-        <ComingSoon
-          title="India Wedding Garlands Coming Soon"
-          message="We are preparing a beautiful collection of traditional Indian wedding garlands. Please call us for current availability, custom designs, and pricing."
-        />
+        <section className="py-12 lg:py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mb-8">
+              <h2 className="font-serif text-2xl font-bold text-foreground">
+                India Wedding Garland Collection
+              </h2>
+              <p className="mt-1 text-muted-foreground">
+                {indiaWeddingGarlands.length} traditional garlands to choose from
+              </p>
+            </div>
+            <GarlandGrid garlands={indiaWeddingGarlands} batchSize={12} />
+          </div>
+        </section>
       </main>
 
       <Footer />
