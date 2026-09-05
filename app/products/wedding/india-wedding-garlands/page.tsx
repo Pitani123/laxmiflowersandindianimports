@@ -4,6 +4,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ProductNotice } from "@/components/product-notice"
 import { GarlandGrid } from "@/components/garland-grid"
+import { IndiaWeddingGarlandsCollage } from "@/components/india-wedding-garlands-collage"
 import { indiaWeddingGarlands } from "@/lib/india-wedding-garlands-data"
 
 export default function IndiaWeddingGarlandsPage() {
@@ -13,7 +14,8 @@ export default function IndiaWeddingGarlandsPage() {
 
       <main className="flex-1">
         <section className="relative flex min-h-[400px] items-end overflow-hidden bg-primary py-16 sm:py-20">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-secondary" />
+          <IndiaWeddingGarlandsCollage />
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-transparent" />
           <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
             <Link
               href="/products/wedding"
