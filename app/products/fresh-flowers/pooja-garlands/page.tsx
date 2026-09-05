@@ -40,7 +40,7 @@ export default async function PoojaGarlandsPage() {
           </div>
         </section>
 
-        <ProductNotice />
+        <ProductNotice variant="pooja-garlands" />
 
         {/* Products Section */}
         <section className="py-16 lg:py-24">
