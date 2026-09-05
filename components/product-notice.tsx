@@ -1,6 +1,12 @@
 import { Clock, Package, Settings } from "lucide-react"
 
-export function ProductNotice() {
+type ProductNoticeProps = {
+  variant?: "local-wedding" | "india-wedding"
+}
+
+export function ProductNotice({ variant = "local-wedding" }: ProductNoticeProps) {
+  const isIndiaWedding = variant === "india-wedding"
+
   return (
     <section className="border-b border-border bg-secondary/50 py-6">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
