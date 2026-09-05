@@ -76,14 +76,13 @@ const productCategories = [
   //   image: "/images/traditional-dresses.jpg",
   //   href: "/products/jewellery",
   // },
-  // Temporarily disabled - Traditional Dresses
-  // {
-  //   id: "traditional-dresses",
-  //   name: "Indian Traditional Dresses",
-  //   description: "Beautiful ethnic wear for all occasions",
-  //   image: "/images/traditional-dresses.jpg",
-  //   href: "/products/traditional-dresses",
-  // },
+  {
+    id: "ethnic-wear",
+    name: "Ethnic Wear",
+    description: "Indian ladies clothing for festivals and parties",
+    image: "/images/traditional-dresses.jpg",
+    href: "/products/ethnic-wear",
+  },
   // Temporarily disabled - Indian Snacks
   // {
   //   id: "snacks",
@@ -92,14 +91,13 @@ const productCategories = [
   //   image: "/images/snacks.jpg",
   //   href: "/products/snacks",
   // },
-  // Temporarily disabled - Rentals
-  // {
-  //   id: "rentals",
-  //   name: "Rentals",
-  //   description: "Rental items for events and ceremonies",
-  //   image: "/images/rentals.jpg",
-  //   href: "/products/rentals",
-  // },
+  {
+    id: "rentals",
+    name: "Rentals",
+    description: "Rental items for events and ceremonies",
+    image: "/images/rentals.jpg",
+    href: "/products/rentals",
+  },
 ]
 
 export default function ProductsPage() {
