@@ -40,7 +40,7 @@ const subcategories = [
   {
     id: "india-wedding-garlands",
     name: "India Wedding Garlands",
-    description: "Traditional Indian wedding garlands for your special celebration",
+    description: "Garlands made in India and shipped to the USA for your special celebration",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-22%20at%2010.24.58%20PM-9s9uCjSrK2CYFijcNQxD84SlVqIOAJ.jpeg",
     href: "/products/wedding/india-wedding-garlands",
     icon: Flower2,
