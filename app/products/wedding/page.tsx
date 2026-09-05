@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { WeddingAccessoriesCollage } from "@/components/wedding-accessories-collage"
 import { HairAccessoriesCollage } from "@/components/hair-accessories-collage"
 import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
+import { IndiaWeddingGarlandsCollage } from "@/components/india-wedding-garlands-collage"
 import { DecorativeCoconutCollage } from "@/components/decorative-coconut-collage"
 import { WeddingRentalsCollage } from "@/components/wedding-rentals-collage"
 import { WeddingCollage } from "@/components/wedding-collage"
@@ -142,6 +143,8 @@ export default function WeddingPage() {
                   >
                     {category.id === "wedding-garlands" ? (
                       <WeddingGarlandsCollage />
+                    ) : category.id === "india-wedding-garlands" ? (
+                      <IndiaWeddingGarlandsCollage />
                     ) : category.id === "wedding-accessories" ? (
                       <WeddingAccessoriesCollage />
                     ) : category.id === "hair-accessories" ? (
