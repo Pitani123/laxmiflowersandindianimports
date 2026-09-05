@@ -8,6 +8,16 @@ import { LiveCountersCollage } from "./live-counters-collage"
 
 const categories = [
   {
+    name: "Fresh Flowers",
+    href: "/products/fresh-flowers",
+    image: "/images/fresh-flowers.jpg",
+    description: "Daily fresh flowers for all occasions",
+    subcategories: [
+      { name: "Loose Flowers", href: "/products/fresh-flowers/loose-flowers" },
+      { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
+    ],
+  },
+  {
     name: "Wedding",
     href: "/products/wedding",
     image: "/images/garlands.jpg",
@@ -21,16 +31,6 @@ const categories = [
       { name: "Hair Accessories", href: "/products/wedding/hair-accessories" },
       { name: "Wedding Rentals", href: "/products/wedding/rentals" },
       { name: "Car Decorations", href: "/products/wedding/car-decorations" },
-    ],
-  },
-  {
-    name: "Fresh Flowers",
-    href: "/products/fresh-flowers",
-    image: "/images/fresh-flowers.jpg",
-    description: "Daily fresh flowers for all occasions",
-    subcategories: [
-      { name: "Loose Flowers", href: "/products/fresh-flowers/loose-flowers" },
-      { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
     ],
   },
   {
