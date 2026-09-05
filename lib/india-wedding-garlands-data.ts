@@ -34,6 +34,9 @@ export const indiaWeddingGarlands: Garland[] = indiaGarlandIds.flatMap((id, inde
     : []
 })
 
-export const weddingGarlands = garlands.filter(
-  (garland) => !indiaGarlandIdSet.has(garland.id),
-)
+export const weddingGarlands: Garland[] = garlands
+  .filter((garland) => !indiaGarlandIdSet.has(garland.id))
+  .map((garland, index) => ({
+    ...garland,
+    name: `WeddingGarland_${String(index + 1).padStart(3, "0")}`,
+  }))
