@@ -6,14 +6,14 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { GarlandGrid } from "@/components/garland-grid"
-import { garlands } from "@/lib/garlands-data"
+import { weddingGarlands } from "@/lib/india-wedding-garlands-data"
 import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
 import { ArrowLeft, Heart, Info } from "lucide-react"
 import { ProductNotice } from "@/components/product-notice"
 
 export default function WeddingGarlandsPage() {
   const batchSize = 12
-  const [showFooter, setShowFooter] = useState(garlands.length <= batchSize)
+  const [showFooter, setShowFooter] = useState(weddingGarlands.length <= batchSize)
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -79,12 +79,12 @@ export default function WeddingGarlandsPage() {
                 Our Wedding Garland Collection
               </h2>
               <p className="mt-1 text-muted-foreground">
-                {garlands.length} beautiful garlands to choose from
+                {weddingGarlands.length} beautiful garlands to choose from
               </p>
             </div>
 
             <GarlandGrid
-              garlands={garlands}
+              garlands={weddingGarlands}
               batchSize={batchSize}
               onAllDisplayed={() => setShowFooter(true)}
             />

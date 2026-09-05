@@ -65,7 +65,58 @@ export const garland_004_Sizes: GarlandSize[] = [
 
 export const garland_005_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $100.00
-  { id: "5ft", label: "5 ft", priceInCents: 10000 }, // $100.00
+  { id: "5ft", label: "5 ft", priceInCents: 11000 }, // $110.00
+]
+
+// India Wedding Garlands - Made in India, 15-day advance order required
+export const indiaGarland_001_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $110.00
+  { id: "5ft", label: "5 ft", priceInCents: 12500 }, // $125.00
+]
+
+export const indiaGarland_002_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 13500 }, // $135.00
+]
+
+export const indiaGarland_003_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 11500 }, // $115.00
+  { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
+]
+
+export const indiaGarland_004_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 12500 }, // $125.00
+  { id: "5ft", label: "5 ft", priceInCents: 14000 }, // $140.00
+]
+
+export const indiaGarland_005_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 13000 }, // $130.00
+  { id: "5ft", label: "5 ft", priceInCents: 14500 }, // $145.00
+]
+
+export const indiaGarland_006_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 13500 }, // $135.00
+]
+
+export const indiaGarland_007_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 11500 }, // $115.00
+  { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
+]
+
+export const indiaGarland_008_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 12500 }, // $125.00
+  { id: "5ft", label: "5 ft", priceInCents: 14000 }, // $140.00
+]
+
+export const indiaGarland_009_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 13000 }, // $130.00
+  { id: "5ft", label: "5 ft", priceInCents: 14500 }, // $145.00
+]
+
+export const indiaGarland_010_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
+  { id: "5ft", label: "5 ft", priceInCents: 13500 }, // $135.00
 ]
 
 export const garland_006_Sizes: GarlandSize[] = [
@@ -505,7 +556,7 @@ export const garlands: Garland[] = [
   {
     id: "garland-023",
     name: "WeddingGarland_023",
-    description: "White Jasmine and Baby's Breath Garland with Pink Rose Accents",
+    description: "White Lily and Baby's Breath Garland with Pink Rose Accents",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%284%29-5eqzxWOFqQSmLSUrhBdvbPiEGPDPGc.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.37%20PM-N2IVuqPOEBZFj699KmH8cNr4Bnafm3.jpeg"
@@ -714,6 +765,76 @@ export const garlands: Garland[] = [
     description: "Red Rose Petal Garland with Baby's Breath Clusters and Gold Beaded Tassel",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_051-KSZjlxcixPrDJrSBjHUJIcIwkBJczT.jpeg"],
     sizes: garland_050_Sizes
+  },
+  {
+    id: "india-garland-001",
+    name: "IndiaWeddingGarland_003",
+    description: "Deep magenta floral garland with gold bands and hanging floral tassels",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-18%20at%207.11.48%20PM-SJGn14oJfjY7NJ9zRdQUffZjNkQWNk.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-002",
+    name: "IndiaWeddingGarland_004",
+    description: "Rich red floral garland with diagonal gold detailing and ornate tassels",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-18%20at%207.11.54%20PM%20%283%29-cAkOucZh4AeMdNIkpQ7weoui9cKl84.jpeg"],
+    sizes: indiaGarland_002_Sizes,
+  },
+  {
+    id: "india-garland-003",
+    name: "IndiaWeddingGarland_005",
+    description: "White and pink floral garland with traditional gold separators",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-18%20at%207.11.55%20PM%20%284%29-lVdKrzW52ogwlOHp2yXq6SbOJFnlox.jpeg"],
+    sizes: indiaGarland_003_Sizes,
+  },
+  {
+    id: "india-garland-004",
+    name: "IndiaWeddingGarland_006",
+    description: "Bright orange marigold-style garland with silver spiral accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-18%20at%207.11.54%20PM%20%281%29-0zyYfh0UeM1f61jnO6cDulzy1j5l5r.jpeg"],
+    sizes: indiaGarland_004_Sizes,
+  },
+  {
+    id: "india-garland-005",
+    name: "IndiaWeddingGarland_007",
+    description: "White and red floral garland with green bands and gold trim",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-18%20at%207.11.54%20PM-cCpB3pluqDq91u49W2ve6yGbpSqW27.jpeg"],
+    sizes: indiaGarland_005_Sizes,
+  },
+  {
+    id: "india-garland-006",
+    name: "IndiaWeddingGarland_008",
+    description: "White floral garland with pink flower sections and rose tassels",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-18%20at%207.11.55%20PM%20%282%29-HX3PDIOgdRvpOllOoN1uVBThGoy2HC.jpeg"],
+    sizes: indiaGarland_006_Sizes,
+  },
+  {
+    id: "india-garland-007",
+    name: "IndiaWeddingGarland_009",
+    description: "Pink and burgundy segmented floral garland with gold accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-18%20at%207.11.55%20PM-QVXQjNtEAeCY8Fn1GUWZ4Teqs5gwzd.jpeg"],
+    sizes: indiaGarland_007_Sizes,
+  },
+  {
+    id: "india-garland-008",
+    name: "IndiaWeddingGarland_010",
+    description: "Pink lotus and red petal garland with delicate floral accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-18%20at%207.11.53%20PM-3VkIBYEZb21MoKR5CYKaeVZo1P9tgP.jpeg"],
+    sizes: indiaGarland_008_Sizes,
+  },
+  {
+    id: "india-garland-009",
+    name: "IndiaWeddingGarland_011",
+    description: "White garland with scattered purple rose accents and floral tassels",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-18%20at%207.11.55%20PM%20%283%29-nxK0nmokuWysgcVAPXF7cGVbzPPhDq.jpeg"],
+    sizes: indiaGarland_009_Sizes,
+  },
+  {
+    id: "india-garland-010",
+    name: "IndiaWeddingGarland_012",
+    description: "White, yellow, and red floral garland with a yellow hanging tassel",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-18%20at%207.11.54%20PM%20%282%29-UkmaIQD42sbOTSjj44z6YdMBMkHhCf.jpeg"],
+    sizes: indiaGarland_010_Sizes,
   },
 ]
 

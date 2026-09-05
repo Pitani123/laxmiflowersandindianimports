@@ -1,6 +1,12 @@
 import { Clock, Package, Settings } from "lucide-react"
 
-export function ProductNotice() {
+type ProductNoticeProps = {
+  variant?: "local-wedding" | "india-wedding"
+}
+
+export function ProductNotice({ variant = "local-wedding" }: ProductNoticeProps) {
+  const isIndiaWedding = variant === "india-wedding"
+
   return (
     <section className="border-b border-border bg-secondary/50 py-6">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -9,10 +15,12 @@ export function ProductNotice() {
             <Clock className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
             <div>
               <p className="text-sm font-medium text-foreground">
-                Advance Notice Required
+                {isIndiaWedding ? "Made in India — 15-Day Advance Notice Required" : "Advance Notice Required"}
               </p>
               <p className="text-sm text-muted-foreground mt-1">
-                Orders for Wedding Garlands, Decorated Coconuts, and Hair Accessories must be placed at least 7 days in advance. For last-minute inquiries, please contact us directly to check availability.
+                {isIndiaWedding
+                  ? "India Wedding Garlands are made in India and shipped to the USA. Orders must be placed at least 15 days before your event; we cannot accept last-minute orders for this collection."
+                  : "Wedding Garlands are made in the USA by expert artisans for Indian weddings. Orders for Wedding Garlands, Decorated Coconuts, and Hair Accessories must be placed at least 7 days in advance. For last-minute inquiries, please contact us directly to check availability."}
               </p>
             </div>
           </div>

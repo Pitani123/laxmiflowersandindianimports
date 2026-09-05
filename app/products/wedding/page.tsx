@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { WeddingAccessoriesCollage } from "@/components/wedding-accessories-collage"
 import { HairAccessoriesCollage } from "@/components/hair-accessories-collage"
 import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
+import { IndiaWeddingGarlandsCollage } from "@/components/india-wedding-garlands-collage"
 import { DecorativeCoconutCollage } from "@/components/decorative-coconut-collage"
 import { WeddingRentalsCollage } from "@/components/wedding-rentals-collage"
 import { WeddingCollage } from "@/components/wedding-collage"
@@ -25,17 +26,25 @@ const decorativeCoconutCollageImages = [
     alt: "DecorativeCoconut_008 - Green coconut with Om symbol lotus mandala design"
   }
 ]
-import { ArrowLeft, Heart, Palmtree, Gem, Sparkles, Flame, Package, Car } from "lucide-react"
+import { ArrowLeft, Heart, Palmtree, Gem, Sparkles, Flame, Package, Car, Flower2 } from "lucide-react"
 import { ProductNotice } from "@/components/product-notice"
 
 const subcategories = [
   {
     id: "wedding-garlands",
     name: "Wedding Garlands",
-    description: "Traditional Indian garlands for weddings and celebrations",
+    description: "Garlands made in the USA by expert artisans for Indian weddings and celebrations",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-22%20at%2010.24.58%20PM-9s9uCjSrK2CYFijcNQxD84SlVqIOAJ.jpeg",
     href: "/products/wedding/wedding-garlands",
     icon: Heart,
+  },
+  {
+    id: "india-wedding-garlands",
+    name: "India Wedding Garlands",
+    description: "Garlands made in India and shipped to the USA for your special celebration",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-22%20at%2010.24.58%20PM-9s9uCjSrK2CYFijcNQxD84SlVqIOAJ.jpeg",
+    href: "/products/wedding/india-wedding-garlands",
+    icon: Flower2,
   },
   {
     id: "camphor-garlands",
@@ -134,6 +143,8 @@ export default function WeddingPage() {
                   >
                     {category.id === "wedding-garlands" ? (
                       <WeddingGarlandsCollage />
+                    ) : category.id === "india-wedding-garlands" ? (
+                      <IndiaWeddingGarlandsCollage />
                     ) : category.id === "wedding-accessories" ? (
                       <WeddingAccessoriesCollage />
                     ) : category.id === "hair-accessories" ? (

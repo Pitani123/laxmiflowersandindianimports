@@ -8,29 +8,29 @@ import { LiveCountersCollage } from "./live-counters-collage"
 
 const categories = [
   {
+    name: "Fresh Flowers",
+    href: "/products/fresh-flowers",
+    image: "/images/fresh-flowers.jpg",
+    description: "Daily fresh flowers for all occasions",
+    subcategories: [
+      { name: "Loose Flowers", href: "/products/fresh-flowers/loose-flowers" },
+      { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
+    ],
+  },
+  {
     name: "Wedding",
     href: "/products/wedding",
     image: "/images/garlands.jpg",
     description: "Traditional wedding essentials",
     subcategories: [
       { name: "Wedding Garlands", href: "/products/wedding/wedding-garlands" },
+      { name: "India Wedding Garlands", href: "/products/wedding/india-wedding-garlands" },
       { name: "Camphor Garlands", href: "/products/wedding/camphor-garlands" },
       { name: "Decorative Coconuts", href: "/products/wedding/decorative-coconuts" },
       { name: "Wedding Accessories", href: "/products/wedding/wedding-accessories" },
       { name: "Hair Accessories", href: "/products/wedding/hair-accessories" },
       { name: "Wedding Rentals", href: "/products/wedding/rentals" },
       { name: "Car Decorations", href: "/products/wedding/car-decorations" },
-    ],
-  },
-  {
-    name: "Live Counters",
-    href: "/products/live-counters",
-    image: "/images/live-floral-bloom-bar.jpg",
-    description: "Live stations for parties, functions & weddings",
-    subcategories: [
-      { name: "Chaat & Pani Puri", href: "/products/live-counters" },
-      { name: "Sugarcane Juice", href: "/products/live-counters" },
-      { name: "Floral Bloom Bar", href: "/products/live-counters" },
     ],
   },
   {
@@ -41,13 +41,14 @@ const categories = [
     subcategories: [],
   },
   {
-    name: "Fresh Flowers",
-    href: "/products/fresh-flowers",
-    image: "/images/fresh-flowers.jpg",
-    description: "Daily fresh flowers for all occasions",
+    name: "Live Counters",
+    href: "/products/live-counters",
+    image: "/images/live-floral-bloom-bar.jpg",
+    description: "Live stations for parties, functions & weddings",
     subcategories: [
-      { name: "Loose Flowers", href: "/products/fresh-flowers/loose-flowers" },
-      { name: "Pooja Garlands", href: "/products/fresh-flowers/pooja-garlands" },
+      { name: "Chaat & Pani Puri", href: "/products/live-counters" },
+      { name: "Sugarcane Juice", href: "/products/live-counters" },
+      { name: "Floral Bloom Bar", href: "/products/live-counters" },
     ],
   },
   {
