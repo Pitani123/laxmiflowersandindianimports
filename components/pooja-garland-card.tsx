@@ -6,7 +6,8 @@ import { DBProduct } from '@/lib/types'
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
-import { ShoppingBag, Check } from 'lucide-react'
+import { ShoppingBag, Check, X, ZoomIn } from 'lucide-react'
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog'
 import { useCart } from '@/lib/cart-context'
 import { cn } from '@/lib/utils'
 
@@ -30,6 +31,7 @@ interface PoojaGarlandCardProps {
 export function PoojaGarlandCard({ product }: PoojaGarlandCardProps) {
   const [selectedSizeId, setSelectedSizeId] = useState(poojaGarlandSizes[0]?.id || '')
   const [isAdded, setIsAdded] = useState(false)
+  const [isImageOpen, setIsImageOpen] = useState(false)
   const { addItem } = useCart()
 
   const selectedSize = poojaGarlandSizes.find(s => s.id === selectedSizeId)
@@ -56,15 +58,51 @@ export function PoojaGarlandCard({ product }: PoojaGarlandCardProps) {
   return (
     <div className="group overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/30 hover:shadow-lg">
       {/* Image Container */}
-      <div className="relative aspect-[3/4] overflow-hidden bg-muted">
-        <Image
-          src={product.image_url || '/images/placeholder.jpg'}
-          alt={product.name}
-          fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        />
-      </div>
+      <button
+        type="button"
+        onClick={() => setIsImageOpen(true)}
+        className="relative block w-full cursor-zoom-in overflow-hidden bg-muted text-left"
+        aria-label={`View enlarged image of ${product.name}`}
+      >
+        <div className="relative aspect-[3/4]">
+          <Image
+            src={product.image_url || '/images/placeholder.jpg'}
+            alt={product.name}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+          <div className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-all group-hover:bg-black/20 group-hover:opacity-100">
+            <div className="rounded-full bg-white/90 p-2">
+              <ZoomIn className="h-5 w-5 text-foreground" />
+            </div>
+          </div>
+        </div>
+      </button>
+
+      <Dialog open={isImageOpen} onOpenChange={setIsImageOpen}>
+        <DialogContent className="max-w-4xl overflow-hidden border-none bg-black/95 p-0" showCloseButton={false}>
+          <DialogTitle className="sr-only">{product.name} - Full Image</DialogTitle>
+          <button
+            type="button"
+            onClick={() => setIsImageOpen(false)}
+            className="absolute right-4 top-4 z-10 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
+            aria-label="Close enlarged image"
+          >
+            <X className="h-6 w-6" />
+          </button>
+          <div className="relative aspect-square w-full sm:aspect-[4/3] md:aspect-[16/10]">
+            <Image
+              src={product.image_url || '/images/placeholder.jpg'}
+              alt={`${product.name} - Full Image`}
+              fill
+              className="object-contain"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+              priority
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
 
       <div className="p-5">
         {/* Name & Description */}
