@@ -31,7 +31,7 @@ export default function IndiaWeddingGarlandsPage() {
                   India Wedding Garlands
                 </h1>
                 <p className="mt-2 text-lg text-primary-foreground/80">
-                  Traditional Indian wedding garlands for your special celebration
+                  Garlands made in India and shipped to the USA for your special celebration
                 </p>
               </div>
             </div>

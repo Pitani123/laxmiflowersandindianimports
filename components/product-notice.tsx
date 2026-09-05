@@ -15,12 +15,12 @@ export function ProductNotice({ variant = "local-wedding" }: ProductNoticeProps)
             <Clock className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
             <div>
               <p className="text-sm font-medium text-foreground">
-                {isIndiaWedding ? "Imported from India — 15-Day Advance Notice Required" : "Advance Notice Required"}
+                {isIndiaWedding ? "Made in India — 15-Day Advance Notice Required" : "Advance Notice Required"}
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 {isIndiaWedding
-                  ? "India Wedding Garlands are brought in from India and must be ordered at least 15 days before your event. We cannot accept last-minute orders for this collection."
-                  : "Orders for Wedding Garlands, Decorated Coconuts, and Hair Accessories must be placed at least 7 days in advance. For last-minute inquiries, please contact us directly to check availability."}
+                  ? "India Wedding Garlands are made in India and shipped to the USA. Orders must be placed at least 15 days before your event; we cannot accept last-minute orders for this collection."
+                  : "Wedding Garlands are made in the USA by expert artisans for Indian weddings. Orders for Wedding Garlands, Decorated Coconuts, and Hair Accessories must be placed at least 7 days in advance. For last-minute inquiries, please contact us directly to check availability."}
               </p>
             </div>
           </div>
