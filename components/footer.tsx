@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Instagram } from "lucide-react"
 
 export function Footer() {
   return (
@@ -84,6 +84,17 @@ export function Footer() {
                   Daily: 11AM - 8:30PM<br />
                   Festival & seasonal: 10AM - 10PM
                 </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Instagram className="h-4 w-4 shrink-0 text-accent" />
+                <a
+                  href="https://instagram.com/laxmiflowers.mckinney?stkn=azNrczJydDR1bGV4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-background/70 hover:text-accent"
+                >
+                  Instagram
+                </a>
               </li>
             </ul>
           </div>
