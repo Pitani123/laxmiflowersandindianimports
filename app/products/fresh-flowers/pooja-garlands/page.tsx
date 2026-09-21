@@ -60,15 +60,16 @@ export default function PoojaGarlandsPage() {
                   ))}
                 </div>
                 {hasMoreProducts && (
-                <div className="mt-10 flex justify-center">
-                  <Button
-                    type="button"
-                    onClick={() => setDisplayedCount((count) => Math.min(count + batchSize, products.length))}
-                    className="bg-primary text-primary-foreground hover:bg-primary/90"
-                  >
-                    Load More ({products.length - displayedCount} more)
-                  </Button>
-                </div>
+                  <div className="mt-10 flex justify-center">
+                    <Button
+                      type="button"
+                      size="lg"
+                      onClick={() => setDisplayedCount((count) => Math.min(count + batchSize, products.length))}
+                      className="min-w-52 px-8 py-5 text-lg bg-primary text-primary-foreground hover:bg-primary/90"
+                    >
+                      Load More ({products.length - displayedCount} more)
+                    </Button>
+                  </div>
                 )}
               </>
             ) : (
