@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { MapPin, Phone, Mail, Clock, Instagram, Navigation as NavIcon, ArrowRight } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, Instagram, MessageCircle, Navigation as NavIcon, ArrowRight } from "lucide-react"
 
 const locations = [
   {
@@ -39,6 +39,7 @@ const locations = [
     mapUrl: "https://maps.google.com/?q=6701+Collin+McKinney+Pkwy+Suite+103+McKinney+TX+75070",
     instagramUrl: "https://instagram.com/laxmiflowers.mckinney?stkn=azNrczJydDR1bGV4",
     instagramHandle: "@laxmiflowers.mckinney",
+    whatsappUrl: "https://chat.whatsapp.com/INStRLrOcoNCIFEOpcInXw",
     isPrimary: false,
   },
   {
@@ -163,6 +164,25 @@ export default function LocationsPage() {
                                 className="text-muted-foreground hover:text-primary"
                               >
                                 {location.instagramHandle}
+                              </a>
+                            </div>
+                          </div>
+                        )}
+
+                        {location.whatsappUrl && (
+                          <div className="flex items-start gap-4">
+                            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent/20">
+                              <MessageCircle className="h-5 w-5 text-primary" />
+                            </div>
+                            <div>
+                              <p className="font-medium text-foreground">WhatsApp Group</p>
+                              <a
+                                href={location.whatsappUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-muted-foreground hover:text-primary"
+                              >
+                                Join the McKinney group
                               </a>
                             </div>
                           </div>
