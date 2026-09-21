@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from "react"
 import Link from "next/link"
 import { ArrowLeft, Flower2 } from "lucide-react"
 import { Navigation } from "@/components/navigation"
@@ -8,6 +11,9 @@ import { IndiaWeddingGarlandsCollage } from "@/components/india-wedding-garlands
 import { indiaWeddingGarlands } from "@/lib/india-wedding-garlands-data"
 
 export default function IndiaWeddingGarlandsPage() {
+  const batchSize = 12
+  const [showFooter, setShowFooter] = useState(indiaWeddingGarlands.length <= batchSize)
+
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Navigation />
@@ -51,12 +57,16 @@ export default function IndiaWeddingGarlandsPage() {
                 {indiaWeddingGarlands.length} traditional garlands to choose from
               </p>
             </div>
-            <GarlandGrid garlands={indiaWeddingGarlands} batchSize={12} />
+            <GarlandGrid
+              garlands={indiaWeddingGarlands}
+              batchSize={batchSize}
+              onAllDisplayed={() => setShowFooter(true)}
+            />
           </div>
         </section>
       </main>
 
-      <Footer />
+      {showFooter && <Footer />}
     </div>
   )
 }
