@@ -53,7 +53,7 @@ export default function PoojaGarlandsPage() {
         <section className="py-16 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             {products.length > 0 ? (
-              <>
+              <div>
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   {displayedProducts.map((product) => (
                     <PoojaGarlandCard key={product.id} product={product} />
@@ -71,7 +71,7 @@ export default function PoojaGarlandsPage() {
                     </Button>
                   </div>
                 )}
-              </>
+              </div>
             ) : (
               <div className="rounded-xl bg-secondary p-12 text-center">
                 <Heart className="mx-auto h-12 w-12 text-muted-foreground" />
