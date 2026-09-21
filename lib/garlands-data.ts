@@ -836,6 +836,48 @@ export const garlands: Garland[] = [
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-18%20at%207.11.54%20PM%20%282%29-UkmaIQD42sbOTSjj44z6YdMBMkHhCf.jpeg"],
     sizes: indiaGarland_010_Sizes,
   },
+  {
+    id: "india-garland-011",
+    name: "IndiaWeddingGarland_013",
+    description: "Coral pink petal garland with baby's breath clusters and rose tassels",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-06%20at%204.02.26%20PM%20%281%29-2pB3rgLiPGLMdRrw1354N8maRexSmo.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-012",
+    name: "IndiaWeddingGarland_014",
+    description: "Pink rose and cream jasmine garland with pearl strands and rose tassels",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-06%20at%204.02.26%20PM-O132GDM1vH2Cpnr2RB1zecd56ZEXOu.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-013",
+    name: "IndiaWeddingGarland_015",
+    description: "Deep red petal garland with pink lotus flowers and baby's breath accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-06%20at%204.02.27%20PM%20%282%29-mUq8smADQ7FnnhiWtxKHc0eb0rc2YF.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-014",
+    name: "IndiaWeddingGarland_016",
+    description: "Red and cream floral garland with green accents and hanging rose tassels",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-06%20at%204.02.27%20PM%20%281%29-HYn2eaketYSN8N8EHFXA2gklAbJwuC.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-015",
+    name: "IndiaWeddingGarland_017",
+    description: "White jasmine garland with baby's breath clusters and floral hanging details",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-06%20at%204.02.27%20PM-patEd2N8O4mBWsKRbDxNtlZIj5CmLB.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-016",
+    name: "IndiaWeddingGarland_018",
+    description: "White jasmine and baby's breath garland with a lush green floral pattern",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-06%20at%204.11.55%20PM-pnSPEyrtBEcGe8ZjFo7bncIqmbye0N.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
 ]
 
 // Helper function to get extras by IDs
