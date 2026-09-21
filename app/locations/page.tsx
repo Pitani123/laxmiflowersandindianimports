@@ -21,6 +21,8 @@ const locations = [
     mapUrl: "https://maps.google.com/?q=2881+FM1385+Aubrey+TX+76227",
     instagramUrl: "https://instagram.com/laxmiflowers.aubrey?stkn=cG02MGZpMm9jeXUw",
     instagramHandle: "@laxmiflowers.aubrey",
+    whatsappUrl: "https://chat.whatsapp.com/GEgvvk1J6Oq85v2UrfDC0o",
+    whatsappLabel: "Join the Aubrey group",
     isPrimary: true,
   },
   {
@@ -40,6 +42,7 @@ const locations = [
     instagramUrl: "https://instagram.com/laxmiflowers.mckinney?stkn=azNrczJydDR1bGV4",
     instagramHandle: "@laxmiflowers.mckinney",
     whatsappUrl: "https://chat.whatsapp.com/INStRLrOcoNCIFEOpcInXw",
+    whatsappLabel: "Join the McKinney group",
     isPrimary: false,
   },
   {
@@ -182,7 +185,7 @@ export default function LocationsPage() {
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-primary"
                               >
-                                Join the McKinney group
+                                {location.whatsappLabel}
                               </a>
                             </div>
                           </div>

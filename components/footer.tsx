@@ -62,6 +62,17 @@ export function Footer() {
                   Instagram
                 </a>
               </li>
+              <li className="flex items-center gap-3">
+                <MessageCircle className="h-4 w-4 shrink-0 text-accent" />
+                <a
+                  href="https://chat.whatsapp.com/GEgvvk1J6Oq85v2UrfDC0o"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-background/70 hover:text-accent"
+                >
+                  WhatsApp Group
+                </a>
+              </li>
             </ul>
           </div>
 
