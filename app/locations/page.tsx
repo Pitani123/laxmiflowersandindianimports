@@ -19,6 +19,8 @@ const locations = [
     },
     image: "/images/store-main.jpg",
     mapUrl: "https://maps.google.com/?q=2881+FM1385+Aubrey+TX+76227",
+    instagramUrl: "https://instagram.com/laxmiflowers.aubrey?stkn=cG02MGZpMm9jeXUw",
+    instagramHandle: "@laxmiflowers.aubrey",
     isPrimary: true,
   },
   {
@@ -36,6 +38,7 @@ const locations = [
     image: "/images/store-main.jpg",
     mapUrl: "https://maps.google.com/?q=6701+Collin+McKinney+Pkwy+Suite+103+McKinney+TX+75070",
     instagramUrl: "https://instagram.com/laxmiflowers.mckinney?stkn=azNrczJydDR1bGV4",
+    instagramHandle: "@laxmiflowers.mckinney",
     isPrimary: false,
   },
   {
@@ -157,7 +160,7 @@ export default function LocationsPage() {
                                 rel="noopener noreferrer"
                                 className="text-muted-foreground hover:text-primary"
                               >
-                                @laxmiflowers.mckinney
+                                {location.instagramHandle}
                               </a>
                             </div>
                           </div>
