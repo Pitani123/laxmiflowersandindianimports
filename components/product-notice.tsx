@@ -19,14 +19,14 @@ export function ProductNotice({ variant = "local-wedding" }: ProductNoticeProps)
                 {isIndiaWedding
                   ? "Made in India — 15-Day Advance Notice Required"
                   : isPoojaGarlands
-                    ? "Made in India — 15-Day Advance Notice Required"
+                    ? "Made in India and USA — Advance Notice Required"
                     : "Advance Notice Required"}
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 {isIndiaWedding
                   ? "India Wedding Garlands are made in India and shipped to the USA. Orders must be placed at least 15 days before your event; we cannot accept last-minute orders for this collection."
                   : isPoojaGarlands
-                    ? "Pooja Garlands are made in India and shipped to the USA. We may not have enough quantity in stock for bulk orders. Bulk orders must be placed at least 15 days before your event."
+                    ? "Pooja Garlands are made in India and the USA. Products made in India require at least 15 days advance booking, while products made in the USA require at least 7 days advance booking. Bulk orders may require additional notice based on availability."
                     : "Wedding Garlands are made in the USA by expert artisans for Indian weddings. Orders for Wedding Garlands, Decorated Coconuts, and Hair Accessories must be placed at least 7 days in advance. For last-minute inquiries, please contact us directly to check availability."}
               </p>
             </div>
