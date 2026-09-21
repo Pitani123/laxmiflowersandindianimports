@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, Instagram } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Instagram, MessageCircle } from "lucide-react"
 
 export function Footer() {
   return (
@@ -62,6 +62,17 @@ export function Footer() {
                   Instagram
                 </a>
               </li>
+              <li className="flex items-center gap-3">
+                <MessageCircle className="h-4 w-4 shrink-0 text-accent" />
+                <a
+                  href="https://chat.whatsapp.com/GEgvvk1J6Oq85v2UrfDC0o"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-background/70 hover:text-accent"
+                >
+                  WhatsApp Group
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -105,6 +116,17 @@ export function Footer() {
                   className="text-sm text-background/70 hover:text-accent"
                 >
                   Instagram
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <MessageCircle className="h-4 w-4 shrink-0 text-accent" />
+                <a
+                  href="https://chat.whatsapp.com/INStRLrOcoNCIFEOpcInXw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-background/70 hover:text-accent"
+                >
+                  WhatsApp Group
                 </a>
               </li>
             </ul>

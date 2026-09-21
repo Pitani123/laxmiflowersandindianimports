@@ -11,13 +11,12 @@ import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog'
 import { useCart } from '@/lib/cart-context'
 import { cn } from '@/lib/utils'
 
-// Pooja Garland sizes with prices per foot ($12 per foot)
 const poojaGarlandSizes = [
-  { id: "1ft", label: "1 ft", priceInCents: 1200 }, // $12.00
-  { id: "2ft", label: "2 ft", priceInCents: 2400 }, // $24.00
-  { id: "3ft", label: "3 ft", priceInCents: 3600 }, // $36.00
-  { id: "4ft", label: "4 ft", priceInCents: 4800 }, // $48.00
-  { id: "5ft", label: "5 ft", priceInCents: 6000 }, // $60.00
+  { id: "1ft", label: "1 ft" },
+  { id: "2ft", label: "2 ft" },
+  { id: "3ft", label: "3 ft" },
+  { id: "4ft", label: "4 ft" },
+  { id: "5ft", label: "5 ft" },
 ]
 
 function formatPrice(priceInCents: number): string {
@@ -34,8 +33,11 @@ export function PoojaGarlandCard({ product }: PoojaGarlandCardProps) {
   const [isImageOpen, setIsImageOpen] = useState(false)
   const { addItem } = useCart()
 
+  const pricePerFoot = product.price_per_foot_in_cents ?? 1200
   const selectedSize = poojaGarlandSizes.find(s => s.id === selectedSizeId)
-  const totalPrice = selectedSize?.priceInCents || 0
+  const selectedFeet = Number.parseInt(selectedSizeId, 10)
+  const selectedPriceInCents = pricePerFoot * selectedFeet
+  const totalPrice = selectedSize ? selectedPriceInCents : 0
 
   const handleAddToCart = () => {
     if (!selectedSize) return
@@ -46,7 +48,7 @@ export function PoojaGarlandCard({ product }: PoojaGarlandCardProps) {
       id: `${product.id}-${selectedSizeId}`,
       name: productName,
       description: product.description || '',
-      priceInCents: selectedSize.priceInCents,
+      priceInCents: selectedPriceInCents,
       imageUrl: product.image_url || '',
       category: 'pooja-garlands',
     }, 1)
@@ -134,7 +136,7 @@ export function PoojaGarlandCard({ product }: PoojaGarlandCardProps) {
                   )}
                 >
                   <span className="text-sm font-medium">{size.label}</span>
-                  <span className="text-xs text-muted-foreground">{formatPrice(size.priceInCents)}</span>
+                  <span className="text-xs text-muted-foreground">{formatPrice(pricePerFoot * Number.parseInt(size.id, 10))}</span>
                 </Label>
               </div>
             ))}

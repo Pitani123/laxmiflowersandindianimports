@@ -5,6 +5,7 @@ export interface DBProduct {
   name: string
   description: string | null
   price_in_cents: number
+  price_per_foot_in_cents?: number
   category: string
   image_url: string | null
   additional_images?: string[]
