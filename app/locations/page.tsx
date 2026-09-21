@@ -55,6 +55,8 @@ const locations = [
     },
     image: "/images/store-downtown.jpg",
     mapUrl: "https://maps.google.com/?q=1655+Oak+Tree+Rd+Edison+NJ",
+    instagramUrl: "https://instagram.com/laxmiflowers.nj?stkn=MTl4cTQ1MXQ4NGdnNA==",
+    instagramHandle: "@laxmiflowers.nj",
     isPrimary: false,
   },
 ]
