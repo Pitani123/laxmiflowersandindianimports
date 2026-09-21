@@ -1,4 +1,6 @@
-import Image from "next/image"
+'use client'
+
+import { useState } from "react"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -9,8 +11,13 @@ import { poojaGarlandProducts } from "@/data/pooja-garlands"
 import { ArrowLeft, Heart } from "lucide-react"
 import { ProductNotice } from "@/components/product-notice"
 
-export default async function PoojaGarlandsPage() {
+export default function PoojaGarlandsPage() {
+  const batchSize = 12
   const products = poojaGarlandProducts.filter((p) => p.is_active)
+  const [displayedCount, setDisplayedCount] = useState(batchSize)
+  const displayedProducts = products.slice(0, displayedCount)
+  const hasMoreProducts = displayedCount < products.length
+  const showFooter = !hasMoreProducts
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -46,11 +53,24 @@ export default async function PoojaGarlandsPage() {
         <section className="py-16 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             {products.length > 0 ? (
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {products.map((product) => (
-                  <PoojaGarlandCard key={product.id} product={product} />
-                ))}
-              </div>
+              <>
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {displayedProducts.map((product) => (
+                    <PoojaGarlandCard key={product.id} product={product} />
+                  ))}
+                </div>
+                {hasMoreProducts && (
+                <div className="mt-10 flex justify-center">
+                  <Button
+                    type="button"
+                    onClick={() => setDisplayedCount((count) => Math.min(count + batchSize, products.length))}
+                    className="bg-primary text-primary-foreground hover:bg-primary/90"
+                  >
+                    Load More ({products.length - displayedCount} more)
+                  </Button>
+                </div>
+                )}
+              </>
             ) : (
               <div className="rounded-xl bg-secondary p-12 text-center">
                 <Heart className="mx-auto h-12 w-12 text-muted-foreground" />
@@ -65,7 +85,7 @@ export default async function PoojaGarlandsPage() {
         </section>
       </main>
       
-      <Footer />
+      {showFooter && <Footer />}
     </div>
   )
 }
