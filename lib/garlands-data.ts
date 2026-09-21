@@ -878,6 +878,13 @@ export const garlands: Garland[] = [
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-06%20at%204.11.55%20PM-pnSPEyrtBEcGe8ZjFo7bncIqmbye0N.jpeg"],
     sizes: indiaGarland_001_Sizes,
   },
+  {
+    id: "india-garland-017",
+    name: "IndiaWeddingGarland_019",
+    description: "White jasmine and green floral garland with a pearl loop and hanging floral tassel",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-06%20at%204.11.40%20PM-lv2TnTqPDOFuaR2PFZ5Y05tft2b30i.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
 ]
 
 // Helper function to get extras by IDs
