@@ -71,14 +71,14 @@ export const weddingRentals: WeddingRental[] = [
   },
   {
     id: "rental-008",
-    name: "Adjustable Double Crossbar Pipe and Drape Frame",
+    name: "Heavy duty backdrop stand",
     description: "Adjustable 10 x 10 foot pipe and drape frame for wedding backdrops, ceremonies, and event installations.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.20.36%20PM%20%282%29-mkHbzcxQfQYg2DkizdNU2e80ip4wJn.jpeg"],
     pricePerDayInCents: 0,
   },
   {
     id: "rental-009",
-    name: "Large Aluminum Ceremony Trays",
+    name: "Biryani Handis (small, Medium and Large)",
     description: "Set of large traditional aluminum trays suitable for ceremony arrangements and event presentation.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.20.36%20PM%20%281%29-dE6QEGQMxzwah6X8SfdnM0nw5A2gDA.jpeg"],
     pricePerDayInCents: 0,
@@ -102,7 +102,7 @@ export const weddingRentals: WeddingRental[] = [
   },
   {
     id: "rental-014",
-    name: "Krishna Statue",
+    name: "Krishna Brass Idol",
     description: "Colorful embellished Krishna statue with flute, ideal for cultural celebrations and ceremonial décor.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.29.15%20PM%20%281%29-oLeAR4hyeaHrFkHlnAUO6Eh5abjZS1.jpeg"],
     pricePerDayInCents: 0,
