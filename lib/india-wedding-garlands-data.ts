@@ -29,7 +29,6 @@ const indiaGarlandIds = [
   "india-garland-017",
   "india-garland-018",
   "india-garland-019",
-  "india-garland-020",
   "india-garland-021",
   "india-garland-022",
   "india-garland-023",
