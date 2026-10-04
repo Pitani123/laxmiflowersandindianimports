@@ -44,7 +44,7 @@ export default function WeddingRentalsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-8 rounded-xl bg-secondary p-5 text-center">
               <p className="text-sm text-muted-foreground">
-                All prices shown are per day. Call us to check availability and reserve your items.
+                Rental pricing varies by item and event. Call the store to check availability and reserve your items.
               </p>
             </div>
 

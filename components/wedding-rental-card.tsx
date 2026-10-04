@@ -11,8 +11,8 @@ import {
 } from '@/components/ui/dialog'
 import { Button } from '@/components/ui/button'
 
-function formatPricePerDay(priceInCents: number): string {
-  return `$${(priceInCents / 100).toFixed(2)} / day`
+function formatPricePerDay(_priceInCents: number): string {
+  return 'Call Store for Pricing'
 }
 
 interface WeddingRentalCardProps {
