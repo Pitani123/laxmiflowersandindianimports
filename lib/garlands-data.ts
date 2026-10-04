@@ -690,6 +690,55 @@ export const garlands: Garland[] = [
     sizes: garland_039_Sizes
   },
   {
+    id: "garland-040",
+    name: "WeddingGarland_040",
+    description: "White Spider Mums and Pink Carnations with Baby's Breath Garland",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_040-nkyATf8ujrOArHwIldv6cetSjCMJ2t.jpeg"],
+    sizes: garland_040_Sizes
+  },
+  {
+    id: "garland-041",
+    name: "WeddingGarland_041",
+    description: "Olive Green Beaded Garland with Pearl Spheres and Gold Bead Accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_041-AYHG0Z7lkNexIYzz0sD1B0Y5rvOaSV.jpeg"],
+    sizes: garland_041_Sizes
+  },
+  {
+    id: "garland-042",
+    name: "WeddingGarland_042",
+    description: "Deep Pink Ruffled Rose Petal Garland with Baby's Breath Clusters",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_042-VAG6xoEDsZOU0dgWYkLqxSw3pblr4e.jpeg"],
+    sizes: garland_042_Sizes
+  },
+  {
+    id: "garland-043",
+    name: "WeddingGarland_043",
+    description: "Pink and White Lotus Garland with Baby's Breath Accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_043-alICEC5MQFa1LjOcig6ExNmJ5DUiFQ.jpeg"],
+    sizes: garland_043_Sizes
+  },
+  {
+    id: "garland-044",
+    name: "WeddingGarland_044",
+    description: "Pink Lotus Petal Garland with Delicate Baby's Breath",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_044-lS7MvhJmsKXNSW3JBtq4IgT7QTQOWy.jpeg"],
+    sizes: garland_044_Sizes
+  },
+  {
+    id: "garland-045",
+    name: "WeddingGarland_045",
+    description: "Lush Baby's Breath Garland with Soft Pink Floral Accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_045-VTl4Jc5yQ3L4OURuRgKmpdRgeFBLFV.jpeg"],
+    sizes: garland_045_Sizes
+  },
+  {
+    id: "garland-046",
+    name: "WeddingGarland_046",
+    description: "Red and Magenta Petal Garland with Yellow Rose Accents and Cream Flower Bands",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_046-ABkmpsGmykII4wUSZQiEyghSOjBGZ5.jpeg"],
+    sizes: garland_046_Sizes
+  },
+  {
     id: "garland-047",
     name: "WeddingGarland_047",
     description: "Cream Jasmine Garland with Baby's Breath Clusters and Gold Ribbon",
@@ -890,34 +939,6 @@ export const garlands: Garland[] = [
     name: "IndiaWeddingGarland_027",
     description: "Cream jasmine garland with bright orange floral sections, delicate white accents, red roses, pearl strands, and a red rose tassel.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.57%20PM%20%281%29-5X7N437yOWnEOX7YCzz0Ys4tNFfhde.jpeg"],
-    sizes: indiaGarland_001_Sizes,
-  },
-  {
-    id: "india-garland-026",
-    name: "IndiaWeddingGarland_028",
-    description: "Pink and white floral garland with repeating gold accents and red rose tassels.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.48%20PM%20%281%29-ok7rd6b8gfxsYhq0ENKYTwonQrZTwU.jpeg"],
-    sizes: indiaGarland_001_Sizes,
-  },
-  {
-    id: "india-garland-027",
-    name: "IndiaWeddingGarland_029",
-    description: "White jasmine garland with purple floral bands, pale pink roses, pearl strands, and purple tassels.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.48%20PM-RctPoU8fHgBTdmej5TTXgYsSffGdxq.jpeg"],
-    sizes: indiaGarland_001_Sizes,
-  },
-  {
-    id: "india-garland-028",
-    name: "IndiaWeddingGarland_030",
-    description: "Pink lotus-style floral garland with white filler flowers, magenta accents, pearl strands, and a layered tassel.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.49%20PM-APd3o1OSMrGHK9wA13GrrfS82Rf5st.jpeg"],
-    sizes: indiaGarland_001_Sizes,
-  },
-  {
-    id: "india-garland-033",
-    name: "IndiaWeddingGarland_035",
-    description: "White jasmine garland with purple floral bands, pale pink roses, pearl strands, and purple tassels.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.48%20PM-17bD784StlDClimqmb4tXCEEZdboft.jpeg"],
     sizes: indiaGarland_001_Sizes,
   },
 ]
