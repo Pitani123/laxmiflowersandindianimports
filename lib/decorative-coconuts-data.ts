@@ -94,7 +94,7 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
     name: "DecorativeCoconut_010",
     description: "Beautiful green coconut with red heart centerpiece featuring Telugu script names, pearl and gold bead border with rhinestone accents, and decorative pearl bow topper. Ideal for personalized wedding gifts.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM%20%282%29-CVcTvMSxN48Jzwolel50s0aGqYwiF8.jpeg"],
-    priceInCents: 7500, // $55.00
+    priceInCents: 9500, // $95.00
     customizable: true,
   },
   {
