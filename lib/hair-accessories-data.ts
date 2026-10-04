@@ -109,13 +109,6 @@ export const hairAccessories: HairAccessory[] = [
     priceInCents: 6000,
   },
   {
-    id: "hair-015",
-    name: "Hair_Accessories_015",
-    description: "Traditional red and white flower poolajada finished with gold ribbon ties for South Indian bridal and ceremonial hairstyles.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.00%20PM-IwV9iC4VhfxFyJ24pE1r6QC4pOZuxO.jpeg"],
-    priceInCents: 4500,
-  },
-  {
     id: "hair-016",
     name: "Hair_Accessories_016",
     description: "Vibrant red floral hair band accented with clusters of delicate white flowers for festive and wedding styling.",
@@ -128,13 +121,6 @@ export const hairAccessories: HairAccessory[] = [
     description: "Red floral headband with gold rose accents and adjustable gold ribbon ties for traditional celebrations.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.02%20PM%20%281%29-NBe0T3i2q95Nig4DVvTmuOHI9QZFhL.jpeg"],
     priceInCents: 4500,
-  },
-  {
-    id: "hair-018",
-    name: "Hair_Accessories_018",
-    description: "Soft pink floral bridal hair band with layered blossoms and a gold ribbon finish for elegant wedding looks.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.03%20PM%20%281%29-MzbgB7vedpECiPbakgiBbBgEvAuXd2.jpeg"],
-    priceInCents: 5000,
   },
   {
     id: "hair-019",
