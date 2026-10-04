@@ -711,34 +711,6 @@ export const garlands: Garland[] = [
     sizes: garland_042_Sizes
   },
   {
-    id: "garland-043",
-    name: "WeddingGarland_043",
-    description: "Pink and White Lotus Garland with Baby's Breath Accents",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_043-alICEC5MQFa1LjOcig6ExNmJ5DUiFQ.jpeg"],
-    sizes: garland_043_Sizes
-  },
-  {
-    id: "garland-044",
-    name: "WeddingGarland_044",
-    description: "Pink Lotus Petal Garland with Delicate Baby's Breath",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_044-lS7MvhJmsKXNSW3JBtq4IgT7QTQOWy.jpeg"],
-    sizes: garland_044_Sizes
-  },
-  {
-    id: "garland-045",
-    name: "WeddingGarland_045",
-    description: "Lush Baby's Breath Garland with Soft Pink Floral Accents",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_045-VTl4Jc5yQ3L4OURuRgKmpdRgeFBLFV.jpeg"],
-    sizes: garland_045_Sizes
-  },
-  {
-    id: "garland-046",
-    name: "WeddingGarland_046",
-    description: "Red and Magenta Petal Garland with Yellow Rose Accents and Cream Flower Bands",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_046-ABkmpsGmykII4wUSZQiEyghSOjBGZ5.jpeg"],
-    sizes: garland_046_Sizes
-  },
-  {
     id: "garland-047",
     name: "WeddingGarland_047",
     description: "Cream Jasmine Garland with Baby's Breath Clusters and Gold Ribbon",
