@@ -776,7 +776,7 @@ export const garlands: Garland[] = [
   {
     id: "india-garland-002",
     name: "IndiaWeddingGarland_004",
-    description: "Rich red floral garland with diagonal gold detailing and ornate tassels",
+    description: "Rich red lily garland with diagonal gold detailing and ornate tassels",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-18%20at%207.11.54%20PM%20%283%29-cAkOucZh4AeMdNIkpQ7weoui9cKl84.jpeg"],
     sizes: indiaGarland_002_Sizes,
   },
