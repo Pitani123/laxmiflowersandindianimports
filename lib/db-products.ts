@@ -1,6 +1,7 @@
 import { bouquetProducts } from '@/data/bouquets'
 import { looseFlowerProducts } from '@/data/loose-flowers'
 import { poojaGarlandProducts } from '@/data/pooja-garlands'
+import { rentalProducts } from '@/data/rentals'
 import type { DBProduct } from '@/lib/types'
 
 export type { DBProduct } from '@/lib/types'
@@ -9,6 +10,7 @@ const localProducts: DBProduct[] = [
   ...looseFlowerProducts,
   ...poojaGarlandProducts,
   ...bouquetProducts,
+  ...rentalProducts,
 ]
 
 export async function getProducts(): Promise<DBProduct[]> {

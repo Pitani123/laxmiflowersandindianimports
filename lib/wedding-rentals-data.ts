@@ -70,20 +70,6 @@ export const weddingRentals: WeddingRental[] = [
     pricePerDayInCents: 3000, // $30.00 per day
   },
   {
-    id: "rental-008",
-    name: "Heavy duty backdrop stand",
-    description: "Adjustable 10 x 10 foot pipe and drape frame for wedding backdrops, ceremonies, and event installations.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.20.36%20PM%20%282%29-mkHbzcxQfQYg2DkizdNU2e80ip4wJn.jpeg"],
-    pricePerDayInCents: 0,
-  },
-  {
-    id: "rental-009",
-    name: "Biryani Handis (small, Medium and Large)",
-    description: "Set of large traditional aluminum trays suitable for ceremony arrangements and event presentation.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.20.36%20PM%20%281%29-dE6QEGQMxzwah6X8SfdnM0nw5A2gDA.jpeg"],
-    pricePerDayInCents: 0,
-  },
-  {
     id: "rental-010",
     name: "Yellow Pooja Mandap Table",
     description: "Bright yellow decorative pooja table with tiered shelves and traditional auspicious details.",
