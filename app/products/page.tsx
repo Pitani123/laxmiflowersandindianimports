@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer"
 import { Store } from "lucide-react"
 import { ProductNotice } from "@/components/product-notice"
 import { WeddingCollage } from "@/components/wedding-collage"
+import { WeddingRentalsCollage } from "@/components/wedding-rentals-collage"
 
 const productCategories = [
   {
@@ -121,6 +122,8 @@ export default function ProductsPage() {
                 >
                   {category.id === "wedding" ? (
                     <WeddingCollage />
+                  ) : category.id === "rentals" ? (
+                    <WeddingRentalsCollage />
                   ) : (
                     <Image
                       src={category.image}
