@@ -201,6 +201,60 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     sizes: garikaMunthaluSizes11,
     potSize: "5/6 inch clay pot",
     customizable: true
+  },
+  {
+    id: "garika-munthalu-012",
+    name: "GarikaMunthalu_012",
+    description: "Gold decorated clay pot with pearl flower accents, crystal leaf detailing, and layered gold and silver beaded borders.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.53%20PM-cwvefRY5HwLeY3aUZhqet1WJ8UC1A7.jpeg"],
+    sizes: garikaMunthaluSizes1,
+    potSize: "5/6 inch clay pot",
+    customizable: true
+  },
+  {
+    id: "garika-munthalu-013",
+    name: "GarikaMunthalu_013",
+    description: "Gold decorated clay pot with a pearl collar, ornate pearl-and-gold medallion accents, and hanging crystal embellishments.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.54%20PM-PRREbTvUiRPhzYmHiEBU4Yav6NVI39.jpeg"],
+    sizes: garikaMunthaluSizes2,
+    potSize: "5/6 inch clay pot",
+    customizable: true
+  },
+  {
+    id: "garika-munthalu-014",
+    name: "GarikaMunthalu_014",
+    description: "Emerald green and gold decorated clay pot with a burgundy rim, pearl floral accents, and delicate gold trim.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.01%20PM%20%281%29-3L95Cnui1sAcq4ybzS3h5OLdOOcohr.jpeg"],
+    sizes: garikaMunthaluSizes3,
+    potSize: "5/6 inch clay pot",
+    customizable: true
+  },
+  {
+    id: "garika-munthalu-015",
+    name: "GarikaMunthalu_015",
+    description: "Deep burgundy and gold decorated clay pot pair with pearl and gemstone flower motifs and rich red beaded collar accents.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.04%20PM-NO2TqTiKYJbSKx0jKXq7pSUzharbBT.jpeg"],
+    sizes: garikaMunthaluSizes4,
+    potSize: "5/6 inch clay pot",
+    customizable: true
+  },
+  {
+    id: "garika-munthalu-016",
+    name: "GarikaMunthalu_016",
+    description: "Red and green decorated clay pot with a gold-painted neck, pearl and crystal floral accents, and layered rhinestone borders.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.05%20PM-UgDMA2sBWzbyGLyk7YIvvwXpxLC4Ho.jpeg"],
+    sizes: garikaMunthaluSizes5,
+    potSize: "5/6 inch clay pot",
+    customizable: true
+  },
+  {
+    id: "garika-munthalu-017",
+    name: "GarikaMunthalu_017",
+    description: "Maroon and gold decorated clay pot pair with pearl dot accents, red gemstone detailing, and a classic festive finish.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.06%20PM-RRqpjrMx77rL9mdcJv6iJSppXiC9OK.jpeg"],
+    sizes: garikaMunthaluSizes6,
+    potSize: "5/6 inch clay pot",
+    customizable: true
   }
 ]
 
