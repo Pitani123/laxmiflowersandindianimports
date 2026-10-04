@@ -3,13 +3,12 @@
 import { useState, useMemo } from 'react'
 import Image from 'next/image'
 import { WeddingRental } from '@/lib/wedding-rentals-data'
-import { X, ZoomIn, ChevronLeft, ChevronRight, Phone } from 'lucide-react'
+import { X, ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react'
 import {
   Dialog,
   DialogContent,
   DialogTitle,
 } from '@/components/ui/dialog'
-import { Button } from '@/components/ui/button'
 
 function formatPricePerDay(_priceInCents: number): string {
   return 'Call Store for Pricing'
@@ -71,16 +70,6 @@ export function WeddingRentalCard({ product }: WeddingRentalCardProps) {
             <span className="text-lg font-bold text-primary">{formatPricePerDay(product.pricePerDayInCents)}</span>
           </div>
 
-          {/* Call to Reserve Button */}
-          <Button
-            asChild
-            className="mt-4 w-full bg-primary text-primary-foreground hover:bg-primary/90"
-          >
-            <a href="tel:+14699889029">
-              <Phone className="mr-2 h-4 w-4" />
-              Call to Reserve
-            </a>
-          </Button>
         </div>
       </div>
 
