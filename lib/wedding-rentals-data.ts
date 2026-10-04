@@ -49,16 +49,6 @@ export const weddingRentals: WeddingRental[] = [
     pricePerDayInCents: 4500, // $45.00 per day
   },
   {
-    id: "rental-005",
-    name: "Bowls (Set of 2)",
-    description:
-      "Set of two ornate decorative bowls with detailed gold and maroon lattice work, perfect for traditional wedding ceremony arrangements.",
-    images: [
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Bowls-Z0f0bqcZM8bgHKoz3m6C5yuzIJNPY2.jpeg",
-    ],
-    pricePerDayInCents: 3000, // $30.00 per day
-  },
-  {
     id: "rental-006",
     name: "Kanyadanam Set 1",
     description:
@@ -103,8 +93,11 @@ export const weddingRentals: WeddingRental[] = [
   {
     id: "rental-011",
     name: "Decorative Meenakari Baskets",
-    description: "Pair of richly patterned red and gold decorative baskets for wedding and cultural event displays.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.21.03%20PM%20%281%29-YCZp3Ih5x2unhccTHRGOB0TS5SjaUO.jpeg"],
+    description: "Pair of richly patterned red and gold decorative baskets with detailed gold and maroon lattice work, perfect for wedding ceremonies, traditional arrangements, and cultural event displays.",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.21.03%20PM%20%281%29-YCZp3Ih5x2unhccTHRGOB0TS5SjaUO.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Bowls-Z0f0bqcZM8bgHKoz3m6C5yuzIJNPY2.jpeg",
+    ],
     pricePerDayInCents: 0,
   },
   {
