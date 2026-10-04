@@ -135,4 +135,11 @@ export const weddingRentals: WeddingRental[] = [
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%207.17.19%20PM-8aeLMsvzE2qDP4ii6XBxcpY8oMsnqR.jpeg"],
     pricePerDayInCents: 0,
   },
+  {
+    id: "rental-019",
+    name: "Rocket Bounce House",
+    description: "Colorful rocket-themed inflatable bounce house with an enclosed jumping area and front slide, perfect for children's parties and outdoor celebrations.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-04%20at%202.56.12%20PM-JMCiX0A966GsbFftvdKKjSEEyus013.jpeg"],
+    pricePerDayInCents: 0,
+  },
 ]
