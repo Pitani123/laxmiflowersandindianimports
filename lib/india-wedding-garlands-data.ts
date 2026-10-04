@@ -45,6 +45,7 @@ export const indiaWeddingGarlands: Garland[] = indiaGarlandIds.flatMap((id, inde
     ? [{
         ...garland,
         name: `IndiaWeddingGarland_${String(index + 1).padStart(3, "0")}`,
+        sizes: garland.sizes.filter((size) => size.id !== "3ft"),
       }]
     : []
 })
