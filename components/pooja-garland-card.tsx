@@ -107,9 +107,9 @@ export function PoojaGarlandCard({ product }: PoojaGarlandCardProps) {
       </Dialog>
 
       <div className="p-5">
-        {/* Name & Description */}
+        {/* Name & Store Contact */}
         <h3 className="font-serif text-lg font-bold text-foreground">{product.name}</h3>
-        <p className="mt-1 text-sm text-muted-foreground line-clamp-2">{product.description}</p>
+        <p className="mt-1 text-sm text-muted-foreground">Call store for more details</p>
 
         {/* Size Selection */}
         <div className="mt-4">
