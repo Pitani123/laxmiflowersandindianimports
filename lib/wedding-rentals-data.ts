@@ -39,11 +39,12 @@ export const weddingRentals: WeddingRental[] = [
   },
   {
     id: "rental-004",
-    name: "Rings Binde",
+    name: "Pearl and Gold Rings Binde",
     description:
-      "Beautifully embellished pot (binde) decorated with intricate gold beadwork and pearl detailing, used to hold the rings during wedding rituals.",
+      "Beautifully embellished pearl and gold binde decorated with intricate beadwork, pearl detailing, and an ornate statement-vase design, used for wedding rituals and elegant pooja or event décor.",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Rings%20Binde-oVCMIfYIGWlx9URLF9GOdgzqtLF903.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.21.03%20PM%20%283%29-IFKri0FmSzoY6nOQ2Usyp8b3fur2ni.jpeg",
     ],
     pricePerDayInCents: 4500, // $45.00 per day
   },
@@ -71,9 +72,10 @@ export const weddingRentals: WeddingRental[] = [
     id: "rental-007",
     name: "Kanyadanam Set 2",
     description:
-      "Decorative Kanyadanam set featuring a tumbler and plate with vibrant red and gold meenakari patterns for the wedding ritual.",
+      "Decorative Kanyadanam set featuring a tumbler and plate with vibrant red and gold meenakari patterns, plus an ornate red, gold, and green pooja thali with a matching decorated vessel for the wedding ritual and traditional ceremonies.",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Kanyadanam%20set2-cSttHcapOGiVzibv2t9iSLJHUt6dhl.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.21.03%20PM%20%282%29-REpHplc9ii6FD6i7f07IISOAbdi9ZA.jpeg",
     ],
     pricePerDayInCents: 3000, // $30.00 per day
   },
@@ -103,20 +105,6 @@ export const weddingRentals: WeddingRental[] = [
     name: "Decorative Meenakari Baskets",
     description: "Pair of richly patterned red and gold decorative baskets for wedding and cultural event displays.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.21.03%20PM%20%281%29-YCZp3Ih5x2unhccTHRGOB0TS5SjaUO.jpeg"],
-    pricePerDayInCents: 0,
-  },
-  {
-    id: "rental-012",
-    name: "Decorative Pooja Thali Set",
-    description: "Ornate red, gold, and green pooja thali with a matching decorated vessel for traditional ceremonies.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.21.03%20PM%20%282%29-REpHplc9ii6FD6i7f07IISOAbdi9ZA.jpeg"],
-    pricePerDayInCents: 0,
-  },
-  {
-    id: "rental-013",
-    name: "Pearl and Gold Decorative Vase",
-    description: "Statement gold and pearl embellished vase for elegant wedding, pooja, and event décor.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.21.03%20PM%20%283%29-IFKri0FmSzoY6nOQ2Usyp8b3fur2ni.jpeg"],
     pricePerDayInCents: 0,
   },
   {
