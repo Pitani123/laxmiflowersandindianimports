@@ -201,7 +201,34 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     sizes: garikaMunthaluSizes11,
     potSize: "5/6 inch clay pot",
     customizable: true
-  }
+  },
+  {
+    id: "garika-munthalu-012",
+    name: "GarikaMunthalu_012",
+    description: "Gold decorated clay pot with pearl flower accents, crystal leaf detailing, and layered gold and silver beaded borders.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.53%20PM-cwvefRY5HwLeY3aUZhqet1WJ8UC1A7.jpeg"],
+    sizes: garikaMunthaluSizes1,
+    potSize: "5/6 inch clay pot",
+    customizable: true
+  },
+  {
+    id: "garika-munthalu-013",
+    name: "GarikaMunthalu_013",
+    description: "Gold decorated clay pot with a pearl collar, ornate pearl-and-gold medallion accents, and hanging crystal embellishments.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.54%20PM-PRREbTvUiRPhzYmHiEBU4Yav6NVI39.jpeg"],
+    sizes: garikaMunthaluSizes2,
+    potSize: "5/6 inch clay pot",
+    customizable: true
+  },
+  {
+    id: "garika-munthalu-014",
+    name: "GarikaMunthalu_014",
+    description: "Emerald green and gold decorated clay pot with a burgundy rim, pearl floral accents, and delicate gold trim.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.01%20PM%20%281%29-3L95Cnui1sAcq4ybzS3h5OLdOOcohr.jpeg"],
+    sizes: garikaMunthaluSizes3,
+    potSize: "5/6 inch clay pot",
+    customizable: true
+  },
 ]
 
 // Helper function to format price

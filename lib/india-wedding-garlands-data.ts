@@ -27,6 +27,14 @@ const indiaGarlandIds = [
   "india-garland-015",
   "india-garland-016",
   "india-garland-017",
+  "india-garland-018",
+  "india-garland-019",
+  "india-garland-020",
+  "india-garland-021",
+  "india-garland-022",
+  "india-garland-023",
+  "india-garland-024",
+  "india-garland-025",
 ]
 
 const indiaGarlandIdSet = new Set(indiaGarlandIds)

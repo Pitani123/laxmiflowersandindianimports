@@ -767,6 +767,41 @@ export const garlands: Garland[] = [
     sizes: garland_050_Sizes
   },
   {
+    id: "garland-051",
+    name: "WeddingGarland_051",
+    description: "Pink lotus petal garland with white baby's breath clusters, magenta accents, pearl strands, and a layered floral tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.49%20PM-qNWqm1OWxID1kra43PZMP0voxNTGwW.jpeg"],
+    sizes: garland_050_Sizes
+  },
+  {
+    id: "garland-052",
+    name: "WeddingGarland_052",
+    description: "White baby's breath and soft pink carnation garland with a full floral center and matching pink tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.50%20PM%20%281%29-auL2uwFvinYMZHtsuhdcSoC9TNfiP1.jpeg"],
+    sizes: garland_050_Sizes
+  },
+  {
+    id: "garland-053",
+    name: "WeddingGarland_053",
+    description: "White chrysanthemum garland accented with orange-red roses, pearl strands, and coordinating rose tassels.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.57%20PM-VxfBDTNmPY2nS1aEXiAfxKMVIScWV7.jpeg"],
+    sizes: garland_050_Sizes
+  },
+  {
+    id: "garland-054",
+    name: "WeddingGarland_054",
+    description: "Pink lotus garland with white baby's breath bands, pearl loop accents, and a soft pink floral tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.58%20PM-o05QmNDa5tWTv5C83EOhEEhOCDaE7Z.jpeg"],
+    sizes: garland_050_Sizes
+  },
+  {
+    id: "garland-055",
+    name: "WeddingGarland_055",
+    description: "White chrysanthemum and pink lotus garland with baby's breath, gold rose accents, pearl details, and layered floral tassels.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.59%20PM-GVrIop2jntN6YSJhAKMu5qQ6In2QJ8.jpeg"],
+    sizes: garland_050_Sizes
+  },
+  {
     id: "india-garland-001",
     name: "IndiaWeddingGarland_003",
     description: "Deep magenta floral garland with gold bands and hanging floral tassels",
@@ -776,7 +811,7 @@ export const garlands: Garland[] = [
   {
     id: "india-garland-002",
     name: "IndiaWeddingGarland_004",
-    description: "Rich red floral garland with diagonal gold detailing and ornate tassels",
+    description: "Rich red lily garland with diagonal gold detailing and ornate tassels",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-07-18%20at%207.11.54%20PM%20%283%29-cAkOucZh4AeMdNIkpQ7weoui9cKl84.jpeg"],
     sizes: indiaGarland_002_Sizes,
   },
@@ -883,6 +918,62 @@ export const garlands: Garland[] = [
     name: "IndiaWeddingGarland_019",
     description: "White jasmine and green floral garland with a pearl loop and hanging floral tassel",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-06%20at%204.11.40%20PM-lv2TnTqPDOFuaR2PFZ5Y05tft2b30i.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-018",
+    name: "IndiaWeddingGarland_020",
+    description: "Elegant pink and white floral garland with repeating rose-toned sections, cream accents, gold separators, and red rose tassels.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.48%20PM%20%281%29-HQnbVxUyYeRmY9qxek3E8XbwU9TEkt.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-019",
+    name: "IndiaWeddingGarland_021",
+    description: "White jasmine-style garland with rich purple floral bands, pale pink rose accents, pearl strands, and matching purple tassels.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.48%20PM-zK9dioNJVlH7B0c9qW34sxY7fIF5so.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-020",
+    name: "IndiaWeddingGarland_022",
+    description: "Pink lotus-inspired floral garland with baby's breath clusters, magenta accents, pearl strands, and a layered floral tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.49%20PM-9BdSxhS6O7Ge31r8ZvXHfLPwfgtL4U.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-021",
+    name: "IndiaWeddingGarland_023",
+    description: "Colorful red, cream, yellow, and pink floral garland with decorative gold bands and multicolor rose tassels.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.50%20PM-VDQkThYYaWBtpGMCZt2PBCkpyorKqi.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-022",
+    name: "IndiaWeddingGarland_024",
+    description: "White jasmine garland with alternating green floral bands and a pearl-strand finish with a green floral tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.54%20PM%20%281%29-DyQ85Fqlrrh07nPFdWIavOF4Xvtfok.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-023",
+    name: "IndiaWeddingGarland_025",
+    description: "White and green floral garland with alternating dense sections and a compact floral hanging tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.55%20PM-L2RoPF8eGpkHSrndR846DksIqblofy.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-024",
+    name: "IndiaWeddingGarland_026",
+    description: "Deep red floral garland with cream and green accent bands, gold detailing, and a red rose hanging tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.56%20PM-2PYF7BHJtV8yjpBc0JNujM987UIQsZ.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-025",
+    name: "IndiaWeddingGarland_027",
+    description: "Cream jasmine garland with bright orange floral sections, delicate white accents, red roses, pearl strands, and a red rose tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.57%20PM%20%281%29-5X7N437yOWnEOX7YCzz0Ys4tNFfhde.jpeg"],
     sizes: indiaGarland_001_Sizes,
   },
 ]

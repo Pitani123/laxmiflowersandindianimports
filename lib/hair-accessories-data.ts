@@ -93,5 +93,47 @@ export const hairAccessories: HairAccessory[] = [
     description: "Traditional South Indian bridal poolajada with alternating bands of deep red rose petals and white jasmine buds, finished with gold ribbon ties. Perfect for bridal hairstyles and special occasions.",
     images: ["/images/products/hair-accessories-12.jpg"],
     priceInCents: 2500, // $25.00
-  }  
+  },
+  {
+    id: "hair-013",
+    name: "Hair_Accessories_013",
+    description: "Long red rose and white flower jadai veni with jeweled flower centers, gold bead accents, and rose tassels for bridal hairstyles.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.59%20PM%20%281%29-X4BPyNwJHBCBALoWA6h8uRDl1mY0Nj.jpeg"],
+    priceInCents: 2500, // $25.00
+  },
+  {
+    id: "hair-014",
+    name: "Hair_Accessories_014",
+    description: "Elegant white rose and baby's breath bridal hair accessory with layered pearl details and black thread ties.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.55%20PM%20%281%29-pHnm8K2elBAO6Jh8j8cZGNVLl1yeun.jpeg"],
+    priceInCents: 2500, // $25.00
+  },
+  {
+    id: "hair-016",
+    name: "Hair_Accessories_016",
+    description: "Vibrant red floral hair band accented with clusters of delicate white flowers for festive and wedding styling.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.01%20PM-FvGXwxXd95VW1cT9xtMYsU0ptiCSxh.jpeg"],
+    priceInCents: 2500, // $25.00
+  },
+  {
+    id: "hair-017",
+    name: "Hair_Accessories_017",
+    description: "Red floral headband with gold rose accents and adjustable gold ribbon ties for traditional celebrations.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.02%20PM%20%281%29-NBe0T3i2q95Nig4DVvTmuOHI9QZFhL.jpeg"],
+    priceInCents: 2500, // $25.00
+  },
+  {
+    id: "hair-019",
+    name: "Hair_Accessories_019",
+    description: "Full pink rose petal floral hair accessory with black thread ties, designed for traditional bridal hairstyles.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.07%20PM-8Vh7lObcAnSRnaQKLhrvF8P6JWBQAS.jpeg"],
+    priceInCents: 2500, // $25.00
+  },
+  {
+    id: "hair-020",
+    name: "Hair_Accessories_020",
+    description: "Red rose and baby's breath floral hair set with coordinating rose-and-flower hair pieces for wedding styling.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.03%20PM-3L2rrwc0930DE4GDMocqkM19m5DRW4.jpeg"],
+    priceInCents: 2500 // $25.00,
+  }
 ]
