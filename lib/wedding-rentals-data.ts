@@ -94,13 +94,6 @@ export const weddingRentals: WeddingRental[] = [
     pricePerDayInCents: 0,
   },
   {
-    id: "rental-015",
-    name: "Artificial Tropical Plants",
-    description: "Pair of tall artificial tropical plants in textured gold planters for event and venue décor.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.29.14%20PM-Fg4d45HfQsmb5t2KNL7ynPHT38ZyKb.jpeg"],
-    pricePerDayInCents: 0,
-  },
-  {
     id: "rental-016",
     name: "Kundulu Brass Oil Lamps",
     description: "Pair of 32-inch traditional brass kundulu oil lamps; smaller size also available.",
@@ -108,24 +101,10 @@ export const weddingRentals: WeddingRental[] = [
     pricePerDayInCents: 0,
   },
   {
-    id: "rental-017",
-    name: "Floral Arrangement Stands",
-    description: "Pair of rose-gold square floral stands with coordinated artificial flower arrangements.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%206.29.15%20PM-8avRxgbWcWkHAYmtygca4153DawDZ1.jpeg"],
-    pricePerDayInCents: 0,
-  },
-  {
     id: "rental-018",
     name: "Ganesh Idol (2 Feet)",
     description: "Two-foot decorative Ganesh idol with an ornate silver finish for ceremonial and event décor.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%207.17.19%20PM-8aeLMsvzE2qDP4ii6XBxcpY8oMsnqR.jpeg"],
-    pricePerDayInCents: 0,
-  },
-  {
-    id: "rental-019",
-    name: "Rocket Bounce House",
-    description: "Colorful rocket-themed inflatable bounce house with an enclosed jumping area and front slide, perfect for children's parties and outdoor celebrations.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-04%20at%202.56.12%20PM-JMCiX0A966GsbFftvdKKjSEEyus013.jpeg"],
     pricePerDayInCents: 0,
   },
 ]
