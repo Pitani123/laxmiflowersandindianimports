@@ -102,6 +102,15 @@ export const camphorGarlands: CamphorGarland[] = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-18%20at%201.00.01%20PM-COZ852IVn4pDZ6WxxYAybqaWqdKYit.jpeg"
     ],
     sizes: camphor_004_Sizes
+  },
+  {
+    id: "camphor-005",
+    name: "Camphor_005",
+    description: "Elegant double-strand camphor garland with white camphor pieces, colorful pink and green beadwork, pearl and gold accents, and matching pink rose tassels.",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.02%20PM-OjfaOEbeFgg328dcat7AkJDaySs53v.jpeg"
+    ],
+    sizes: defaultCamphorSizes
   }
 ]
 
