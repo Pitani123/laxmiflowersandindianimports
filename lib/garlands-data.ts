@@ -690,27 +690,6 @@ export const garlands: Garland[] = [
     sizes: garland_039_Sizes
   },
   {
-    id: "garland-040",
-    name: "WeddingGarland_040",
-    description: "White Spider Mums and Pink Carnations with Baby's Breath Garland",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_040-nkyATf8ujrOArHwIldv6cetSjCMJ2t.jpeg"],
-    sizes: garland_040_Sizes
-  },
-  {
-    id: "garland-041",
-    name: "WeddingGarland_041",
-    description: "Olive Green Beaded Garland with Pearl Spheres and Gold Bead Accents",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_041-AYHG0Z7lkNexIYzz0sD1B0Y5rvOaSV.jpeg"],
-    sizes: garland_041_Sizes
-  },
-  {
-    id: "garland-042",
-    name: "WeddingGarland_042",
-    description: "Deep Pink Ruffled Rose Petal Garland with Baby's Breath Clusters",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_042-VAG6xoEDsZOU0dgWYkLqxSw3pblr4e.jpeg"],
-    sizes: garland_042_Sizes
-  },
-  {
     id: "garland-047",
     name: "WeddingGarland_047",
     description: "Cream Jasmine Garland with Baby's Breath Clusters and Gold Ribbon",
