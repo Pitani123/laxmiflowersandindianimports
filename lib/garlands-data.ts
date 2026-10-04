@@ -767,6 +767,41 @@ export const garlands: Garland[] = [
     sizes: garland_050_Sizes
   },
   {
+    id: "garland-051",
+    name: "WeddingGarland_051",
+    description: "Pink lotus petal garland with white baby's breath clusters, magenta accents, pearl strands, and a layered floral tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.49%20PM-qNWqm1OWxID1kra43PZMP0voxNTGwW.jpeg"],
+    sizes: garland_050_Sizes
+  },
+  {
+    id: "garland-052",
+    name: "WeddingGarland_052",
+    description: "White baby's breath and soft pink carnation garland with a full floral center and matching pink tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.50%20PM%20%281%29-auL2uwFvinYMZHtsuhdcSoC9TNfiP1.jpeg"],
+    sizes: garland_050_Sizes
+  },
+  {
+    id: "garland-053",
+    name: "WeddingGarland_053",
+    description: "White chrysanthemum garland accented with orange-red roses, pearl strands, and coordinating rose tassels.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.57%20PM-VxfBDTNmPY2nS1aEXiAfxKMVIScWV7.jpeg"],
+    sizes: garland_050_Sizes
+  },
+  {
+    id: "garland-054",
+    name: "WeddingGarland_054",
+    description: "Pink lotus garland with white baby's breath bands, pearl loop accents, and a soft pink floral tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.58%20PM-o05QmNDa5tWTv5C83EOhEEhOCDaE7Z.jpeg"],
+    sizes: garland_050_Sizes
+  },
+  {
+    id: "garland-055",
+    name: "WeddingGarland_055",
+    description: "White chrysanthemum and pink lotus garland with baby's breath, gold rose accents, pearl details, and layered floral tassels.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.59%20PM-GVrIop2jntN6YSJhAKMu5qQ6In2QJ8.jpeg"],
+    sizes: garland_050_Sizes
+  },
+  {
     id: "india-garland-001",
     name: "IndiaWeddingGarland_003",
     description: "Deep magenta floral garland with gold bands and hanging floral tassels",
