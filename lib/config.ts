@@ -2,8 +2,8 @@
 
 export const config = {
   // Enable/disable shopping cart functionality (Add to Cart button and cart experience)
-  // Set NEXT_PUBLIC_ENABLE_ADD_TO_CART_BUTTON=false to disable (enabled by default)
-  enableCart: process.env.NEXT_PUBLIC_ENABLE_ADD_TO_CART_BUTTON !== 'false',
+  // Cart is currently disabled site-wide. Set this to true to enable it.
+  enableCart: false,
   
   // Enable/disable SMS notifications for orders
   // Requires TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, and TWILIO_PHONE_NUMBER
