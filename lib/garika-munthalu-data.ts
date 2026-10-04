@@ -229,33 +229,6 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
     potSize: "5/6 inch clay pot",
     customizable: true
   },
-  {
-    id: "garika-munthalu-015",
-    name: "GarikaMunthalu_015",
-    description: "Deep burgundy and gold decorated clay pot pair with pearl and gemstone flower motifs and rich red beaded collar accents.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.04%20PM-NO2TqTiKYJbSKx0jKXq7pSUzharbBT.jpeg"],
-    sizes: garikaMunthaluSizes4,
-    potSize: "5/6 inch clay pot",
-    customizable: true
-  },
-  {
-    id: "garika-munthalu-016",
-    name: "GarikaMunthalu_016",
-    description: "Red and green decorated clay pot with a gold-painted neck, pearl and crystal floral accents, and layered rhinestone borders.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.05%20PM-UgDMA2sBWzbyGLyk7YIvvwXpxLC4Ho.jpeg"],
-    sizes: garikaMunthaluSizes5,
-    potSize: "5/6 inch clay pot",
-    customizable: true
-  },
-  {
-    id: "garika-munthalu-017",
-    name: "GarikaMunthalu_017",
-    description: "Maroon and gold decorated clay pot pair with pearl dot accents, red gemstone detailing, and a classic festive finish.",
-    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.06%20PM-RRqpjrMx77rL9mdcJv6iJSppXiC9OK.jpeg"],
-    sizes: garikaMunthaluSizes6,
-    potSize: "5/6 inch clay pot",
-    customizable: true
-  }
 ]
 
 // Helper function to format price
