@@ -941,6 +941,62 @@ export const garlands: Garland[] = [
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.57%20PM%20%281%29-5X7N437yOWnEOX7YCzz0Ys4tNFfhde.jpeg"],
     sizes: indiaGarland_001_Sizes,
   },
+  {
+    id: "india-garland-026",
+    name: "IndiaWeddingGarland_028",
+    description: "Pink and white floral garland with repeating gold accents and red rose tassels.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.48%20PM%20%281%29-ok7rd6b8gfxsYhq0ENKYTwonQrZTwU.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-027",
+    name: "IndiaWeddingGarland_029",
+    description: "White jasmine garland with purple floral bands, pale pink roses, pearl strands, and purple tassels.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.48%20PM-RctPoU8fHgBTdmej5TTXgYsSffGdxq.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-028",
+    name: "IndiaWeddingGarland_030",
+    description: "Pink lotus-style floral garland with white filler flowers, magenta accents, pearl strands, and a layered tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.49%20PM-APd3o1OSMrGHK9wA13GrrfS82Rf5st.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-029",
+    name: "IndiaWeddingGarland_031",
+    description: "Colorful red, cream, yellow, and pink floral garland with gold detailing and multicolor rose tassels.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.50%20PM-w7Nxd6kNoIcEsYdPiiMTLuNCqGFvII.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-030",
+    name: "IndiaWeddingGarland_032",
+    description: "Deep red floral garland with cream and green accent bands, gold details, and a red rose tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.56%20PM-IQK3tTxncskEwhsVL1PbDnYJJFjIDy.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-031",
+    name: "IndiaWeddingGarland_033",
+    description: "Cream jasmine garland with orange floral sections, white accents, red roses, pearl strands, and a rose tassel.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.57%20PM%20%281%29-XJOmOCnqwNzLr15GIicGBz5GbkFesd.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-032",
+    name: "IndiaWeddingGarland_034",
+    description: "Pink and white floral garland with gold accents and red rose tassels.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.48%20PM%20%281%29-dUlN6U1LgQ3laMlR36IaAvniB0cYiv.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
+  {
+    id: "india-garland-033",
+    name: "IndiaWeddingGarland_035",
+    description: "White jasmine garland with purple floral bands, pale pink roses, pearl strands, and purple tassels.",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.48%20PM-17bD784StlDClimqmb4tXCEEZdboft.jpeg"],
+    sizes: indiaGarland_001_Sizes,
+  },
 ]
 
 // Helper function to get extras by IDs
