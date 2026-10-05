@@ -68,57 +68,6 @@ export const garland_005_Sizes: GarlandSize[] = [
   { id: "5ft", label: "5 ft", priceInCents: 11000 }, // $110.00
 ]
 
-// India Wedding Garlands - Made in India, 15-day advance order required
-export const indiaGarland_001_Sizes: GarlandSize[] = [
-  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $110.00
-  { id: "5ft", label: "5 ft", priceInCents: 12500 }, // $125.00
-]
-
-export const indiaGarland_002_Sizes: GarlandSize[] = [
-  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
-  { id: "5ft", label: "5 ft", priceInCents: 13500 }, // $135.00
-]
-
-export const indiaGarland_003_Sizes: GarlandSize[] = [
-  { id: "4ft", label: "4 ft", priceInCents: 11500 }, // $115.00
-  { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
-]
-
-export const indiaGarland_004_Sizes: GarlandSize[] = [
-  { id: "4ft", label: "4 ft", priceInCents: 12500 }, // $125.00
-  { id: "5ft", label: "5 ft", priceInCents: 14000 }, // $140.00
-]
-
-export const indiaGarland_005_Sizes: GarlandSize[] = [
-  { id: "4ft", label: "4 ft", priceInCents: 13000 }, // $130.00
-  { id: "5ft", label: "5 ft", priceInCents: 14500 }, // $145.00
-]
-
-export const indiaGarland_006_Sizes: GarlandSize[] = [
-  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
-  { id: "5ft", label: "5 ft", priceInCents: 13500 }, // $135.00
-]
-
-export const indiaGarland_007_Sizes: GarlandSize[] = [
-  { id: "4ft", label: "4 ft", priceInCents: 11500 }, // $115.00
-  { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
-]
-
-export const indiaGarland_008_Sizes: GarlandSize[] = [
-  { id: "4ft", label: "4 ft", priceInCents: 12500 }, // $125.00
-  { id: "5ft", label: "5 ft", priceInCents: 14000 }, // $140.00
-]
-
-export const indiaGarland_009_Sizes: GarlandSize[] = [
-  { id: "4ft", label: "4 ft", priceInCents: 13000 }, // $130.00
-  { id: "5ft", label: "5 ft", priceInCents: 14500 }, // $145.00
-]
-
-export const indiaGarland_010_Sizes: GarlandSize[] = [
-  { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
-  { id: "5ft", label: "5 ft", priceInCents: 13500 }, // $135.00
-]
-
 export const garland_006_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 17000 }, // $170.00
   { id: "5ft", label: "5 ft", priceInCents: 20000 }, // $200.00
@@ -366,6 +315,57 @@ export const garland_049_Sizes: GarlandSize[] = [
 export const garland_050_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $180.00
   { id: "5ft", label: "5 ft", priceInCents: 12500 }, // $200.00
+]
+
+// India Wedding Garlands - Made in India, 15-day advance order required
+export const indiaGarland_001_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $110.00
+  //{ id: "5ft", label: "5 ft", priceInCents: 12500 }, // $125.00
+]
+
+export const indiaGarland_002_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $120.00
+  //{ id: "5ft", label: "5 ft", priceInCents: 13500 }, // $135.00
+]
+
+export const indiaGarland_003_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $115.00
+  //{ id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
+]
+
+export const indiaGarland_004_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $125.00
+  //{ id: "5ft", label: "5 ft", priceInCents: 14000 }, // $140.00
+]
+
+export const indiaGarland_005_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $130.00
+  //{ id: "5ft", label: "5 ft", priceInCents: 14500 }, // $145.00
+]
+
+export const indiaGarland_006_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $120.00
+  //{ id: "5ft", label: "5 ft", priceInCents: 13500 }, // $135.00
+]
+
+export const indiaGarland_007_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 11500 }, // $115.00
+  //{ id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
+]
+
+export const indiaGarland_008_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $125.00
+  //{ id: "5ft", label: "5 ft", priceInCents: 14000 }, // $140.00
+]
+
+export const indiaGarland_009_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $130.00
+  //{ id: "5ft", label: "5 ft", priceInCents: 14500 }, // $145.00
+]
+
+export const indiaGarland_010_Sizes: GarlandSize[] = [
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $120.00
+  //{ id: "5ft", label: "5 ft", priceInCents: 13500 }, // $135.00
 ]
 
 // =================================================================================
