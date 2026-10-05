@@ -5,7 +5,6 @@ import { WeddingGarlandsCollage } from "./wedding-garlands-collage"
 import { FreshFlowersCollage } from "./fresh-flowers-collage"
 import { FlowerBouquetCollage } from "./flower-bouquet-collage"
 import { LiveCountersCollage } from "./live-counters-collage"
-import { WeddingRentalsCollage } from "./wedding-rentals-collage"
 
 const categories = [
   {
@@ -87,8 +86,6 @@ export function ProductCategories() {
                 <FlowerBouquetCollage />
               ) : category.name === "Live Counters" ? (
                 <LiveCountersCollage />
-              ) : category.name === "Rentals" ? (
-                <WeddingRentalsCollage />
               ) : (
                 <Image
                   src={category.image}

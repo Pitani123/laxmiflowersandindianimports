@@ -17,7 +17,13 @@ const poojaGarlandSizes = [
   { id: "3ft", label: "3 ft" },
   { id: "4ft", label: "4 ft" },
   { id: "5ft", label: "5 ft" },
+  { id: "6ft", label: "6 ft" },
 ]
+
+const poojaGarlandFixedPricesInCents: Record<string, number> = {
+  "5ft": 6500,
+  "6ft": 7800,
+}
 
 function formatPrice(priceInCents: number): string {
   return `$${(priceInCents / 100).toFixed(2)}`
@@ -36,7 +42,7 @@ export function PoojaGarlandCard({ product }: PoojaGarlandCardProps) {
   const pricePerFoot = product.price_per_foot_in_cents ?? 1200
   const selectedSize = poojaGarlandSizes.find(s => s.id === selectedSizeId)
   const selectedFeet = Number.parseInt(selectedSizeId, 10)
-  const selectedPriceInCents = pricePerFoot * selectedFeet
+  const selectedPriceInCents = poojaGarlandFixedPricesInCents[selectedSizeId] ?? pricePerFoot * selectedFeet
   const totalPrice = selectedSize ? selectedPriceInCents : 0
 
   const handleAddToCart = () => {
@@ -136,7 +142,7 @@ export function PoojaGarlandCard({ product }: PoojaGarlandCardProps) {
                   )}
                 >
                   <span className="text-sm font-medium">{size.label}</span>
-                  <span className="text-xs text-muted-foreground">{formatPrice(pricePerFoot * Number.parseInt(size.id, 10))}</span>
+                  <span className="text-xs text-muted-foreground">{formatPrice(poojaGarlandFixedPricesInCents[size.id] ?? pricePerFoot * Number.parseInt(size.id, 10))}</span>
                 </Label>
               </div>
             ))}
