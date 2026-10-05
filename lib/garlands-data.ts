@@ -349,7 +349,7 @@ export const indiaGarland_006_Sizes: GarlandSize[] = [
 ]
 
 export const indiaGarland_007_Sizes: GarlandSize[] = [
-  { id: "4ft", label: "4 ft", priceInCents: 11500 }, // $115.00
+  { id: "4ft", label: "4 ft", priceInCents: 10000 }, // $115.00
   //{ id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
 ]
 
