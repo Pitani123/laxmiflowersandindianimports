@@ -35,17 +35,6 @@ export const rentalProducts: DBProduct[] = [
     updated_at: '2026-01-01T00:00:00Z',
   },
   {
-    id: 'rental-016',
-    name: 'Kundulu Brass Oil Lamps',
-    description: 'Pair of 32-inch traditional brass kundulu oil lamps; smaller size also available.',
-    price_in_cents: 0,
-    category: 'rentals',
-    image_url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-30%20at%207.17.04%20PM-VHOdtOHntckbq16XJNFD9LeqMJgjEl.jpeg',
-    is_active: true,
-    created_at: '2026-01-01T00:00:00Z',
-    updated_at: '2026-01-01T00:00:00Z',
-  },
-  {
     id: 'rental-017',
     name: 'Floral Arrangement Stands',
     description: 'Pair of rose-gold square floral stands with coordinated artificial flower arrangements.',
