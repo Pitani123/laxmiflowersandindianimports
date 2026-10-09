@@ -669,6 +669,20 @@ export const garlands: Garland[] = [
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.59%20PM-GVrIop2jntN6YSJhAKMu5qQ6In2QJ8.jpeg"],
     sizes: garland_050_Sizes
   },
+  {
+    id: "garland-056",
+    name: "WeddingGarland_056",
+    description: "White Lily and Baby's Breath Garland with Pink Rose Accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%284%29-5eqzxWOFqQSmLSUrhBdvbPiEGPDPGc.jpeg", "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.37%20PM-N2IVuqPOEBZFj699KmH8cNr4Bnafm3.jpeg"],
+    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 12000 }, { id: "5ft", label: "5 ft", priceInCents: 13000 }]
+  },
+  {
+    id: "garland-057",
+    name: "WeddingGarland_057",
+    description: "Tuberose and Lotus Garland with Baby's Breath and Green Rose Accents",
+    images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%2010.10.46%20PM-LMIhZciZxEImnT79MphA9nd2vl3tuy.jpeg"],
+    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 14000 }, { id: "5ft", label: "5 ft", priceInCents: 15000 }]
+  },
 
 ]
 
