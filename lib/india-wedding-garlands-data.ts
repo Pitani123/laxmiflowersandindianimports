@@ -38,52 +38,42 @@ export const garlandExtras: GarlandExtra[] = [
 // India Wedding Garlands - Made in India, 15-day advance order required
 export const indiaGarland_001_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $110.00
-  { id: "5ft", label: "5 ft", priceInCents: 12500 }, // $125.00
 ]
 
 export const indiaGarland_002_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
-  { id: "5ft", label: "5 ft", priceInCents: 13500 }, // $135.00
 ]
 
 export const indiaGarland_003_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 11500 }, // $115.00
-  { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
 ]
 
 export const indiaGarland_004_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 12500 }, // $125.00
-  { id: "5ft", label: "5 ft", priceInCents: 14000 }, // $140.00
 ]
 
 export const indiaGarland_005_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 13000 }, // $130.00
-  { id: "5ft", label: "5 ft", priceInCents: 14500 }, // $145.00
 ]
 
 export const indiaGarland_006_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
-  { id: "5ft", label: "5 ft", priceInCents: 13500 }, // $135.00
 ]
 
 export const indiaGarland_007_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 11500 }, // $115.00
-  { id: "5ft", label: "5 ft", priceInCents: 13000 }, // $130.00
 ]
 
 export const indiaGarland_008_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 12500 }, // $125.00
-  { id: "5ft", label: "5 ft", priceInCents: 14000 }, // $140.00
 ]
 
 export const indiaGarland_009_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 13000 }, // $130.00
-  { id: "5ft", label: "5 ft", priceInCents: 14500 }, // $145.00
 ]
 
 export const indiaGarland_010_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 12000 }, // $120.00
-  { id: "5ft", label: "5 ft", priceInCents: 13500 }, // $135.00
 ]
 
 
@@ -268,63 +258,63 @@ export const indiaWeddingGarlands: Garland[] = [
     name: "IndiaWeddingGarland_026",
     description: "Rose Petals Garland",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-13%20at%204.40.24%20PM-68AsyoEQaQ8YfMIsWDsra1vtiM1xDe.jpeg"],
-    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 10000 }, { id: "5ft", label: "5 ft", priceInCents: 11000 }],
+    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 10000 }, ],
   },
   {
     id: "india-garland-027",
     name: "IndiaWeddingGarland_027",
     description: "Jasmine and Rose Petal Double Garland with Gold Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%208.51.36%20PM-NulcMENf90OZMBjKVRY3IdxDrQCP8L.jpeg"],
-    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 11000 }, { id: "5ft", label: "5 ft", priceInCents: 12000 }],
+    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 11000 }, ],
   },
   {
     id: "india-garland-028",
     name: "IndiaWeddingGarland_028",
     description: "Classic Rose Petal Garland in Deep Pink",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-14%20at%2010.10.46%20PM%20%281%29-DmerghZu0PPTd5yU6vzs84taoQbM9t.jpeg"],
-    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 10000 }, { id: "5ft", label: "5 ft", priceInCents: 11000 }],
+    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 10000 }, ],
   },
   {
     id: "india-garland-029",
     name: "IndiaWeddingGarland_029",
     description: "Deep Pink Ruffled Rose Petal Garland with Baby's Breath Clusters",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_042-VAG6xoEDsZOU0dgWYkLqxSw3pblr4e.jpeg"],
-    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 11500 }, { id: "5ft", label: "5 ft", priceInCents: 12500 }],
+    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 11500 }, ],
   },
   {
     id: "india-garland-030",
     name: "IndiaWeddingGarland_030",
     description: "Pink Lotus Petal Garland with Delicate Baby's Breath",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_044-lS7MvhJmsKXNSW3JBtq4IgT7QTQOWy.jpeg"],
-    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 18000 }, { id: "5ft", label: "5 ft", priceInCents: 20000 }],
+    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 18000 }, ],
   },
   {
     id: "india-garland-031",
     name: "IndiaWeddingGarland_031",
     description: "Lush Baby's Breath Garland with Soft Pink Floral Accents",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_045-VTl4Jc5yQ3L4OURuRgKmpdRgeFBLFV.jpeg"],
-    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 18000 }, { id: "5ft", label: "5 ft", priceInCents: 20000 }],
+    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 18000 }, ],
   },
   {
     id: "india-garland-032",
     name: "IndiaWeddingGarland_032",
     description: "Red and Magenta Petal Garland with Yellow Rose Accents and Cream Flower Bands",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_046-ABkmpsGmykII4wUSZQiEyghSOjBGZ5.jpeg"],
-    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 12000 }, { id: "5ft", label: "5 ft", priceInCents: 12500 }],
+    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 12000 }, ],
   },
   {
     id: "india-garland-033",
     name: "IndiaWeddingGarland_033",
     description: "Cream Jasmine Garland with Baby's Breath Clusters and Gold Ribbon",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_047-FnWN7yH16YpAjmLol6MWFTenOkammU.jpeg"],
-    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 12000 }, { id: "5ft", label: "5 ft", priceInCents: 12500 }],
+    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 12000 }, ],
   },
   {
     id: "india-garland-034",
     name: "IndiaWeddingGarland_034",
     description: "Red Rose Petal Garland with Baby's Breath Clusters and Gold Beaded Tassel",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WeddingGarland_051-KSZjlxcixPrDJrSBjHUJIcIwkBJczT.jpeg"],
-    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 12000 }, { id: "5ft", label: "5 ft", priceInCents: 12500 }],
+    sizes: [{ id: "4ft", label: "4 ft", priceInCents: 12000 }, ],
   },
 ]
 
