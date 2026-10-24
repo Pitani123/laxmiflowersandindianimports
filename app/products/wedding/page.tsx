@@ -125,7 +125,7 @@ export default function WeddingPage() {
           </div>
         </section>
 
-        <ProductNotice />
+        <ProductNotice variant="wedding" />
 
         {/* Subcategories Section */}
         <section className="py-16 lg:py-24">

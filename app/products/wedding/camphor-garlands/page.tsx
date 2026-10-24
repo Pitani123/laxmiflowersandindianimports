@@ -43,7 +43,7 @@ export default function CamphorGarlandsPage() {
           </div>
         </section>
 
-        <ProductNotice />
+        <ProductNotice variant="camphor-garlands" />
 
         {/* Info Banner */}
         <section className="border-b border-border bg-secondary/50 py-4">

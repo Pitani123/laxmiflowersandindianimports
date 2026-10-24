@@ -37,7 +37,7 @@ export default function WeddingRentalsPage() {
           </div>
         </section>
 
-        <ProductNotice />
+        <ProductNotice variant="wedding-rentals" />
 
         {/* Products Section */}
         <section className="py-16 lg:py-24">

@@ -54,7 +54,7 @@ export default function CarDecorationsPage() {
           </div>
         </section>
 
-        <ProductNotice />
+        <ProductNotice variant="car-decorations" />
 
         {/* Products Section */}
         <section className="py-16 lg:py-24">
