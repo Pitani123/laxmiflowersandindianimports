@@ -202,10 +202,9 @@ export default function LocationsPage() {
                             <div className="mt-1 space-y-1 text-sm text-muted-foreground">
                               {location.id === "mckinney" ? (
                                 <>
-                                  <p><span className="font-medium text-foreground">Friday:</span> {location.hours.friday}</p>
+                                  <p><span className="font-medium text-foreground">Monday - Friday:</span> {location.hours.weekdays}</p>
                                   <p><span className="font-medium text-foreground">Saturday:</span> {location.hours.saturday}</p>
                                   <p><span className="font-medium text-foreground">Sunday:</span> {location.hours.sunday}</p>
-                                  <p><span className="font-medium text-foreground">Monday - Thursday:</span> {location.hours.weekdays}</p>
                                 </>
                               ) : (
                                 <>
