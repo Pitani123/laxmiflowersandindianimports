@@ -155,15 +155,7 @@ export function GarlandCard({ garland }: GarlandCardProps) {
 
       <div className="p-5">
         {/* Name & Description */}
-        <h3 className="font-serif text-lg font-bold text-foreground">
-          {garland.name.startsWith('LFUSWG') ? (
-            <>
-              LFUSWG<span className="inline-block text-[1.15em]">{garland.name.slice(6)}</span>
-            </>
-          ) : (
-            garland.name
-          )}
-        </h3>
+        <h3 className="font-serif text-lg font-bold text-foreground">{garland.name}</h3>
         <p className="mt-1 text-sm text-muted-foreground line-clamp-2">{garland.description}</p>
         <p className="mt-1 text-xs italic text-muted-foreground/70">Color customizations available</p>
 
