@@ -28,6 +28,9 @@ export function RentalCard({ product }: RentalCardProps) {
       
       <div className="p-5">
         <h3 className="font-serif text-lg font-bold text-foreground">{product.name}</h3>
+        <p className="mt-2 text-base font-semibold text-primary">
+          {product.price_in_cents > 0 ? `$${(product.price_in_cents / 100).toFixed(2)} / day` : 'Contact for price'}
+        </p>
         <p className="mt-1 text-sm text-muted-foreground line-clamp-2">{product.description}</p>
         
         {/* Contact for Price */}
