@@ -23,8 +23,8 @@ const categories = [
     image: "/images/garlands.jpg",
     description: "Traditional wedding essentials",
     subcategories: [
-      { name: "Wedding Garlands", href: "/products/wedding/wedding-garlands" },
-      { name: "India Wedding Garlands", href: "/products/wedding/india-wedding-garlands" },
+      { name: "USA-Made Wedding Garlands", href: "/products/wedding/wedding-garlands" },
+      { name: "Imported India Wedding Garlands", href: "/products/wedding/india-wedding-garlands" },
       { name: "Camphor Garlands", href: "/products/wedding/camphor-garlands" },
       { name: "Decorative Coconuts", href: "/products/wedding/decorative-coconuts" },
       { name: "Wedding Accessories", href: "/products/wedding/wedding-accessories" },

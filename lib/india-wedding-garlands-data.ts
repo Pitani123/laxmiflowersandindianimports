@@ -1,4 +1,4 @@
-// India Wedding Garlands - Made in India, 15-day advance order required
+// Imported India Wedding Garlands - Made in India, 15-day advance order required
 
 export interface GarlandSize {
   id: string
@@ -35,7 +35,7 @@ export const garlandExtras: GarlandExtra[] = [
   { id: "extra-flowers", name: "Extra Flowers", priceInCents: 1200 }, // $12.00
 ]
 
-// India Wedding Garlands - Made in India, 15-day advance order required
+// Imported India Wedding Garlands - Made in India, 15-day advance order required
 export const indiaGarland_001_Sizes: GarlandSize[] = [
   { id: "4ft", label: "4 ft", priceInCents: 11000 }, // $110.00
 ]

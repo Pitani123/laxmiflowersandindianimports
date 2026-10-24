@@ -37,7 +37,7 @@ export const garlandExtras: GarlandExtra[] = [
 ]
 
 // =================================================================================
-// DEFAULT SIZES - Wedding Garlands (3ft, 4ft, 5ft)
+// DEFAULT SIZES - USA-Made Wedding Garlands (3ft, 4ft, 5ft)
 // =================================================================================
 export const defaultSizes: GarlandSize[] = [
   //{ id: "3ft", label: "3 ft", priceInCents: 10000 }, // $100.00

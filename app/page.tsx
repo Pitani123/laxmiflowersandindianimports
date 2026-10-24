@@ -65,7 +65,7 @@ export default function HomePage() {
               <div className="flex flex-col items-start gap-2">
                 <div className="inline-flex w-44 items-center justify-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-sm font-medium text-foreground">
                   <Heart className="h-3.5 w-3.5 text-accent" />
-                  <span>Wedding Garlands</span>
+                  <span>USA-Made Wedding Garlands</span>
                 </div>
                 <div className="inline-flex w-44 items-center justify-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-sm font-medium text-foreground">
                   <Gift className="h-3.5 w-3.5 text-accent" />
@@ -87,7 +87,7 @@ export default function HomePage() {
                 </div>
                 <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-xs font-medium text-foreground">
                   <Heart className="h-3.5 w-3.5 text-accent" />
-                  <span>Wedding Garlands</span>
+                  <span>USA-Made Wedding Garlands</span>
                 </div>
                 <div className="inline-flex items-center gap-1.5 rounded-full bg-accent/20 px-3 py-1.5 text-xs font-medium text-foreground">
                   <Gift className="h-3.5 w-3.5 text-accent" />
