@@ -11,9 +11,30 @@ import { WeddingGarlandsCollage } from "@/components/wedding-garlands-collage"
 import { ArrowLeft, Heart, Info } from "lucide-react"
 import { ProductNotice } from "@/components/product-notice"
 
+const featuredGarlandNames = [
+  "LFUSWG011",
+  "LFUSWG019",
+  "LFUSWG022",
+  "LFUSWG024",
+  "LFUSWG028",
+  "LFUSWG029",
+  "LFUSWG048",
+  "LFUSWG049",
+]
+
+const orderedWeddingGarlands = [...weddingGarlands].sort((a, b) => {
+  const aIndex = featuredGarlandNames.indexOf(a.name)
+  const bIndex = featuredGarlandNames.indexOf(b.name)
+
+  if (aIndex === -1 && bIndex === -1) return 0
+  if (aIndex === -1) return 1
+  if (bIndex === -1) return -1
+  return aIndex - bIndex
+})
+
 export default function WeddingGarlandsPage() {
   const batchSize = 12
-  const [showFooter, setShowFooter] = useState(weddingGarlands.length <= batchSize)
+  const [showFooter, setShowFooter] = useState(orderedWeddingGarlands.length <= batchSize)
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -79,12 +100,12 @@ export default function WeddingGarlandsPage() {
                 Our Wedding Garland Collection
               </h2>
               <p className="mt-1 text-muted-foreground">
-                {weddingGarlands.length} beautiful garlands to choose from
+                {orderedWeddingGarlands.length} beautiful garlands to choose from
               </p>
             </div>
 
             <GarlandGrid
-              garlands={weddingGarlands}
+              garlands={orderedWeddingGarlands}
               batchSize={batchSize}
               onAllDisplayed={() => setShowFooter(true)}
             />
