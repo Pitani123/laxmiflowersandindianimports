@@ -33,9 +33,10 @@ const locations = [
     phone: "+1 (682) 439-6439",
     email: "laxmiflowers.aubrey@gmail.com",
     hours: {
-      weekdays: "11:00 AM - 8:30 PM",
-      saturday: "11:00 AM - 8:30 PM",
-      sunday: "11:00 AM - 8:30 PM",
+      weekdays: "11:00 AM - 9:00 PM",
+      saturday: "10:00 AM - 9:00 PM",
+      sunday: "10:00 AM - 9:00 PM",
+      friday: "11:00 AM - 9:00 PM",
     },
     image: "/images/store-main.jpg",
     mapUrl: "https://maps.google.com/?q=6701+Collin+McKinney+Pkwy+Suite+103+McKinney+TX+75070",
@@ -199,9 +200,19 @@ export default function LocationsPage() {
                           <div>
                             <p className="font-medium text-foreground">Store Hours</p>
                             <div className="mt-1 space-y-1 text-sm text-muted-foreground">
-                              <p><span className="font-medium text-foreground">Mon - Fri:</span> {location.hours.weekdays}</p>
-                              <p><span className="font-medium text-foreground">Saturday:</span> {location.hours.saturday}</p>
-                              <p><span className="font-medium text-foreground">Sunday:</span> {location.hours.sunday}</p>
+                              {location.id === "mckinney" ? (
+                                <>
+                                  <p><span className="font-medium text-foreground">Monday - Friday:</span> {location.hours.weekdays}</p>
+                                  <p><span className="font-medium text-foreground">Saturday:</span> {location.hours.saturday}</p>
+                                  <p><span className="font-medium text-foreground">Sunday:</span> {location.hours.sunday}</p>
+                                </>
+                              ) : (
+                                <>
+                                  <p><span className="font-medium text-foreground">Mon - Fri:</span> {location.hours.weekdays}</p>
+                                  <p><span className="font-medium text-foreground">Saturday:</span> {location.hours.saturday}</p>
+                                  <p><span className="font-medium text-foreground">Sunday:</span> {location.hours.sunday}</p>
+                                </>
+                              )}
                               {location.id === "mckinney" && (
                                 <p className="pt-2 text-sm leading-relaxed text-muted-foreground">
                                   <span className="font-medium text-foreground">Festival & seasonal hours:</span> Every day, 10:00 AM - 10:00 PM
