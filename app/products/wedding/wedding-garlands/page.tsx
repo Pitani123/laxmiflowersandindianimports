@@ -22,14 +22,32 @@ const featuredGarlandNames = [
   "LFUSWG049",
 ]
 
-const orderedWeddingGarlands = [...weddingGarlands].sort((a, b) => {
-  const aIndex = featuredGarlandNames.indexOf(a.name)
-  const bIndex = featuredGarlandNames.indexOf(b.name)
+const bottomGarlandNames = [
+  "LFUSWG006",
+  "LFUSWG008",
+  "LFUSWG009",
+  "LFUSWG017",
+]
 
-  if (aIndex === -1 && bIndex === -1) return 0
-  if (aIndex === -1) return 1
-  if (bIndex === -1) return -1
-  return aIndex - bIndex
+const orderedWeddingGarlands = [...weddingGarlands].sort((a, b) => {
+  const aFeaturedIndex = featuredGarlandNames.indexOf(a.name)
+  const bFeaturedIndex = featuredGarlandNames.indexOf(b.name)
+  const aBottomIndex = bottomGarlandNames.indexOf(a.name)
+  const bBottomIndex = bottomGarlandNames.indexOf(b.name)
+
+  if (aFeaturedIndex !== -1 || bFeaturedIndex !== -1) {
+    if (aFeaturedIndex === -1) return 1
+    if (bFeaturedIndex === -1) return -1
+    return aFeaturedIndex - bFeaturedIndex
+  }
+
+  if (aBottomIndex !== -1 || bBottomIndex !== -1) {
+    if (aBottomIndex === -1) return -1
+    if (bBottomIndex === -1) return 1
+    return aBottomIndex - bBottomIndex
+  }
+
+  return 0
 })
 
 export default function WeddingGarlandsPage() {
