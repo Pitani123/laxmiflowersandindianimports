@@ -69,7 +69,7 @@ export const camphor_004_Sizes: CamphorGarlandSize[] = [
 export const camphorGarlands: CamphorGarland[] = [
   {
     id: "camphor-001",
-    name: "Camphor_001",
+    name: "LFINCG001",
     description: "Dual-strand camphor garland with white camphor blocks, golden beads, pearls, golden mesh balls, and colorful decorative rosettes",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.36.59%20PM-FRRNJgBs7q27lot0ETR5tdY62Yw71t.jpeg"
@@ -78,7 +78,7 @@ export const camphorGarlands: CamphorGarland[] = [
   },
   {
     id: "camphor-002",
-    name: "Camphor_002",
+    name: "LFINCG002",
     description: "Elegant camphor garland with white camphor pieces, golden leaf decorations, yellow and white beads, colorful rosettes, and pearl tassels",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.36.42%20PM-n2rJxBixiKxx38cLrK835uk3YjROOL.jpeg"
@@ -87,7 +87,7 @@ export const camphorGarlands: CamphorGarland[] = [
   },
   {
     id: "camphor-003",
-    name: "Camphor_003",
+    name: "LFINCG003",
     description: "Double-strand camphor garland with golden and yellow decorative beads at top and bottom, white camphor pieces in the middle strands, red silk thread ball accents, and decorative tassels with orange and pearl beads",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-18%20at%201.05.25%20PM-xpszNoeAJLdSFfzt5EDxeHRU3XQFUX.jpeg"
@@ -96,7 +96,7 @@ export const camphorGarlands: CamphorGarland[] = [
   },
   {
     id: "camphor-004",
-    name: "Camphor_004",
+    name: "LFINCG004",
     description: "Multi-strand camphor garland featuring two large red velvet hearts with gold filigree borders at the top, white camphor beads, golden beads throughout, red silk thread balls in the middle section, and ornate gold bead tassels",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-18%20at%201.00.01%20PM-COZ852IVn4pDZ6WxxYAybqaWqdKYit.jpeg"
@@ -105,7 +105,7 @@ export const camphorGarlands: CamphorGarland[] = [
   },
   {
     id: "camphor-005",
-    name: "Camphor_005",
+    name: "LFINCG005",
     description: "Elegant double-strand camphor garland with white camphor pieces, colorful pink and green beadwork, pearl and gold accents, and matching pink rose tassels.",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.02%20PM-OjfaOEbeFgg328dcat7AkJDaySs53v.jpeg"

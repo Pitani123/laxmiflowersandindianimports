@@ -11,12 +11,12 @@ export interface DecorativeCoconut {
 }
 
 // =================================================================================
-// DECORATIVE COCONUTS - Named as DecorativeCoconut_001, DecorativeCoconut_002, etc.
+// DECORATIVE COCONUTS - Named as LFUSDC001, LFUSDC002, etc.
 // =================================================================================
 export const decorativeCoconuts: DecorativeCoconut[] = [
   {
     id: "decorative-coconut-001",
-    name: "DecorativeCoconut_001",
+    name: "LFUSDC001",
     description: "Beautifully hand-decorated coconut with intricate red heart center, gold beadwork, pearl embellishments, and traditional Telugu script. Perfect for wedding ceremonies and religious rituals.",
     images: ["/images/products/decorative-coconut-1.jpg"],
     priceInCents: 10000, // $50.00
@@ -24,7 +24,7 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
   },
   {
     id: "decorative-coconut-002",
-    name: "DecorativeCoconut_002",
+    name: "LFUSDC002",
     description: "Elegant decorated coconut featuring a stunning red lotus flower made with sparkling crystals on a silver crystal background. Adorned with golden top and pearl accents. Ideal for pujas and special occasions.",
     images: ["/images/products/decorative-coconut-2.jpg"],
     priceInCents: 12000, // $50.00
@@ -32,7 +32,7 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
   },
   {
     id: "decorative-coconut-003",
-    name: "DecorativeCoconut_003",
+    name: "LFUSDC003",
     description: "Exquisite green coconut with red heart center decorated with gold and pearl beadwork, rhinestone embellishments, and Telugu blessing text. Traditional design with golden decorative top.",
     images: ["/images/products/decorative-coconut-3.jpg"],
     priceInCents: 9500, // $50.00
@@ -40,7 +40,7 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
   },
   {
     id: "decorative-coconut-004",
-    name: "DecorativeCoconut_004",
+    name: "LFUSDC004",
     description: "Vibrant green coconut with personalized initials in gold crystals. Features elaborate Ganesha medallion surrounded by golden and clear crystal sunburst pattern with pearl embellishments.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.20%20PM-7LL5qBIo35DTtsn74AIib9S2CXlhba.jpeg"],
     priceInCents: 8500, // $65.00
@@ -48,7 +48,7 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
   },
   {
     id: "decorative-coconut-005",
-    name: "DecorativeCoconut_005",
+    name: "LFUSDC005",
     description: "Elegant green coconut with beautiful Ganesha medallion centerpiece surrounded by pearl and crystal embellishments in a circular pattern. Perfect for traditional wedding ceremonies.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM-vCPPivoLUFvpilgi9XUCQYwaRhBSVC.jpeg"],
     priceInCents: 9000, // $55.00
@@ -56,7 +56,7 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
   },
   {
     id: "decorative-coconut-006",
-    name: "DecorativeCoconut_006",
+    name: "LFUSDC006",
     description: "Stunning green coconut with traditional Namam/Tilak design featuring white pearl borders, red crystal center, gold rhinestone accents, and decorative golden crown top with ornate rope details.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.44.38%20PM%20%281%29-o7EY9pPFJHVMLSF260OsOoub70pI0z.jpeg"],
     priceInCents: 10000, // $55.00
@@ -64,7 +64,7 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
   },
   {
     id: "decorative-coconut-007",
-    name: "DecorativeCoconut_007",
+    name: "LFUSDC007",
     description: "Elegant green coconut with traditional Tirumala Namam design in silver and red rhinestones, scattered crystal accents, and decorative topper with gold trim. Perfect for religious ceremonies.",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.10%20AM-XwMclB6qTwnaO3Gynp1bbYhJNw4rJ6.jpeg",
@@ -75,7 +75,7 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
   },
   {
     id: "decorative-coconut-008",
-    name: "DecorativeCoconut_008",
+    name: "LFUSDC008",
     description: "Vibrant green coconut featuring Om symbol in lotus mandala design with red center, golden Om lettering, crystal rhinestone petals, and pearl flower accents with decorative pearl bow topper.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM%20%282%29-WA52eN3TJDtzWIHY8Qe44OHi9SczgU.jpeg"],
     priceInCents: 10000, // $55.00
@@ -83,7 +83,7 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
   },
   {
     id: "decorative-coconut-009",
-    name: "DecorativeCoconut_009",
+    name: "LFUSDC009",
     description: "Bright green coconut with red lotus flower design outlined in silver crystal rhinestones, scattered red crystal flower accents, pearl and gold rope topper. Displayed on brass pot stand.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-18%20at%2012.54.39%20PM%20%281%29-JaUo4OWPXapc7yunjU64REn1IFbllb.jpeg"],
     priceInCents: 9500, // $75.00
@@ -91,7 +91,7 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
   },
   {
     id: "decorative-coconut-010",
-    name: "DecorativeCoconut_010",
+    name: "LFUSDC010",
     description: "Beautiful green coconut with red heart centerpiece featuring Telugu script names, pearl and gold bead border with rhinestone accents, and decorative pearl bow topper. Ideal for personalized wedding gifts.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM%20%282%29-CVcTvMSxN48Jzwolel50s0aGqYwiF8.jpeg"],
     priceInCents: 9500, // $95.00
@@ -99,7 +99,7 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
   },
   {
     id: "decorative-coconut-011",
-    name: "DecorativeCoconut_011",
+    name: "LFUSDC011",
     description: "Dark green coconut featuring traditional Vaishnava Tilak/Namam symbol with silver crystal rhinestone U-shape and red crystal center flame, gold rhinestone border, and decorative gold rope topper.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-18%20at%2012.54.39%20PM-JrvP0s6Lv9ogteykKrafuZ1rn39oL7.jpeg"],
     priceInCents: 7500, // $75.00
@@ -107,7 +107,7 @@ export const decorativeCoconuts: DecorativeCoconut[] = [
   },
   {
     id: "decorative-coconut-012",
-    name: "DecorativeCoconut_012",
+    name: "LFUSDC012",
     description: "Beautiful green coconut with a bold red heart centerpiece featuring Telugu script in gold beadwork, framed by pearl and gold bead borders with rhinestone accents and a delicate pearl bow topper. A perfect personalized keepsake for weddings and traditional ceremonies.",
     images: ["/images/products/decorative-coconut-12.jpg"],
     priceInCents: 10000, // $100.00

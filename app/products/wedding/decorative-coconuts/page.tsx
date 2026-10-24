@@ -53,7 +53,7 @@ export default function DecorativeCoconutsPage() {
           </div>
         </section>
 
-        <ProductNotice />
+        <ProductNotice variant="decorative-coconuts" />
 
         {/* Products Section */}
         <section className="py-16 lg:py-24">

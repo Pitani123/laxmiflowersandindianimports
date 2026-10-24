@@ -45,7 +45,7 @@ interface Category {
 const categories: Category[] = [
   {
     slug: "wedding-garlands",
-    title: "Wedding Garlands",
+    title: "USA-Made Wedding Garlands",
     subtitle: "Handcrafted fresh flower garlands for your special day",
     items: garlands.map((g) => ({
       name: g.name,

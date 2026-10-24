@@ -107,7 +107,7 @@ export default function ProductsPage() {
       <Navigation />
       
       <main className="flex-1">
-        <ProductNotice />
+        <ProductNotice variant="products" />
 
         {/* Categories Grid */}
         <section className="py-10 lg:py-12">

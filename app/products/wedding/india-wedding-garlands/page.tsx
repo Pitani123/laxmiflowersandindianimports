@@ -36,7 +36,7 @@ export default function IndiaWeddingGarlandsPage() {
               </div>
               <div>
                 <h1 className="font-serif text-4xl font-bold text-primary-foreground sm:text-5xl">
-                  India Wedding Garlands
+                  Imported India Wedding Garlands
                 </h1>
                 <p className="mt-2 text-lg text-primary-foreground/80">
                   Garlands made in India and shipped to the USA for your special celebration

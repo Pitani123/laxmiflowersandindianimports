@@ -40,7 +40,7 @@ export default async function BouquetsPage() {
           </div>
         </section>
 
-        <ProductNotice />
+        <ProductNotice variant="bouquets" />
 
         {/* Products Section */}
         <section className="py-16 lg:py-24">

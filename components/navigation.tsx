@@ -19,8 +19,8 @@ const productLinks = [
     href: "/products/wedding", 
     label: "Wedding",
     subcategories: [
-      { href: "/products/wedding/wedding-garlands", label: "Wedding Garlands" },
-      { href: "/products/wedding/india-wedding-garlands", label: "India Wedding Garlands" },
+      { href: "/products/wedding/wedding-garlands", label: "USA-Made Wedding Garlands" },
+      { href: "/products/wedding/india-wedding-garlands", label: "Imported India Wedding Garlands" },
       { href: "/products/wedding/camphor-garlands", label: "Camphor Garlands" },
       { href: "/products/wedding/decorative-coconuts", label: "Decorative Coconuts" },
       { href: "/products/wedding/wedding-accessories", label: "Wedding Accessories" },

@@ -32,7 +32,7 @@ import { ProductNotice } from "@/components/product-notice"
 const subcategories = [
   {
     id: "wedding-garlands",
-    name: "Wedding Garlands",
+    name: "USA-Made Wedding Garlands",
     description: "Garlands made in the USA by expert artisans for Indian weddings and celebrations",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-22%20at%2010.24.58%20PM-9s9uCjSrK2CYFijcNQxD84SlVqIOAJ.jpeg",
     href: "/products/wedding/wedding-garlands",
@@ -40,7 +40,7 @@ const subcategories = [
   },
   {
     id: "india-wedding-garlands",
-    name: "India Wedding Garlands",
+    name: "Imported India Wedding Garlands",
     description: "Garlands made in India and shipped to the USA for your special celebration",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-22%20at%2010.24.58%20PM-9s9uCjSrK2CYFijcNQxD84SlVqIOAJ.jpeg",
     href: "/products/wedding/india-wedding-garlands",
@@ -125,7 +125,7 @@ export default function WeddingPage() {
           </div>
         </section>
 
-        <ProductNotice />
+        <ProductNotice variant="wedding" />
 
         {/* Subcategories Section */}
         <section className="py-16 lg:py-24">

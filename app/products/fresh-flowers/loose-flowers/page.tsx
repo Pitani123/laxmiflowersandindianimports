@@ -39,7 +39,7 @@ export default async function LooseFlowersPage() {
           </div>
         </section>
 
-        <ProductNotice />
+        <ProductNotice variant="loose-flowers" />
 
         {/* Products Section */}
         <section className="py-16 lg:py-24">

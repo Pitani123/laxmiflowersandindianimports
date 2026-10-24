@@ -57,7 +57,7 @@ export default function FreshFlowersPage() {
           </div>
         </section>
 
-        <ProductNotice />
+        <ProductNotice variant="fresh-flowers" />
 
         {/* Subcategories Section */}
         <section className="py-16 lg:py-24">
