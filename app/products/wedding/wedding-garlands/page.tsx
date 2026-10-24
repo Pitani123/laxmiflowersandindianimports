@@ -36,7 +36,7 @@ export default function WeddingGarlandsPage() {
                 </div>
                 <div>
                   <h1 className="font-serif text-4xl font-bold text-card sm:text-5xl">USA-Made Wedding Garlands</h1>
-                  <p className="mt-1 text-lg text-card/80">Traditional Indian garlands for weddings and celebrations</p>
+                  <p className="mt-1 text-lg text-card/80">Garlands made in the USA by expert artisans for Indian Weddings and Celebrations</p>
                 </div>
               </div>
             </div>
