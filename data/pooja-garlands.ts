@@ -7,7 +7,7 @@ import type { DBProduct } from '@/lib/types'
 export const poojaGarlandProducts: DBProduct[] = [
   {
     id: 'pooja-garland-001',
-    name: 'PoojaGarland_001',
+    name: 'LFINPG001',
     description: 'Traditional red button roses pooja garland with white jasmine and green leaves. Perfect for deity worship and temple offerings. Flowers: Red Button Roses, White Jasmine, Green Leaves. Colors: Red, White, Green. Price: 1ft - $11, 2ft - $22',
     price_in_cents: 1100,
     category: 'pooja-garlands',
@@ -18,7 +18,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-002',
-    name: 'PoojaGarland_002',
+    name: 'LFINPG002',
     description: 'Elegant red roses pooja garland with white tuberose flowers and dark green foliage accents. Ideal for pooja ceremonies and special occasions. Flowers: Red Roses, White Tuberose, Green Foliage. Colors: Red, White, Green. Price: 1ft - $12, 2ft - $24',
     price_in_cents: 1100,
     category: 'pooja-garlands',
@@ -29,7 +29,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-003',
-    name: 'PoojaGarland_003',
+    name: 'LFINPG003',
     description: 'Vibrant yellow roses pooja garland with red rose accents. Traditional design perfect for Ganesh pooja, Lakshmi pooja and auspicious ceremonies. Flowers: Yellow Roses, Red Roses. Colors: Yellow, Red. Price: 1ft - $12, 2ft - $24',
     price_in_cents: 1100,
     category: 'pooja-garlands',
@@ -40,7 +40,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-004',
-    name: 'PoojaGarland_004',
+    name: 'LFINPG004',
     description: 'White Jasmine Garland with Golden Rose Petal Accents. Elegant design perfect for daily pooja, temple offerings and special ceremonies.',
     price_in_cents: 1100,
     category: 'pooja-garlands',
@@ -51,7 +51,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-005',
-    name: 'PoojaGarland_005',
+    name: 'LFINPG005',
     description: 'Traditional red and yellow pooja garland with red roses as the main color and yellow flower sections as accents. Classic temple-style design perfect for deity worship and auspicious ceremonies.',
     price_in_cents: 1100,
     category: 'pooja-garlands',
@@ -62,7 +62,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-006',
-    name: 'PoojaGarland_006',
+    name: 'LFINPG006',
     description: 'Red and yellow spiral twisted pooja garland featuring alternating red and yellow roses in an elegant twisted pattern with green leaves at the bottom tassel. Perfect for Ganesh pooja, Lakshmi pooja and festive occasions.',
     price_in_cents: 1100,
     category: 'pooja-garlands',
@@ -73,7 +73,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-007',
-    name: 'PoojaGarland_007',
+    name: 'LFINPG007',
     description: 'Purple button chrysanthemum garland with gold floral accents and a matching floral tassel. A vibrant choice for pooja ceremonies and temple offerings.',
     price_in_cents: 1100,
     category: 'pooja-garlands',
@@ -84,7 +84,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-008',
-    name: 'PoojaGarland_008',
+    name: 'LFINPG008',
     description: 'Bright yellow and pink rose garland arranged in a classic alternating pattern with a full rose tassel. Perfect for festive pooja ceremonies.',
     price_in_cents: 1100,
     category: 'pooja-garlands',
@@ -95,7 +95,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-009',
-    name: 'PoojaGarland_009',
+    name: 'LFINPG009',
     description: 'Red and yellow rose garland with gold separators and a rounded yellow floral tassel. Designed for deity worship and auspicious ceremonies.',
     price_in_cents: 1100,
     category: 'pooja-garlands',
@@ -106,7 +106,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-010',
-    name: 'PoojaGarland_010',
+    name: 'LFINPG010',
     description: 'Multicolor rose garland with red, orange, yellow, white, and green floral sections. A colorful traditional design for pooja and temple celebrations.',
     price_in_cents: 1100,
     category: 'pooja-garlands',
@@ -117,7 +117,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-011',
-    name: 'PoojaGarland_011',
+    name: 'LFUSPG011',
     description: 'Vibrant multicolor chrysanthemum garland with pink, yellow, coral, purple, and red floral sections.',
     price_in_cents: 1800,
     price_per_foot_in_cents: 1800,
@@ -129,7 +129,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-012',
-    name: 'PoojaGarland_012',
+    name: 'LFUSPG012',
     description: 'Pink, red, and yellow floral garland arranged in bold alternating sections with a full yellow floral finish.',
     price_in_cents: 1800,
     price_per_foot_in_cents: 1800,
@@ -141,7 +141,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-013',
-    name: 'PoojaGarland_013',
+    name: 'LFUSPG013',
     description: 'Yellow, pink, and deep red chrysanthemum garland with a bright yellow center and floral tassel.',
     price_in_cents: 1800,
     price_per_foot_in_cents: 1800,
@@ -153,7 +153,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-014',
-    name: 'PoojaGarland_014',
+    name: 'LFUSPG014',
     description: 'Red, white, pink, and yellow floral garland with leafy accents and a layered yellow flower finish.',
     price_in_cents: 1800,
     price_per_foot_in_cents: 1800,
@@ -165,7 +165,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-015',
-    name: 'PoojaGarland_015',
+    name: 'LFUSPG015',
     description: 'Traditional green leaf garland with pale purple blossoms arranged in alternating floral clusters.',
     price_in_cents: 1800,
     price_per_foot_in_cents: 1800,
@@ -177,7 +177,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-016',
-    name: 'PoojaGarland_016',
+    name: 'LFUSPG016',
     description: 'Pink and white floral pooja garland with deep red rose sections, white chrysanthemum accents, and a large red rose tassel. Ideal for deity worship and festive ceremonies.',
     price_in_cents: 1800,
     price_per_foot_in_cents: 1800,
@@ -189,7 +189,7 @@ export const poojaGarlandProducts: DBProduct[] = [
   },
   {
     id: 'pooja-garland-017',
-    name: 'PoojaGarland_017',
+    name: 'LFUSPG017',
     description: 'Bright yellow and pink floral pooja garland with deep red rose sections and a layered yellow-and-pink floral tassel. A vibrant choice for auspicious ceremonies and temple offerings.',
     price_in_cents: 1800,
     price_per_foot_in_cents: 1800,
