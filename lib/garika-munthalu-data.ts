@@ -81,7 +81,7 @@ export const garikaMunthaluSizes11: GarikaMunthaluSize[] = [
 export const garikaMunthaluProducts: GarikaMunthalu[] = [
   {
     id: "garika-munthalu-001",
-    name: "GarikaMunthalu_001",
+    name: "LFUSGM001",
     description: "Traditional decorated clay pots available in red and green with golden base, pearl bead rim, gold chain embellishments, and elegant scalloped patterns",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-29%20at%209.41.55%20PM%20%281%29-1pLnn3gO4RISA7RitjPMWuRwevu2ea.jpeg",
@@ -94,7 +94,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
   },
   {
     id: "garika-munthalu-002",
-    name: "GarikaMunthalu_002",
+    name: "LFUSGM002",
     description: "Red and gold clay pot with pearl bead trim and colorful gemstone flower accents",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.11.41%20PM-VsZlEuNR4SBdC1TSGEmL12gfdYrcjN.jpeg"
@@ -105,7 +105,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
   },
   {
     id: "garika-munthalu-003",
-    name: "GarikaMunthalu_003",
+    name: "LFUSGM003",
     description: "Gold painted clay pot with white rim, pearl and gold bead trim, and hanging chain embellishments",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.05.43%20PM-j6NghIyGasuJN6oLp26TQSYD8FmANA.jpeg"
@@ -116,7 +116,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
   },
   {
     id: "garika-munthalu-004",
-    name: "GarikaMunthalu_004",
+    name: "LFUSGM004",
     description: "Gold painted clay pot with pearl bead trim and colorful gemstone flower decorations",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.05.42%20PM-H988PFKyGvl8VmeM5QXLZKVIqhv8p3.jpeg"
@@ -127,7 +127,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
   },
   {
     id: "garika-munthalu-005",
-    name: "GarikaMunthalu_005",
+    name: "LFUSGM005",
     description: "Vibrant red clay pot with golden rim, pearl chains, multicolored rhinestones, and intricate golden bead work",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM%20%283%29-0Kdha6raJGXNFMhERMXddHPaWTWa13.jpeg"
@@ -138,7 +138,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
   },
   {
     id: "garika-munthalu-006",
-    name: "GarikaMunthalu_006",
+    name: "LFUSGM006",
     description: "Deep red clay pot with pearl bands, green crystal drapes, white flower accents, and golden rhinestone patterns",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM%20%282%29-kYD4ou5FYideu95eSIQwlE0kEuCOOr.jpeg"
@@ -149,7 +149,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
   },
   {
     id: "garika-munthalu-007",
-    name: "GarikaMunthalu_007",
+    name: "LFUSGM007",
     description: "Golden clay pot with pearl circular designs, rhinestone centers, golden bead chains, and elegant embellishments",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-19%20at%204.35.04%20PM%20%284%29-MKqEsdE2VyOw9NVpaQiaimr5Tq9dAz.jpeg"
@@ -160,7 +160,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
   },
   {
     id: "garika-munthalu-008",
-    name: "GarikaMunthalu_008",
+    name: "LFUSGM008",
     description: "Elegant red, green and gold banded clay pot pair with pearl flower accents, gold rhinestone borders, emerald crystal details, and golden base",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.17%20AM%20%281%29-1ODsc5q4CSTdec2U7jGmWxWSAQ4epM.jpeg"
@@ -171,7 +171,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
   },
   {
     id: "garika-munthalu-009",
-    name: "GarikaMunthalu_009",
+    name: "LFUSGM009",
     description: "Stunning golden clay pot pair with green leaf petal designs outlined in rhinestones, red teardrop accents, and elegant green rim",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.15%20AM-vYJ3GzsMg6r9O1BXylLQjizjkimLWf.jpeg"
@@ -182,7 +182,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
   },
   {
     id: "garika-munthalu-010",
-    name: "GarikaMunthalu_010",
+    name: "LFUSGM010",
     description: "Rich maroon clay pot pair with golden rim and base, pearl and gold flower decorations, and red rhinestone band accent near the neck",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.09%20AM-oz8sUBVHywgtOqwXZZ0OS472DA6VeS.jpeg"
@@ -193,7 +193,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
   },
   {
     id: "garika-munthalu-011",
-    name: "GarikaMunthalu_011",
+    name: "LFUSGM011",
     description: "Classic maroon and gold striped clay pot pair with pearl dot accents, red crystal embellishments, and gold rhinestone borders between bands",
     images: [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-05-10%20at%2012.44.18%20AM-lSgVb3ZItdNXeGr9d65sLhKUSGSZZ3.jpeg"
@@ -204,7 +204,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
   },
   {
     id: "garika-munthalu-012",
-    name: "GarikaMunthalu_012",
+    name: "LFUSGM012",
     description: "Gold decorated clay pot with pearl flower accents, crystal leaf detailing, and layered gold and silver beaded borders.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.53%20PM-cwvefRY5HwLeY3aUZhqet1WJ8UC1A7.jpeg"],
     sizes: garikaMunthaluSizes1,
@@ -213,7 +213,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
   },
   {
     id: "garika-munthalu-013",
-    name: "GarikaMunthalu_013",
+    name: "LFUSGM013",
     description: "Gold decorated clay pot with a pearl collar, ornate pearl-and-gold medallion accents, and hanging crystal embellishments.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.29.54%20PM-PRREbTvUiRPhzYmHiEBU4Yav6NVI39.jpeg"],
     sizes: garikaMunthaluSizes2,
@@ -222,7 +222,7 @@ export const garikaMunthaluProducts: GarikaMunthalu[] = [
   },
   {
     id: "garika-munthalu-014",
-    name: "GarikaMunthalu_014",
+    name: "LFUSGM014",
     description: "Emerald green and gold decorated clay pot with a burgundy rim, pearl floral accents, and delicate gold trim.",
     images: ["https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-03%20at%204.30.01%20PM%20%281%29-3L95Cnui1sAcq4ybzS3h5OLdOOcohr.jpeg"],
     sizes: garikaMunthaluSizes3,
